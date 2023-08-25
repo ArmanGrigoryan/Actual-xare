@@ -9,8 +9,8 @@ import TopHeader from './TopBar';
 import normalLogo from '../../../assets/img/logo/actual-logo.jpg';
 import darkLogo from '../../../assets/img/logo/dark-logo.png';
 
-import productImg1 from '../../../assets/img/shop/1.jpg';
-import productImg2 from '../../../assets/img/shop/2.jpg';
+// import productImg1 from '../../../assets/img/shop/1.jpg';
+// import productImg2 from '../../../assets/img/shop/2.jpg';
 
 const Header = (props) => {
 	const { headerClass, parentMenu, secondParentMenu, activeMenu, headerNormalLogo, headerStickyLogo, mobileNormalLogo, mobileStickyLogo, TopBar, TopBarClass, emailAddress, phoneNumber, Location, CanvasLogo, CanvasClass } = props;
@@ -27,7 +27,7 @@ const Header = (props) => {
 			}
 		};
 
-		// window.addEventListener("scroll", toggleVisibility);
+		window.addEventListener("scroll", toggleVisibility);
 
 		return () => window.removeEventListener("scroll", toggleVisibility);
 	}, []);

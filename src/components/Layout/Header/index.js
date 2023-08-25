@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import MenuItems from './MenuItems';
 import RSMobileMenu from './RSMobileMenu';
 import CanvasMenu from './CanvasMenu';
-import TopHeader from './TopBar';
+// import TopHeader from './TopBar';
 
 import normalLogo from '../../../assets/img/logo/lite-logo.png';
 import darkLogo from '../../../assets/img/logo/dark-logo.png';
 
-import productImg1 from '../../../assets/img/shop/1.jpg';
-import productImg2 from '../../../assets/img/shop/2.jpg';
+// import productImg1 from '../../../assets/img/shop/1.jpg';
+// import productImg2 from '../../../assets/img/shop/2.jpg';
 
 const Header = (props) => {
 	const { parentMenu } = props;
@@ -27,7 +27,7 @@ const Header = (props) => {
 			}
 		};
 
-		// window.addEventListener("scroll", toggleVisibility);
+		window.addEventListener("scroll", toggleVisibility);
 
 		return () => window.removeEventListener("scroll", toggleVisibility);
 	}, []);
@@ -40,7 +40,7 @@ const Header = (props) => {
 		<React.Fragment>
 			<div className={'full-width-header home8-style4 main-home'}>
 				<header id="rs-header" className='rs-header'>
-					<TopHeader />
+					{/* <TopHeader /> */}
 
 					<div className={isVisible ? 'menu-area menu-sticky sticky' : 'menu-area menu-sticky'}>
 						<div className="container">

@@ -20,8 +20,8 @@ import HomeTwo from '../pages/home-2';
 // import HomeFifteen from '../pages/home-15';
 import About from '../pages/about';
 import AboutTwo from '../pages/about-2';
-import CourseOne from '../pages/course';
-import CourseTwo from '../pages/course-2';
+// import CourseOne from '../pages/course';
+// import CourseTwo from '../pages/course-2';
 // import CourseThree from '../pages/course-3';
 // import CourseFour from '../pages/course-4';
 // import CourseFive from '../pages/course-5';
@@ -58,9 +58,9 @@ import ContactTwo from '../pages/contact-2';
 import Error from '../pages/404';
 import LoadTop from '../components/Common/ScrollTop/LoadTop'
 import CourseThree from './../pages/course-3/index';
-import CourseFour from './../pages/course-4/index';
-import CourseFive from './../pages/course-5/index';
-import CourseSix from './../pages/course-6/index';
+// import CourseFour from './../pages/course-4/index';
+// import CourseFive from './../pages/course-5/index';
+// import CourseSix from './../pages/course-6/index';
 
 const App = () => {
 
@@ -87,12 +87,8 @@ const App = () => {
                     <Route path="/home-15" component={HomeFifteen} /> */}
                     <Route path="/about" component={About} />
                     <Route path="/about-2" component={AboutTwo} />
-                    <Route path="/course" exact component={CourseOne} />
-                    <Route path="/course-2" component={CourseTwo} />
+                    <Route path="/course" exact component={CourseThree} />
                     <Route path="/course-3" component={CourseThree} />
-                    <Route path="/course-4" component={CourseFour} />
-                    <Route path="/course-5" component={CourseFive} />
-                    <Route path="/course-6" component={CourseSix} />
                     <Route path="/course/course-single" component={CourseSingle} />
                     <Route path="/course-categories" component={CourseCategoryPage} />
                     <Route path="/team" exact component={Team} />

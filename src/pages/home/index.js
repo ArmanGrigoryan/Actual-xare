@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import OffWrap from '../../components/Layout/Header/OffWrap';
 import Header from '../../components/Layout/Header/Header';
 // import Footer from '../../components/Layout/Footer/Footer';
@@ -9,6 +9,10 @@ import HomeMain from './HomeMain';
 // import footerLogo from '../../assets/img/logo/lite-logo.png';
 
 const HomePage = () =>  {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <React.Fragment>
             <OffWrap />

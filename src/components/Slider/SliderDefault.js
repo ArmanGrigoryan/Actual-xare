@@ -28,7 +28,10 @@ const SliderDefault = () => {
                 <Slider {...sliderSettings}>
                     <div className="slider-content slide1">
                         <div className="container">
-                            <div className="content-part">
+                            <div className="content-part position-relative">
+                                <video autoplay muted loop id="myVideo1">
+                                    <source src="https://www.shutterstock.com/shutterstock/videos/1062177724/preview/stock-footage-happy-family-people-group-pull-hands-to-the-sun-teamwork-silhouette-people-party-dancing.webm" type="video/mp4" />
+                                </video>
                                 <div className="sl-sub-title">Սկսել հենց հիմա</div>
                                 <h1 className="sl-title">Ամրապնդիր մասնագիտական կարողություններդ</h1>
                                 <div className="sl-btn">
@@ -40,7 +43,10 @@ const SliderDefault = () => {
 
                     <div className="slider-content slide2">
                         <div className="container">
-                            <div className="content-part">
+                            <div className="content-part position-relative">
+                                <video autoplay muted loop id="myVideo2">
+                                    <source src="https://www.shutterstock.com/shutterstock/videos/1062177724/preview/stock-footage-happy-family-people-group-pull-hands-to-the-sun-teamwork-silhouette-people-party-dancing.webm" type="video/mp4" />
+                                </video>
                                 <div className="sl-sub-title">Սկսել հենց հիմա</div>
                                 <h1 className="sl-title">Ամրապնդիր մասնագիտական կարողություններդ</h1>
                                 <div className="sl-btn">
