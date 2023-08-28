@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import { Link } from 'react-router-dom';
-
-// Image
 import videoImg from '../../../assets/img/about/about-video-bg2.png';
 
 const CourseSidebar = () => {
@@ -54,8 +52,8 @@ const CourseSidebar = () => {
                 </ul>
             </div>                
             <div className="btn-part">
-                <a href="#" className="btn readon2 orange">$35</a>
-                <a href="#" className="btn readon2 orange-transparent">Buy Now</a>
+                <a href="#" className="btn readon orange">$35</a>
+                <a href="#" className="btn readon orange-transparent">Buy Now</a>
             </div>
         </div>
     );

@@ -2,12 +2,10 @@ import React from 'react';
 import Slider from "react-slick";
 import SectionTitle from '../../components/Common/SectionTitle';
 import SingleTestimonial from '../../components/Testimonial/SingleTestimonial';
-
-
 import quote from '../../assets/img/testimonial/main-home/test-2.png';
 import author1 from '../../assets/img/testimonial/style5/1.png';
-import author2 from '../../assets/img/testimonial/style5/2.png';
-import author3 from '../../assets/img/testimonial/style5/3.png';
+import author2 from '../../assets/img/testimonial/style5/1.png';
+import author3 from '../../assets/img/testimonial/style5/1.png';
 
 const Testimonial = () => {
 
@@ -34,7 +32,7 @@ const Testimonial = () => {
             <div className="rs-testimonial main-home pt-100 pb-100 md-pt-70 md-pb-70">
                 <div className="container">
                     <SectionTitle
-                        sectionClass="sec-title3 mb-50 md-mb-30 text-center"
+                        sectionClass="sec-title2 mb-50 md-mb-30 text-center"
                         subtitleClass="sub-title primary"
                         subtitle=""
                         titleClass="title white-color"

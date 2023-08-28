@@ -2,11 +2,11 @@ import React from 'react';
 import Slider from "react-slick";
 
 import brandLogo1 from '../../../assets/img/brand/1.png';
-import brandLogo2 from '../../../assets/img/brand/2.png';
-import brandLogo3 from '../../../assets/img/brand/3.png';
-import brandLogo4 from '../../../assets/img/brand/4.png';
-import brandLogo5 from '../../../assets/img/brand/5.png';
-import brandLogo6 from '../../../assets/img/brand/6.png';
+import brandLogo2 from '../../../assets/img/brand/1.png';
+import brandLogo3 from '../../../assets/img/brand/1.png';
+import brandLogo4 from '../../../assets/img/brand/1.png';
+import brandLogo5 from '../../../assets/img/brand/1.png';
+import brandLogo6 from '../../../assets/img/brand/1.png';
 
 const BrandThree = (props) => {
     const { brandBg, brandClass } = props;

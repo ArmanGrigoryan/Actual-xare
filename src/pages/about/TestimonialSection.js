@@ -1,85 +1,52 @@
 import React from 'react';
-import Slider from "react-slick";
-import SectionTitle from '../../components/Common/SectionTitle';
-import SingleTestimonialThree from '../../components/Testimonial/SingleTestimonialThree';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import SingleTestimonialTwo from '../../components/Testimonial/SingleTestimonialTwo';
+import donorImg from '../../assets/img/donor/1.jpg';
+import avatar1 from '../../assets/img/donor/1.jpg';
+import avatar2 from '../../assets/img/donor/1.jpg';
 
+function Testimonial() {
 
-// Testimonial Avatars
-import author1 from '../../assets/img/testimonial/style3/1.png';
-import author2 from '../../assets/img/testimonial/style3/2.png';
-import author3 from '../../assets/img/testimonial/style3/3.png';
-import author4 from '../../assets/img/testimonial/style3/4.png';
-import author5 from '../../assets/img/testimonial/style3/5.png';
-
-const Testimonial = () => {
-
-    const testimonialSettings = {
-        dots: true,
-        centerMode: false,
-        infinite: true,
-        arrows: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                    dots: false,
-                }
-            }
-        ]
-    };
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     return (
         <React.Fragment>
-            <div className="rs-testimonial style3 orange-color pt-102 md-pt-70 pb-60">
+            <div className="rs-testimonial style2 pt-100 pb-100 md-pt-70 md-pb-70">
                 <div className="container">
-                    <SectionTitle
-                        sectionClass="sec-title mb-60 text-center md-mb-30"
-                        subtitleClass="sub-title orange"
-                        subtitle="Student Reviews"
-                        titleClass="title mb-0"
-                        title="What Our Students Says"
-                    />
                     <div className="row">
-                        <Slider {...testimonialSettings}>
-                            <SingleTestimonialThree
-                                itemClass="testi-item"
-                                authorImage={author1}
-                                Title="David Warner"
-                                Designation="Web Developer"
-                                Description="Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway."
+                        <div className="col-lg-5 pr-90 md-pr-14 md-mb-30">
+                            <div className="donation-part" data-aos="fade-up">
+                                <img
+                                    src={donorImg}
+                                    alt="Donor"
+                                />
+                                <h3 className="title mb-10">Donation helps us</h3>
+                                <div className="desc mb-38">Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed eius to mod tempors incididunt ut labore et dolore magna this aliqua  enims ad minim.</div>
+                                <div className="btn-part">
+                                    <Link className="readon orange" to="/contact">Become a donor</Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-7 lg-pl-0 ml--14 md-ml-0">
+                            <SingleTestimonialTwo
+                                testiImage={avatar1}
+                                name="Mahadi mansura"
+                                designation="Head Teacher"
+                                description="Education is the passport to the future for tomorrow belongs to those who prepare for it today"
                             />
-                            <SingleTestimonialThree
-                                itemClass="testi-item"
-                                authorImage={author2}
-                                Title="Mitchel Starc"
-                                Designation="App Developer"
-                                Description="Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway."
+                            <SingleTestimonialTwo
+                                animateDelay="50"
+                                itemClass="testi-wrap"
+                                testiImage={avatar2}
+                                name="Jonathon Lary"
+                                designation="Math Teacher"
+                                description="Education is the passport to the future for tomorrow belongs to those who prepare for it today"
                             />
-                            <SingleTestimonialThree
-                                itemClass="testi-item"
-                                authorImage={author3}
-                                Title="Steve Smith"
-                                Designation="Web Designer"
-                                Description="Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway."
-                            />
-                            <SingleTestimonialThree
-                                itemClass="testi-item"
-                                authorImage={author4}
-                                Title="Bret Lee"
-                                Designation="Client Manager"
-                                Description="Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway."
-                            />
-                            <SingleTestimonialThree
-                                itemClass="testi-item"
-                                authorImage={author5}
-                                Title="Shan Warne"
-                                Designation="Digital Marketar"
-                                Description="Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway."
-                            />
-                        </Slider>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,4 +54,4 @@ const Testimonial = () => {
     )
 }
 
-export default Testimonial
+export default Testimonial;

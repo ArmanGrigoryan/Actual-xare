@@ -5,38 +5,23 @@ import AboutVideo from './VideoSection';
 import AboutCounter from './CounterSection';
 import Testimonial from './TestimonialSection';
 import ScrollToTop from '../../components/Common/ScrollTop';
-
+import AboutText from './AboutTextSection.js';
+import AboutTab from './AboutTabSection.js';
+import Faq from '../../components/FAQ';
 
 const AboutMain = () => {
 
     return (
         <React.Fragment>
-            {/* AboutCounter Start */}
-            <AboutCounter />
-            {/* AboutCounter End */}
-
-            {/* AboutVideo Start */}
+            <AboutText />
             <AboutVideo />
-            {/* AboutVideo End */}
-
-            {/* Team Section Start */}
+            <AboutCounter />
+            <AboutTab />
             <Team />
-            {/* Team Section End */}
-
-            {/* Testimonial Section Start */}
             <Testimonial />
-            {/* Testimonial Section End */}
-
-            {/* Blog Section Start */}
             <Blog />
-            {/* Blog Section End */}
-
-			{/* scrolltop-start */}
-			<ScrollToTop
-				scrollClassName="scrollup orange-color"
-			/>
-			{/* scrolltop-end */}
-
+            <Faq />
+			<ScrollToTop scrollClassName="scrollup orange-color" />
         </React.Fragment>
     )
 }

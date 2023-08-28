@@ -1,14 +1,12 @@
 import React from 'react';
 import SectionTitle from '../../components/Common/SectionTitle';
 import CourseSingle from '../../components/Courses/CourseSingle';
-
-// Courses Image
 import image1 from '../../assets/img/courses/main-home/1.jpg';
 import image2 from '../../assets/img/courses/main-home/2.jpg';
-import image3 from '../../assets/img/courses/home8/2.jpg';
-import image4 from '../../assets/img/courses/home8/4.jpg';
-import image5 from '../../assets/img/courses/home8/5.jpg';
-import image6 from '../../assets/img/courses/home8/6.jpg';
+import image3 from '../../assets/img/courses/2.jpg';
+import image4 from '../../assets/img/courses/4.jpg';
+import image5 from '../../assets/img/courses/5.jpg';
+import image6 from '../../assets/img/courses/6.jpg';
 
 const Courses = () => {
 
@@ -16,7 +14,7 @@ const Courses = () => {
         <div className="rs-popular-courses main-home event-bg pt-100 pb-100 md-pt-70 md-pb-70">
             <div className="container">
                 <SectionTitle
-                    sectionClass="sec-title3 text-center mb-44"
+                    sectionClass="sec-title2 text-center mb-44"
                     subtitleClass="sub-title"
                     subtitle="Select Courses"
                     titleClass="title black-color"

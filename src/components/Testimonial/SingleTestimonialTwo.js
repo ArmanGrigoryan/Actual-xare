@@ -6,7 +6,7 @@ const SingleTestimonialTwo = (props) => {
 
     useEffect(() => {
         AOS.init();
-    })
+    }, []);
 
     return (
         <div className={itemClass ? itemClass : 'testi-wrap mb-50'} data-aos={animateName ? animateName : 'fade-up'} data-aos-delay={animateDelay ? animateDelay : ''}>

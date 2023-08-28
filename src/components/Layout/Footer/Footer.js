@@ -1,25 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import FooterBottom from './FooterBottom';
 
-import footerLogo1 from '../../../assets/img/logo/actual-logo.jpg';
-import postImg1 from '../../../assets/img/blog/post1.jpg';
-import postImg2 from '../../../assets/img/blog/post2.jpg';
-
 const Footer = (props) => {
-    const { footerLogo, footerClass, footerTopClass } = props;
+    const { footerClass, footerTopClass } = props;
     return (
         <footer className={footerClass ? footerClass : 'rs-footer'}>
             <div className={`footer-top ${footerTopClass}`}>
                 <div className="container">
                     <div className="d-flex justify-content-between">
-                        {/* <div className="col-lg-3 col-6 footer-widget">
-                            <div className="footer-logo mb-30">
-                                <Link to="/" as="/">
-                                    <img src={footerLogo ? footerLogo1 : footerLogo1} alt="Logo" />
-                                </Link>
-                            </div>
-                        </div> */}
                         <div className="col-lg-3 col-6 footer-widget">
                             <h3 className="widget-title">Հասցե</h3>
                             <ul className="address-widget">

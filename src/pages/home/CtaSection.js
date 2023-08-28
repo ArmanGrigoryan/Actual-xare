@@ -11,7 +11,7 @@ const Cta = () => {
                     <div className="row">
                         <div className="offset-lg-6 col-lg-6 pl-70 md-pl-14">
                             <SectionTitle
-                                sectionClass="sec-title3 mb-40"
+                                sectionClass="sec-title2 mb-40"
                                 titleClass="title white-color mb-16"
                                 title="20% Offer Running - Join Today"
                                 descClass="desc white-color pr-100 md-pr-0"

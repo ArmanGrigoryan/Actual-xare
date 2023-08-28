@@ -7,7 +7,7 @@ const SingleEventThree = (props) => {
         <div className={eventClass ? eventClass : 'event-item'}>
             <div className="event-short">
                 <div className="featured-img">
-                    <img src={eventImg} alt="Image" />
+                    <img src={eventImg} alt="Event" />
                 </div>
                 <div className="content-part">
                     <h4 className="title"><Link to="/event/style-1">{eventTitle ? eventTitle : 'Educational Technology and Mobile Learning'}</Link></h4>
@@ -33,6 +33,12 @@ const SingleEventThree = (props) => {
                             {eventSchedule}
                         </div> : ''
                     }
+                    
+                    <div className='blog-button white-color'>
+                        <Link to="/blog/single-post-right-sidebar" className="blog-btn white-color">
+                            {'Continue Reading'}
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

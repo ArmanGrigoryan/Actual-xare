@@ -1,6 +1,5 @@
 import React from 'react';
-import SubscribeForm from '../../Elements/Subscribe/SubscribeForm';
-
+import SubscribeForm from '../../Elements/Subscribe/SubscribeForm.js';
 import newsletterIcon from '../../../assets/img/newsletter.png'
 
 const Newsletter = (props) => {

@@ -2,11 +2,11 @@ import React from 'react';
 import Slider from "react-slick";
 
 import brandNormalLogo1 from '../../../assets/img/brand/1.png';
-import brandNormalLogo2 from '../../../assets/img/brand/2.png';
-import brandNormalLogo3 from '../../../assets/img/brand/3.png';
-import brandNormalLogo4 from '../../../assets/img/brand/4.png';
-import brandNormalLogo5 from '../../../assets/img/brand/5.png';
-import brandNormalLogo6 from '../../../assets/img/brand/6.png';
+import brandNormalLogo2 from '../../../assets/img/brand/1.png';
+import brandNormalLogo3 from '../../../assets/img/brand/1.png';
+import brandNormalLogo4 from '../../../assets/img/brand/1.png';
+import brandNormalLogo5 from '../../../assets/img/brand/1.png';
+import brandNormalLogo6 from '../../../assets/img/brand/1.png';
 
 const Brand = (props) => {
     const { brandClass } = props;

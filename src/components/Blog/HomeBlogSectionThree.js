@@ -9,7 +9,6 @@ import blogImg4 from '../../assets/img/blog/style2/4.jpg';
 
 const BlogPartThree = () => {
 
-
     const blogSettings = {
         dots: false,
         centerMode: false,

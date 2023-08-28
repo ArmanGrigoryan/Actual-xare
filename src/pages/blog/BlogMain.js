@@ -4,12 +4,12 @@ import SinglePostSix from '../../components/Blog/SinglePostSix';
 
 import blogImg1 from '../../assets/img/blog/inner/1.jpg'
 import blogImg2 from '../../assets/img/blog/inner/2.jpg'
-import blogImg3 from '../../assets/img/blog/inner/3.jpg'
-import blogImg4 from '../../assets/img/blog/inner/4.jpg'
-import blogImg5 from '../../assets/img/blog/inner/5.jpg'
-import blogImg6 from '../../assets/img/blog/inner/6.jpg'
-import blogImg7 from '../../assets/img/blog/inner/7.jpg'
-import blogImg8 from '../../assets/img/blog/inner/8.jpg'
+import blogImg3 from '../../assets/img/blog/inner/1.jpg'
+import blogImg4 from '../../assets/img/blog/inner/2.jpg'
+import blogImg5 from '../../assets/img/blog/inner/1.jpg'
+import blogImg6 from '../../assets/img/blog/inner/2.jpg'
+import blogImg7 from '../../assets/img/blog/inner/1.jpg'
+import blogImg8 from '../../assets/img/blog/inner/2.jpg'
 
 const BlogMain = () => {
 

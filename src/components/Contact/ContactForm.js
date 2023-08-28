@@ -6,23 +6,23 @@ const ContactForm = (props) => {
         <form id="contact-form" action="#">
             <div className="row">
                 <div className="col-md-6 mb-30">
-                    <input className="from-control" type="text" id="name" name="name" placeholder="Name" required />
+                    <input className="from-control" type="text" id="name" name="name" placeholder="Անուն" required />
                 </div>
 
                 <div className="col-md-6 mb-30">
-                    <input className="from-control" type="text" id="email" name="email" placeholder="E-Mail" required />
+                    <input className="from-control" type="text" id="email" name="email" placeholder="Էլ. փոստ" required />
                 </div>
 
                 <div className="col-md-6 mb-30">
-                    <input className="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required />
+                    <input className="from-control" type="text" id="phone" name="phone" placeholder="Հեռ." required />
                 </div>
 
                 <div className="col-md-6 mb-30">
-                    <input className="from-control" type="text" id="website" name="website" placeholder="Your Website" required />
+                    <input className="from-control" type="text" id="website" name="website" placeholder="Ձեր կայքը" required />
                 </div>
 
                 <div className="col-12 mb-30">
-                    <textarea className="from-control" id="message" name="message" placeholder="Your message Here" required></textarea>
+                    <textarea className="from-control" id="message" name="message" placeholder="Ձեր հաղորդագրությունը" required></textarea>
                 </div>
             </div>
             <div className="btn-part">

@@ -2,14 +2,11 @@ import React, { useState } from 'react';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import SectionTitle from '../../components/Common/SectionTitle';
-
-// About Image
 import countIcon1 from '../../assets/img/about/style3/icons/1.png';
 import countIcon2 from '../../assets/img/about/style3/icons/2.png';
 import countIcon3 from '../../assets/img/about/style3/icons/3.png';
 
 const AboutCounter = () => {
-
     const [state, setState] = useState(true);
 
     const counters = [
