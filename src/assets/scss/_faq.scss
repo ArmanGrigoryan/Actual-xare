@@ -103,6 +103,7 @@
 							.card-link[aria-selected=true] {
 								background: $primaryColor;
 								color: $whiteColor;
+                                border-radius: 12px;
 								&:after {
 									content: "\f1f6";
 								}
@@ -160,6 +161,7 @@
                                 .card-link[aria-selected=true] {
                                     background: $orangeColor;
                                     color: $whiteColor;
+                                    border-radius: 12px;
                                 }
                             }
                             .card-body{
@@ -188,7 +190,6 @@
             background: $orangeColor;
         }
     } 
-   
 }
 
 /* Lg Device :1199px. */

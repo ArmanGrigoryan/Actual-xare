@@ -170,8 +170,7 @@
 	}
 }
 
-.home8-style4.main-home,
-.header-style1.home14-style {
+.home8-style4.main-home {
 	.mobile-menu{
 		ul{
 			li{
@@ -202,38 +201,7 @@
 		}
 	}
 }
-.full-width-header.header-style1.home8-style4 {
-	.mobile-menu{
-		ul{
-			li{
-				a{
-					&.active-menu,
-					&:hover{
-						color:$orangeColor;
-					}
-				}
-				&.current-menu-item {
-					> a {
-						color:$orangeColor;
-					}
-				}
-			}
-			
-			li.menu-item-has-children{
-				ul.sub-menu{
-					li{		
-						&:hover{
-							> a{
-								color:$orangeColor;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-.header-style2.modify1.header-home6,
+
 .home8-style4.home9 {
 	.mobile-menu{
 		ul{
@@ -257,70 +225,6 @@
 						&:hover{
 							> a{
 								color:$yellowColor;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-.header-style3.modify {
-	.mobile-menu{
-		ul{
-			li{
-				a{
-					&.active-menu,
-					&:hover{
-						color:$primaryColor;
-					}
-				}
-				&.current-menu-item {
-					> a {
-						color:$primaryColor;
-					}
-				}
-			}
-			
-			li.menu-item-has-children{
-				ul.sub-menu{
-					li{		
-						&:hover{
-							> a{
-								color:$primaryColor;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-.header-style1.home12-modifiy {
-	.mobile-menu{
-		ul{
-			li{
-				a{
-					&.active-menu,
-					&:hover{
-						color:$greenColor;
-					}
-				}
-				&.current-menu-item {
-					> a {
-						color:$greenColor;
-					}
-				}
-			}
-			
-			li.menu-item-has-children{
-				ul.sub-menu{
-					li{		
-						&:hover{
-							> a{
-								color:$greenColor;
 							}
 						}
 					}
