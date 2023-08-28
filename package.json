@@ -13,7 +13,6 @@
 		"node-sass": "^4.14.1",
 		"react": "^17.0.1",
 		"react-accessible-accordion": "^3.3.3",
-		"react-burger-menu": "^2.7.1",
 		"react-countup": "^4.3.3",
 		"react-customizable-progressbar": "^1.0.1",
 		"react-dom": "^17.0.1",
@@ -35,13 +34,24 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"lint": "eslint --fix --ext .js,.jsx ."
 	},
 	"eslintConfig": {
 		"extends": [
 			"react-app",
 			"react-app/jest"
-		]
+		],
+		"plugins": [
+			"unused-imports"
+		],
+		"rules": {
+			"no-unused-vars": "error"
+		}
+	},
+	"devDependencies": {
+		"eslint": "^7.11.0",
+		"eslint-plugin-unused-imports": "^3.0.0"
 	},
 	"browserslist": {
 		"production": [
