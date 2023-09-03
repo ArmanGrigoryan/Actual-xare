@@ -9,7 +9,7 @@ import Register from '../pages/register';
 import Blog from '../pages/blog';
 import Contact from '../pages/contact';
 import Error from '../pages/404';
-import LoadTop from '../components/Common/ScrollTop/LoadTop'
+import LoadTop from '../components/Common/ScrollTop/LoadTop';
 import Course from './../pages/course/index';
 import Checkout from '../pages/shop/checkout';
 
@@ -34,7 +34,6 @@ const App = () => {
                     <Route component={Error} />
                 </Switch>
             </Router>
-
         </div>
     );
 }

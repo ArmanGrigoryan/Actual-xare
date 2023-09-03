@@ -8,11 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/scss/main.scss';
 
 ReactDOM.render(
-	<React.StrictMode>
 		<BrowserRouter>
 			<App />
-		</BrowserRouter>
-	</React.StrictMode>,
+		</BrowserRouter>,
 	document.getElementById('root')
 );
 
