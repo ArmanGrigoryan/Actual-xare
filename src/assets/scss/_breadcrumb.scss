@@ -14,7 +14,7 @@
         text-align: center;
         padding: 0 10px;
         .page-title {
-            font-size: 48px;
+            font-size: 38px;
             margin-bottom: 20px;
             color: $orangeColor;
         }
@@ -97,6 +97,12 @@
 @media #{$md} {
     .rs-breadcrumbs .breadcrumbs-img img{
         min-height: 200px;
+        height: 220px;
+    }
+    .breadcrumbs-text .page-title {
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 30px !important;
     }
 }
 @media #{$sm} {

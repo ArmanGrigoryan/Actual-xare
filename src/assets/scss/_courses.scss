@@ -1,8 +1,9 @@
 .rs-popular-courses {
     &.style3 {
-        .courses-item {
+        .courses-item{
             border: 1px solid #dfe9eb;
             transition: $transition;
+
             .img-part {
                 img {
                     width: 100%;
@@ -19,7 +20,7 @@
                     line-height: 40px;
                     color: $whiteColor;
                     font-weight: 500;
-                    background: $primaryColor;
+                    background: $orangeColor;
                     border-radius: 3px;
                     transition: $transition;
                     position: absolute;
@@ -80,7 +81,7 @@
         }
     }
     &.main-home{
-        .courses-item{
+        .courses-item {
             position: relative;
             .courses-grid{
                 padding: 0px;
@@ -176,7 +177,7 @@
             }
         }
         &.home12-style{
-            .courses-item{
+            .courses-item {
                 .courses-grid{
                     .content-part{
                         padding: 32px 35px 35px 35px;
@@ -233,14 +234,14 @@
             margin: 0;
             button {
                 width: 30px;
-                border: 1px solid $primaryColor;
+                border: 1px solid $orangeColor;
                 background: $titleColor;
                 opacity: 0.75;
-            }                
+            }
             &:hover,
             &.slick-active {
                 button {
-                    background: $primaryColor;
+                    background: $orangeColor;
                     opacity: 1;
                 }
                 
@@ -248,7 +249,7 @@
         }
     }
 
-    .courses-item{
+    .courses-item {
         padding: 0 30px;
         position: relative;
         transition: $transition;
@@ -315,7 +316,7 @@
                 a{
                     color: $titleColor4;
                     &:hover{
-                        color: $primaryColor;
+                        color: $orangeColor;
                     }
                 }
             }
@@ -325,12 +326,11 @@
                 border-bottom: 1px solid #e5e8eb;
                 padding-bottom: 35px;
                 .img-part{
-                  
-                   img{
-                        border-radius: 50%;
-                        width: 30px;
-                        height: 30px;
-                   }
+                    img{
+                            border-radius: 50%;
+                            width: 30px;
+                            height: 30px;
+                    }
                 }
                 span{
                     color: $metaColor;
@@ -364,7 +364,7 @@
                             }
                         }
                         &:hover{
-                            color: $primaryColor;
+                            color: $orangeColor;
                         }
                     }
                 }
@@ -388,31 +388,31 @@
 }
 
 @media #{$xl} {
-    .rs-popular-courses.style3 .courses-item .content-part .title {
+    .rs-popular-courses.style3 .courses-item.content-part .title {
         font-size: 24px;
     }
 }
 
 /* Lg Device :1199px. */
 @media #{$lg} {
-    .rs-popular-courses.main-home.home12-style .courses-item .courses-grid .content-part .title {
+    .rs-popular-courses.main-home.home12-style .courses-item.courses-grid .content-part .title {
         line-height: 29px;
         font-size: 20px;
     } 
-    .rs-popular-courses.main-home.home12-style .courses-item .courses-grid .content-part {
+    .rs-popular-courses.main-home.home12-style .courses-item.courses-grid .content-part {
         padding: 32px 25px 35px 25px;
     }
 }
 
 @media #{$sm} {
-    .rs-featured-courses .courses-item {
+    .rs-featured-courses .courses-item{
         padding: 0 20px;
     }
 }
 
 /* Large Mobile :575px. */
 @media #{$xs} {
-    .rs-popular-courses.style3 .courses-item .img-part img {
+    .rs-popular-courses.style3 .courses-item.img-part img {
         width: 100%;
     }
 }
@@ -422,13 +422,13 @@
     .rs-popular-courses.main-home.home12-style .sec-title4 .title {
         font-size: 22px;
     }
-    .rs-popular-courses.main-home .courses-item .courses-grid .content-part {
+    .rs-popular-courses.main-home .courses-item.courses-grid .content-part {
         padding: 30px 25px;
     }
-    .rs-popular-courses.main-home .courses-item .courses-grid .content-part .title {
+    .rs-popular-courses.main-home .courses-item.courses-grid .content-part .title {
         font-size: 20px;
     } 
-    .rs-popular-courses.style3 .courses-item .content-part .title  {
+    .rs-popular-courses.style3 .courses-item.content-part .title  {
         font-size: 18px;
     } 
 }

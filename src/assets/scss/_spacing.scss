@@ -69,6 +69,22 @@
 .pr-2 {padding-right: 2px !important;}
 .pr-5 {padding-right: 5px !important;}
 
+/*-- Border Radius --*/
+@for $i from 1 through 40 {
+    .radius-#{$i}{border-radius: 1px *$i;}
+}
+.radius-full {border-radius: 50% !important;}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y)*-1);
+    margin-right: calc(var(--bs-gutter-x)*-0.5);
+    margin-left: calc(var(--bs-gutter-x)*-0.5);
+}
+
 /* Lg Device :1199px. */
 @media #{$lg} {
     /*--

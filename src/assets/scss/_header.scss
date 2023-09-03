@@ -88,7 +88,7 @@
                 a{
                     img{
                         transition: 0.4s;
-                        max-height: 40px;
+                        max-height: 70px;
                     }
                     .sticky-logo{
                         display: none;
@@ -101,7 +101,7 @@
                 transform: translateY(-50%);
                 display: none;
                 img {
-                    max-height: 30px;
+                    max-height: 70px;
                 }
             }
             .logo-cat-wrap {
@@ -165,30 +165,32 @@
             .main-menu{
 				.mobile-menu {
 					display: none;
-                    height: 65px;
-                    line-height: 65px;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 70px;
+                    line-height: 70px;
                     .mobile-normal-logo {
                         float: left;
                         display: block;
                         img {
-                            max-height: 30px;
+                            max-height: 70px;
                         }
                     }
                     .mobile-sticky-logo {
                         float: left;
                         display: none;
                         img {
-                            max-height: 30px;
+                            max-height: 70px;
                         }
                     }
                     .logo {
                         img {
-                            max-height: 30px;
+                            max-height: 70px;
                         }
                     }
                     .rs-menu-toggle{
+                        cursor: pointer;
                         color: $whiteColor;
-                        float: right;
                         font-size: 20px;
                         &:hover {
                             opacity: 0.8;
@@ -219,8 +221,8 @@
                                     transition: $transition;
                                     font-size: 15px;
                                     font-weight: 500;
-                                    height: 65px;
-                                    line-height: 65px;
+                                    height: 70px;
+                                    line-height: 70px;
                                     padding: 0;
                                     color: $whiteColor;
                                     position: relative;
@@ -234,16 +236,16 @@
                                 }
                                 &.current-menu-item {
                                     > a {
-                                       color: #bbb;
+                                        color: #bbb;
                                     }
                                 }
                                 &:last-child{
                                     margin-right: 0!important;
                                     a {
-                                       margin-right: 0!important;
+                                        margin-right: 0!important;
                                     }
                                     i{
-                                       margin: 0;
+                                        margin: 0;
                                     }
                                 } 
                                 &.rs-mega-menu{
@@ -260,25 +262,6 @@
 
                                         .mega-menu-container {
                                             display: inline-flex;
-                                        }
-                                        .single-megamenu {
-                                            width: 33.33%;
-                                            float: left;
-                                        }
-                                        &.two-column {
-                                            min-width: 650px;
-                                            .mega-menu-container{
-                                                .single-megamenu {
-                                                    width: 50%;
-                                                }
-                                            }
-                                        }
-                                        &.four-column {
-                                            .mega-menu-container{
-                                                .single-megamenu {
-                                                    width: 25%;
-                                                }
-                                            }
                                         }
                                     }
                                     &:hover {
@@ -329,8 +312,8 @@
                         }
                     }
                     > a {
-                        height: 65px;
-                        line-height: 65px;
+                        height: 70px;
+                        line-height: 70px;
                         display: flex;
                         align-items: center;
                         i {
@@ -372,39 +355,15 @@
                 background: #fff;
                 .logo-area{
                     a{
-                        .sticky-logo{                            
+                        .sticky-logo{
                             display: block;
-                            max-height: 30px;
+                            max-height: 70px;
                         }
                         .normal-logo{
                             display: none;
                         }
                     }
-                }
-                .rs-menu-area {
-                    float: right;
-                }
-                .main-menu {
-                    .rs-menu {
-                        ul {
-                            &.vv-menu {
-                                > li {
-                                    > a {
-                                        color: #0a0a0a;
-                                        &:hover {
-                                            color: $primaryColor;
-                                        }
-                                    }
-                                    &.current-menu-item {
-                                        > a {
-                                            color: $primaryColor;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }                
+                }         
             }
         }
         
@@ -442,8 +401,8 @@
                     }
                 }
                 > a {
-                    height: 65px;
-                    line-height: 65px;
+                    height: 70px;
+                    line-height: 70px;
                     display: flex;
                     align-items: center;
                     i {
@@ -469,6 +428,7 @@
         }
 
         .nav-expander {
+            display: none;
             position: relative;
             top: 3px;
             transition: $transition;
@@ -587,6 +547,7 @@
                                 }
                             }
                             .rs-menu-toggle {
+                                cursor: pointer;
                                 color: $whiteColor !important;
                             }
                         }
@@ -633,6 +594,7 @@
                                                 }
                                                 &.current-menu-item {
                                                     > a {
+                                                        position: relative;
                                                         color: $orangeColor !important;
                                                     }
                                                     > a::after {
@@ -732,6 +694,7 @@
                         }
                     }
                     .nav-expander {
+                        display: none;
                         span {
                             background: $whiteColor;
                         }
@@ -744,13 +707,7 @@
                     .mini-cart-active:hover .woocommerce-mini-cart {
                         top: 90px;
                     }
-                .nav-expander {
-                        color: $whiteColor !important;
-                        &:hover{
-                            color: $orangeColor !important;
-                        }
-                    }
-                }                
+                }
             }
         }
     }
@@ -760,16 +717,10 @@
     .full-width-header {
         .rs-header {
             .menu-area {
-                position: relative;
+                position: static;
                 z-index: 99;
-                .rs-menu-area {
-                    float: unset;
-                }
                 &.sticky {
-                    position: relative;
-                    .rs-menu-area {
-                        float: unset;
-                    }
+                    position: static;
                     .main-menu {
                         .mobile-menu {
                             .mobile-normal-logo {
@@ -783,6 +734,37 @@
                             }
                         } 
                     }                                       
+                }
+                .rs-menu-area {
+                    .main-menu {
+                        .mobile-menu {
+                            .normal-logo {
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-expander {
+        display: block;
+    }
+}
+
+
+@media #{$mobile} {
+    .full-width-header {
+        .rs-header {
+            .menu-area {
+                .rs-menu-area {
+                    .main-menu {
+                        .mobile-menu {
+                            .normal-logo {
+                                width: 150px;
+                            }
+                        }
+                    }
                 }
             }
         }
