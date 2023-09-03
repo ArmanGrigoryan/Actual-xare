@@ -5,7 +5,7 @@ const CourseSingleFour = (props) => {
     const { courseClass, courseCategory, courseImg, catLink, courseTitle, coursePrice, studentQuantity, userRating, btnText, metaIcon } = props;
 
     return (
-        <div className={courseClass ? courseClass : 'courses-item'}>
+        <div className={courseClass ? courseClass : 'courses-item radius-12'}>
             <div className="img-part">
                 <img
                     src={courseImg}

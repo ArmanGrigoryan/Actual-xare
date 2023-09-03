@@ -1,35 +1,42 @@
 import React, { useState } from 'react';
-import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
+import CountUp from 'react-countup';
 import SectionTitle from '../../components/Common/SectionTitle';
 import countIcon1 from '../../assets/img/about/style3/icons/1.png';
 import countIcon2 from '../../assets/img/about/style3/icons/2.png';
 import countIcon3 from '../../assets/img/about/style3/icons/3.png';
 
+const counters = [
+    {
+        countNum: 800,
+        countTitle: 'Ուսանող',
+        counterPrefix: '+',
+        countIcon: countIcon1
+    },
+    {
+        countNum: 88,
+        countTitle: 'Միջին գնահատական',
+        counterPrefix: '',
+        countIcon: countIcon2
+    },
+    {
+        countNum: 95,
+        countTitle: 'Շրջանավարտ',
+        counterPrefix: '%',
+        countIcon: countIcon3
+    }
+];
+
 const AboutCounter = () => {
-    const [state, setState] = useState(true);
+    const [isReadyOnce, setIsReadyOnce] = useState(false);
+    const [isAnimated, setIsAnimated] = useState(false);
+    const onChange = (value) => {
+        if (!isReadyOnce && value) setIsReadyOnce(true);
+    };
 
-    const counters = [
-        {
-            countNum: 2,
-            countTitle: 'Students',
-            counterPrefix: 'k+',
-            countIcon: countIcon1
-        },
-        {
-            countNum: 50,
-            countTitle: 'Average CGPA',
-            counterPrefix: '',
-            countIcon: countIcon2
-        },
-        {
-            countNum: 95,
-            countTitle: 'Graduates',
-            counterPrefix: '%',
-            countIcon: countIcon3
-        }
-
-    ];
+    const onEnd = () => {
+        if (isReadyOnce || !isAnimated) setIsAnimated(true);
+    };
 
     return (
         <div id="rs-about" className="rs-about style3 pt-110 md-pt-70">
@@ -40,68 +47,41 @@ const AboutCounter = () => {
                             <SectionTitle
                                 sectionClass="sec-title"
                                 subtitleClass="sub-title orange"
-                                subtitle="About Us"
+                                subtitle=""
                                 titleClass="title mb-20"
-                                title="The End Result of All True Learning"
+                                title="Մեր ուսանողների վերջնական արդյունքները"
+                                description="Հաջողության բանալին գնահատելն է, թե ինչպես են մարդիկ սովորում, հասկանալ մտքի գործընթացը, որը մտնում է ուսումնական ձևավորման մեջ, ինչն է լավ աշխատում և մի շարք տարբեր բաներ:"
                                 descClass="desc big"
-                                description="The key to success is to appreciate how people learn, understand the thought process that goes into instructional design, what works well, and a range of differen"
                             />
                         </div>
                     </div>
                     <div className="col-lg-8 pl-82 md-pl-14">
                         {counters &&
                             <div className="row rs-counter couter-area">
-                                {counters.map((counter, num) => (
-                                    <div key={num} className="col-md-4 sm-mb-30">
+                                {counters.map(counter => (
+                                    <div key={counter.countNum} className="col-md-4 sm-mb-30">
                                         <div className="counter-item one">
                                             <img className="count-img" src={counter.countIcon} alt="" />
-                                            <h2 className="number rs-count">
-                                                <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd={() => setState(false)} />
-                                                {({ countUpRef, start }) => (
-                                                    <VisibilitySensor onChange={start} delayedCall>
-                                                        <span ref={countUpRef} />
-                                                    </VisibilitySensor>
-                                                )}
-                                                <span className="counter-prefix">{counter.counterPrefix}</span>
+                                            <h2 className="number rs-count mt-10 mb-0">
+                                                <VisibilitySensor onChange={onChange}>
+                                                    {({ isVisible }) => (
+                                                        <div>
+                                                            <CountUp 
+                                                                onEnd={onEnd}
+                                                                redraw={true} 
+                                                                start={!isAnimated ? 0 : counter.countNum} 
+                                                                end={isVisible && isReadyOnce ? counter.countNum : 0} 
+                                                                duration={4} 
+                                                            />
+                                                            <span className="counter-prefix">{counter.counterPrefix}</span>
+                                                        </div>
+                                                    )}
+                                                </VisibilitySensor>
                                             </h2>
                                             <h4 className="title mb-0">{counter.countTitle}</h4>
                                         </div>
                                     </div>
-                                )).slice(0, 1)}
-                                {counters.map((counter, num) => (
-                                    <div key={num} className="col-md-4 sm-mb-30">
-                                        <div className="counter-item two">
-                                            <img className="count-img" src={counter.countIcon} alt="" />
-                                            <h2 className="number rs-count">3.
-                                                <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd={() => setState(false)} />
-                                                {({ countUpRef, start }) => (
-                                                    <VisibilitySensor onChange={start} delayedCall>
-                                                        <span ref={countUpRef} />
-                                                    </VisibilitySensor>
-                                                )}
-                                                <span className="counter-prefix">{counter.counterPrefix}</span>
-                                            </h2>
-                                            <h4 className="title mb-0">{counter.countTitle}</h4>
-                                        </div>
-                                    </div>
-                                )).slice(1, 2)}
-                                {counters.map((counter, num) => (
-                                    <div key={num} className="col-md-4">
-                                        <div className="counter-item three">
-                                            <img className="count-img" src={counter.countIcon} alt="" />
-                                            <h2 className="number rs-count">
-                                                <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd={() => setState(false)} />
-                                                {({ countUpRef, start }) => (
-                                                    <VisibilitySensor onChange={start} delayedCall>
-                                                        <span ref={countUpRef} />
-                                                    </VisibilitySensor>
-                                                )}
-                                                <span className="counter-prefix">{counter.counterPrefix}</span>
-                                            </h2>
-                                            <h4 className="title mb-0">{counter.countTitle}</h4>
-                                        </div>
-                                    </div>
-                                )).slice(2, 3)}
+                                ))}
                             </div>
                         }
                     </div>

@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const EventsShort = (props) => {
-    const { eventsClass, dateboxClass, catLink1, catLink2, titleClass, titleLink, animateName, animateDelay } = props;
+    const { eventsClass, dateboxClass, catLink1, catLink2, titleClass, titleLink } = props;
     return (
-        <div className={eventsClass ? eventsClass : 'events-short mb-30'} data-aos={animateName ? animateName : 'fade-up'} data-aos-delay={animateDelay ? animateDelay : ''}>
+        <div className={eventsClass ? eventsClass : 'events-short mb-30'}>
             <div className={dateboxClass ? dateboxClass : 'date-part bgc1'}>
                 <span className="month">{props.month}</span>
                 <div className="date">{props.date}</div>

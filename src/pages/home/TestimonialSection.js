@@ -13,6 +13,10 @@ const Testimonial = () => {
         dots: true,
         centerMode: false,
         infinite: true,
+        draggable: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        lazyLoad: true,
         arrows: false,
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -54,7 +58,7 @@ const Testimonial = () => {
                             authorImage={author2}
                             Title="Արմինե Աղաջանյան"
                             Designation="ՄՌԿ մասնագետ"
-                            Description="Նորն ու այժմեականը լսելու վստահելի հարթակ է..."
+                            Description="Ակտուալը նորն ու այժմեականը լսելու վստահելի հարթակ է..."
                         />
                         <SingleTestimonial
                             itemClass="testi-item"

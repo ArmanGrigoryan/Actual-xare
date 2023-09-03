@@ -23,7 +23,7 @@ const Courses = () => {
                 <div className="row">
                     <div className="col-lg-4 col-md-6 mb-30">
                         <CourseSingle
-                            itemClass="courses-item"
+                            itemClass="courses-item radius-12"
                             image={image1}
                             title="Fitness Development Strategy Buildup Laoreet"
                             pricing="Free"
@@ -34,7 +34,7 @@ const Courses = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 mb-30">
                         <CourseSingle
-                            itemClass="courses-item"
+                            itemClass="courses-item radius-12"
                             image={image2}
                             title="Artificial Intelligence Fundamental Startup Justo"
                             pricing="$40.00"
@@ -45,7 +45,7 @@ const Courses = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 mb-30">
                         <CourseSingle
-                            itemClass="courses-item"
+                            itemClass="courses-item radius-12"
                             image={image3}
                             title="Computer Science Startup Varius et Commodo"
                             pricing="$35.00"
@@ -56,7 +56,7 @@ const Courses = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 md-mb-30">
                         <CourseSingle
-                            itemClass="courses-item"
+                            itemClass="courses-item radius-12"
                             image={image4}
                             title="Testy & Delicious Food Recipes for Lunch Tellus"
                             pricing="$32.00"
@@ -67,7 +67,7 @@ const Courses = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 sm-mb-30">
                         <CourseSingle
-                            itemClass="courses-item"
+                            itemClass="courses-item radius-12"
                             image={image5}
                             title="Lawyer Advance Mental Simulator Handle Nulla"
                             pricing="$22.00"
@@ -78,7 +78,7 @@ const Courses = () => {
                     </div>
                     <div className="col-lg-4 col-md-6">
                         <CourseSingle
-                            itemClass="courses-item"
+                            itemClass="courses-item radius-12"
                             image={image6}
                             title="Computer Fundamentals Basic Startup Ultricies"
                             pricing="$28.00"

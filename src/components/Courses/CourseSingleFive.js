@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CourseSingleFive = (props) => {
     const { courseClass, courseImg, courseTitle, catLink, coursePrice, categoryClass, courseCategory, author, authorImg, userCount, userRating } = props;
     return (
-        <div className={courseClass ? courseClass : 'courses-item'}>
+        <div className={courseClass ? courseClass : 'courses-item radius-12'}>
             <div className="img-part">
                 <img
                     src={courseImg}

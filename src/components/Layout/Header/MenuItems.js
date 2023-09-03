@@ -18,11 +18,11 @@ const MenuItems = () => {
             <li className={location.pathname === '/event' ? 'menu-item-has-children current-menu-item' : 'menu-item-has-children'}>
                 <Link to="/event"> Իրադարձություն </Link>
             </li>
-            <li className={location.pathname === "about" ? 'menu-item-has-children current-menu-item' : 'menu-item-has-children'}>
+            <li className={location.pathname === "/about" ? 'menu-item-has-children current-menu-item' : 'menu-item-has-children'}>
                 <Link to="/about"> Մեր մասին </Link>
             </li>
-            <li className={location.pathname === 'contact' ? 'menu-item-has-children current-menu-item' : 'menu-item-has-children'}>
-                <Link to="/contact"> կապ </Link>
+            <li className={location.pathname === '/contact' ? 'menu-item-has-children current-menu-item' : 'menu-item-has-children'}>
+                <Link to="/contact"> Կապ </Link>
             </li>
 
             {/* <li className={location.pathname === "/checkout" ? 'menu-item-has-children current-menu-item' : 'menu-item-has-children'}>

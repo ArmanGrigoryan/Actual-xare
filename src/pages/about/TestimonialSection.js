@@ -1,17 +1,12 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import AOS from 'aos';
 import SingleTestimonialTwo from '../../components/Testimonial/SingleTestimonialTwo';
+
 import donorImg from '../../assets/img/donor/1.jpg';
 import avatar1 from '../../assets/img/donor/1.jpg';
 import avatar2 from '../../assets/img/donor/1.jpg';
 
 function Testimonial() {
-
-    useEffect(() => {
-        AOS.init();
-    }, []);
 
     return (
         <React.Fragment>
@@ -19,7 +14,7 @@ function Testimonial() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 pr-90 md-pr-14 md-mb-30">
-                            <div className="donation-part" data-aos="fade-up">
+                            <div className="donation-part">
                                 <img
                                     src={donorImg}
                                     alt="Donor"

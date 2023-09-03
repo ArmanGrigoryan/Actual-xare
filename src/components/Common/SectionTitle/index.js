@@ -1,15 +1,10 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
+import React from 'react';
 
 const SectionTitle = (props) => {
-    const { titleClass, subtitleClass, bottomSubTitleClass, descClass, secondDescClass, effectClass, animateName, animateDelay, animateDuration } = props;
-
-    useEffect(() => {
-        AOS.init();
-    }, []);
+    const { titleClass, subtitleClass, bottomSubTitleClass, descClass, secondDescClass, effectClass } = props;
 
     return (
-        <div className={props.sectionClass} data-aos={animateName ? animateName : ''} data-aos-delay={animateDelay ? animateDelay : ''} data-aos-duration={animateDuration ? animateDuration : ''}>
+        <div className={props.sectionClass}>
             {subtitleClass ? <div className={props.subtitleClass}>{props.subtitle}</div> : ''}
             {titleClass ? <h2 className={props.titleClass}>{props.title}</h2> : ''}
             {bottomSubTitleClass ? <div className={props.bottomSubTitleClass}>{props.bottomSubTitle}</div> : ''}

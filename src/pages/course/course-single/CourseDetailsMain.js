@@ -6,17 +6,8 @@ const CourseDetailsMain = () => {
 
     return (
         <React.Fragment>
-            
-            {/* CourseDetails Start */}
             <CourseDetailsPart />
-            {/* CourseDetails End */}
-
-			{/* scrolltop-start */}
-			<ScrollToTop
-				scrollClassName="scrollup orange-color"
-			/>
-			{/* scrolltop-end */}
-
+			<ScrollToTop scrollClassName="scrollup orange-color" />
         </React.Fragment>
     )
 }

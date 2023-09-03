@@ -1,21 +1,19 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../../components/Layout/Header';
 import Footer from '../../components/Layout/Footer/Footer';
 import Newsletter from '../../components/Common/Newsletter';
 import HomeMain from './HomeMain';
-import footerLogo from '../../assets/img/logo/lite-logo.png';
-import favIcon from '../../assets/img/fav-orange.png';
+import footerLogo from '../../assets/img/logo/logo-light.png';
+import useFade from '../../utils/hooks/useFade.js';
 
 const HomePage = () =>  {
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0);
-    }, [])
+    const { refElement: animateRef } = useFade();
 
     return (
-        <React.Fragment>
+        <div ref={animateRef} className="hidden-opacity">
             <Helmet>
-                <link rel="icon" href={favIcon} />
+                <meta name="description" content="Actual HR Agency, Actual training center" />
             </Helmet>
             <Header parentMenu='home' />
             <HomeMain />
@@ -27,7 +25,7 @@ const HomePage = () =>  {
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}
             />
-        </React.Fragment>
+        </div>
     );
 }
 

@@ -1,16 +1,10 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import AOS from 'aos';
 import SectionTitle from '../../components/Common/SectionTitle';
 import EventsShort from '../../components/Events/EventsShort';
 import eventImage from '../../assets/img/event/single.jpg'
 
 const Events = () => {
-
-    useEffect(() => {
-        AOS.init();
-    }, []);
 
     return (
         <div className="rs-latest-events style1 bg-wrap pt-100 md-pt-70 md-pb-70">

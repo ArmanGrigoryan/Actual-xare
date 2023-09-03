@@ -14,7 +14,6 @@ const Degree = () => {
             <div className="container">
                 <div className="row y-middle">
                     <div className="col-lg-4 col-md-6 mb-30">
-                        {/* Section Title Start */}
                         <SectionTitle
                             sectionClass="sec-title"
                             subtitleClass="sub-title primary"
@@ -22,7 +21,6 @@ const Degree = () => {
                             titleClass="title mb-0"
                             title="Successfully Complete A Degree at Educavo University"
                         />
-                        {/* Section Title End */}
                     </div>
                     <div className="col-lg-4 col-md-6 mb-30">
                         <DegreeSingle

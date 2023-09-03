@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Recent Post Thumb Images
 import thumb1 from '../../assets/img/blog/style2/1.jpg'
 import thumb2 from '../../assets/img/blog/style2/2.jpg'
 import thumb3 from '../../assets/img/blog/style2/3.jpg'

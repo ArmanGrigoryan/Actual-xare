@@ -18,9 +18,9 @@ const AboutText = () => {
                             <SectionTitle
                                 sectionClass="sec-title mb-44 md-mb-0"
                                 subtitleClass="sub-title orange"
-                                subtitle="About Educavo"
+                                subtitle=""
                                 titleClass="title mb-16"
-                                title="Welcome to The Educavo Online Learning"
+                                title="Ակտուալ-ի մասին"
                                 descClass="bold-text mb-22"
                                 description="Recogizing the need is the primary than we expected Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa voluptatibus,"
                                 secondDescClass="desc"

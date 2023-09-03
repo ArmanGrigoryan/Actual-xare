@@ -11,7 +11,7 @@ const ContactMain = () => {
         <React.Fragment>
             <SiteBreadcrumb
                 pageTitle="Կապ մեզ հետ"
-                pageName="Կապվեք մեզ հետ"
+                pageName=""
                 breadcrumbsImg={bannerbg}
             />
             <div className="rs-contact style1 event-bg pt-110 md-pt-80 pb-100 md-pb-80">
@@ -30,7 +30,7 @@ const ContactMain = () => {
                                 boxClass="sm-mb-30"
                                 title="Էլ. հասցե"
                                 iconClass="flaticon-email"
-                                email="contact@educavo.com"
+                                email="contact@actual.com"
                             />
                         </div>
                         <div className="col-md-4">
@@ -47,15 +47,14 @@ const ContactMain = () => {
                 <div className="container">
                     <div className="row y-top">
                         <div className="col-lg-6 md-mb-30">
-                            <div class="mapouter">
-                                <div class="gmap_canvas">
+                            <div className="mapouter">
+                                <div className="gmap_canvas">
                                     <iframe
-                                        className="gmap_iframe" 
+                                        title="Map"
+                                        className="gmap_iframe radius-32" 
                                         width="100%" 
-                                        frameborder="0" 
+                                        frameBorder="0" 
                                         scrolling="no" 
-                                        marginheight="0" 
-                                        marginwidth="0" 
                                         src="https://maps.google.com/maps?width=530&amp;height=530&amp;hl=en&amp;q=Teryan 74&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                                     />
                                 </div>

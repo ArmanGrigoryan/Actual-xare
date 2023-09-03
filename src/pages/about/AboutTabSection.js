@@ -1,7 +1,6 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
-// Image
 import aboutImg from '../../assets/img/about/history.png';
 import tabImg1 from '../../assets/img/about/history.png';
 import tabImg2 from '../../assets/img/about/history.png';
@@ -9,9 +8,9 @@ import tabImg3 from '../../assets/img/about/history.png';
 
 const AboutTab = () => {
 
-    let tab1 = "History",
-        tab2 = "Mission & Vission",
-        tab3 = "Administration"
+    let tab1 = "Պատմություն",
+        tab2 = "Առաքելություն և տեսլական",
+        tab3 = "Ադմինիստրացիա"
     const tabStyle = 'nav nav-tabs histort-part';
 
     return (
@@ -24,6 +23,7 @@ const AboutTab = () => {
                                 <img 
                                     src={aboutImg}
                                     alt="About" 
+                                    className="radius-12"
                                 />
                             </div>
                             <TabList className={tabStyle}>
@@ -42,13 +42,14 @@ const AboutTab = () => {
                             <TabPanel>
                                 <div className="about-history">
                                     <div className="sec-title mb-24">
-                                        <h2 className="title">Educavo History</h2>
+                                        <h2 className="title">Ակտուալ-ի Պատմությունը</h2>
                                         <div className="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
                                     </div>
                                     <div className="tab-img">
                                         <img 
                                             src={tabImg1}
                                             alt="Tab 1" 
+                                            className='radius-12 tab-desc-image'
                                         />
                                     </div>
                                 </div>
@@ -56,13 +57,14 @@ const AboutTab = () => {
                             <TabPanel>
                                 <div className="about-mission">
                                     <div className="sec-title mb-24">
-                                        <h2 className="title">Educavo Mission</h2>
+                                        <h2 className="title">Ակտուալ-ի տեսլականը</h2>
                                         <div className="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
                                     </div>
                                     <div className="tab-img">
-                                        <img 
+                                        <img
                                             src={tabImg2}
                                             alt="Tab 2" 
+                                            className='radius-12 tab-desc-image'
                                         />
                                     </div>
                                 </div>
@@ -70,13 +72,14 @@ const AboutTab = () => {
                             <TabPanel>
                                 <div className="about-admin">
                                     <div className="sec-title mb-24">
-                                        <h2 className="title">Educavo Administration</h2>
+                                        <h2 className="title">Ադմինիստրացիա</h2>
                                         <div className="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
                                     </div>
                                     <div className="tab-img">
                                         <img 
                                             src={tabImg3}
                                             alt="Tab 3" 
+                                            className='radius-12 tab-desc-image'
                                         />
                                     </div>
                                 </div>

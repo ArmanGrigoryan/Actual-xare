@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import SingleTeam from '../../components/Team/SingleTeam';
 import SectionTitle from '../../components/Common/SectionTitle';
+
 import teamimg1 from '../../assets/img/team/1.jpg';
 import teamimg2 from '../../assets/img/team/2.jpg';
 import teamimg3 from '../../assets/img/team/3.jpg';
@@ -29,7 +30,7 @@ const Team = () => {
     const slilderSettings = {
         dots: false,
         centerMode: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2500,
         lazyLoad: true,
         infinite: true,

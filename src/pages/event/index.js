@@ -1,4 +1,4 @@
-import React, { useLayoutEffect} from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import SingleEventThree from '../../components/Events/SingleEventThree';
 import Header from '../../components/Layout/Header';
@@ -6,8 +6,7 @@ import Footer from '../../components/Layout/Footer/Footer';
 import Newsletter from '../../components/Common/Newsletter';
 import ScrollToTop from '../../components/Common/ScrollTop';
 import SiteBreadcrumb from '../../components/Common/Breadcumb';
-import favIcon from '../../assets/img/fav-orange.png';
-import footerLogo from '../../assets/img/logo/lite-logo.png';
+import footerLogo from '../../assets/img/logo/logo-light.png';
 import bannerbg from '../../assets/img/breadcrumbs/inner12.jpg';
 import eventImg1 from '../../assets/img/event/style3/1.jpg';
 import eventImg2 from '../../assets/img/event/style3/2.jpg';
@@ -15,16 +14,15 @@ import eventImg3 from '../../assets/img/event/style3/1.jpg';
 import eventImg4 from '../../assets/img/event/style3/2.jpg';
 import eventImg5 from '../../assets/img/event/style3/1.jpg';
 import eventImg6 from '../../assets/img/event/style3/2.jpg';
+import useFade from '../../utils/hooks/useFade.js';
 
 const Event = () => {
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    const { refElement: animateRef } = useFade();
 
     return (
-        <React.Fragment>
+        <div ref={animateRef} className="hidden-opacity">
             <Helmet>
-                <link rel="icon" href={favIcon} />
+                <meta name="description" content="Actual HR Agency, Actual training center" />
             </Helmet>
             <Header parentMenu='pages' />
             <SiteBreadcrumb
@@ -101,7 +99,7 @@ const Event = () => {
             </div>
 
             <Newsletter
-                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-80"
+                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-40"
                 titleClass="title mb-0 white-color"
             />
             <Footer
@@ -111,7 +109,7 @@ const Event = () => {
             <ScrollToTop
                 scrollClassName="scrollup orange-color"
             />
-        </React.Fragment>
+        </div>
     );
 }
 

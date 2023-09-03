@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import Header from '../components/Layout/Header';
@@ -6,24 +6,21 @@ import Footer from '../components/Layout/Footer/Footer';
 import Newsletter from '../components/Common/Newsletter';
 import ScrollToTop from '../components/Common/ScrollTop';
 import SiteBreadcrumb from '../components/Common/Breadcumb';
-import favIcon from '../assets/img/fav-orange.png';
-import footerLogo from '../assets/img/logo/lite-logo.png';
+import footerLogo from '../assets/img/logo/logo-light.png';
 import bannerbg from '../assets/img/breadcrumbs/inner12.jpg';
+import useFade from '../utils/hooks/useFade.js';
 
 const Login = () => {
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    const { refElement: animateRef } = useFade();
 
     return (
-        <React.Fragment>
+        <div ref={animateRef} className="hidden-opacity">
             <Helmet>
-                <link rel="icon" href={favIcon} />
             </Helmet>
             <Header parentMenu='pages' />
             <SiteBreadcrumb
-                pageTitle="Login"
-                pageName="Login"
+                pageTitle="Մուտք գործել"
+                pageName=""
                 breadcrumbsImg={bannerbg}
             />
             <div className="rs-login pt-100 pb-100 md-pt-80 md-pb-80">
@@ -31,13 +28,13 @@ const Login = () => {
                     <div className="noticed">
                         <div className="main-part">
                             <div className="method-account">
-                                <h2 className="login">Login</h2>
+                                <h2 className="login">Լրացրեք տվյալները</h2>
                                 <form>
-                                    <input type="email" name="E-mail" placeholder="E-mail" required />
-                                    <input type="text" name="text" placeholder="Password" required />
-                                    <button type="submit" className="readon submit-btn">login</button>
+                                    <input type="email" name="E-mail" placeholder="Էլ. փոստ" required />
+                                    <input type="text" name="text" placeholder="Մուտքանուն" required />
+                                    <button type="submit" className="readon submit-btn">Մուտք</button>
                                     <div className="last-password">
-                                        <p>Not registered? <Link to="/register">Create an account</Link></p>
+                                        <p>Չունե՞ք հաշիվ:   <Link className='ml-10 bold' to="/register">Ստեղծել նորը</Link></p>
                                     </div>
                                 </form>
                             </div>
@@ -46,17 +43,15 @@ const Login = () => {
                 </div>
             </div>
             <Newsletter
-                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-80"
+                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-40"
                 titleClass="title mb-0 white-color"
             />
             <Footer
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}
             />
-            <ScrollToTop
-                scrollClassName="scrollup orange-color"
-            />            
-        </React.Fragment>
+            <ScrollToTop scrollClassName="scrollup orange-color" />
+        </div>
     );
 }
 

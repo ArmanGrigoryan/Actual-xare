@@ -1,15 +1,10 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
+import React from 'react';
 
 const SingleTestimonialTwo = (props) => {
-    const { itemClass, animateName, animateDelay } = props;
-
-    useEffect(() => {
-        AOS.init();
-    }, []);
+    const { itemClass } = props;
 
     return (
-        <div className={itemClass ? itemClass : 'testi-wrap mb-50'} data-aos={animateName ? animateName : 'fade-up'} data-aos-delay={animateDelay ? animateDelay : ''}>
+        <div className={itemClass ? itemClass : 'testi-wrap mb-50'}>
             <div className="img-part">
                 <img
                     src={props.testiImage}

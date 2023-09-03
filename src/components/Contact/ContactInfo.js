@@ -5,7 +5,7 @@ const ContactInfo = (props) => {
     return (
         <React.Fragment>
 
-            <div className={`address-box ${boxClass}`}>
+            <div className={`address-box radius-12 ${boxClass}`}>
                 <div className="address-icon">
                     <i className={iconClass}></i>
                 </div>

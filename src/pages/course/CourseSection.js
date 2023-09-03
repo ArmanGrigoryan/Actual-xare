@@ -16,7 +16,7 @@ const Courses = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-sm-6 mb-40">
                             <CourseSingleFour
-                                courseClass="courses-item"
+                                courseClass="courses-item radius-12"
                                 courseImg={image1}
                                 courseCategory="Photography"
                                 courseTitle="The Art of Black and White Photography"
@@ -27,7 +27,7 @@ const Courses = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 mb-40">
                             <CourseSingleFour
-                                courseClass="courses-item"
+                                courseClass="courses-item radius-12"
                                 courseImg={image2}
                                 courseCategory="Web Development"
                                 courseTitle="Become a PHP Master and Make Money Fast"
@@ -38,7 +38,7 @@ const Courses = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 mb-40">
                             <CourseSingleFour
-                                courseClass="courses-item"
+                                courseClass="courses-item radius-12"
                                 courseImg={image3}
                                 courseCategory="Web Development"
                                 courseTitle="Learn Python – Interactive Python Tutorial"
@@ -49,7 +49,7 @@ const Courses = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 md-mb-30">
                             <CourseSingleFour
-                                courseClass="courses-item"
+                                courseClass="courses-item radius-12"
                                 courseImg={image4}
                                 courseCategory="Web Development"
                                 courseTitle="From Zero to Hero with Advance Nodejs"
@@ -60,7 +60,7 @@ const Courses = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 sm-mb-30">
                             <CourseSingleFour
-                                courseClass="courses-item"
+                                courseClass="courses-item radius-12"
                                 courseImg={image5}
                                 courseCategory="Web Development"
                                 courseTitle="The Art of Black and White Photography"
@@ -71,7 +71,7 @@ const Courses = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6">
                             <CourseSingleFour
-                                courseClass="courses-item"
+                                courseClass="courses-item radius-12"
                                 courseImg={image6}
                                 courseCategory="Web Development"
                                 courseTitle="Learning jQuery Mobile for Beginners"

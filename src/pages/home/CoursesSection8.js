@@ -45,7 +45,7 @@ const Courses = () => {
                 
                 <Slider {...sliderSettings}>
                     <CourseSingleFive
-                        courseClass= "courses-item"
+                        courseClass= "courses-item radius-12"
                         courseImg= {courseImg1}
                         authorImg= {authorImg1}
                         author='Mark Anthony'
@@ -58,7 +58,7 @@ const Courses = () => {
                         btnText="Get it Now"
                     /> 
                     <CourseSingleFive
-                        courseClass= "courses-item"
+                        courseClass= "courses-item radius-12"
                         courseImg= {courseImg2}
                         authorImg= {authorImg1}
                         author='Rose Glory'
@@ -71,7 +71,7 @@ const Courses = () => {
                         btnText="Get it Now"
                     /> 
                     <CourseSingleFive
-                        courseClass= "courses-item"
+                        courseClass= "courses-item radius-12"
                         courseImg= {courseImg3}
                         authorImg= {authorImg1}
                         author='Steve Jones'
@@ -84,7 +84,7 @@ const Courses = () => {
                         btnText="Get it Now"
                     /> 
                     <CourseSingleFive
-                        courseClass= "courses-item"
+                        courseClass= "courses-item radius-12"
                         courseImg= {courseImg2}
                         authorImg= {authorImg1}
                         author='Nicky John'

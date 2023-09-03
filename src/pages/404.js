@@ -1,16 +1,17 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import ErrorContent from '../components/Error';
-import favIcon from '../assets/img/fav-orange.png';
+import useFade from '../utils/hooks/useFade.js';
 
 const Error = () => {
+    const { refElement: animateRef } = useFade();
+
     return (
-        <React.Fragment>
+        <div ref={animateRef} className="hidden-opacity">
             <Helmet>
-                <link rel="icon" href={favIcon} />
             </Helmet>
             <ErrorContent />
-        </React.Fragment>            
+        </div>
     );
 }
 
