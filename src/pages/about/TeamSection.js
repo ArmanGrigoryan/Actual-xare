@@ -3,13 +3,10 @@ import Slider from "react-slick";
 import SingleTeam from '../../components/Team/SingleTeam';
 import SectionTitle from '../../components/Common/SectionTitle';
 
-import teamimg1 from '../../assets/img/team/1.jpg';
-import teamimg2 from '../../assets/img/team/2.jpg';
-import teamimg3 from '../../assets/img/team/3.jpg';
-import teamimg4 from '../../assets/img/team/4.jpg';
-import teamimg5 from '../../assets/img/team/5.jpg';
-import teamimg6 from '../../assets/img/team/2.jpg';
-import teamimg7 from '../../assets/img/team/3.jpg';
+import team1 from '../../assets/img/team/team1.jpg';
+import team2 from '../../assets/img/team/team2.jpg';
+import team3 from '../../assets/img/team/team3.jpg';
+import team4 from '../../assets/img/team/team4_.jpg';
 
 const Team = () => {
 
@@ -31,7 +28,7 @@ const Team = () => {
         dots: false,
         centerMode: false,
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 3500,
         lazyLoad: true,
         infinite: true,
         arrows: true,
@@ -67,65 +64,44 @@ const Team = () => {
         <React.Fragment>
             <div className="rs-team style1 inner-style orange-color pt-94 pb-100 md-pt-64 md-pb-70 gray-bg">
                 <div className="container">
-                    <div className="row y-middle mb-50 md-mb-30">
+                    <div className="row y-middle mb-30">
                         <div className="col-md-6 sm-mb-30">
                             <SectionTitle
                                 sectionClass="sec-title"
                                 subtitleClass="sub-title orange"
-                                subtitle="Instrructor"
+                                subtitle="Ակտուալի թիմը"
                                 titleClass="title mb-0"
-                                title="Expert Teachers"
+                                title="Դասավանդողներ"
                             />
                         </div>
                     </div>
                     <Slider {...slilderSettings}>
                         <SingleTeam
                             itemClass="team-item"
-                            Image={teamimg1}
-                            Title="Makhaia Antitni"
-                            Designation="President & CEO"
+                            Image={team1}
+                            Title="Սոնա Վարդանյան"
+                            Designation="Ավագ ՄՌԿ մասնագետ"
                         />
 
                         <SingleTeam
                             teamClass="team-item"
-                            Image={teamimg2}
-                            Title="Corey Anderson"
-                            Designation="CEO & Founder"
+                            Image={team2}
+                            Title="Սիրանուշ Բարսեղյան"
+                            Designation="Ավագ ՄՌԿ մասնագետ"
                         />
 
                         <SingleTeam
                             teamClass="team-item"
-                            Image={teamimg3}
-                            Title="Masud Rana"
-                            Designation="Web Developer"
+                            Image={team3}
+                            Title="Լաուրա Վիրաբյան"
+                            Designation="CEO, Ավագ ՄՌԿ մասնագետ"
                         />
 
                         <SingleTeam
                             teamClass="team-item"
-                            Image={teamimg4}
-                            Title="Najmul Huda"
-                            Designation="Digital Marketer"
-                        />
-
-                        <SingleTeam
-                            teamClass="team-item"
-                            Image={teamimg5}
-                            Title="Rushali Rumi"
-                            Designation="Design Lead"
-                        />
-
-                        <SingleTeam
-                            teamClass="team-item"
-                            Image={teamimg6}
-                            Title="Abu Sayed"
-                            Designation="App Developer"
-                        />
-
-                        <SingleTeam
-                            teamClass="team-item"
-                            Image={teamimg7}
-                            Title="Sonia Akhter"
-                            Designation="Graphic Artist"
+                            Image={team4}
+                            Title="Մոնիկա Գրիգորյան"
+                            Designation="ՄՌԿ մասնագետ"
                         />
                     </Slider>
                 </div>

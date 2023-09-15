@@ -1,12 +1,14 @@
 import React from 'react';
-import Slider from "react-slick";
+import Marquee from "react-fast-marquee";
 
-import brandLogo1 from '../../../assets/img/brand/1.png';
-import brandLogo2 from '../../../assets/img/brand/1.png';
-import brandLogo3 from '../../../assets/img/brand/1.png';
-import brandLogo4 from '../../../assets/img/brand/1.png';
-import brandLogo5 from '../../../assets/img/brand/1.png';
-import brandLogo6 from '../../../assets/img/brand/1.png';
+import brand1 from '../../../assets/img/partners/ANAU.png';
+import brand2 from '../../../assets/img/partners/Ador.png';
+import brand3 from '../../../assets/img/partners/Breavis.png';
+import brand4 from '../../../assets/img/partners/Exterior.png';
+import brand5 from '../../../assets/img/partners/Tsiran.png';
+import brand6 from '../../../assets/img/partners/Eye-Optics.png';
+import brand7 from '../../../assets/img/partners/Mersoft.png';
+import brand8 from '../../../assets/img/partners/PAK.png';
 
 const BrandThree = (props) => {
     const { brandBg, brandClass } = props;
@@ -19,89 +21,52 @@ const BrandThree = (props) => {
         backgroundColor: 'transparent'
     }
 
-    const sliderSettings = {
-        dots: false,
-        centerMode: false,
-        infinite: true,
-        arrows: false,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 4,
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
-        ]
-    };
-
     return (
         <div className={brandClass ? brandClass : 'rs-partner style2 pt-120 md-pt-80'} style={brandBg ? brandBgStyle : brandBgDefaultStyle}>
-            <div className="container">
-                <Slider {...sliderSettings}>
-                    <div className="partner-item">
-                        <div className="logo-img">
-                            <a href="#">
-                                <img src={brandLogo1} alt="" />
-                            </a>
-                        </div>
+            <h2 className='text-center mb-40'>Ակտուալի գործընկերները</h2>
+            
+            <Marquee>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img src={brand1} alt="" />
                     </div>
-                    <div className="partner-item">
-                        <div className="logo-img">
-                            <a href="#">
-                                <img src={brandLogo2} alt="" />
-                            </a>
-                        </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img src={brand2} alt="" />
                     </div>
-                    <div className="partner-item">
-                        <div className="logo-img">
-                            <a href="#">
-                                <img src={brandLogo3} alt="" />
-                            </a>
-                        </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img src={brand3} alt="" />
                     </div>
-                    <div className="partner-item">
-                        <div className="logo-img">
-                            <a href="#">
-                                <img src={brandLogo4} alt="" />
-                            </a>
-                        </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img src={brand4} alt="" />
                     </div>
-                    <div className="partner-item">
-                        <div className="logo-img">
-                            <a href="#">
-                                <img src={brandLogo5} alt="" />
-                            </a>
-                        </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img src={brand5} alt="" />
                     </div>
-                    <div className="partner-item">
-                        <div className="logo-img">
-                            <a href="#">
-                                <img src={brandLogo6} alt="" />
-                            </a>
-                        </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img src={brand6} alt="" />
                     </div>
-                </Slider>
-            </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img src={brand7} alt="" />
+                    </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img src={brand8} alt="" />
+                    </div>
+                </div>
+            </Marquee>
         </div>
     );
 }

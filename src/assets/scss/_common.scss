@@ -16,6 +16,22 @@ body {
     font-weight: 400;
     overflow-x: hidden;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent !important;
+}
+::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    height: 150px;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
 * {
     user-select: none;
 }
@@ -1014,6 +1030,9 @@ select,
 
 
 @media #{$sm} {
+    .counter-item {
+        text-align: center;
+    }
     .container {
         max-width: 540px;
     }    

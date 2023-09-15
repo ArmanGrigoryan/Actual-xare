@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import React from "react";
 
 const SingleTeam = (props) => {
     const { teamClass, Image, Title, Designation } = props;
@@ -10,33 +10,9 @@ const SingleTeam = (props) => {
             />
             <div className="content-part">
                 <h4 className="name">
-                    <Link to='/team/team-single'>
-                        {Title ? Title : 'Jhon Pedrocas'}
-                    </Link>
+                    {Title ? Title : 'Jhon Pedrocas'}
                 </h4>
                 <span className="designation">{Designation ? Designation : 'Professor'}</span>
-                <ul className="social-links">
-                    <li>
-                        <Link to="#">
-                            <i className="fa fa-facebook-f"></i>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="#">
-                            <i className="fa fa-twitter"></i>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="#">
-                            <i className="fa fa-pinterest"></i>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="#">
-                            <i className="fa fa-instagram"></i>
-                        </Link>
-                    </li>
-                </ul>
             </div>
         </div>
 	)

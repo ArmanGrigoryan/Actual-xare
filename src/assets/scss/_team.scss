@@ -4,7 +4,9 @@
             border-radius: 15px 15px 4px 4px;
             position: relative;
             overflow: hidden;
+            max-height: 350px;
             img {
+                min-height: 350px;
                 width: 100%;
             }
             .content-part {
@@ -18,7 +20,8 @@
                 opacity: 0;
 
                 .name {
-                    margin-bottom: 8px;
+                    margin-top: 15px;
+                    margin-bottom: 0;
                     font-size: 22px;
                     a {
                         color: $whiteColor;
@@ -127,7 +130,7 @@
                 width: 100% !important;
                 height: 320px !important;
                 background: $whiteColor;
-                border-radius: 50%;
+                border-radius: 40%;
                 padding-top: 30px; 
                 opacity: 1 !important;
                 transition: $transition;
@@ -152,5 +155,11 @@
 @media #{$mobile} {
     .rs-team.style1 .team-item .content-part .social-links li {
         margin-right: 24px;
+    }
+    .rs-team.style1 .team-item .content-part .name {
+        font-size: 18px;
+    }
+    .rs-team.style1 .team-item .content-part .designation {
+        font-size: 14px;
     }
 }

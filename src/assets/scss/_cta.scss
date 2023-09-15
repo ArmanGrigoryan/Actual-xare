@@ -20,7 +20,10 @@
                 color: $whiteColor;
                 display: block;
                 overflow: hidden;
+                display: flex;
+                align-items: center;
                 i {
+                    min-width: 70px;
                     width: 70px;
                     height: 70px;
                     line-height: 61px;
@@ -69,6 +72,8 @@
                 background-position: left;
             }
             &.inner-page {
+                position: relative;
+
                 &:before {
                     background: url(../img/cta/style2/left-bg2.png);
                     background-size: cover;
@@ -77,6 +82,13 @@
                     background: url(../img/cta/style2/right-bg2.png);
                     background-size: cover;
                 }
+            }
+            .width-30-100 {
+                width: 30%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                animation: width-30-100 2s linear 0s infinite alternate;
             }
         }
     }

@@ -8,6 +8,7 @@
         display: block;
         .react-tabs__tab {
             display: block;
+            text-align: center;
             margin-bottom: 30px;
             button {
                 padding: 28px 20px 22px;
@@ -48,6 +49,10 @@
                 margin-bottom: 0;
             }
         }
+    }
+
+    .img-part {
+        animation: left-right 20s linear 0s infinite alternate;
     }
 }
 

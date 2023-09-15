@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SingleTestimonialTwo from '../../components/Testimonial/SingleTestimonialTwo';
+import { Fade } from 'react-reveal';
 
 import donorImg from '../../assets/img/donor/1.jpg';
 import avatar1 from '../../assets/img/donor/1.jpg';
@@ -27,20 +28,24 @@ function Testimonial() {
                             </div>
                         </div>
                         <div className="col-lg-7 lg-pl-0 ml--14 md-ml-0">
-                            <SingleTestimonialTwo
-                                testiImage={avatar1}
-                                name="Mahadi mansura"
-                                designation="Head Teacher"
-                                description="Education is the passport to the future for tomorrow belongs to those who prepare for it today"
-                            />
-                            <SingleTestimonialTwo
-                                animateDelay="50"
-                                itemClass="testi-wrap"
-                                testiImage={avatar2}
-                                name="Jonathon Lary"
-                                designation="Math Teacher"
-                                description="Education is the passport to the future for tomorrow belongs to those who prepare for it today"
-                            />
+                            <Fade left>
+                                <SingleTestimonialTwo
+                                    testiImage={avatar1}
+                                    name="Լաուրա Վիրաբյան"
+                                    designation="Առաջատար մասնագետ"
+                                    description="Կրթությունը վաղվա ապագայի անձնագիրն է, պատկանում է նրանց, ովքեր պատրաստվում են դրան այսօր"
+                                />
+                            </Fade>
+                            <Fade right>
+                                <SingleTestimonialTwo
+                                    testiImage={avatar2}
+                                    animateDelay="50"
+                                    itemClass="testi-wrap"
+                                    name="Լուսինե Կիրակոսյան"
+                                    designation="Առաջատար մասնագետ"
+                                    description="Կրթությունը վաղվա ապագայի անձնագիրն է, պատկանում է նրանց, ովքեր պատրաստվում են դրան այսօր"
+                                />
+                            </Fade>
                         </div>
                     </div>
                 </div>
