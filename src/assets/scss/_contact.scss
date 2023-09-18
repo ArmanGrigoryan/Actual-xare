@@ -84,7 +84,7 @@
                 outline: none;
                 border: none;
                 padding: 12px 40px;
-                border-radius: 3px;
+                border-radius: 12px;
                 display: inline-block;
                 font-size: 16px;
                 font-weight: 500;
@@ -97,6 +97,9 @@
                 text-transform: uppercase;
                 &:hover {
                     opacity: 0.90;
+                }
+                &[disabled] {
+                    opacity: .75;
                 }
             }
             ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

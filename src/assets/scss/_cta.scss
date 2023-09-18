@@ -51,7 +51,6 @@
             &:before {
                 position: absolute;
                 content: '';
-                width: 50%;
                 height: 100%;
                 top: 0;
                 bottom: 0;
@@ -59,6 +58,7 @@
             }
             &:before {
                 background: url(../img/cta/style2/left-bg.jpg);
+                width: 55%;
                 left: 0;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -66,6 +66,7 @@
             }
             &:after {
                 background: url(../img/cta/style2/right-bg.jpg);
+                width: 40%;
                 right: 0;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -83,13 +84,6 @@
                     background-size: cover;
                 }
             }
-            .width-30-100 {
-                width: 30%;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                animation: width-30-100 2s linear 0s infinite alternate;
-            }
         }
     }
     &.main-home{
@@ -101,7 +95,7 @@
             &:before {
                 position: absolute;
                 content: '';
-                width: 50%;
+                width: 60%;
                 height: 100%;
                 bottom: 0;
                 z-index: -1;

@@ -9,7 +9,7 @@ const AboutText = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6 order-last padding-0 md-pl-14 md-pr-14 md-mb-30">
-                        <div className="img-part">
+                        <div className="img-part animated">
                             <img className="about-main" src={AboutImage} alt="About" />
                         </div>
                     </div>

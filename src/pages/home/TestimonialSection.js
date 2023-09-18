@@ -3,9 +3,10 @@ import Slider from "react-slick";
 import SectionTitle from '../../components/Common/SectionTitle';
 import SingleTestimonial from '../../components/Testimonial/SingleTestimonial';
 import quote from '../../assets/img/testimonial/main-home/test-2.png';
-import author1 from '../../assets/img/testimonial/style5/1.png';
-import author2 from '../../assets/img/testimonial/style5/1.png';
-import author3 from '../../assets/img/testimonial/style5/1.png';
+// import author1 from '../../assets/img/testimonial/style5/1.png';
+// import author2 from '../../assets/img/testimonial/style5/1.png';
+// import author3 from '../../assets/img/testimonial/style5/1.png';
+import female from '../../assets/img/icon/female.png';
 
 const Testimonial = () => {
 
@@ -47,7 +48,7 @@ const Testimonial = () => {
                         <SingleTestimonial
                             itemClass="testi-item"
                             quoteImage={quote}
-                            authorImage={author1}
+                            authorImage={female}
                             Title="Լուսինե Մանուկյան"
                             Designation="ՄՌԿ մասնագետ"
                             Description="Ոչ միայն խորհուրդ կտամ մասնակցել , այլև ես ինքս մեծ սիրով կրկին կմասնակցեմ Ակտուալի կողմից անցկացվելիք դասընթացներին..."
@@ -55,7 +56,7 @@ const Testimonial = () => {
                         <SingleTestimonial
                             itemClass="testi-item"
                             quoteImage={quote}
-                            authorImage={author2}
+                            authorImage={female}
                             Title="Արմինե Աղաջանյան"
                             Designation="ՄՌԿ մասնագետ"
                             Description="Ակտուալը նորն ու այժմեականը լսելու վստահելի հարթակ է..."
@@ -63,7 +64,7 @@ const Testimonial = () => {
                         <SingleTestimonial
                             itemClass="testi-item"
                             quoteImage={quote}
-                            authorImage={author3}
+                            authorImage={female}
                             Title="Սուսաննա Մարտիրոսյան"
                             Designation="ՄՌԿ մասնագետ"
                             Description="Դասընթացը տվեց այն հնարավորությունը, որ կադրային գծով մասնագետը դառնա բիզնես գործընկեր..."
@@ -71,7 +72,7 @@ const Testimonial = () => {
                         <SingleTestimonial
                             itemClass="testi-item"
                             quoteImage={quote}
-                            authorImage={author3}
+                            authorImage={female}
                             Title="Սոնա Վարդանյան"
                             Designation="ՄՌԿ դասընթացի շրջանավարտ"
                             Description="Շատ շնորհակալ եմ արդիական դասընթացի, կազմակերպության գործնական խնդիրների վերաբերյալ մեծ քանակությանմբ տեղյակություն ստանալու համար..."
@@ -79,7 +80,7 @@ const Testimonial = () => {
                         <SingleTestimonial
                             itemClass="testi-item"
                             quoteImage={quote}
-                            authorImage={author3}
+                            authorImage={female}
                             Title="Աննա Օհանյան"
                             Designation="ՄՌԿ դասընթացի շրջանավարտ"
                             Description="Ակտուալ-ում Յուրաքանչյուր թեմա յուրովի հետաքրքիր է..."

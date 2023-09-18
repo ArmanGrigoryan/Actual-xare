@@ -94,7 +94,7 @@ const Team = () => {
                             teamClass="team-item"
                             Image={team3}
                             Title="Լաուրա Վիրաբյան"
-                            Designation="CEO, Ավագ ՄՌԿ մասնագետ"
+                            Designation="Հիմնադիր տնօրեն, Ավագ ՄՌԿ մասնագետ"
                         />
 
                         <SingleTeam

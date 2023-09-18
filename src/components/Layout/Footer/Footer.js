@@ -20,7 +20,7 @@ const Footer = (props) => {
                             </li>
                             <li>
                                 <i className="flaticon-email"></i>
-                                <div className="desc"><a href="mailto:support@actual.com">support@actual.com</a></div>
+                                <div className="desc"><a href="mailto:actualhrarmenia@gmail.com">actualhrarmenia@gmail.com</a></div>
                             </li>
                             <li className='mt-60'>
                                 <ul className="d-flex gap-4">
@@ -30,7 +30,7 @@ const Footer = (props) => {
                                         </a>
                                     </li>
                                     <li className="d-flex">
-                                        <a href="mailto:support@actual.com">
+                                        <a href="mailto:actualhrarmenia@gmail.com">
                                             <i className="fa fa-google-plus position-static"></i>
                                         </a>
                                     </li>

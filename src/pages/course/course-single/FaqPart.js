@@ -29,7 +29,7 @@ const FaqPart = () => {
                             <div className="clearfix">
                                 <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={() => { openModal(); }} />
                                 <div className="pull-left">
-                                    <Link className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
+                                    <Link to="" className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
                                 </div>
                                 <div className="pull-right">
                                     <div className="minutes">35 Minutes</div>
@@ -40,7 +40,7 @@ const FaqPart = () => {
                             <div className="clearfix">
                                 <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={() => { openModal(); }} />
                                 <div className="pull-left">
-                                    <Link className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
+                                    <Link to="" className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
                                 </div>
                                 <div className="pull-right">
                                     <div className="minutes">35 Minutes</div>
@@ -51,7 +51,7 @@ const FaqPart = () => {
                             <div className="clearfix">
                                 <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={() => { openModal(); }} />
                                 <div className="pull-left">
-                                    <Link className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
+                                    <Link to="" className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
                                 </div>
                                 <div className="pull-right">
                                     <div className="minutes">35 Minutes</div>
@@ -71,7 +71,7 @@ const FaqPart = () => {
                             <div className="clearfix">
                                 <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={() => { openModal(); }} />
                                 <div className="pull-left">
-                                    <Link className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
+                                    <Link to="" className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
                                 </div>
                                 <div className="pull-right">
                                     <div className="minutes">35 Minutes</div>
@@ -82,7 +82,7 @@ const FaqPart = () => {
                             <div className="clearfix">
                                 <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={() => { openModal(); }} />
                                 <div className="pull-left">
-                                    <Link className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
+                                    <Link to="" className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
                                 </div>
                                 <div className="pull-right">
                                     <div className="minutes">35 Minutes</div>
@@ -93,7 +93,7 @@ const FaqPart = () => {
                             <div className="clearfix">
                                 <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={() => { openModal(); }} />
                                 <div className="pull-left">
-                                    <Link className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
+                                    <Link to="" className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
                                 </div>
                                 <div className="pull-right">
                                     <div className="minutes">35 Minutes</div>
@@ -113,7 +113,7 @@ const FaqPart = () => {
                             <div className="clearfix">
                                 <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={() => { openModal(); }} />
                                 <div className="pull-left">
-                                    <Link className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
+                                    <Link to="" className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
                                 </div>
                                 <div className="pull-right">
                                     <div className="minutes">35 Minutes</div>
@@ -124,7 +124,7 @@ const FaqPart = () => {
                             <div className="clearfix">
                                 <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={() => { openModal(); }} />
                                 <div className="pull-left">
-                                    <Link className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
+                                    <Link to="" className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
                                 </div>
                                 <div className="pull-right">
                                     <div className="minutes">35 Minutes</div>
@@ -135,7 +135,7 @@ const FaqPart = () => {
                             <div className="clearfix">
                                 <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={() => { openModal(); }} />
                                 <div className="pull-left">
-                                    <Link className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
+                                    <Link to="" className="popup-videos play-icon" onClick={() => { openModal(); }}><i className="fa fa-play"></i>What is UI/ UX Design?</Link>
                                 </div>
                                 <div className="pull-right">
                                     <div className="minutes">35 Minutes</div>

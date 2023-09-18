@@ -901,6 +901,25 @@ select,
     opacity: 0;
 }
 
+.width-30-100 {
+    width: 30%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    animation: width-30-100 2s linear 0s infinite alternate;
+}
+.width-30-100-delayed {
+    width: 30%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    animation: width-30-100 2s linear 3s infinite alternate;
+}
+
+.img-part.animated {
+    animation: left-right 20s linear 0s infinite alternate;
+}
+
 /* Custom Container Width :1440px. */
 @media (min-width: 1440px) {
     .container {

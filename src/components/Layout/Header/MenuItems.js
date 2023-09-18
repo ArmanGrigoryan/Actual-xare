@@ -9,7 +9,7 @@ const MenuItems = () => {
             <li className={location.pathname === "/" ? 'rs-mega-menu menu-item-has-children current-menu-item' : 'rs-mega-menu menu-item-has-children'}>
                 <Link to="/"> Գլխավոր </Link>
             </li>
-            <li className={location.pathname === "/course" ? 'menu-item-has-children current-menu-item' : 'menu-item-has-children'}>
+            <li className={location.pathname.includes("/course") ? 'menu-item-has-children current-menu-item' : 'menu-item-has-children'}>
                 <Link to="/course"> Դասընթացներ </Link>
             </li>
             <li className={location.pathname === "/blog" ? 'menu-item-has-children current-menu-item' : 'menu-item-has-children'}>

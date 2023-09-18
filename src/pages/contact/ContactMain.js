@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SiteBreadcrumb from '../../components/Common/Breadcumb';
 import SectionTitle from '../../components/Common/SectionTitle';
 import ContactForm from '../../components/Contact/ContactForm';
@@ -6,6 +6,15 @@ import ContactInfo from '../../components/Contact/ContactInfo';
 import bannerbg from '../../assets/img/breadcrumbs/inner12.jpg';
 
 const ContactMain = () => {
+    const [btnText, setBtnText] = useState("Ուղարկել");
+    const [disabled, setDisabled] = useState(false);
+
+    const submitHandler = (evt) => {
+        evt.preventDefault();
+
+        setDisabled(true);
+        setBtnText("Շնորհակալություն");
+    }
 
     return (
         <React.Fragment>
@@ -30,7 +39,7 @@ const ContactMain = () => {
                                 boxClass="sm-mb-30"
                                 title="Էլ. հասցե"
                                 iconClass="flaticon-email"
-                                email="contact@actual.com"
+                                email="actualhrarmenia@gmail.com"
                             />
                         </div>
                         <div className="col-md-4">
@@ -71,7 +80,9 @@ const ContactMain = () => {
                                 />
                                 <ContactForm
                                     submitBtnClass="btn-send"
-                                    btnText="Ուղարկել"
+                                    btnText={btnText}
+                                    btnDisabled={disabled}
+                                    cb={submitHandler}
                                 />
                             </div>
                         </div>

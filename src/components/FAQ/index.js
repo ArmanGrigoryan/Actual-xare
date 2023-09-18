@@ -10,7 +10,7 @@ import {
 const Faq = () => {
 
     return (
-        <div className="rs-faq-part style1 pt-90 pb-100 md-pt-70 md-pb-80">
+        <div id="faq" className="rs-faq-part style1 pt-90 pb-100 md-pt-70 md-pb-80">
             <div className="container">
                 <div className="main-part innerpage">
                     <div className="faq-content mb-50 md-mb-30">

@@ -101,7 +101,7 @@
             .author-desc {
                 padding: 70px 15px;
                 background-color: #171F3296;
-                border-radius: 5px 5px 5px 5px;
+                border-radius: 18px;
                 min-height: 420px;
                 .desc {
                     text-align: center;
@@ -130,7 +130,8 @@
                     bottom: 80px;
                     img {
                         width: auto;
-                        border-radius: 50%;                        
+                        border-radius: 50%;          
+                        background-color: #c9bfbf;              
                     }
                 }
             }

@@ -1,32 +1,77 @@
 import React from 'react';
 
 const ContactForm = (props) => {
-    const { submitBtnClass, btnText } = props;
+    const { submitBtnClass, btnText, cb, btnDisabled } = props;
+
     return (
-        <form id="contact-form" action="#">
+        <form id="contact-form" action="#" onSubmit={cb}>
             <div className="row">
                 <div className="col-md-6 mb-30">
-                    <input className="from-control" type="text" id="name" name="name" placeholder="Անուն" required />
+                    <input
+                        id="name" 
+                        className="from-control" 
+                        type="text" 
+                        name="name" 
+                        placeholder="Անուն" 
+                        required 
+                        onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
+                        onInput={evt => evt.target.setCustomValidity("")}
+                    />
                 </div>
 
                 <div className="col-md-6 mb-30">
-                    <input className="from-control" type="text" id="email" name="email" placeholder="Էլ. փոստ" required />
+                    <input 
+                        id="email" 
+                        className="from-control" 
+                        type="text" 
+                        name="email" 
+                        placeholder="Էլ. փոստ" 
+                        required 
+                        onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
+                        onInput={evt => evt.target.setCustomValidity("")}
+                    />
                 </div>
 
                 <div className="col-md-6 mb-30">
-                    <input className="from-control" type="text" id="phone" name="phone" placeholder="Հեռ." required />
+                    <input 
+                        id="phone" 
+                        className="from-control" 
+                        type="text" 
+                        name="phone" 
+                        placeholder="Հեռ." 
+                        required 
+                        onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
+                        onInput={evt => evt.target.setCustomValidity("")}
+                    />
                 </div>
 
                 <div className="col-md-6 mb-30">
-                    <input className="from-control" type="text" id="website" name="website" placeholder="Ձեր կայքը" required />
+                    <input
+                        id="website" 
+                        className="from-control" 
+                        type="text" 
+                        name="website" 
+                        placeholder="Ձեր կայքը" 
+                        required 
+                        onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
+                        onInput={evt => evt.target.setCustomValidity("")}
+                    />
                 </div>
 
                 <div className="col-12 mb-30">
-                    <textarea className="from-control" id="message" name="message" placeholder="Ձեր հաղորդագրությունը" required></textarea>
+                    <textarea 
+                        id="message" 
+                        className="from-control" 
+                        name="message" 
+                        placeholder="Ձեր հաղորդագրությունը" 
+                        required
+                        onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
+                        onInput={evt => evt.target.setCustomValidity("")}
+                    ></textarea>
                 </div>
             </div>
             <div className="btn-part">
-                <button className={submitBtnClass ? submitBtnClass : 'readon learn-more submit'} type="submit">{btnText ? btnText : 'Submit Now'}</button>
+                <button disabled={btnDisabled} className={submitBtnClass ? submitBtnClass : 'readon learn-more submit'} type="submit">{btnText}</button>
             </div>
         </form>
     );
