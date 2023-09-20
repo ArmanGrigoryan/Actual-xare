@@ -20,7 +20,7 @@ const AboutTab = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 padding-0 md-pl-14 md-pr-14 md-mb-30 relative">
                             <div className="img-part text-center">
-                                <img 
+                                <img loading="lazy" 
                                     src={aboutImg}
                                     alt="About" 
                                     className="radius-12"
@@ -46,7 +46,7 @@ const AboutTab = () => {
                                         <div className="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
                                     </div>
                                     <div className="tab-img">
-                                        <img 
+                                        <img loading="lazy" 
                                             src={tabImg1}
                                             alt="Tab 1" 
                                             className='radius-12 tab-desc-image'
@@ -61,7 +61,7 @@ const AboutTab = () => {
                                         <div className="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
                                     </div>
                                     <div className="tab-img">
-                                        <img
+                                        <img loading="lazy"
                                             src={tabImg2}
                                             alt="Tab 2" 
                                             className='radius-12 tab-desc-image'
@@ -76,7 +76,7 @@ const AboutTab = () => {
                                         <div className="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
                                     </div>
                                     <div className="tab-img">
-                                        <img 
+                                        <img loading="lazy" 
                                             src={tabImg3}
                                             alt="Tab 3" 
                                             className='radius-12 tab-desc-image'

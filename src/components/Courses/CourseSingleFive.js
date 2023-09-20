@@ -6,7 +6,7 @@ const CourseSingleFive = (props) => {
     return (
         <div className={courseClass ? courseClass : 'courses-item radius-12'}>
             <div className="img-part">
-                <img
+                <img loading="lazy"
                     src={courseImg}
                     alt={courseTitle}
                 />
@@ -25,7 +25,7 @@ const CourseSingleFive = (props) => {
                 <h3 className="title"><Link to="/course/course-single">{courseTitle ? courseTitle : 'Become a PHP Master and Make Money Fast'}</Link></h3>
                 <div className="images mb-32 md-mb-16">
                     <div className="img-part">
-                        <img src={authorImg} alt="Author" />
+                        <img loading="lazy" src={authorImg} alt="Author" />
                     </div>
                     <span>By {author ? author : 'Admin'} in {courseCategory ? courseCategory : 'Web Development'}</span>
                 </div>

@@ -6,7 +6,7 @@ const DegreeSingle = (props) => {
 
     return (
         <div className={itemClass ? itemClass : 'degree-wrap'}>
-            <img
+            <img loading="lazy"
                 src={props.itemImage}
                 alt={props.title}
             />

@@ -7,7 +7,7 @@ const SinglePostSix = (props) => {
         <div className={blogClass ? blogClass : 'blog-item'}>
             <div className="blog-img">
                 <Link to="/blog/single-post-right-sidebar">
-                    <img
+                    <img loading="lazy"
                         src={blogImage}
                         alt={blogTitle}
                     />

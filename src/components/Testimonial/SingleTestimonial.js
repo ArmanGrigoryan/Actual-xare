@@ -5,7 +5,7 @@ const SingleTestimonial = (props) => {
         <div className={props.itemClass}>
             <div className="author-desc">
                 <div className="desc">
-                    <img
+                    <img loading="lazy"
                         src={props.quoteImage}
                         alt={props.Title}
                         className="quote"
@@ -13,7 +13,7 @@ const SingleTestimonial = (props) => {
                     {props.Description}
                 </div>
                 <div className="author-img">
-                    <img
+                    <img loading="lazy"
                         src={props.authorImage}
                         alt={props.Title}
                     />

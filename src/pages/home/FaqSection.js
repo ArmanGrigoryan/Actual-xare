@@ -7,6 +7,7 @@ import {
     AccordionItemPanel,
     AccordionItemButton,
 } from 'react-accessible-accordion';
+import { Link } from 'react-router-dom';
 
 const FaqSection = () => {
 
@@ -66,9 +67,15 @@ const FaqSection = () => {
                                         </AccordionItemPanel>
                                     </AccordionItem>
                                 </Accordion>
+                                <div className='blog-button text-right'>
+                                    <Link to="/about#faq" className="blog-btn">
+                                        {'Ավելին'}
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div className="col-lg-6 padding-0">
                         <div className="img-part media-icon orange-color">
                             <a href="#" className="popup-videos" onClick={() => { openModal(); }}><i className="fa fa-play"></i></a>

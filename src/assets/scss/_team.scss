@@ -4,9 +4,9 @@
             border-radius: 15px 15px 4px 4px;
             position: relative;
             overflow: hidden;
-            max-height: 350px;
+            max-height: 400px;
             img {
-                min-height: 350px;
+                min-height: 400px;
                 width: 100%;
             }
             .content-part {
@@ -22,7 +22,7 @@
                 .name {
                     margin-top: 15px;
                     margin-bottom: 0;
-                    font-size: 22px;
+                    font-size: 18px;
                     a {
                         color: $whiteColor;
                         &:hover {
@@ -34,6 +34,7 @@
                     color: $whiteColor;
                     margin-bottom: 16px;
                     display: block;
+                    font-size: 12px;
                 }
                 .social-links {
                     li {
@@ -125,13 +126,13 @@
             overflow: hidden;
             .content-part { 
                 top: unset !important;
-                bottom: -205px;
+                bottom: -240px;
                 transform: translateX(-50%) !important;
                 width: 100% !important;
                 height: 320px !important;
                 background: $whiteColor;
                 border-radius: 40%;
-                padding-top: 30px; 
+                padding-top: 10px; 
                 opacity: 1 !important;
                 transition: $transition;
                 .name {
@@ -155,11 +156,5 @@
 @media #{$mobile} {
     .rs-team.style1 .team-item .content-part .social-links li {
         margin-right: 24px;
-    }
-    .rs-team.style1 .team-item .content-part .name {
-        font-size: 18px;
-    }
-    .rs-team.style1 .team-item .content-part .designation {
-        font-size: 14px;
     }
 }

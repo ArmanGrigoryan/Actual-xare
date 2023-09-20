@@ -61,7 +61,7 @@ const AboutCounter = () => {
                                 {counters.map(counter => (
                                     <div key={counter.countNum} className="col-md-4 sm-mb-30">
                                         <div className="counter-item one">
-                                            <img className="count-img" src={counter.countIcon} alt="" />
+                                            <img loading="lazy" className="count-img" src={counter.countIcon} alt="" />
                                             <h2 className="number rs-count mt-10 mb-0">
                                                 <VisibilitySensor onChange={onChange}>
                                                     {({ isVisible }) => (

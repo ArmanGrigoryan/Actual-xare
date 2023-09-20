@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import {
     Accordion,
     AccordionItem,
@@ -8,9 +9,17 @@ import {
 } from 'react-accessible-accordion';
 
 const Faq = () => {
+    const location = useLocation();
+    const faqElement = useRef();
+
+    useEffect(() => {
+        if (location.hash === "#faq") faqElement.current.scrollIntoView({
+            behavior: "smooth"
+        });
+    }, [location.hash])
 
     return (
-        <div id="faq" className="rs-faq-part style1 pt-90 pb-100 md-pt-70 md-pb-80">
+        <div ref={faqElement} id="faq" className="rs-faq-part style1 pt-90 pb-100 md-pt-70 md-pb-80">
             <div className="container">
                 <div className="main-part innerpage">
                     <div className="faq-content mb-50 md-mb-30">

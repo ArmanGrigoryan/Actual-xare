@@ -72,6 +72,8 @@
 .full-width-header{
     position: relative;
     .rs-header{  
+        max-height: 100vh;
+        padding-top: 10px;
         position: relative;
 
         .logo-part {
@@ -191,7 +193,7 @@
                     .rs-menu-toggle{
                         cursor: pointer;
                         color: $whiteColor;
-                        font-size: 20px;
+                        font-size: 25px;
                         &:hover {
                             opacity: 0.8;
                         }

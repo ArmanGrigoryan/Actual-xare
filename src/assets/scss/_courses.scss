@@ -231,21 +231,46 @@
 
     .slick-dots {
         li{
-            margin: 0;
-            button {
-                width: 30px;
-                border: 1px solid $orangeColor;
-                background: $titleColor;
-                opacity: 0.75;
-            }
+            transition: all .2s ease-in-out;
+
             &:hover,
             &.slick-active {
-                button {
-                    background: $orangeColor;
-                    opacity: 1;
-                }
-                
+                transform: scale(1.5);
             }
+        }
+    }
+
+    .slick-next {
+        width: 35px;
+        height: 35px;
+        right: 5%;
+        z-index: 1;
+        background: black;
+        border-radius: 50%;
+        &::before {
+            opacity: 1;
+            font-size: 45px;
+            position: absolute;
+            top: -2px;
+            right: -5px;
+        }
+    }
+    .slick-prev {
+        width: 35px;
+        height: 35px;
+        left: 5%;
+        z-index: 1;
+        background: black;
+        border-radius: 50%;
+        &::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            font-size: 45px;
+            position: absolute;
+            top: -2px;
+            right: -5px;
         }
     }
 
@@ -407,6 +432,26 @@
 @media #{$sm} {
     .rs-featured-courses .courses-item{
         padding: 0 20px;
+    }
+    .rs-featured-courses {
+        .slick-next {
+            width: 25px;
+            height: 25px;
+            &::before {
+                font-size: 35px;
+                top: -2px;
+                right: -5px;
+            }
+        }
+        .slick-prev {
+            width: 25px;
+            height: 25px;
+            &::before {
+                font-size: 35px;
+                top: -2px;
+                right: -5px;
+            }
+        }
     }
 }
 

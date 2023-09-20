@@ -7,7 +7,7 @@ const SiteBreadcrumb = (props) => {
 	return (
 		<div className={breadcrumbsClass ? breadcrumbsClass : 'rs-breadcrumbs breadcrumbs-overlay'}>
 			<div className="breadcrumbs-img">
-				<img 
+				<img loading="lazy" 
 					src={breadcrumbsImg} 
 					alt="Breadcrumbs" 
 				/>

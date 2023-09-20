@@ -53,42 +53,42 @@ const Brand = (props) => {
                     <div className="partner-item">
                         <div className="logo-img">
                             <a href="#">
-                                <img className="main-logo" src={brandNormalLogo1} alt="" />
+                                <img loading="lazy" className="main-logo" src={brandNormalLogo1} alt="" />
                             </a>
                         </div>
                     </div>
                     <div className="partner-item">
                         <div className="logo-img">
                             <a href="#">
-                                <img className="main-logo" src={brandNormalLogo2} alt="" />
+                                <img loading="lazy" className="main-logo" src={brandNormalLogo2} alt="" />
                             </a>
                         </div>
                     </div>
                     <div className="partner-item">
                         <div className="logo-img">
                             <a href="#">
-                                <img className="main-logo" src={brandNormalLogo3} alt="" />
+                                <img loading="lazy" className="main-logo" src={brandNormalLogo3} alt="" />
                             </a>
                         </div>
                     </div>
                     <div className="partner-item">
                         <div className="logo-img">
                             <a href="#">
-                                <img className="main-logo" src={brandNormalLogo4} alt="" />
+                                <img loading="lazy" className="main-logo" src={brandNormalLogo4} alt="" />
                             </a>
                         </div>
                     </div>
                     <div className="partner-item">
                         <div className="logo-img">
                             <a href="#">
-                                <img className="main-logo" src={brandNormalLogo5} alt="" />
+                                <img loading="lazy" className="main-logo" src={brandNormalLogo5} alt="" />
                             </a>
                         </div>
                     </div>
                     <div className="partner-item">
                         <div className="logo-img">
                             <a href="#">
-                                <img className="main-logo" src={brandNormalLogo6} alt="" />
+                                <img loading="lazy" className="main-logo" src={brandNormalLogo6} alt="" />
                             </a>
                         </div>
                     </div>

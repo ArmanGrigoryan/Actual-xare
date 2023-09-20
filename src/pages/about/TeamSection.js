@@ -9,21 +9,6 @@ import team3 from '../../assets/img/team/team3.jpg';
 import team4 from '../../assets/img/team/team4_.jpg';
 
 const Team = () => {
-
-    function NextArrow(props) {
-        const { className, onClick } = props;
-        return (
-            <button type='button' onClick={onClick} className={className}><i className="flaticon-right-arrow"></i></button>
-        );
-    }
-
-    function PrevArrow(props) {
-        const { className, onClick } = props;
-        return (
-            <button type='button' onClick={onClick} className={className}> <i className="flaticon-left-arrow"></i></button>
-        );
-    }
-
     const slilderSettings = {
         dots: false,
         centerMode: false,
@@ -32,8 +17,6 @@ const Team = () => {
         lazyLoad: true,
         infinite: true,
         arrows: true,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
         className: "active",
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -47,16 +30,10 @@ const Team = () => {
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     arrows: false,
                 }
             },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
         ]
     };
 

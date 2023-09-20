@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useLocation } from 'react-router-dom';
 
 export default function useScrollTop() {
 	const [isVisible, setIsVisible] = useState(false);
     const animateRef = useRef();
+    const location = useLocation();
 
 	const scrollToTop = useCallback(() => {
 		window.scrollTo({
@@ -45,6 +47,16 @@ export default function useScrollTop() {
 
 		return () => window.removeEventListener("scroll", toggleVisibility);
 	}, [isVisible]);
+
+    useEffect(() => {
+        const elementId = location.hash;
+        if (elementId) {
+            const element = document.getElementById(elementId);
+            element?.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    }, [location.hash]);
 
     return {
         isVisible,

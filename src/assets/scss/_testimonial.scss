@@ -151,29 +151,7 @@
                 }
             }
         }
-        .slick-dots {
-            text-align: center;
-            margin-top: 47px;
-            li {
-                button {
-                    width: 25px;
-                    height: 10px;
-                    display: inline-block;
-                    margin: 0 6px;
-                    padding: 3px 0;
-                    border-radius: 30px;
-                    background: darken($orangeColor, 10%);
-                    border: none;
-                    transition: $transition;
-                }
-                &:hover button,
-                &.slick-active button {
-                    width: 40px;
-                    background: $orangeColor;
-                    opacity: 1;
-                }
-            }
-        }
+
         .owl-stage-outer {
             padding: 10px;
             margin: -10px;

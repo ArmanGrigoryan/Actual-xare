@@ -95,18 +95,19 @@
             &:before {
                 position: absolute;
                 content: '';
-                width: 60%;
                 height: 100%;
                 bottom: 0;
                 z-index: -1;
             }
             &:after {
+                width: 60%;
                 background:url(../img/cta/home1.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
             }
             &:before {
+                width: 40%;
                 background:url(../img/cta/main-home.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;

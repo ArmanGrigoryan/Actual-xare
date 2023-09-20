@@ -163,7 +163,7 @@ const CheckoutMain = () => {
                             <div className="top-area">
                                 <div className="payment-co">
                                     <span>PayPal</span>
-                                    <img src={paypalLogo} alt="PayPal Logo" />
+                                    <img loading="lazy" src={paypalLogo} alt="PayPal Logo" />
                                 </div>
                                 <div className="p-msg">Pay via PayPal you can pay with your credit card if you dont have a PayPal account.</div>
                             </div>

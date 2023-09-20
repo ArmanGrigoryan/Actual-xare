@@ -9,21 +9,17 @@ const Header = (props) => {
 	const { parentMenu } = props;
 	const [menuOpen, setMenuOpen] = useState(false)
 	const [isVisible, setIsVisible] = useState(false);
-	
+
 	useEffect(() => {
-		// Sticky is displayed after scrolling for 100 pixels
 		const toggleVisibility = () => {
-			if (window.pageYOffset > 100) {
-				setIsVisible(true);
-			} else {
-				setIsVisible(false);
-			}
+			if (window.pageYOffset > 100 && !isVisible) setIsVisible(true);
+			else if (window.pageYOffset <= 100 && isVisible) setIsVisible(false);
 		};
 
 		window.addEventListener("scroll", toggleVisibility);
 
 		return () => window.removeEventListener("scroll", toggleVisibility);
-	}, []);
+	}, [isVisible]);
 
 	return (
 		<React.Fragment>
@@ -36,14 +32,14 @@ const Header = (props) => {
 								<div className="col-lg-3 pl-30">
 									<div className="logo-area hidden-md">
 										<Link to="/">
-											<img 
+											<img loading="lazy" 
 												src={normalLogo} 
 												alt="" 
 												width={250} 
 												height={70} 
 												className="normal-logo" 
 											/>
-											<img className="sticky-logo" width={250} height={70} src={darkLogo} alt="" />
+											<img loading="lazy" className="sticky-logo" width={250} height={70} src={darkLogo} alt="" />
 										</Link>
 									</div>
 								</div>
@@ -52,7 +48,7 @@ const Header = (props) => {
 										<div className="main-menu">
 											<div className="mobile-menu md-display-flex">
 												<Link to="/" className="pl-30 mobile-normal-logo">
-													<img 
+													<img loading="lazy" 
 														src={normalLogo} 
 														alt="" 
 														width={220} 
@@ -61,7 +57,7 @@ const Header = (props) => {
 													/>
 												</Link>
 												<Link to="/" className="mobile-sticky-logo">
-													<img 
+													<img loading="lazy" 
 														src={darkLogo} 
 														alt="logo" 
 														width={220} 
@@ -69,7 +65,7 @@ const Header = (props) => {
 														className="normal-logo" 
 													/>
 												</Link>
-												<span className="rs-menu-toggle pl-10 pr-10" onClick={() => {
+												<span className="rs-menu-toggle pl-10 pr-10 mr-20" onClick={() => {
 													setMenuOpen(!menuOpen)
 												}}>
 													<i className="fa fa-bars"></i>
@@ -95,7 +91,7 @@ const Header = (props) => {
 										</svg>
 									</button>
 								</div> */}
-								
+
 								<div className="col-lg-2 text-end d-none">
 									<div className="expand-btn-inner search-icon">
 										<ul className="expand-items">

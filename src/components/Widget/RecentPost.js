@@ -14,7 +14,7 @@ const RecentPost = () => {
             <div className="show-featured">
                 <div className="post-img">
                     <Link to="/blog/single-post-right-sidebar">
-                        <img
+                        <img loading="lazy"
                             src={thumb1}
                             alt=""
                         />
@@ -31,7 +31,7 @@ const RecentPost = () => {
             <div className="show-featured">
                 <div className="post-img">
                     <Link to="/blog/single-post-right-sidebar">
-                        <img
+                        <img loading="lazy"
                             src={thumb2}
                             alt=""
                         />
@@ -48,7 +48,7 @@ const RecentPost = () => {
             <div className="show-featured">
                 <div className="post-img">
                     <Link to="/blog/single-post-right-sidebar">
-                        <img
+                        <img loading="lazy"
                             src={thumb3}
                             alt=""
                         />
@@ -65,7 +65,7 @@ const RecentPost = () => {
             <div className="show-featured">
                 <div className="post-img">
                     <Link to="/blog/single-post-right-sidebar">
-                        <img
+                        <img loading="lazy"
                             src={thumb4}
                             alt=""
                         />
@@ -82,7 +82,7 @@ const RecentPost = () => {
             <div className="show-featured">
                 <div className="post-img">
                     <Link to="/blog/single-post-right-sidebar">
-                        <img
+                        <img loading="lazy"
                             src={thumb5}
                             alt=""
                         />

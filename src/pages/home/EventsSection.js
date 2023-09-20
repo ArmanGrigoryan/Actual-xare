@@ -19,7 +19,7 @@ const Events = () => {
                             title="Educavo Events"
                         />
                         <div className="single-img">
-                            <img
+                            <img loading="lazy"
                                 src={eventImage}
                                 alt="Event"
                             />

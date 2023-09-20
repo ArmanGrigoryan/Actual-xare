@@ -7,7 +7,7 @@ const CourseSingle = (props) => {
             <div className="courses-grid">
                 <div className="img-part">
                     <Link to="/course/course-single">
-                        <img
+                        <img loading="lazy"
                             src={props.image}
                             alt={props.title}
                         />

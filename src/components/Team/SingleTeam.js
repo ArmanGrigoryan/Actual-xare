@@ -4,7 +4,7 @@ const SingleTeam = (props) => {
     const { teamClass, Image, Title, Designation } = props;
 	return(
         <div className={teamClass ? teamClass : 'team-item'}>
-            <img 
+            <img loading="lazy" 
                 src={Image} 
                 alt={Title}
             />

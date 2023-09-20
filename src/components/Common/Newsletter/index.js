@@ -14,7 +14,7 @@ const Newsletter = (props) => {
                             <div className="content-part">
                                 <div className="sec-title">
                                     <div className="title-icon md-mb-14">
-                                        <img src={iconPath ? iconPath : newsletterIcon} alt="icon" />
+                                        <img loading="lazy" src={iconPath ? iconPath : newsletterIcon} alt="icon" />
                                     </div>
                                     <h3 className={titleClass ? titleClass : 'title mb-0 white-color'}>Բաժանորդագրվել մեր ալիքին</h3>
                                 </div>

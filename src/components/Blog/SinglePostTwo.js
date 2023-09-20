@@ -8,7 +8,7 @@ const SinglePostTwo = (props) => {
             <div className={ImgOrder == 'last' ? 'col-md-6 order-last' : 'col-md-6'}>
                 <div className="image-part">
                     <Link to="/blog/single-post-right-sidebar">
-                        <img
+                        <img loading="lazy"
                             src={blogImage}
                             alt={blogTitle}
                         />

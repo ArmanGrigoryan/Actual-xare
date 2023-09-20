@@ -8,7 +8,7 @@ const PostContent = ({ }) => {
     return (
         <div className="blog-deatails">
             <div className="bs-img">
-                <img
+                <img loading="lazy"
                     src={postImage}
                     alt="Post Image"
                 />
@@ -47,7 +47,7 @@ const PostContent = ({ }) => {
                     </p>
                 </div>
                 <div className="blog-img mb-40">
-                    <img
+                    <img loading="lazy"
                         src={innerImage}
                         alt=""
                     />

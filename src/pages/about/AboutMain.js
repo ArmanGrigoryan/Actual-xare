@@ -8,6 +8,7 @@ import ScrollToTop from '../../components/Common/ScrollTop';
 import AboutText from './AboutTextSection.js';
 import AboutTab from './AboutTabSection.js';
 import Faq from '../../components/FAQ';
+import SlideShow from './SlideShow.js';
 
 const AboutMain = () => {
 
@@ -19,6 +20,7 @@ const AboutMain = () => {
             <AboutTab />
             <Team />
             <Testimonial />
+			<SlideShow />
             <Blog />
             <Faq />
 			<ScrollToTop scrollClassName="scrollup orange-color" />

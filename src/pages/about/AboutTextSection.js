@@ -10,7 +10,7 @@ const AboutText = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6 order-last padding-0 md-pl-14 md-pr-14 md-mb-30">
                         <div className="img-part animated">
-                            <img className="about-main" src={AboutImage} alt="About" />
+                            <img loading="lazy" className="about-main" src={AboutImage} alt="About" />
                         </div>
                     </div>
                     <div className="col-lg-6 pr-70 md-pr-14">
