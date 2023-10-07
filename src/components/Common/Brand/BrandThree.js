@@ -66,6 +66,46 @@ const BrandThree = (props) => {
                         <img loading="lazy" src={brand8} alt="" />
                     </div>
                 </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img loading="lazy" src={brand1} alt="" />
+                    </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img loading="lazy" src={brand2} alt="" />
+                    </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img loading="lazy" src={brand3} alt="" />
+                    </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img loading="lazy" src={brand4} alt="" />
+                    </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img loading="lazy" src={brand5} alt="" />
+                    </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img loading="lazy" src={brand6} alt="" />
+                    </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img loading="lazy" src={brand7} alt="" />
+                    </div>
+                </div>
+                <div className="partner-item">
+                    <div className="logo-img">
+                        <img loading="lazy" src={brand8} alt="" />
+                    </div>
+                </div>
             </Marquee>
         </div>
     );

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import CheckoutMain from '../../components/Shop/CheckoutMain';
 import Header from '../../components/Layout/Header';
 import Footer from '../../components/Layout/Footer/Footer';

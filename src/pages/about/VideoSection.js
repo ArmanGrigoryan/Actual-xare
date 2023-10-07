@@ -25,7 +25,7 @@ const AboutVideo = () => {
                                 <a className="popup-videos" onClick={() => { openModal(); }}><i className="fa fa-play"></i> <h5 className="title mb-0 width-30-100">Կատարեք շրջագայություն Ակտուալում</h5></a>
                             </div>
                         </div>
-                        <div className="col-lg-6 pl-100 pt-134 pb-150 md-pl-14 md-pt-0 md-pb-70">
+                        <div className="col-lg-6 pl-150 pt-134 pb-150 md-pl-14 md-pt-0 md-pb-70">
                             <SectionTitle
                                 sectionClass="sec-title mb-40"
                                 titleClass="title mb-16"

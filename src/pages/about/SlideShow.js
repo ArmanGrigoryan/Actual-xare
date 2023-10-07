@@ -16,7 +16,7 @@ const SlideShow = () => {
 
     return (
         <div className="rs-featured-courses pt-100 pb-150 md-pt-76 md-pb-140 sm-pb-70">
-            <div className="container">
+            <div>
                 <SectionTitle
                     sectionClass="sec-title2 text-center"
                     subtitleClass="sub-title uppercase mb-10"

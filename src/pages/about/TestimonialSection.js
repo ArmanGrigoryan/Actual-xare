@@ -12,7 +12,7 @@ function Testimonial() {
             <div className="rs-testimonial style2 pt-100 pb-100 md-pt-70 md-pb-70">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-7 lg-pl-0 ml--14 md-ml-0">
+                        <div>
                             <Fade left>
                                 <SingleTestimonialTwo
                                     testiImage={avatar1}
