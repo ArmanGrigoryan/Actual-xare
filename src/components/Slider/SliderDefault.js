@@ -5,7 +5,7 @@ const SliderDefault = () => {
     const videoRef = useRef();
 
     useLayoutEffect(() => {
-        videoRef.current.play();
+        // videoRef.current.play();
     }, []);
 
     return (

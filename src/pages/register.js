@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer/Footer';
@@ -15,8 +14,6 @@ const Register = () => {
 
     return (
         <div ref={animateRef} className="hidden-opacity">
-            <Helmet>
-            </Helmet>
             <Header parentMenu='pages' />
             <SiteBreadcrumb
                 pageTitle="Գրանցվել"
