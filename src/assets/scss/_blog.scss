@@ -159,7 +159,7 @@
                         a{
                             color: $purpleColor;
                             &:hover{
-                                color: $orangeColor;
+                                color: $primaryColor;
                             }
                         }
                     }
@@ -191,7 +191,7 @@
                             font-size: 14px;
                             &:before {
                                 padding-right: 7px;
-                                color: $orangeColor;
+                                color: $primaryColor;
                             }
                         }
                         a {
@@ -210,7 +210,7 @@
                     a{
                         color: $titleColor5;
                         &:hover{
-                            color: $orangeColor;
+                            color: $primaryColor;
                         }
                     }
                 }
@@ -233,7 +233,7 @@
                                 content: "\f02d";
                                 font-family: "FontAwesome";
                                 font-size: 15px;
-                                color: $orangeColor;
+                                color: $primaryColor;
                                 position: absolute;
                                 left: 0px;
                                 top: 1px;
@@ -244,7 +244,7 @@
                                 a{
                                     color: $bodyColor;
                                     &:hover{
-                                        color: $orangeColor;
+                                        color: $primaryColor;
                                     }
                                 }
                             }
@@ -269,7 +269,7 @@
                                 margin-left: 3px;
                             }
                             &:hover{
-                                color: $orangeColor;
+                                color: $primaryColor;
                                 
                             }
                         }
@@ -374,7 +374,7 @@
                 border: 0;
                 width: 50px;
                 height: 2px;
-                background: $orangeColor;
+                background: $primaryColor;
                 z-index: 1;
                 margin-left: 0;
                 bottom: 0;
@@ -474,7 +474,7 @@
                             color: #273c66;
                         }
                         &:hover{
-                            color: $orangeColor;
+                            color: $primaryColor;
                         }
                     }
                }
@@ -501,17 +501,17 @@
         .ps-navigation ul li a .link-text:hover,
         .ps-navigation ul li a .next-link:hover,
         .ps-navigation ul li a .next-link:hover i::before {
-            color: $orangeColor;
+            color: $primaryColor;
         }
         blockquote::before {
-            background: $orangeColor;
+            background: $primaryColor;
         }
         .comment-area .comment-full .submit-btn .submit {
-            border-color: $orangeColor;
-            background: $orangeColor;
+            border-color: $primaryColor;
+            background: $primaryColor;
             &:hover {
-                border-color: darken($orangeColor,10%);
-                background: darken($orangeColor,10%);
+                border-color: darken($primaryColor,10%);
+                background: darken($primaryColor,10%);
             }
         }
     }

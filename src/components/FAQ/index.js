@@ -25,43 +25,43 @@ const Faq = () => {
                     <div className="faq-content mb-50 md-mb-30">
                         <h2 className='text-center mb-50'>Հաճախ տրվող հարցեր</h2>
                         <div className="title mb-30 md-mb-14">
-                            <h3 className="text-part">Kindergarten</h3>
+                            <h3 className="text-part">Himnakan</h3>
                         </div>
                         <Accordion className="accordion-style1" preExpanded={'a'}>
                             <AccordionItem className="accordion-item" uuid="a">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        What do you mean by item and end product?
+                                        Inchpes karox enq gracnvel?
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu
+                                    Patasxan 1
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="b">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        What does non-exclusive mean?
+                                        Inch e HR-@?
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu
+                                    Patasxan 2
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="c">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        What are some examples of permitted end products?
+                                        Vortex e kentron@?
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu
+                                    Patasxan 3
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="d">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        What is distance education?
+                                        Erb karox enq sksel?
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
@@ -73,7 +73,7 @@ const Faq = () => {
 
                     <div className="faq-content mb-50 md-mb-30">
                         <div className="title mb-30 md-mb-14">
-                            <h3 className="text-part">Primary School</h3>
+                            <h3 className="text-part">Erkrordakan</h3>
                         </div>
                         <Accordion className="accordion-style1" preExpanded={'a'}>
                             <AccordionItem className="accordion-item" uuid="a">

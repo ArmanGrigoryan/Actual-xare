@@ -1,20 +1,21 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import Header from '../../components/Layout/Header';
 import Footer from '../../components/Layout/Footer/Footer';
 import Newsletter from '../../components/Common/Newsletter';
 import HomeMain from './HomeMain';
 import footerLogo from '../../assets/img/logo/logo-light.png';
 import useFade from '../../utils/hooks/useFade.js';
+import SEO from '../../components/SEO';
 
 const HomePage = () =>  {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
-            <Helmet>
-                <meta name="description" content="Actual HR Agency, Actual training center" />
-            </Helmet>
+            <SEO
+                title='Actual HR Agency | Ակտուալ - Գլխավոր'
+                description='Գլխավոր էջ - Այցելեք Ակտուալ` Հայաստանում նմանը չունեցող ուսումնական կենտրոն ծառայությունների ոլորտում: Եթե չունեք փորձ, պարզապես գնեք այն:'
+            />
             <Header parentMenu='home' />
             <HomeMain />
             <Newsletter

@@ -9,6 +9,7 @@ import brand5 from '../../../assets/img/partners/Tsiran.png';
 import brand6 from '../../../assets/img/partners/Eye-Optics.png';
 import brand7 from '../../../assets/img/partners/Mersoft.png';
 import brand8 from '../../../assets/img/partners/PAK.png';
+import BrandItem from './Item';
 
 const BrandThree = (props) => {
     const { brandBg, brandClass } = props;
@@ -23,89 +24,33 @@ const BrandThree = (props) => {
 
     return (
         <div className={brandClass ? brandClass : 'rs-partner style2 pt-120 md-pt-80'} style={brandBg ? brandBgStyle : brandBgDefaultStyle}>
-            <h2 className='text-center mb-40'>Ակտուալի գործընկերները</h2>
+            <h2 className='title'>Ակտուալի գործընկերները</h2>
             
             <Marquee>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand1} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand2} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand3} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand4} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand5} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand6} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand7} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand8} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand1} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand2} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand3} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand4} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand5} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand6} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand7} alt="" />
-                    </div>
-                </div>
-                <div className="partner-item">
-                    <div className="logo-img">
-                        <img loading="lazy" src={brand8} alt="" />
-                    </div>
-                </div>
+                <BrandItem src={brand1} />
+                <BrandItem src={brand2} />
+                <BrandItem src={brand3} />
+                <BrandItem src={brand4} />
+                <BrandItem src={brand5} />
+                <BrandItem src={brand6} />
+                <BrandItem src={brand7} />
+                <BrandItem src={brand8} />
+                <BrandItem src={brand1} />
+                <BrandItem src={brand2} />
+                <BrandItem src={brand3} />
+                <BrandItem src={brand4} />
+                <BrandItem src={brand5} />
+                <BrandItem src={brand6} />
+                <BrandItem src={brand7} />
+                <BrandItem src={brand8} />
+                <BrandItem src={brand1} />
+                <BrandItem src={brand2} />
+                <BrandItem src={brand3} />
+                <BrandItem src={brand4} />
+                <BrandItem src={brand5} />
+                <BrandItem src={brand6} />
+                <BrandItem src={brand7} />
+                <BrandItem src={brand8} />
             </Marquee>
         </div>
     );

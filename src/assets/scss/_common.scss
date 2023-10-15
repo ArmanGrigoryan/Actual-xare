@@ -135,9 +135,13 @@ h6 {
 //     z-index: 1;
 //     position: relative;
 // }
-// .text-right {
-//     text-align: right;
-// }
+
+.text-right {
+    text-align: right;
+}
+button[disabled] {
+    opacity: .75;
+}
 ul {
 	margin: 0px;
 	padding: 0px;
@@ -154,7 +158,7 @@ ul {
 	color: $primaryColor !important;
 }
 .orange-color {
-    color: $orangeColor !important;
+    color: $orangeColor!important;
 }
 .secondary-color {
 	color: $secondaryColor !important;
@@ -364,7 +368,7 @@ ul {
     }
     &.orange-color{
         .popup-videos {           
-            color: $orangeColor;
+            color: $primaryColor;
             background: $whiteColor;
             i {
                 &:before {
@@ -382,7 +386,7 @@ ul {
     &.orange-color2{
         .popup-videos {
             color: $whiteColor;
-            background: $orangeColor;
+            background: $primaryColor;
             animation: circle-ripple 3s linear linear infinite;
             -webkit-animation: circle-ripple 3s linear infinite;
             &:before {
@@ -390,7 +394,7 @@ ul {
             }
             &:hover {            
                 &:before {
-                    background: $orangeColor;
+                    background: $primaryColor;
                 }
             }
         } 
@@ -424,8 +428,8 @@ ul {
     background: $grayColor;
     &.orange-btn{
         color: $whiteColor;
-        background: $orangeColor;
-        border-color: $orangeColor;
+        background: $primaryColor;
+        border-color: $primaryColor;
         border-radius: 5px 5px 5px 5px;
         outline: none;
         padding: 12px 35px;
@@ -443,7 +447,7 @@ ul {
         }
         &:hover{
             color: $whiteColor;
-            background: darken($orangeColor,10%);
+            background: darken($primaryColor,10%);
         }
         &.transparent{
             &:hover{
@@ -456,31 +460,31 @@ ul {
     &.register-btn {
         padding: 10px 50px;
         color: $whiteColor;
-        background: $orangeColor;
-        border-color: $orangeColor;
+        background: $primaryColor;
+        border-color: $primaryColor;
         font-weight: 500;
         width: 100%;
         border-radius: 5px;
         &:hover {
-            background: darken($orangeColor, 5%);
+            background: darken($primaryColor, 5%);
         }
     }
     &.submit-btn{
         border: 2px solid;
-        border-color: $orangeColor;
+        border-color: $primaryColor;
         padding: 10px 50px;
         line-height: normal;
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 500;
-        background: $orangeColor;
+        background: $primaryColor;
         color: $whiteColor;
         border-radius: 5px; 
         margin-bottom: 12px;
         width: 100%;
         &:hover{
             background: transparent !important;
-            color: $orangeColor !important;
+            color: $primaryColor !important;
         }
     }  
     &:hover {
@@ -530,10 +534,10 @@ ul {
         color: $whiteColor;
     }
     &.orange-color {
-        background: $orangeColor;
+        background: $primaryColor;
         color: $whiteColor !important;
         &:hover {
-            background: darken($orangeColor,10%);
+            background: darken($primaryColor,10%);
         }
     }
 }
@@ -636,11 +640,6 @@ blockquote {
 .body-color {
     color: $bodyColor;
 }
-.media-icon {
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-}
 
 // Section Title
 .sec-title {
@@ -663,7 +662,7 @@ blockquote {
             color: $titleColor;
         }
         &.orange {
-            color: $orangeColor;
+            color: $primaryColor;
         }
     }
     .desc {
@@ -837,8 +836,37 @@ select,
     animation: width-30-100 2s linear 3s infinite alternate;
 }
 
-.img-part.animated {
-    animation: left-right 20s linear 0s infinite alternate;
+.img-part {
+    &.animated {
+        animation: left-right 20s linear 0s infinite alternate;
+    }
+
+    .about-tabs-image {
+        min-height: 380px;
+        width: 100%;
+    }
+}
+
+.about-admin {
+    .desc {
+        font-size: 16px;
+    }
+
+    ol.list {
+        padding: 10px 30px;
+        list-style-type: square;
+        
+        li {
+            margin-top: 5px;
+            font-size: 16px;
+            line-height: 22px;
+
+            strong {
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
 }
 
 /* Custom Container Width :1440px. */

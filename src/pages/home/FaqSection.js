@@ -67,7 +67,7 @@ const FaqSection = () => {
                                         </AccordionItemPanel>
                                     </AccordionItem>
                                 </Accordion>
-                                <div className='blog-button text-right'>
+                                <div className='blog-button text-right mt-4'>
                                     <Link to="/about#faq" className="blog-btn">
                                         {'Ավելին'}
                                     </Link>

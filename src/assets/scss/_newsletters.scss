@@ -1,9 +1,6 @@
 .rs-newsletter {
     &.style1 {
         .newsletter-wrap {
-            background: url(../img/bg/newsletter-bg.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
             border-radius: 12px;
             padding: 60px 70px;
             position: relative;
@@ -54,9 +51,9 @@
                 background: url(../img/bg/newslatter-bg15.jpg);
                 .newsletter-form {
                     button {
-                        background: $orangeColor;
+                        background: $primaryColor;
                         &:hover {
-                            background: $orangeColor;
+                            background: $primaryColor;
                         }
                     }
                 }
@@ -68,9 +65,9 @@
             background: #171F32;
             .newsletter-form {
                 button {
-                    background: $orangeColor;
+                    background: $primaryColor;
                     &:hover {
-                        background: lighten($orangeColor, 5%);
+                        background: lighten($primaryColor, 5%);
                     }
                 }
             }

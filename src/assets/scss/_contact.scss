@@ -19,7 +19,7 @@
             .address-icon{
                 margin-bottom: 18px;
                 i{
-                    color: $orangeColor;
+                    color: $primaryColor;
                     &:before {
                         font-size: 70px;
                         line-height: 70px;
@@ -47,7 +47,7 @@
                     font-family: $titleFont;
                     font-weight: 600;
                     &:hover {
-                        color: $orangeColor;
+                        color: $primaryColor;
                     }
                 }
             }
@@ -89,7 +89,7 @@
                 font-size: 16px;
                 font-weight: 500;
                 color: $whiteColor;
-                background: $orangeColor;
+                background: $primaryColor;
                 transition: all 0.3s ease;
                 position: relative;
                 overflow: hidden;

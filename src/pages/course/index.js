@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import Header from '../../components/Layout/Header';
 import Footer from '../../components/Layout/Footer/Footer';
 import Newsletter from '../../components/Common/Newsletter';
@@ -8,15 +7,17 @@ import CourseMain from './CourseMain';
 import footerLogo from '../../assets/img/logo/logo-light.png';
 import bannerbg from '../../assets/img/breadcrumbs/inner12.jpg';
 import useFade from '../../utils/hooks/useFade.js';
+import SEO from '../../components/SEO';
 
 const Course = () => {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
-            <Helmet>
-                <meta name="description" content="Actual HR Agency, Actual training center" />
-            </Helmet>
+            <SEO
+                title='Actual HR Agency | Ակտուալ - Դասընթացներ'
+                description='Ակտուալն իր ուսուցման ծառայություններն է առաջարկում բիզնես անգլերենի, մարդկային ռեսուրսների կառավարման, Excel-ի, կադրային գործավարության ոլորտներում, ինչպես սկսնակների, այնպես էլ խորացված մասնագետների համար։ Դարձեք վկայագրված մասնագետ:'
+            />
             <Header parentMenu='course' />
             <SiteBreadcrumb
                 pageTitle="Course Grid 03"

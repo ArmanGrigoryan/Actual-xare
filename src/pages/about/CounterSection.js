@@ -71,7 +71,7 @@ const AboutCounter = () => {
                                                                 redraw={true} 
                                                                 start={!isAnimated ? 0 : counter.countNum} 
                                                                 end={isVisible && isReadyOnce ? counter.countNum : 0} 
-                                                                duration={4} 
+                                                                duration={3} 
                                                             />
                                                             <span className="counter-prefix">{counter.counterPrefix}</span>
                                                         </div>

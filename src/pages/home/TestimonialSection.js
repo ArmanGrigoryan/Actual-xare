@@ -3,9 +3,6 @@ import Slider from "react-slick";
 import SectionTitle from '../../components/Common/SectionTitle';
 import SingleTestimonial from '../../components/Testimonial/SingleTestimonial';
 import quote from '../../assets/img/testimonial/main-home/test-2.png';
-// import author1 from '../../assets/img/testimonial/style5/1.png';
-// import author2 from '../../assets/img/testimonial/style5/1.png';
-// import author3 from '../../assets/img/testimonial/style5/1.png';
 import female from '../../assets/img/icon/female.png';
 
 const Testimonial = () => {
@@ -16,7 +13,7 @@ const Testimonial = () => {
         infinite: true,
         draggable: false,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 6000,
         lazyLoad: true,
         arrows: false,
         slidesToShow: 2,

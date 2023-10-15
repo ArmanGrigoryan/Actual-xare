@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   esbuild: {
     loader: "jsx",
-    include: /src\/.*\.jsx?$/,
+    include: /src\/.*\.js|.jsx?$/,
     exclude: [],
   },
   assetsInclude: ['**/*.gltf'],

@@ -126,7 +126,7 @@
 
                         color: #000000;
                         &:hover{
-                            color: $orangeColor;
+                            color: $primaryColor;
                         }
                     }
                 }
@@ -154,7 +154,7 @@
                     }
                     .btn-part{
                         a{
-                            background: $orangeColor;
+                            background: $primaryColor;
                             text-transform: capitalize;
                             padding: 7px 15px;
                             color: $whiteColor;
@@ -162,7 +162,7 @@
                             font-size: 14px;
                             display: inline-block;
                             &:hover {
-                                background: darken($orangeColor,10%);
+                                background: darken($primaryColor,10%);
                             }
                         }
                     }
@@ -252,7 +252,7 @@
                 .event-short{
                     .featured-img{
                         .dates{
-                            background: $orangeColor;
+                            background: $primaryColor;
                         }
                     }
                 }

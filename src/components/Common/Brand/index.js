@@ -7,6 +7,7 @@ import brandNormalLogo3 from '../../../assets/img/brand/1.png';
 import brandNormalLogo4 from '../../../assets/img/brand/1.png';
 import brandNormalLogo5 from '../../../assets/img/brand/1.png';
 import brandNormalLogo6 from '../../../assets/img/brand/1.png';
+import BrandItem from './Item';
 
 const Brand = (props) => {
     const { brandClass } = props;

@@ -8,12 +8,17 @@ import SiteBreadcrumb from '../components/Common/Breadcumb';
 import footerLogo from '../assets/img/logo/logo-light.png';
 import bannerbg from '../assets/img/breadcrumbs/inner12.jpg';
 import useFade from '../utils/hooks/useFade.js';
+import SEO from '../components/SEO';
 
 const Register = () => {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
+            <SEO
+                title='Actual HR Agency | Ակտուալ - Գրանցվեք'
+                description='Գրանցվեք՝ Դասընթացներին մասնակից դառնալու, Ակտուալի ամենաթարմ նորությունների, առաջարկությունների մասին տեղեկանալու և հետադարձ կապի պահպանման համար:'
+            />
             <Header parentMenu='pages' />
             <SiteBreadcrumb
                 pageTitle="Գրանցվել"
