@@ -14,7 +14,7 @@ const SingleTestimonialTwo = (props) => {
             <div className="content-part pt-12">
                 <div className="desc">{props.description}</div>
                 <div className="info">
-                    <h5 className="name">{props.name}</h5>
+                    <h5 className="name text-right">{props.name}</h5>
                     <div className="designation">{props.designation}</div>
                 </div>
             </div>

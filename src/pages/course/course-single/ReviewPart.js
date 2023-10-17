@@ -14,7 +14,7 @@ const ReviewPart = () => {
                 <ul className="like-option">
                     <li><i className="fa fa-thumbs-o-up"></i></li>
                     <li><i className="fa fa-thumbs-o-down"></i></li>
-                    <li><a className="report" href="#">Report</a></li>
+                    <li><a className="report">Report</a></li>
                 </ul>
             </div>
             <div className="cource-review-box mb-30">
@@ -27,7 +27,7 @@ const ReviewPart = () => {
                 <ul className="like-option">
                     <li><i className="fa fa-thumbs-o-up"></i></li>
                     <li><i className="fa fa-thumbs-o-down"></i></li>
-                    <li><a className="report" href="#">Report</a></li>
+                    <li><a className="report">Report</a></li>
                 </ul>
             </div>
             <div className="cource-review-box mb-30">
@@ -40,7 +40,7 @@ const ReviewPart = () => {
                 <ul className="like-option">
                     <li><i className="fa fa-thumbs-o-up"></i></li>
                     <li><i className="fa fa-thumbs-o-down"></i></li>
-                    <li><a className="report" href="#">Report</a></li>
+                    <li><a className="report">Report</a></li>
                 </ul>
             </div>
             <div className="cource-review-box">
@@ -53,9 +53,9 @@ const ReviewPart = () => {
                 <ul className="like-option">
                     <li><i className="fa fa-thumbs-o-up"></i></li>
                     <li><i className="fa fa-thumbs-o-down"></i></li>
-                    <li><a className="report" href="#">Report</a></li>
+                    <li><a className="report">Report</a></li>
                 </ul>
-                <a href="#" className="more">View More</a>
+                <a className="more">View More</a>
             </div>
         </div>
     );

@@ -52,8 +52,8 @@ const CourseSidebar = () => {
                 </ul>
             </div>                
             <div className="btn-part">
-                <a href="#" className="btn readon orange">$35</a>
-                <a href="#" className="btn readon orange-transparent">Buy Now</a>
+                <a className="btn readon orange">$35</a>
+                <a className="btn readon orange-transparent">Buy Now</a>
             </div>
         </div>
     );

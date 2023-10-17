@@ -46,9 +46,9 @@ const Team = () => {
                             <SectionTitle
                                 sectionClass="sec-title"
                                 subtitleClass="sub-title orange"
-                                subtitle="Ակտուալի թիմը"
+                                subtitle="Դասավանդողներ"
                                 titleClass="title mb-0"
-                                title="Դասավանդողներ"
+                                title="Ակտուալի թիմը"
                             />
                         </div>
                     </div>
@@ -79,6 +79,20 @@ const Team = () => {
                             Image={team4}
                             Title="Մոնիկա Գրիգորյան"
                             Designation="ՄՌԿ մասնագետ"
+                        />
+
+                        <SingleTeam
+                            teamClass="team-item"
+                            Image={team2}
+                            Title="Լիլիթ Դավթյան"
+                            Designation="ՄՌԿ մասնագետ"
+                        />
+
+                        <SingleTeam
+                            teamClass="team-item"
+                            Image={team2}
+                            Title="Էլեն Մարդոյան"
+                            Designation="Մենեջեր"
                         />
                     </Slider>
                 </div>

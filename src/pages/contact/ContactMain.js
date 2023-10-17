@@ -31,7 +31,7 @@ const ContactMain = () => {
                                 boxClass="sm-mb-30"
                                 title="Հասցե"
                                 iconClass="flaticon-location"
-                                address="Տերյան 74, Երևան"
+                                address="Խանջյան 19, Երևան"
                             />
                         </div>
                         <div className="col-md-4">

@@ -12,7 +12,7 @@ const Footer = (props) => {
                         <ul className="address-widget">
                             <li>
                                 <i className="flaticon-location"></i>
-                                <div className="desc">Տերյան 74, Երևան</div>
+                                <div className="desc">Խանջյան 19, Երևան</div>
                             </li>
                             <li>
                                 <i className="flaticon-call"></i>
