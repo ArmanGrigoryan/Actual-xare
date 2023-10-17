@@ -493,14 +493,14 @@
                                         &.current-menu-item {
                                             > a {
                                                 position: relative;
-                                                color: $primaryColor !important;
+                                                color: $orangeColor !important;
                                             }  
                                             > a::after {
                                                 content: "";
                                                 height: 2px;
                                                 position: absolute;
                                                 transition: all 0.35s ease;
-                                                background-color: $primaryColor;
+                                                background-color: $orangeColor;
                                                 width: 100%;
                                                 bottom: 20px;
                                                 left: 0;
@@ -541,7 +541,7 @@
                                             } 
                                             &.current-menu-item {
                                                 > a {
-                                                    color: $primaryColor !important;
+                                                    color: $orangeColor !important;
                                                 }  
                                             }  
                                         }

@@ -96,7 +96,7 @@
         .react-tabs__tab{
             position:relative;
             text-align:center;
-            width: 25%;
+            width: calc(100% / 3);
             display: inline-block;
             button{
                 position:relative;
@@ -119,6 +119,18 @@
                     color:$whiteColor;
                     background:$primaryColor;
                     border-color: $primaryColor;
+                }
+            }
+
+            &:first-child {
+                button {
+                    border-top-left-radius: 12px;
+                }
+            }
+
+            &:last-child {
+                button {
+                    border-top-right-radius: 12px;
                 }
             }
         }

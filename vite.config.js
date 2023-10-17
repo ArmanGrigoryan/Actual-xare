@@ -10,4 +10,8 @@ export default defineConfig({
   },
   assetsInclude: ['**/*.gltf'],
   plugins: [react()],
+  server: {
+    host: "localhost",
+    port: 3000
+  }
 })
