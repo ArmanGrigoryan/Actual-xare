@@ -590,6 +590,7 @@ ul {
 [class^="flaticon-"]:after,
 [class*=" flaticon-"]:after {
     font-family: Flaticon;
+    font-weight: 700;
     font-size: 20px;
     font-style: normal;
     margin-left: 0;
@@ -916,7 +917,8 @@ select,
         max-width: 1070px;
     }
     .sec-title .title,
-    .sec-title2 .title {
+    .sec-title2 .title,
+    .rs-partner h2.title {
         font-size: 35px;
     }
 }
@@ -970,6 +972,9 @@ select,
     }
     .container {
         max-width: 720px;
+    }
+    .container.wider {
+        max-width: 800px;
     }
     .mobile-menu-part.open {
         display: block;

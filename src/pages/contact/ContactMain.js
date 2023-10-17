@@ -24,7 +24,7 @@ const ContactMain = () => {
                 breadcrumbsImg={bannerbg}
             />
             <div className="rs-contact style1 event-bg pt-110 md-pt-80 pb-100 md-pb-80">
-                <div className="container pb-66 md-pb-46">
+                <div className="container wider pb-66 md-pb-46">
                     <div className="row gutter-35">
                         <div className="col-md-4">
                             <ContactInfo

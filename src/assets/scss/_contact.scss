@@ -28,7 +28,8 @@
             }
             .address-text{
                 .label{
-                    font-size: 22px;
+                    font-size: 22px;    
+                    text-wrap: wrap;
                     font-weight: 700;
                     display: block;
                     color: $titleColor5;
@@ -37,6 +38,7 @@
                 }
                 .address {
                     color: $titleColor7;
+                    text-wrap: wrap;
                     font-size: 17px;
                     font-family: $titleFont;
                     font-weight: 600;
@@ -146,6 +148,7 @@
                 .address-text {
                     a,
                     .desc {
+                        text-wrap: wrap;
                         font-size: 16px;;
                     }
                 }
@@ -178,6 +181,7 @@
             .address-box {
                 .address-text {
                     .label {
+                        text-wrap: wrap;
                         font-size: 20px;
                         margin-bottom: 8px;
                     }

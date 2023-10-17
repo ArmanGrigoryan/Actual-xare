@@ -25,7 +25,7 @@ const HomeMain = () => {
 			<Events />
 			<FaqSection />
 			<Testimonial />
-			<BrandThree brandClass='rs-partner pb-60 pt-60 md-pb-70' />
+			<BrandThree brandClass='rs-partner pb-40 pt-60' />
 			<Blog />
 			<ScrollToTop scrollClassName="scrollup orange-color" />
 		</React.Fragment>

@@ -14,6 +14,7 @@ const ContactForm = (props) => {
                         name="name" 
                         placeholder="Անուն" 
                         required 
+                        disabled={btnDisabled}
                         onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
                         onInput={evt => evt.target.setCustomValidity("")}
                     />
@@ -27,6 +28,7 @@ const ContactForm = (props) => {
                         name="email" 
                         placeholder="Էլ. փոստ" 
                         required 
+                        disabled={btnDisabled}
                         onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
                         onInput={evt => evt.target.setCustomValidity("")}
                     />
@@ -40,6 +42,7 @@ const ContactForm = (props) => {
                         name="phone" 
                         placeholder="Հեռ." 
                         required 
+                        disabled={btnDisabled}
                         onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
                         onInput={evt => evt.target.setCustomValidity("")}
                     />
@@ -53,6 +56,7 @@ const ContactForm = (props) => {
                         name="website" 
                         placeholder="Ձեր կայքը" 
                         required 
+                        disabled={btnDisabled}
                         onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
                         onInput={evt => evt.target.setCustomValidity("")}
                     />
@@ -65,6 +69,7 @@ const ContactForm = (props) => {
                         name="message" 
                         placeholder="Ձեր հաղորդագրությունը" 
                         required
+                        disabled={btnDisabled}
                         onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
                         onInput={evt => evt.target.setCustomValidity("")}
                     ></textarea>

@@ -2,7 +2,6 @@
     .partner-item {
         display: inline-block;
         margin: 0 40px;
-        width: 100%;
         height: 100%;
 
         img {
@@ -31,18 +30,20 @@
         margin-bottom: 40px;
         text-align: center;
     }
+
+    .marquee {
+        height: 100px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
     
-    .marquee-container {
-        align-items: center;
-
-        .initial-child-container {
-            display: flex;
-            align-items: center;
-
-            .child {
-                height: 100%;
-                width: 100%;
-            }
+        & > div {
+            display: block;
+            width: 200%;
+            height: 100px;
+            position: absolute;
+            overflow: hidden;
+            animation: marquee 35s linear infinite;
         }
     }
 }

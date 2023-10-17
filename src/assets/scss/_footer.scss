@@ -136,7 +136,7 @@
                 a {
                     color: $yellowColor;
                     &:hover{
-                        color: $primaryColor;
+                        color: $orangeColor;
                     }
                 }
             }
@@ -177,11 +177,11 @@
         }
 
         &.main-home{
-            background: #151515;
+            // background: #151515;
             .footer-top {
                 .widget-title {
                     &:before{
-                        background: $primaryColor;
+                        background: $orangeColor;
                     }
                 }
                 .footer-logo{
@@ -210,7 +210,7 @@
                             font-size: 16px;
                             margin-right: 10px;
                             &:hover{
-                                color: $primaryColor;
+                                color: $orangeColor;
                             }
                         }
                     }
@@ -220,11 +220,11 @@
                         a {
                             color: #e8e8e8;
                             &:hover {
-                                color: $primaryColor;
+                                color: $orangeColor;
                             }
                         }
                         &:before {
-                            background: $primaryColor;
+                            background: $orangeColor;
                         }
                     }
                 }
@@ -232,13 +232,13 @@
                     li {
                         i {
                             &:before {
-                                color: $primaryColor;
+                                color: $orangeColor;
                             }
                         }
                         .desc {
                             a {
                                 &:hover {
-                                    color: $primaryColor;
+                                    color: $orangeColor;
                                 }
                             }
                         }
@@ -259,14 +259,14 @@
                         .post-desc{
                             a{
                                 &:hover{
-                                    color: $primaryColor;
+                                    color: $orangeColor;
                                 }
                             }
                         }
                         .post-date{
                             i{
                                 font-size: 13px;
-                                color: $primaryColor;
+                                color: $orangeColor;
                                 padding-right: 5px;
                             }
                         }
@@ -285,7 +285,7 @@
                     a {
                         color: $whiteColor;
                         &:hover{
-                            color: $primaryColor;
+                            color: $orangeColor;
                         }
                     }
                 }
@@ -298,7 +298,7 @@
                         a {
                             color: #e8e8e8;
                             &:hover {
-                                color: $primaryColor;
+                                color: $orangeColor;
                             }
                         }
                         &:before {
@@ -306,7 +306,7 @@
                             content: "";
                             position: absolute;
                             font-size: 18px;
-                            background: $primaryColor;
+                            background: $orangeColor;
                             left: 0;
                             top: 50%;
                             width: 6px;

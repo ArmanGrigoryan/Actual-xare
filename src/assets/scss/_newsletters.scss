@@ -65,9 +65,9 @@
             background: #171F32;
             .newsletter-form {
                 button {
-                    background: $primaryColor;
+                    background: $orangeColor;
                     &:hover {
-                        background: lighten($primaryColor, 5%);
+                        background: lighten($orangeColor, 5%);
                     }
                 }
             }
