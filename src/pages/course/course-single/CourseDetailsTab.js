@@ -7,9 +7,9 @@ import InstructorPart from './IntructorPart';
 
 const CourseDetailsTab = () => {
 
-    let tab1 = "Overview",
-        tab2 = "Instuctor",
-        tab3 = "Reviews";
+    let tab1 = "Նկարագիր",
+        tab2 = "Դասընթացավար",
+        tab3 = "Կարծիքներ";
     const tabStyle = 'intro-tabs tabs-box';
 
     return (

@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import SingleTeam from '../../components/Team/SingleTeam';
 import SectionTitle from '../../components/Common/SectionTitle';
 
-import team1 from '../../assets/img/team/team1.jpg';
-import team2 from '../../assets/img/team/team2.jpg';
-import team3 from '../../assets/img/team/team3.jpg';
-import team4 from '../../assets/img/team/team4_.jpg';
+import team1 from '../../assets/img/team/1.jpg';
+import team2 from '../../assets/img/team/2.jpg';
+import team3 from '../../assets/img/team/3.jpg';
+import team4 from '../../assets/img/team/4.jpg';
 
 const Team = () => {
     const slilderSettings = {

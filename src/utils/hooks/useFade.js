@@ -1,10 +1,12 @@
 import { useEffect, useLayoutEffect, useRef } from "react";
 
-export default function useFade() {
+export default function useFade(isScrolling = true) {
     const animateRef = useRef();
 
     useLayoutEffect(() => {
-        window.scrollTo(0, 0);
+        if (isScrolling) {
+            window.scrollTo(0, 0);
+        }
     }, []);
 
     useEffect(() => {
@@ -17,7 +19,7 @@ export default function useFade() {
             iterations: 1,
             fill: "forwards",
         });
-    });
+    }), [];
 
     return {
         refElement: animateRef

@@ -386,7 +386,8 @@ ul {
     &.orange-color2{
         .popup-videos {
             color: $whiteColor;
-            background: $primaryColor;
+            opacity: .9;
+            background: $orangeColor;
             animation: circle-ripple 3s linear linear infinite;
             -webkit-animation: circle-ripple 3s linear infinite;
             &:before {
@@ -1008,7 +1009,10 @@ select,
     }
     .container {
         max-width: 540px;
-    }    
+    }
+    .rs-team.style1 {
+        flex-direction: column;
+    }
     .mobile-menu-part.open {
         width: 100%;
         left: 0;

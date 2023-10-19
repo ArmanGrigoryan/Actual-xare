@@ -1,5 +1,7 @@
 .rs-team {
     &.style1 {
+        margin-top: 20px;
+
         .team-item {
             border-radius: 15px 15px 4px 4px;
             position: relative;
@@ -118,6 +120,24 @@
                 &:after {
                     background: $primaryColor;
                 }
+            }
+        }
+
+        .instructor {
+            &-title{
+                position:relative;
+                color: $titleColor;
+                font-size:26px;
+                font-weight:600;
+                line-height:1.3em;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                color: $titleColor;
+                margin: 20px 25px;
+                list-style-type: circle;
+                line-height: 22px;
             }
         }
     } 
