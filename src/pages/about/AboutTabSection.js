@@ -20,7 +20,7 @@ const AboutTab = () => {
             ref={refElement1}
             src={aboutImg}
             alt="About" 
-            className="radius-12 about-tabs-image"
+            className="radius-12 about-tabs-image card-shadow-deep"
         />
     ), []);
 
@@ -29,7 +29,7 @@ const AboutTab = () => {
             ref={refElement2}
             src={araqelutyunImg}
             alt="About" 
-            className="radius-12 about-tabs-image"
+            className="radius-12 about-tabs-image card-shadow-deep"
         />
     ), []);
 
@@ -38,7 +38,7 @@ const AboutTab = () => {
             ref={refElement3}
             src={administraciaImg}
             alt="About" 
-            className="radius-12 about-tabs-image"
+            className="radius-12 about-tabs-image card-shadow-deep"
         />
     ), []);
 
@@ -69,7 +69,7 @@ const AboutTab = () => {
                 <Tabs>
                     <div className="row align-items-center">
                         <div className="col-lg-6 padding-0 md-pl-14 md-pr-14 md-mb-30 relative">
-                            <div className="img-part text-center">
+                            <div className={`img-part text-center ${tab === tab2 ? "higher" : ""}`}>
                                 {
                                     tab === tab2 ? 
                                         Image2 : 

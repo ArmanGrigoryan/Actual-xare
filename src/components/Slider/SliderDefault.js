@@ -17,11 +17,11 @@ const SliderDefault = () => {
                     </video>
                     <div className="container">
                         <div className="content-part position-relative">
-                            <div className="sl-sub-title">Սկսիր հենց հիմա</div>
                             <h1 className="sl-title">Ամրապնդիր մասնագիտական կարողություններդ</h1>
+                            <h2 className='width-30-100 white-color mb-50'>Մենք կսովորեցնենք հոգ տանել Ձեր բիզնեսի մասին</h2>
                             <div className="sl-btn">
                                 <Link 
-                                    className="readon orange-btn main-home" 
+                                    className="readon orange-btn main-home p-40" 
                                     target='_blank' 
                                     to={{ pathname: "https://shorturl.at/jBEPW" }}
                                 >

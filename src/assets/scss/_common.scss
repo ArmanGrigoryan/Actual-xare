@@ -439,7 +439,7 @@ ul {
         font-weight: 500;
         text-transform: uppercase;
         &.main-home{
-            padding: 10px 30px !important;
+            padding: 15px 50px !important;
             &:hover{
                 transform: scale(1.15);
                 color: $whiteColor;
@@ -819,12 +819,39 @@ select,
     height:530px !important;
 }
 
+.card-shadow-light {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.card-shadow {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.card-shadow-deep {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.card-shadow-top {
+    box-shadow: 0px -75px 30px 40px rgba(0, 0, 0, 0.6);
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.slick-slide img {
+    max-height: 700px;
+    border-radius: 12px;
+    object-fit: contain;
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .hidden-opacity {
     opacity: 0;
 }
 
 .width-30-100 {
     width: 30%;
+    max-width: fit-content;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -876,6 +903,18 @@ select,
     .container {
         max-width: 1270px;
         width: 100%;
+    }
+
+    .img-part {
+        .about-tabs-image {
+            min-height: 470px;
+        }
+
+        &.higher {
+            .about-tabs-image {
+                min-height: 530px;
+            }
+        }
     }
 }
 

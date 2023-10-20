@@ -8,7 +8,14 @@ const SectionTitle = (props) => {
             {subtitleClass ? <div className={props.subtitleClass}>{props.subtitle}</div> : ''}
             {titleClass ? <h2 className={props.titleClass}>{props.title}</h2> : ''}
             {bottomSubTitleClass ? <div className={props.bottomSubTitleClass}>{props.bottomSubTitle}</div> : ''}
-            {descClass ? <div className={props.descClass}>{props.description}</div> : ''}
+            {descClass ? <div>
+                <div className={props.descClass}>{props.description}</div>
+                <div className={props.descClass}>{props.detailedDescription}</div>
+                { props.detailedDescription && <>
+                    <div>Եկե՛ք զարգացնենք Ձեր բիզնեսը միասին 🧡</div> 
+                    <hr />
+                </> }
+            </div> : ''}
             {secondDescClass ? <div className={props.secondDescClass}>{props.secondDescription}</div> : ''}
             {effectClass ? <div className={props.effectClass}></div> : ''}
         </div>

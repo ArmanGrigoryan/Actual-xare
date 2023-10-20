@@ -140,6 +140,141 @@
                 line-height: 22px;
             }
         }
+
+        .gallery {
+            margin-top: 50px;
+            transition: $transition;
+
+            &-wrapper {
+                max-height: 600px;
+                overflow: hidden;
+                transition: $transition;
+
+                &.expanded {
+                    transition: $transition;
+                    // height: auto;
+                    max-height: 5000px;
+                    overflow: visible;
+                }
+
+                .image-grid-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                    margin: 10px 0;
+
+                    &-column {
+                        flex: 25%;
+                        padding: 0 4px;
+
+                        img {
+                            width: 100%;
+                            margin-top: 8px;
+                            vertical-align: middle;
+                            transition: $transition;
+
+                            &.slim {
+                                height: 200px;
+                            }
+
+                            &:hover {
+                                transform: scale(1.05);
+                            }
+                        }
+                    }
+                }
+
+                .divider {
+                    hr.cut {
+                        width: 80%;
+                        border: 0;
+                        margin: 30px auto;
+                        box-shadow: 0 1em 1em -1em rgba(0, 0, 0, .25);
+                        
+                        &.progress {
+                            background: rgba(1, 15, 30, 0.1);
+                            height: 1.5px;
+                            overflow: hidden;
+                            position: relative;
+                        }
+                        
+                        &.progress::before {
+                            content: "";
+                            animation-duration: 3s;
+                            animation-timing-function: ease;
+                            animation-iteration-count: infinite;
+                            animation-name: progress;
+                            background: darken($primaryColor, 80%);
+                            display: block;
+                            height: 1.5px;
+                            position: absolute;
+                            width: 80px;
+                        }   
+                    }
+                }
+            }
+
+            .more-section {
+                padding-top: 20px;
+                position: relative;
+                z-index: 1;
+
+                h1 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 20px;
+                    text-align: center;
+                    color: $primaryColor;
+                }
+                
+                span {
+                    top: -40px;
+                    position: relative;
+                    display: inline-block;
+                    text-transform: capitalize;
+                    opacity: 0;
+                    margin: 0 5px;
+                    transform: rotateX(-90deg);
+                }
+                
+                .let1 {
+                    animation: drop 2.2s ease-in-out infinite;
+                    animation-delay: 1.2s;
+                }
+                
+                .let2 {
+                    animation: drop 2.2s ease-in-out infinite;
+                    animation-delay: 1.3s;
+                }
+                
+                .let3 {
+                    animation: drop 2.2s ease-in-out infinite;
+                    animation-delay: 1.4s;
+                }
+                
+                .let4 {
+                    animation: drop 2.2s ease-in-out infinite;
+                    animation-delay: 1.5s;
+                
+                }
+                
+                .let5 {
+                    animation: drop 2.2s ease-in-out infinite;
+                    animation-delay: 1.6s;
+                }
+                
+                .let6 {
+                    animation: drop 2.2s ease-in-out infinite;
+                    animation-delay: 1.7s;
+                }
+                
+                .let7 {
+                    animation: drop 2.2s ease-in-out infinite;
+                    animation-delay: 1.8s;
+                }
+            }
+        }
+
     } 
     &.inner-style {
         .team-item {
@@ -173,8 +308,72 @@
         }
     }
 }
+
+.image-preview-modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1000;
+
+    &-container {
+        width: 100%;
+        max-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+
+        .item {
+            max-height: inherit;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .close-icon {
+            padding: 25px;
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            top: 5%;
+            right: 7%;
+            font-size: 50px;
+        }
+    }
+}
+
 @media #{$mobile} {
     .rs-team.style1 .team-item .content-part .social-links li {
         margin-right: 24px;
+    }
+}
+
+@media #{$md} {
+    .rs-team.style1 .gallery .image-grid-container-column img.slim {
+        height: 150px;
+    }
+}
+
+@media #{$sm} {
+    .rs-team.style1 .gallery .image-grid-container-column img.slim {
+        min-height: 150px;
+        height: auto;
+    }
+
+    .rs-team.style1 .gallery .image-grid-container-column {
+        flex: 50%;
+    }
+}
+
+@media #{$xs} {
+    .rs-team.style1 .gallery .image-grid-container-column {
+        flex: 100%;
     }
 }

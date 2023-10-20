@@ -73,7 +73,6 @@
     position: relative;
     .rs-header{  
         max-height: 100vh;
-        padding-top: 20px;
         position: relative;
 
         .logo-part {
@@ -84,13 +83,15 @@
             }
         }
         .menu-area {
-            transition: $transition;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            transition: $header_transition;
             background-image: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
             .logo-area{
                 a{
                     img{
                         transition: 0.4s;
-                        max-height: 70px;
+                        max-height: 90px;
                     }
                     .sticky-logo{
                         display: none;
@@ -103,7 +104,7 @@
                 transform: translateY(-50%);
                 display: none;
                 img {
-                    max-height: 70px;
+                    max-height: 90px;
                 }
             }
             .logo-cat-wrap {
@@ -169,25 +170,25 @@
 					display: none;
                     justify-content: space-between;
                     align-items: center;
-                    height: 70px;
-                    line-height: 70px;
+                    height: 90px;
+                    line-height: 90px;
                     .mobile-normal-logo {
                         float: left;
                         display: block;
                         img {
-                            max-height: 70px;
+                            max-height: 90px;
                         }
                     }
                     .mobile-sticky-logo {
                         float: left;
                         display: none;
                         img {
-                            max-height: 70px;
+                            max-height: 90px;
                         }
                     }
                     .logo {
                         img {
-                            max-height: 70px;
+                            max-height: 90px;
                         }
                     }
                     .rs-menu-toggle{
@@ -223,8 +224,8 @@
                                     transition: $transition;
                                     font-size: 15px;
                                     font-weight: 500;
-                                    height: 70px;
-                                    line-height: 70px;
+                                    height: 90px;
+                                    line-height: 90px;
                                     padding: 0;
                                     color: $whiteColor;
                                     position: relative;
@@ -314,8 +315,8 @@
                         }
                     }
                     > a {
-                        height: 70px;
-                        line-height: 70px;
+                        height: 90px;
+                        line-height: 90px;
                         display: flex;
                         align-items: center;
                         i {
@@ -359,7 +360,7 @@
                     a{
                         .sticky-logo{
                             display: block;
-                            max-height: 70px;
+                            max-height: 90px;
                         }
                         .normal-logo{
                             display: none;
@@ -403,8 +404,8 @@
                     }
                 }
                 > a {
-                    height: 70px;
-                    line-height: 70px;
+                    height: 90px;
+                    line-height: 90px;
                     display: flex;
                     align-items: center;
                     i {

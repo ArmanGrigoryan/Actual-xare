@@ -6,14 +6,15 @@
             height: 100vh;
             text-align: center;
             .content-part{
-                padding: 250px 35px 100px;
-                max-width: 900px;
+                padding: 300px 35px 100px;
+                max-width: 1000px;
                 margin: 0 auto;
+
                 .sl-sub-title {
-                    font-size: 22px;
+                    font-size: 40px;
                     line-height: 30px;
                     font-weight: 500;
-                    color: $primaryColor;
+                    color: $orangeColor;
                     margin-bottom: 22px;
                     text-transform: uppercase;
                 }
