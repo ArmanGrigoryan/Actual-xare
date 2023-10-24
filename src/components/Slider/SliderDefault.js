@@ -18,7 +18,7 @@ const SliderDefault = () => {
                     <div className="container">
                         <div className="content-part position-relative">
                             <h1 className="sl-title">Ամրապնդիր մասնագիտական կարողություններդ</h1>
-                            <h2 className='width-30-100 white-color mb-50'>Մենք կսովորեցնենք հոգ տանել Ձեր բիզնեսի մասին</h2>
+                            <h2 className='width-50-100 fade-in-mobile anime white-color mb-50'>Մենք կսովորեցնենք հոգ տանել Ձեր բիզնեսի մասին</h2>
                             <div className="sl-btn">
                                 <Link 
                                     className="readon orange-btn main-home p-40" 

@@ -19,7 +19,7 @@ const Faq = () => {
     }, [location.hash])
 
     return (
-        <div ref={faqElement} id="faq" className="rs-faq-part style1 pt-50 pb-100 md-pt-70 md-pb-80">
+        <div ref={faqElement} id="faq" className="rs-faq-part style1 pt-50 pb-50 md-pt-20 md-pb-20">
             <div className="container">
                 <div className="main-part innerpage">
                     <div className="faq-content mb-10">

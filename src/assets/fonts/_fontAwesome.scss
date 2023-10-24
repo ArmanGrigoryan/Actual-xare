@@ -17,6 +17,9 @@
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale
 }
+.fa-search-plus:before {
+  content:"\f00e"
+}
 .fa-star:before {
   content: "\f005"
 }

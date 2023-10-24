@@ -4,7 +4,7 @@ const SingleTestimonialTwo = (props) => {
     const { itemClass } = props;
 
     return (
-        <div className={itemClass ? itemClass : 'testi-wrap mb-50'}>
+        <div className={itemClass ? itemClass : 'testi-wrap mb-20'}>
             <div className="img-part">
                 <img loading="lazy"
                     src={props.testiImage}

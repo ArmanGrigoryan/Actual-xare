@@ -21,16 +21,20 @@ import pic17 from '../../assets/img/archive/19.jpeg';
 import pic18 from '../../assets/img/archive/14.jpeg';
 import pic19 from '../../assets/img/archive/21.jpeg';
 import pic20 from '../../assets/img/archive/17.jpeg';
+import PopupImage from "../Layout/ImagePopup/index.js";
 
 export default function Gallery() {
+    const [previewElement, setPreviewElement] = useState(null);
     const [isExpandable, setIsExpandable] = useState(false);
     const contentRef = useRef();
 
     const toggleImages = () => setIsExpandable(prev => !prev);
 
     return (
-        <div className="gallery sec-title2">
-            <h1 className="title ml-100">Արխիվ</h1>
+        <div className="gallery sec-title">
+            <div className="container">
+                <h1 className="title">Արխիվ</h1>
+            </div>
 
             <div 
                 ref={contentRef} 
@@ -38,20 +42,64 @@ export default function Gallery() {
             >
                 <div className="image-grid-container"> 
                     <div className="image-grid-container-column">
-                        <Image src={pic1} alt="Picture 1" className="slim" />
-                        <Image src={pic2} alt="Picture 2" />
+                        <Image 
+                            src={pic1} 
+                            alt="Picture 1" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                            className="slim" 
+                        />
+                        <Image 
+                            src={pic2} 
+                            alt="Picture 2" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
                     </div>
                     <div className="image-grid-container-column">
-                        <Image src={pic3} alt="Picture 3" />
-                        <Image src={pic4} alt="Picture 4" className="slim" />
+                        <Image 
+                            src={pic3} 
+                            alt="Picture 3" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
+                        <Image 
+                            src={pic4} 
+                            alt="Picture 4" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                            className="slim" 
+                        />
                     </div>  
                     <div className="image-grid-container-column">
-                        <Image src={pic5} alt="Picture 5" className="slim" />
-                        <Image src={pic6} alt="Picture 6" />
+                        <Image 
+                            src={pic5} 
+                            alt="Picture 5" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                            className="slim" 
+                        />
+                        <Image 
+                            src={pic6} 
+                            alt="Picture 6" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
                     </div>
                     <div className="image-grid-container-column">
-                        <Image src={pic7} alt="Picture 7" />
-                        <Image src={pic8} alt="Picture 8" className="slim" />
+                        <Image 
+                            src={pic7} 
+                            alt="Picture 7" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
+                        <Image 
+                            src={pic8} 
+                            alt="Picture 8" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                            className="slim" 
+                        />
                     </div>
                 </div>
 
@@ -61,16 +109,36 @@ export default function Gallery() {
 
                 <div className="image-grid-container"> 
                     <div className="image-grid-container-column">
-                        <Image src={pic9} alt="Picture 9" />
+                        <Image 
+                            src={pic9} 
+                            alt="Picture 9" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
                     </div>
                     <div className="image-grid-container-column">
-                        <Image src={pic10} alt="Picture 10" />
+                        <Image 
+                            src={pic10} 
+                            alt="Picture 10" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
                     </div>  
                     <div className="image-grid-container-column">
-                        <Image src={pic11} alt="Picture 11" />
+                        <Image 
+                            src={pic11} 
+                            alt="Picture 11" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
                     </div>
                     <div className="image-grid-container-column">
-                        <Image src={pic12} alt="Picture 12" />
+                        <Image 
+                            src={pic12} 
+                            alt="Picture 12" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
                     </div>
                 </div>
 
@@ -80,26 +148,82 @@ export default function Gallery() {
 
                 <div className="image-grid-container"> 
                     <div className="image-grid-container-column">
-                        <Image src={pic13} alt="Picture 13" className="slim" />
-                        <Image src={pic14} alt="Picture 14" />
+                        <Image 
+                            src={pic13} 
+                            alt="Picture 13" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                            className="slim" 
+                        />
+                        <Image 
+                            src={pic14} 
+                            alt="Picture 14" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
                     </div>
                     <div className="image-grid-container-column">
-                        <Image src={pic15} alt="Picture 15" />
-                        <Image src={pic16} alt="Picture 16" className="slim" />
+                        <Image 
+                            src={pic15} 
+                            alt="Picture 15" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
+                        <Image 
+                            src={pic16} 
+                            alt="Picture 16" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                            className="slim" 
+                        />
                     </div>  
                     <div className="image-grid-container-column">
-                        <Image src={pic17} alt="Picture 17" className="slim" />
-                        <Image src={pic18} alt="Picture 18" />
+                        <Image 
+                            src={pic17} 
+                            alt="Picture 17" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                            className="slim" 
+                        />
+                        <Image 
+                            src={pic18} 
+                            alt="Picture 18" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
                     </div>
                     <div className="image-grid-container-column">
-                        <Image src={pic19} alt="Picture 19" />
-                        <Image src={pic20} alt="Picture 20" className="slim" />
+                        <Image 
+                            src={pic19} 
+                            alt="Picture 19" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                        />
+                        <Image 
+                            src={pic20} 
+                            alt="Picture 20" 
+                            isZooming={true}
+                            onClick={(evt) => setPreviewElement(evt.target)}
+                            className="slim" 
+                        />
                     </div>
                 </div>
+
+                {
+                    previewElement ?
+                    <PopupImage onClose={() => setPreviewElement(null)}>
+                        <Image 
+                            src={previewElement.src} 
+                            alt={previewElement.alt} 
+                            className="radius-12 b-none border-none item" 
+                        />
+                    </PopupImage> :
+                    null
+                }
             </div>
 
             <div className={`more-section ${!isExpandable ? "card-shadow-top" : ""}`}>
-                <h1 onClick={toggleImages}>
+                <h1 className="cursor-pointer" onClick={toggleImages}>
                     <span className="let1">ա</span>
                     <span className="let2">վ</span>
                     <span className="let3">ե</span>

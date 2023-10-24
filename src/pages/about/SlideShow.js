@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Slider from "react-slick";
 import SectionTitle from '../../components/Common/SectionTitle';
 import pic1 from '../../assets/img/archive/1.jpg';
@@ -22,7 +22,6 @@ import pic18 from '../../assets/img/archive/14.jpeg';
 import pic19 from '../../assets/img/archive/21.jpeg';
 import pic20 from '../../assets/img/archive/17.jpeg';
 import Image from '../../components/Elements/Image';
-import PopupImage from '../../components/Layout/ImagePopup';
 
 const SlideShow = () => {
     const sliderSettings = {
@@ -32,12 +31,11 @@ const SlideShow = () => {
         arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        className: 'slides'
+        className: 'slides',
     };
-    const [previewElement, setPreviewElement] = useState(null);
 
     return (
-        <div className="rs-featured-courses pt-100 pb-150 md-pt-76 md-pb-140 sm-pb-70">
+        <div className="rs-featured-courses pt-50 pb-50 md-pt-30 md-pb-30 sm-pb-30">
             <div className="relative">
                 <SectionTitle
                     sectionClass="sec-title2 text-center"
@@ -51,136 +49,104 @@ const SlideShow = () => {
                         src={pic1} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic2} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic3} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic4} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic5} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic6} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic7} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic8} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic9} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic10} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic11} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic12} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic13} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic14} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic15} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic16} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic17} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic18} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic19} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                     <Image 
                         src={pic20} 
                         alt="" 
                         className="block d-block w-100 radius-12 b-none border-none" 
-                        onClick={(evt) => setPreviewElement(evt.target)}
                     />
                 </Slider>
-
-                {
-                    previewElement ?
-                    <PopupImage onClose={() => setPreviewElement(null)}>
-                        <Image 
-                            src={previewElement.src} 
-                            alt={previewElement.alt} 
-                            className="radius-12 b-none border-none item" 
-                        />
-                    </PopupImage> :
-                    null
-                }
-          </div>
+            </div>
         </div>
     );
 }
