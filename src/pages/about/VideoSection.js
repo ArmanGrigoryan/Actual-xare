@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ModalVideo from 'react-modal-video';
 import SectionTitle from '../../components/Common/SectionTitle';
 
@@ -12,7 +12,7 @@ const AboutVideo = () => {
     useLayoutEffect(() => {
         console.log(videoRef)
         // videoRef.current.play();
-    }, [])
+    }, []);
 
     return (
         <div className="rs-cta style2">
@@ -20,9 +20,12 @@ const AboutVideo = () => {
             <div className="partition-bg-wrap inner-page">
                 <div className="container">
                     <div className="row y-bottom">
-                        <div className="col-lg-6 pb-50 md-pt-150 md-pb-150">
-                            <div className="video-wrap">
-                                <a className="popup-videos" onClick={toggleModal}><i className="fa fa-play"></i> <h5 className="title mb-0 width-30-100">Կատարեք շրջագայություն Ակտուալում</h5></a>
+                        <div className="col-lg-6 pb-50 md-pt-30 md-pb-30 d-flex align-items-center min-height-400">
+                            <div className="video-wrap w-100">
+                                <a className="popup-videos w-100" onClick={toggleModal}>
+                                    <i className="fa fa-play"></i> 
+                                    <h5 className="title mb-0 ml-20 mobile-fade-full-width width-30-100">Կատարեք շրջագայություն Ակտուալում</h5>
+                                </a>
                             </div>
                         </div>
                         <div className="col-lg-6 pl-150 pt-134 pb-150 md-pl-14 md-pt-0 md-pb-70">

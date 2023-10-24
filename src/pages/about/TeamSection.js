@@ -7,7 +7,6 @@ import team1 from '../../assets/img/team/1.jpg';
 import team2 from '../../assets/img/team/2.jpg';
 import team3 from '../../assets/img/team/3.jpg';
 import team4 from '../../assets/img/team/4.jpg';
-import Gallery from '../../components/Gallery';
 
 const slilderSettings = {
     dots: false,
@@ -42,7 +41,7 @@ const Team = () => {
         <React.Fragment>
             <div className="rs-team style1 inner-style orange-color pt-40 pb-40 gray-bg">
                 <div className="container">
-                    <div className="row y-middle mb-30">
+                    <div className="row y-middle">
                         <div className="col-md-6 sm-mb-30">
                             <SectionTitle
                                 sectionClass="sec-title"
@@ -97,9 +96,6 @@ const Team = () => {
                         />
                     </Slider>
                 </div>
-
-                <Gallery />
-
             </div>
         </React.Fragment>
     )

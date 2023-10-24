@@ -43,7 +43,11 @@
             height: 100px;
             position: absolute;
             overflow: hidden;
-            animation: marquee 35s linear infinite;
+            animation: marquee 30s linear infinite;
+
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
 }

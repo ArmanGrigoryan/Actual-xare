@@ -60,12 +60,19 @@
     }
     .rs-slider.main-home .slider-content .content-part .anime {
         padding: 0 8%;
-        font-size: 24px;
+        font-size: 21px;
         width: 100%;
+        text-wrap: wrap;
     }
     .fade-in-mobile {
         transform: scale(1.2);
         animation: fade-in 1.2s linear 0s infinite alternate;
+    }
+    .mobile-fade-full-width {
+        transform: scale(1.2);
+        animation: fade-in 1.2s linear 0s infinite alternate;
+        width: 100%;
+        text-wrap: wrap;
     }
 }
 
