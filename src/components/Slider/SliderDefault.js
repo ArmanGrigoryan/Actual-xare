@@ -20,13 +20,13 @@ const SliderDefault = () => {
                             <h1 className="sl-title">Ամրապնդիր մասնագիտական կարողություններդ</h1>
                             <h2 className='width-50-100 fade-in-mobile anime white-color mb-50'>Մենք կսովորեցնենք հոգ տանել Ձեր բիզնեսի մասին</h2>
                             <div className="sl-btn">
-                                <Link 
-                                    className="readon orange-btn main-home p-40" 
+                                <a 
+                                    className="readon orange-btn main-home p-40 cursor-pointer" 
                                     target='_blank' 
-                                    to={{ pathname: "https://shorturl.at/jBEPW" }}
+                                    href="https://shorturl.at/jBEPW"
                                 >
                                     Գրանցվել
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>

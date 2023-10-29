@@ -33,7 +33,7 @@ const FaqSection = () => {
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
                                         <AccordionItemPanel className="card-body">
-                                            Ակտուալը տարիներ շարունակ թողարկել է նմանը չունեցող նախագծեր (The Master, The Voice Of HR), որոնց արդյունքում ձևավորվել և աշխատաշուկայում իրենց ուրույն տեղն են գտել բազմաթիվ կադրեր։
+                                            Ակտուալը տարիներ շարունակ թողարկել է նմանը չունեցող նախագծեր, որոնց արդյունքում ձևավորվել և աշխատաշուկայում իրենց ուրույն տեղն են գտել բազմաթիվ կադրեր։
                                         </AccordionItemPanel>
                                     </AccordionItem>
 
