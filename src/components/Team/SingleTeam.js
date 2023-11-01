@@ -3,7 +3,7 @@ import React from "react";
 const SingleTeam = (props) => {
     const { teamClass, Image, Title, Designation } = props;
 	return(
-        <div className={teamClass ? teamClass : 'team-item'}>
+        <div className={teamClass ? teamClass + ' card-shadow-light' : 'team-item' + ' card-shadow-light'}>
             <img loading="lazy" 
                 src={Image} 
                 alt={Title}

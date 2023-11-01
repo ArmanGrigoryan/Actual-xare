@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const FooterBottom = () => {
+
     return (
         <div className="footer-bottom">
             <div className="container">

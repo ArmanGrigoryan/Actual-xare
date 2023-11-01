@@ -172,13 +172,13 @@
 				a{
 					&.active-menu,
 					&:hover{
-						color:$orangeColor;
+						color:$primaryColor;
 					}
 
 				}
 				&.current-menu-item {
 					> a {
-						color:$orangeColor;
+						color:$primaryColor;
 					}
 				}
 			}

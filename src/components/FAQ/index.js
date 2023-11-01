@@ -19,197 +19,115 @@ const Faq = () => {
     }, [location.hash])
 
     return (
-        <div ref={faqElement} id="faq" className="rs-faq-part style1 pt-90 pb-100 md-pt-70 md-pb-80">
+        <div ref={faqElement} id="faq" className="rs-faq-part style1 pt-50 pb-50 md-pt-20 md-pb-20">
             <div className="container">
                 <div className="main-part innerpage">
-                    <div className="faq-content mb-50 md-mb-30">
+                    <div className="faq-content mb-10">
                         <h2 className='text-center mb-50'>Հաճախ տրվող հարցեր</h2>
-                        <div className="title mb-30 md-mb-14">
-                            <h3 className="text-part">Kindergarten</h3>
-                        </div>
-                        <Accordion className="accordion-style1" preExpanded={'a'}>
+                        <Accordion className="accordion-style1">
                             <AccordionItem className="accordion-item" uuid="a">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        What do you mean by item and end product?
+                                        Ինչպիսի՞ դասընթացներ ունեք
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu
+                                <AccordionItemPanel className="card-body"><pre>{`Դասընթացները հետևյալն են՝
+        - Մարդկային ռեսուրսների կառավարման դասընթաց սկսնակների համար,
+        - Մարդկային ռեսուրսների կառավարման դասընթաց՝ 10/16 վերապատրաստում գործով մասնագետների համար,
+        - Կադրային գործավարություն և ՀՀ Աշխատանքային օրենսգիրք,
+        - Բիզնես անգլերեն՝ եռամսյա հատուկ դասընթաց,
+        - Excel և վերլուծությունը հատուկ դասընթաց:
+        Մանրամասների համար զանգահարեք՝  (+374)44-30-30-28`}</pre>
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="b">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        What does non-exclusive mean?
+                                        Դասընթացի տևողությունը կասե՞ք
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu
+                                    Դասընթացները տևողությունը 5 շաբաթ է, միայն շաբաթ օրերին։
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                            <AccordionItem className="accordion-item" uuid="h">
+                                <AccordionItemHeading className="card-header">
+                                    <AccordionItemButton className="card-link">
+                                        Ինչու՞ հենց Ակտուալ
+                                    </AccordionItemButton>
+                                </AccordionItemHeading>
+                                <AccordionItemPanel className="card-body">
+                                    Ակտուալը տարիներ շարունակ թողարկել է նմանը չունեցող նախագծեր, որոնց արդյունքում ձևավորվել և աշխատաշուկայում իրենց ուրույն տեղն են գտել բազմաթիվ կադրեր։
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                            <AccordionItem className="accordion-item" uuid="i">
+                                <AccordionItemHeading className="card-header">
+                                    <AccordionItemButton className="card-link line-height-25">
+                                        Ինչպե՞ս կարող ենք ծանոթանալ դասավանդող մասնագետների որակավորմանը
+                                    </AccordionItemButton>
+                                </AccordionItemHeading>
+                                <AccordionItemPanel className="card-body">
+                                    Մասնագետների մասին տեղեկատվություն կարող եք ստանալ ընտրելով համապատասխան դասընթացը, դասավանդող բաԺնում։
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="c">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        What are some examples of permitted end products?
+                                        Արդյո՞ք տրամադրվում է սերտիֆիկատ
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu
-                                </AccordionItemPanel>
-                            </AccordionItem>
-                            <AccordionItem className="accordion-item" uuid="d">
-                                <AccordionItemHeading className="card-header">
-                                    <AccordionItemButton className="card-link">
-                                        What is distance education?
-                                    </AccordionItemButton>
-                                </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu, pretium quis,pede justo, of fringilla vel, aliquet nec, ultricies nec, pellen of the tesque services Donec quam felis, ultricies nec, pellentesque eu
-                                </AccordionItemPanel>
-                            </AccordionItem>
-                        </Accordion>
-                    </div>
-
-                    <div className="faq-content mb-50 md-mb-30">
-                        <div className="title mb-30 md-mb-14">
-                            <h3 className="text-part">Primary School</h3>
-                        </div>
-                        <Accordion className="accordion-style1" preExpanded={'a'}>
-                            <AccordionItem className="accordion-item" uuid="a">
-                                <AccordionItemHeading className="card-header">
-                                    <AccordionItemButton className="card-link">
-                                        What if I have an emergency?
-                                    </AccordionItemButton>
-                                </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    Hematology, also spelled haematology, is the branch of medicine concerned with the study of the cause, prognosis, treatment, and prevention of diseases related to blood. It involves treating diseases that affect the production of blood and its components, such as blood cells, hemoglobin, blood proteins, bone marrow, platelets, blood vessels, spleen, and the mechanism of coagulation.
-                                </AccordionItemPanel>
-                            </AccordionItem>
-                            <AccordionItem className="accordion-item" uuid="b">
-                                <AccordionItemHeading className="card-header">
-                                    <AccordionItemButton className="card-link">
-                                        What if my regular doctor is unavailable?
-                                    </AccordionItemButton>
-                                </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    Hematology, also spelled haematology, is the branch of medicine concerned with the study of the cause, prognosis, treatment, and prevention of diseases related to blood. It involves treating diseases that affect the production of blood and its components, such as blood cells, hemoglobin, blood proteins, bone marrow, platelets, blood vessels, spleen, and the mechanism of coagulation.
+                                    Այո, դասընթացն ավարտելուն պես, ուսանողին տրամադրվում է համապատասխան մասնակցության վկայական։
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="c">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        What is the transfer application process?
+                                        Ի՞նչ կտա մեզ HR management դասընթացը
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Hematology, also spelled haematology, is the branch of medicine concerned with the study of the cause, prognosis, treatment, and prevention of diseases related to blood. It involves treating diseases that affect the production of blood and its components, such as blood cells, hemoglobin, blood proteins, bone marrow, platelets, blood vessels, spleen, and the mechanism of coagulation.
+                                    Դասընթացը հնարավորություն կտա ստանալ համակարգված և ամբողջական պատկերացում/գիտելիքներ ՄՌԿ-ի տեսությունից մինչև պրակտիկ կիրառությունը տարբեր ոլորտներում։ Ծանոթացում ՄՌԿ գրեթե բոլոր գործառույթներին և շուկայում ընթացող միտումներին։
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="d">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        What should I bring to my first appointment?
+                                        Պրակտիկայի հարցում օգնու՞մ եք
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Hematology, also spelled haematology, is the branch of medicine concerned with the study of the cause, prognosis, treatment, and prevention of diseases related to blood. It involves treating diseases that affect the production of blood and its components, such as blood cells, hemoglobin, blood proteins, bone marrow, platelets, blood vessels, spleen, and the mechanism of coagulation.
+                                    Այո, Ակտուալը համագործակցում է կազմակերպությունների հետ, որտեղ կարող եք անցնել ուսումնական պրակտիկա։
                                 </AccordionItemPanel>
                             </AccordionItem>
-                        </Accordion>
-                    </div>
-
-                    <div className="faq-content mb-50 md-mb-30">
-                        <div className="title mb-30 md-mb-14">
-                            <h3 className="text-part">High School</h3>
-                        </div>
-                        <Accordion className="accordion-style1" preExpanded={'a'}>
-                            <AccordionItem className="accordion-item" uuid="a">
+                            <AccordionItem className="accordion-item" uuid="e">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        How does the normal heart work?
+                                        Դասընթացի արժեքը կասեք
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    The normal heart is composed of four chambers. The two upper chambers (called atriums or atria) are reservoirs which collect blood as it flows back to the heart. From the atriums, blood flows into the lower two chambers (called ventricles) which pump blood, blood flows into the lower two chambers (called ventricles) which pump blood with each heart beat, into the main arteries.
+                                    Դասընթացների արժեքները տարբեր են, Մանրամասների համար զանգահարեք՝  (+374)44-30-30-28:
                                 </AccordionItemPanel>
                             </AccordionItem>
-                            <AccordionItem className="accordion-item" uuid="b">
+                            <AccordionItem className="accordion-item" uuid="f">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        What are the heart valves?
+                                        Որտե՞ղ է գտնվում Ակտուալը
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    The normal heart is composed of four chambers. The two upper chambers (called atriums or atria) are reservoirs which collect blood as it flows back to the heart. From the atriums, blood flows into the lower two chambers (called ventricles) which pump blood, with each heart beat, blood flows into the lower two chambers (called ventricles) which pump blood into the main arteries.
+                                    Մեր հասցեն է ք․ Երևան, Խանջյան 19։ 
                                 </AccordionItemPanel>
                             </AccordionItem>
-                            <AccordionItem className="accordion-item" uuid="c">
+                            <AccordionItem className="accordion-item" uuid="g">
                                 <AccordionItemHeading className="card-header">
-                                    <AccordionItemButton className="card-link">
-                                        Can a child acquire a heart problem?
+                                    <AccordionItemButton className="card-link line-height-25">
+                                        Ինչպե՞ս կարող ենք տեղեկանալ առաջիկայում սպասվող իրադարձություններին
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    The normal heart is composed of four chambers. The two upper chambers (called atriums or atria) are reservoirs which collect blood as it flows back to the heart. From the atriums, blood flows into the lower two chambers (called ventricles) which pump blood, with each heart beat, blood flows into the lower two chambers (called ventricles) which pump blood into the main arteries.
-                                </AccordionItemPanel>
-                            </AccordionItem>
-                            <AccordionItem className="accordion-item" uuid="d">
-                                <AccordionItemHeading className="card-header">
-                                    <AccordionItemButton className="card-link">
-                                        What is heart education?
-                                    </AccordionItemButton>
-                                </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    The normal heart is composed of four chambers. The two upper chambers (called atriums or atria) are reservoirs which collect blood as it flows back to the heart. From the atriums, blood flows into the lower two chambers (called ventricles) which pump blood, blood flows into the lower two chambers (called ventricles) which pump blood with each heart beat, into the main arteries.
-                                </AccordionItemPanel>
-                            </AccordionItem>
-                        </Accordion>
-                    </div>
-
-                    <div className="faq-content">
-                        <div className="title mb-30 md-mb-14">
-                            <h3 className="text-part">College/University</h3>
-                        </div>
-                        <Accordion className="accordion-style1" preExpanded={'a'}>
-                            <AccordionItem className="accordion-item" uuid="a">
-                                <AccordionItemHeading className="card-header">
-                                    <AccordionItemButton className="card-link">
-                                        What are the requirements ?
-                                    </AccordionItemButton>
-                                </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    The normal heart is composed of four chambers. The two upper chambers (called atriums or atria) are reservoirs which collect blood as it flows back to the heart. From the atriums, blood flows into the lower two chambers (called ventricles) which pump blood, with each heart beat, blood flows into the lower two chambers (called ventricles) which pump blood into the main arteries.
-                                </AccordionItemPanel>
-                            </AccordionItem>
-                            <AccordionItem className="accordion-item" uuid="b">
-                                <AccordionItemHeading className="card-header">
-                                    <AccordionItemButton className="card-link">
-                                        Does Educavo offer free courses?
-                                    </AccordionItemButton>
-                                </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    The normal heart is composed of four chambers. The two upper chambers (called atriums or atria) are reservoirs which collect blood as it flows back to the heart. From the atriums, blood flows into the lower two chambers (called ventricles) which pump blood, with each heart beat, blood flows into the lower two chambers (called ventricles) which pump blood into the main arteries.
-                                </AccordionItemPanel>
-                            </AccordionItem>
-                            <AccordionItem className="accordion-item" uuid="c">
-                                <AccordionItemHeading className="card-header">
-                                    <AccordionItemButton className="card-link">
-                                        What is the transfer application process?
-                                    </AccordionItemButton>
-                                </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    The normal heart is composed of four chambers. The two upper chambers (called atriums or atria) are reservoirs which collect blood as it flows back to the heart. From the atriums, blood flows into the lower two chambers (called ventricles) which pump blood, with each heart beat, blood flows into the lower two chambers (called ventricles) which pump blood into the main arteries.
-                                </AccordionItemPanel>
-                            </AccordionItem>
-                            <AccordionItem className="accordion-item" uuid="d">
-                                <AccordionItemHeading className="card-header">
-                                    <AccordionItemButton className="card-link">
-                                        What is distance education?
-                                    </AccordionItemButton>
-                                </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    The normal heart is composed of four chambers. The two upper chambers (called atriums or atria) are reservoirs which collect blood as it flows back to the heart. From the atriums, blood flows into the lower two chambers (called ventricles) which pump blood, with each heart beat, blood flows into the lower two chambers (called ventricles) which pump blood into the main arteries.
+                                    Կարող եք բաժանորդագրվել մեր ալիքին՝ actualhrarmenia@gmail.com, կամ զանգահարելով (+374)44-30-30-28 հեռախոսահամարին։
                                 </AccordionItemPanel>
                             </AccordionItem>
                         </Accordion>

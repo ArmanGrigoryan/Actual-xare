@@ -3,6 +3,11 @@ import FooterBottom from './FooterBottom';
 
 const Footer = (props) => {
     const { footerClass, footerTopClass } = props;
+
+    const email = "actualhrarmenia@gmail.com";
+    const emailSubject = "Հետադարձ կապ";
+    const emailBody = "Բարև Ձեզ, ես ցանկանում եմ տեղեկանալ դասընթացների մասին ավելի մանրամասն։ Կարող եք զանգահարել՝ +374";
+
     return (
         <footer className={footerClass ? footerClass : 'rs-footer'}>
             <div className={`footer-top ${footerTopClass}`}>
@@ -12,7 +17,7 @@ const Footer = (props) => {
                         <ul className="address-widget">
                             <li>
                                 <i className="flaticon-location"></i>
-                                <div className="desc">Տերյան 74, Երևան</div>
+                                <div className="desc">Խանջյան 19, Երևան</div>
                             </li>
                             <li>
                                 <i className="flaticon-call"></i>
@@ -20,7 +25,7 @@ const Footer = (props) => {
                             </li>
                             <li>
                                 <i className="flaticon-email"></i>
-                                <div className="desc"><a href="mailto:actualhrarmenia@gmail.com">actualhrarmenia@gmail.com</a></div>
+                                <div className="desc"><a href={`mailto:${email}?subject=${emailSubject}&body=${emailBody}`}>{ email }</a></div>
                             </li>
                             <li className='mt-60'>
                                 <ul className="d-flex gap-4">
@@ -30,7 +35,7 @@ const Footer = (props) => {
                                         </a>
                                     </li>
                                     <li className="d-flex">
-                                        <a href="mailto:actualhrarmenia@gmail.com">
+                                        <a target="_top" href={`mailto:${email}?subject=${emailSubject}&body=${emailBody}`}>
                                             <i className="fa fa-google-plus position-static"></i>
                                         </a>
                                     </li>
@@ -53,7 +58,7 @@ const Footer = (props) => {
                                 height={250}
                                 frameBorder="0" 
                                 scrolling="no" 
-                                src="https://maps.google.com/maps?width=530&amp;height=530&amp;hl=en&amp;q=Teryan 74&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                src="https://maps.google.com/maps?width=530&amp;height=530&amp;hl=en&amp;q=Khanjyan 19&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                             />
                         </div>
                     </div>

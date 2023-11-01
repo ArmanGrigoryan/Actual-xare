@@ -20,7 +20,7 @@
                     line-height: 40px;
                     color: $whiteColor;
                     font-weight: 500;
-                    background: $orangeColor;
+                    background: $primaryColor;
                     border-radius: 3px;
                     transition: $transition;
                     position: absolute;
@@ -122,7 +122,7 @@
                             padding: 3px 15px;
                             color: #ffffff;
                             font-weight: 500;
-                            background: #ff5421;
+                            background: $primaryColor;
                             border-radius: 5px;
                             transition: all 0.3s ease;
                             position: absolute;
@@ -137,7 +137,7 @@
                         a{
                             color: $titleColor5;
                             &:hover{
-                                color: $orangeColor;
+                                color: $primaryColor;
                             }
                         }
                     }
@@ -155,7 +155,7 @@
                             color: #363636;
                             i{
                                 &:before{
-                                    color: #ff5421;
+                                    color: $primaryColor;
                                     padding-right: 6px;
                                 }
                             }
@@ -341,7 +341,7 @@
                 a{
                     color: $titleColor4;
                     &:hover{
-                        color: $orangeColor;
+                        color: $primaryColor;
                     }
                 }
             }
@@ -389,7 +389,7 @@
                             }
                         }
                         &:hover{
-                            color: $orangeColor;
+                            color: $primaryColor;
                         }
                     }
                 }

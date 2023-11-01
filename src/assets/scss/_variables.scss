@@ -4,7 +4,8 @@ $bodyFont: 'Nunito', sans-serif;
 $titleFont: 'Nunito', sans-serif;
 
 // Colors
-$primaryColor:     #ff5421;
+$primaryColor:     #99041d;
+$primaryColor:     rgba(48, 32, 197, 0.993);
 $secondaryColor:   #273c66;
 $secondaryColor2:  #1c335f;
 $titleColor:       #111111;
@@ -27,12 +28,14 @@ $purpleColor:      #c701f1;
 $yellowColor:      #f4bf00;
 $greenColor:       #0c8b51;
 // Gradient Backgrounds
-$gradient-bg: linear-gradient(180deg, $secondaryColor 0%, $primaryColor 100%);
+$gradient-bg: linear-gradient(180deg, $secondaryColor 0%, $orangeColor 100%);
 
 // Common
+$header_transition: all .45s ease;
 $transition: all .3s ease;
 
 // Responsive Variables
+$laptop_max: 'only screen and (max-width: 1700px)';
 $laptop: 'only screen and (max-width: 1600px)';
 $xl : 'only screen and (max-width: 1366px)';
 $lg : 'only screen and (max-width: 1199px)';

@@ -136,7 +136,7 @@
                 a {
                     color: $yellowColor;
                     &:hover{
-                        color: $primaryColor;
+                        color: $orangeColor;
                     }
                 }
             }
@@ -177,7 +177,7 @@
         }
 
         &.main-home{
-            background: #151515;
+            // background: #151515;
             .footer-top {
                 .widget-title {
                     &:before{
@@ -306,7 +306,7 @@
                             content: "";
                             position: absolute;
                             font-size: 18px;
-                            background: #ff5421;
+                            background: $orangeColor;
                             left: 0;
                             top: 50%;
                             width: 6px;

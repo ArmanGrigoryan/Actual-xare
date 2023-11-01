@@ -22,9 +22,20 @@ const AboutText = () => {
                                 titleClass="title mb-16"
                                 title="Ակտուալ-ի մասին"
                                 descClass="bold-text mb-22"
-                                description="Recogizing the need is the primary than we expected Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa voluptatibus,"
+                                description="Ակտուալը ժամանակակից հարթակ է, որտեղ Մարդկային ռեսուրսների կառավարմամբ հետաքրքրված յուրաքանչյուր
+                                անձ, սկսնակից մինչև կայացած մասնագետ, կարող է ձեռքբերել գիտելիքներ և հմտություններ: Մարդկային
+                                ռեսուրսների կառավարումը ամենապահանջված մասնագիտացումներից մեկն է և մենք ձեզ կօգնենք դառնալ
+                                մրցունակ մասնագետ, փոխանցելով ձեզ՝ կառավարման ողջ հոգեկերտվածքը, գործիքակազմը և կիրառելիությունը:
+                                Եթե, դուք չունեք փորձ, կարող եք գնել այն…"
                                 secondDescClass="desc"
-                                secondDescription="Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed eius to mod tempors incididunt ut labore et dolore magna this aliqua enims ad minim. Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed eius to mod tempor. Lorem ipsum dolor sit amet"
+                                secondDescription="
+                                Ակտուալ ընկերությունը մշակել և ներդրել է հատուկ բիզնեսների համար նախագծված մի մեխանիզմ, որը իր
+                                ձևաչափով նոր մոտեցում է շուկայում մատուցվող ծառայությունների մեջ՝ Outsource In House մոտեցմամբ:
+                                Ակուալի հմուտ և մասնագիտացված մարդկային ռեսուրսների կառավարման մասնագետները, աշխատանքային
+                                ռեժիմով, գտնվում են բիզնեսում կատարելով ամենօրյա անհրաժեշտ աշխատանքները՝ ի բարորություն ձեր բիզնեսին:
+                                
+                                Այս պահին առաջատար կազմակերպությունները իրենց ՄՌԿ բաժինները վստահել են մեզ, ազատվելով տարատեսակ
+                                հոգսերից և ունեն հնարավորություն գրանցելու շատ արդյունքներ կարճ ժամկետներում:"
                             />
                         </div>
                     </div>
