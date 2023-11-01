@@ -73,7 +73,6 @@
     position: relative;
     .rs-header{  
         max-height: 100vh;
-        padding-top: 10px;
         position: relative;
 
         .logo-part {
@@ -84,13 +83,15 @@
             }
         }
         .menu-area {
-            transition: $transition;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            transition: $header_transition;
             background-image: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
             .logo-area{
                 a{
                     img{
                         transition: 0.4s;
-                        max-height: 70px;
+                        max-height: 90px;
                     }
                     .sticky-logo{
                         display: none;
@@ -103,7 +104,7 @@
                 transform: translateY(-50%);
                 display: none;
                 img {
-                    max-height: 70px;
+                    max-height: 90px;
                 }
             }
             .logo-cat-wrap {
@@ -169,25 +170,25 @@
 					display: none;
                     justify-content: space-between;
                     align-items: center;
-                    height: 70px;
-                    line-height: 70px;
+                    height: 90px;
+                    line-height: 90px;
                     .mobile-normal-logo {
                         float: left;
                         display: block;
                         img {
-                            max-height: 70px;
+                            max-height: 90px;
                         }
                     }
                     .mobile-sticky-logo {
                         float: left;
                         display: none;
                         img {
-                            max-height: 70px;
+                            max-height: 90px;
                         }
                     }
                     .logo {
                         img {
-                            max-height: 70px;
+                            max-height: 90px;
                         }
                     }
                     .rs-menu-toggle{
@@ -223,8 +224,8 @@
                                     transition: $transition;
                                     font-size: 15px;
                                     font-weight: 500;
-                                    height: 70px;
-                                    line-height: 70px;
+                                    height: 90px;
+                                    line-height: 90px;
                                     padding: 0;
                                     color: $whiteColor;
                                     position: relative;
@@ -298,7 +299,7 @@
                             }
                             &:hover {
                                 &:before{
-                                    color: $orangeColor !important;
+                                    color: $primaryColor !important;
                                 }
                             }
                         }
@@ -310,12 +311,12 @@
                         border: none;
                         color: $whiteColor;
                         &:hover{
-                            color: $orangeColor;
+                            color: $primaryColor;
                         }
                     }
                     > a {
-                        height: 70px;
-                        line-height: 70px;
+                        height: 90px;
+                        line-height: 90px;
                         display: flex;
                         align-items: center;
                         i {
@@ -335,7 +336,7 @@
                     display: inline-block;
                     margin-right: 15px;                                        
                     .apply-btn {
-                        background: $orangeColor;
+                        background: $primaryColor;
                         color: $whiteColor;
                         padding: 10px 23px;
                         line-height: 16px;
@@ -359,7 +360,7 @@
                     a{
                         .sticky-logo{
                             display: block;
-                            max-height: 70px;
+                            max-height: 90px;
                         }
                         .normal-logo{
                             display: none;
@@ -399,12 +400,12 @@
                     border: none;
                     color: $whiteColor;
                     &:hover{
-                        color: $orangeColor;
+                        color: $primaryColor;
                     }
                 }
                 > a {
-                    height: 70px;
-                    line-height: 70px;
+                    height: 90px;
+                    line-height: 90px;
                     display: flex;
                     align-items: center;
                     i {
@@ -451,7 +452,7 @@
             &:hover {
                 cursor: pointer;
                 span {
-                    background: $orangeColor;
+                    background: $primaryColor;
                 }
             }
         }
@@ -515,7 +516,7 @@
             }
         }  
         .right_menu_togle .close-btn #nav-close {
-            background: $orangeColor;
+            background: $primaryColor;
         }
         &.main-home{
             position: absolute;
@@ -580,7 +581,7 @@
                                                         height: 2px;
                                                         position: absolute;
                                                         transition: all 0.35s ease;
-                                                        background-color: $orangeColor;
+                                                        background-color: $primaryColor;
                                                         width: 0;
                                                         bottom: 20px;
                                                         left: 0;
@@ -597,14 +598,14 @@
                                                 &.current-menu-item {
                                                     > a {
                                                         position: relative;
-                                                        color: $orangeColor !important;
+                                                        color: $primaryColor !important;
                                                     }
                                                     > a::after {
                                                         content: "";
                                                         height: 2px;
                                                         position: absolute;
                                                         transition: all 0.35s ease;
-                                                        background-color: $orangeColor;
+                                                        background-color: $primaryColor;
                                                         width: 100%;
                                                         bottom: 20px;
                                                         left: 0;
@@ -635,7 +636,7 @@
                                         color: $primaryColor;
                                         i{
                                             &:before {
-                                                color: $orangeColor !important;
+                                                color: $primaryColor !important;
                                             }
                                         }
                                     }
@@ -668,7 +669,7 @@
                             &:hover{
                                 i{
                                     &:before {
-                                        color: $orangeColor !important;
+                                        color: $primaryColor !important;
                                     }
                                 }
                             }
@@ -702,7 +703,7 @@
                         }
                         &:hover {
                             span {
-                                background: $orangeColor;
+                                background: $primaryColor;
                             }
                         }
                     }

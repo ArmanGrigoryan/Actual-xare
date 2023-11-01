@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { CourseContext } from '../../app/App';
 
 const CourseSingleFive = (props) => {
-    const { courseClass, courseImg, courseTitle, catLink, coursePrice, categoryClass, courseCategory, author, authorImg, userCount, userRating } = props;
+    const { courseChangeHandler } = useContext(CourseContext);
+    const { courseClass, courseImg, courseTitle, catLink, coursePrice, categoryClass, courseCategory, author, authorImg, userCount, userRating, btnText } = props;
+
     return (
         <div className={courseClass ? courseClass : 'courses-item radius-12'}>
             <div className="img-part">
@@ -36,8 +39,8 @@ const CourseSingleFive = (props) => {
                         </ul>
                     </div>
                     <div className="btn-part">
-                        <Link to="/course/course-single">
-                            {props.btnText}<i className="flaticon-right-arrow"></i>
+                        <Link onClick={() => courseChangeHandler(courseTitle)} to="/course/course-single">
+                            {btnText}<i className="flaticon-right-arrow"></i>
                         </Link>
                     </div>
                 </div>

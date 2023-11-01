@@ -9,15 +9,21 @@
         .react-tabs__tab {
             display: block;
             text-align: center;
-            margin-bottom: 30px;
+            opacity: .75;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
             button {
-                padding: 28px 20px 22px;
+                padding: 20px;
                 box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1);
                 border: none;
                 border-radius: 12px;
-                width: 230px;
-                font-size: 20px;
+                width: 200px;
+                font-size: 16px;
                 font-weight: 500;
+                line-height: 20px;
                 text-align: center;
                 color: $whiteColor;
                 background: #171F32;
@@ -27,7 +33,7 @@
                     margin-bottom: 15px;
                     i {
                         &:before {
-                            font-size: 45px;
+                            font-size: 40px;
                             line-height: 1;
                             color: $whiteColor;
                         }
@@ -35,14 +41,15 @@
                 }                
             }
             &.react-tabs__tab--selected {
+                opacity: 1;
                 button {
-                    background: $orangeColor;
+                    opacity: 1;
+                    background: $primaryColor;
                 }
             }
             &:hover {
                 button {
-                    opacity: .9;
-                    background: $orangeColor;
+                    background: $primaryColor;
                 }
             }
             &:last-item {

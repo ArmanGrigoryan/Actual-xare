@@ -1,5 +1,5 @@
-import React, {   useLayoutEffect, useRef, useState } from 'react';
-import {Link} from 'react-router-dom';
+import React, { useLayoutEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import ModalVideo from 'react-modal-video';
 import SectionTitle from '../../components/Common/SectionTitle';
 
@@ -7,34 +7,38 @@ const AboutVideo = () => {
     const [isOpen, setIsOpen] = useState(false);
     const videoRef = useRef();
 
-    const openModal = () => setIsOpen(!isOpen);
+    const toggleModal = () => setIsOpen(!isOpen);
 
     useLayoutEffect(() => {
         console.log(videoRef)
         // videoRef.current.play();
-    }, [])
+    }, []);
 
     return (
         <div className="rs-cta style2">
-            <ModalVideo channel='youtube' isOpen={isOpen} videoId='FMvA5fyZ338' onClose={() => { openModal(); }} />
+            <ModalVideo channel='youtube' isOpen={isOpen} videoId='FMvA5fyZ338' onClose={toggleModal} />
             <div className="partition-bg-wrap inner-page">
                 <div className="container">
                     <div className="row y-bottom">
-                        <div className="col-lg-6 pb-50 md-pt-150 md-pb-150">
-                            <div className="video-wrap">
-                                <a className="popup-videos" onClick={() => { openModal(); }}><i className="fa fa-play"></i> <h5 className="title mb-0 width-30-100">Կատարեք շրջագայություն Ակտուալում</h5></a>
+                        <div className="col-lg-6 pb-50 md-pt-30 md-pb-30 d-flex align-items-center min-height-400">
+                            <div className="video-wrap w-100">
+                                <a className="popup-videos w-100" onClick={toggleModal}>
+                                    <i className="fa fa-play"></i> 
+                                    <h5 className="title mb-0 ml-20 mobile-fade-full-width width-30-100">Կատարեք շրջագայություն Ակտուալում</h5>
+                                </a>
                             </div>
                         </div>
-                        <div className="col-lg-6 pl-100 pt-134 pb-150 md-pl-14 md-pt-0 md-pb-70">
+                        <div className="col-lg-6 pl-150 pt-134 pb-150 md-pl-14 md-pt-0 md-pb-70">
                             <SectionTitle
                                 sectionClass="sec-title mb-40"
                                 titleClass="title mb-16"
-                                title="2023 Ընդունելությունը բաց է"
+                                title="2024 Ընդունելությունը բաց է"
                                 descClass="desc"
-                                description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eius to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam. Aenean massa. Cum sociis natoque penatibus et magnis."
+                                description="𝗔𝗖𝗧𝗨𝗔𝗟 𝗛𝗥 𝗔𝗚𝗘𝗡𝗖𝗬-ն կօգնի Ձեր բիզնեսին նոր և պրոֆեսիոնալ մասնագետների հավաքագրման և առաջընթացի ապահովման գործում:"
+                                detailedDescription="Մեր փորձառու մասնագետներից բաղկացած թիմը մշտապես կլինի Ձեր բիզնեսի կողքին՝ համալրելով Ձեր կազմակերպությունը ոչ միայն որակյալ և մրցունակ մասնագետներով, այլև գրագետ և ճիշտ բրենդավորելով Ձեր ընկերությունն աշխատաշուկայում՝ որպես գործատու"
                             />
                             <div className="btn-part">
-                                <Link className="readon orange" to="/contact">Դիմել հիմա</Link>
+                                <Link className="readon orange" to="/courses">Դիմել հիմա</Link>
                             </div>
                         </div>
                     </div>

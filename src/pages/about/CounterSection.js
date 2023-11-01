@@ -8,7 +8,7 @@ import countIcon3 from '../../assets/img/about/style3/icons/3.png';
 
 const counters = [
     {
-        countNum: 800,
+        countNum: 300,
         countTitle: 'Ուսանող',
         counterPrefix: '+',
         countIcon: countIcon1
@@ -71,7 +71,7 @@ const AboutCounter = () => {
                                                                 redraw={true} 
                                                                 start={!isAnimated ? 0 : counter.countNum} 
                                                                 end={isVisible && isReadyOnce ? counter.countNum : 0} 
-                                                                duration={4} 
+                                                                duration={3} 
                                                             />
                                                             <span className="counter-prefix">{counter.counterPrefix}</span>
                                                         </div>

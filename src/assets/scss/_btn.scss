@@ -1,14 +1,13 @@
 /* button style */
 .btn {
 	-moz-user-select: none;
-	background: #096bd8;
 	border: medium none;
 	display: inline-block;
 	font-size: 14px;
 	margin-bottom: 0;
 	padding: 20px 40px;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	-ms-touch-action: manipulation;
 	touch-action: manipulation;
 	-webkit-transition: all 0.3s ease 0s;

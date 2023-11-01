@@ -55,7 +55,6 @@
         }
         .course-features-info {
             margin: 50px 0;
-            border-radius: 3px;
             padding: 30px 40px 30px;
             position: relative;
             background: $whiteColor;
@@ -65,7 +64,7 @@
                     display: block;
                     padding: 10px 0;
                     i {
-                        color: $orangeColor;
+                        color: $primaryColor;
                     }
                     .label {
                         padding-left: 10px;
@@ -81,8 +80,9 @@
             background: $whiteColor;
             box-shadow: 0 0 35px #eee;
             padding: 50px 50px 35px;
-            border-radius: 5px;
+            
             .btn {
+                border-radius: 5px;
                 margin: 0 0 15px;
                 width: 100%;
             }
@@ -96,7 +96,7 @@
         .react-tabs__tab{
             position:relative;
             text-align:center;
-            width: 25%;
+            width: calc(100% / 3);
             display: inline-block;
             button{
                 position:relative;
@@ -117,8 +117,19 @@
             &.react-tabs__tab--selected{
                 button {
                     color:$whiteColor;
-                    background:$orangeColor;
-                    border-color: $orangeColor;
+                    background:$primaryColor;
+                }
+            }
+
+            &:first-child {
+                button {
+                    border-top-left-radius: 12px;
+                }
+            }
+
+            &:last-child {
+                button {
+                    border-top-right-radius: 12px;
                 }
             }
         }
@@ -140,14 +151,6 @@
 /* Course Overview */
 .course-overview{
     position:relative;
-    .instructor-title{
-        position:relative;
-        color: $titleColor;
-        font-size:20px;
-        font-weight:600;
-        line-height:1.3em;
-        margin-bottom:18px;
-    }
     .inner-box{
         position:relative;
         padding:0px 40px 40px;
@@ -188,7 +191,7 @@
                 list-style:disc;
                 margin-bottom:10px;
                 .fa{
-                    color:$orangeColor;
+                    color:$primaryColor;
                     margin:0px 2px;
                 }
                 &:last-child{
@@ -210,7 +213,7 @@
                     content: "\f101";
                     left:0px;
                     top:5px;
-                    color:$orangeColor;
+                    color:$primaryColor;
                     font-size:14px;
                     line-height:1em;
                     font-family: "FontAwesome";
@@ -240,14 +243,14 @@
         font-size:16px;
         .fa{
             position:relative;
-            color:$orangeColor;
+            color:$primaryColor;
             margin:0px 2px;
             font-size:16px;
         }
     }
     .total-rating{
         position:relative;
-        color:$orangeColor;
+        color:$primaryColor;
         font-size:16px;
         font-weight:600;
         margin-right:5px;
@@ -302,7 +305,7 @@
     }
     .more{
         position:relative;
-        color:$orangeColor;
+        color:$primaryColor;
         font-size:14px;
         font-weight:500;
         margin-top:30px;

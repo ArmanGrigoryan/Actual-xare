@@ -1,7 +1,27 @@
 import React from 'react';
 import Slider from "react-slick";
 import SectionTitle from '../../components/Common/SectionTitle';
-import courseImg1 from '../../assets/img/courses/1.jpg';
+import pic1 from '../../assets/img/archive/1.jpg';
+import pic2 from '../../assets/img/archive/2.jpg';
+import pic3 from '../../assets/img/archive/15.jpeg';
+import pic4 from '../../assets/img/archive/6.jpg';
+import pic5 from '../../assets/img/archive/4.jpg';
+import pic6 from '../../assets/img/archive/12.jpeg';
+import pic7 from '../../assets/img/archive/11.jpeg';
+import pic8 from '../../assets/img/archive/16.jpeg';
+import pic9 from '../../assets/img/archive/3.jpg';
+import pic10 from '../../assets/img/archive/8.jpeg';
+import pic11 from '../../assets/img/archive/13.jpeg';
+import pic12 from '../../assets/img/archive/10.jpeg';
+import pic13 from '../../assets/img/archive/20.jpeg';
+import pic14 from '../../assets/img/archive/5.jpg';
+import pic15 from '../../assets/img/archive/9.jpeg';
+import pic16 from '../../assets/img/archive/18.jpeg';
+import pic17 from '../../assets/img/archive/19.jpeg';
+import pic18 from '../../assets/img/archive/14.jpeg';
+import pic19 from '../../assets/img/archive/21.jpeg';
+import pic20 from '../../assets/img/archive/17.jpeg';
+import Image from '../../components/Elements/Image';
 
 const SlideShow = () => {
     const sliderSettings = {
@@ -11,12 +31,12 @@ const SlideShow = () => {
         arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        className: 'slides'
+        className: 'slides',
     };
 
     return (
-        <div className="rs-featured-courses pt-100 pb-150 md-pt-76 md-pb-140 sm-pb-70">
-            <div className="container">
+        <div className="rs-featured-courses pt-50 pb-50 md-pt-30 md-pb-30 sm-pb-30">
+            <div className="relative">
                 <SectionTitle
                     sectionClass="sec-title2 text-center"
                     subtitleClass="sub-title uppercase mb-10"
@@ -25,30 +45,106 @@ const SlideShow = () => {
                     title="Ակտուալի արխիվը"
                 />
                 <Slider {...sliderSettings}>
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
-                    <img loading="lazy" src={courseImg1} alt="" className="block d-block w-100 radius-12 b-none border-none" />
+                    <Image 
+                        src={pic1} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic2} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic3} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic4} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic5} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic6} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic7} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic8} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic9} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic10} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic11} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic12} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic13} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic14} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic15} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic16} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic17} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic18} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic19} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
+                    <Image 
+                        src={pic20} 
+                        alt="" 
+                        className="block d-block w-100 radius-12 b-none border-none" 
+                    />
                 </Slider>
             </div>
         </div>

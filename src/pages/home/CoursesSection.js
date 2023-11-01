@@ -26,7 +26,7 @@ const Courses = () => {
                             itemClass="courses-item radius-12"
                             image={image1}
                             title="Fitness Development Strategy Buildup Laoreet"
-                            pricing="Free"
+                            pricing="Ակցիա"
                             studentQuantity="25"
                             lessonsQuantity="6"
                             courseLink="#"
@@ -37,7 +37,7 @@ const Courses = () => {
                             itemClass="courses-item radius-12"
                             image={image2}
                             title="Artificial Intelligence Fundamental Startup Justo"
-                            pricing="$40.00"
+                            pricing="Ակցիա"
                             studentQuantity="33"
                             lessonsQuantity="4"
                             courseLink="#"
@@ -48,7 +48,7 @@ const Courses = () => {
                             itemClass="courses-item radius-12"
                             image={image3}
                             title="Computer Science Startup Varius et Commodo"
-                            pricing="$35.00"
+                            pricing="Ակցիա"
                             studentQuantity="21"
                             lessonsQuantity="7"
                             courseLink="#"
@@ -59,7 +59,7 @@ const Courses = () => {
                             itemClass="courses-item radius-12"
                             image={image4}
                             title="Testy & Delicious Food Recipes for Lunch Tellus"
-                            pricing="$32.00"
+                            pricing="Ակցիա"
                             studentQuantity="45"
                             lessonsQuantity="12"
                             courseLink="#"
@@ -70,7 +70,7 @@ const Courses = () => {
                             itemClass="courses-item radius-12"
                             image={image5}
                             title="Lawyer Advance Mental Simulator Handle Nulla"
-                            pricing="$22.00"
+                            pricing="Ակցիա"
                             studentQuantity="41"
                             lessonsQuantity="14"
                             courseLink="#"
@@ -81,7 +81,7 @@ const Courses = () => {
                             itemClass="courses-item radius-12"
                             image={image6}
                             title="Computer Fundamentals Basic Startup Ultricies"
-                            pricing="$28.00"
+                            pricing="Ակցիա"
                             studentQuantity="23"
                             lessonsQuantity="5"
                             courseLink="#"

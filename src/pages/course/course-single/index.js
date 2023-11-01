@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import Header from '../../../components/Layout/Header';
 import Footer from '../../../components/Layout/Footer/Footer';
 import Newsletter from '../../../components/Common/Newsletter';
@@ -8,15 +7,17 @@ import CourseDetailsMain from './CourseDetailsMain';
 import footerLogo from '../../../assets/img/logo/logo-light.png';
 import bannerbg from '../../../assets/img/breadcrumbs/inner12.jpg';
 import useFade from '../../../utils/hooks/useFade.js';
+import SEO from '../../../components/SEO';
 
 const CourseSingle = () => {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
-            <Helmet>
-                <meta name="description" content="Actual HR Agency, Actual training center" />
-            </Helmet>
+            <SEO
+                title='Actual HR Agency | Ակտուալ - Դասընթացներ'
+                description='Ծանոթացեք դասընթացի բնութագրին, ստացեք տեղեկատվություն դասընթացավարի, անցկացման ժամերի մասին Եվ գրանցվեք։'
+            />
             <Header parentMenu='course' />
             <SiteBreadcrumb
                 pageTitle="Ընդհանուր բնութագիր"

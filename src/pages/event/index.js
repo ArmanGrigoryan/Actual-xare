@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import SingleEventThree from '../../components/Events/SingleEventThree';
 import Header from '../../components/Layout/Header';
 import Footer from '../../components/Layout/Footer/Footer';
@@ -15,15 +14,17 @@ import eventImg4 from '../../assets/img/event/style3/2.jpg';
 import eventImg5 from '../../assets/img/event/style3/1.jpg';
 import eventImg6 from '../../assets/img/event/style3/2.jpg';
 import useFade from '../../utils/hooks/useFade.js';
+import SEO from '../../components/SEO';
 
 const Event = () => {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
-            <Helmet>
-                <meta name="description" content="Actual HR Agency, Actual training center" />
-            </Helmet>
+            <SEO
+                title='Actual HR Agency | Ակտուալ - Մեր մասին'
+                description='Ծանոթացեք Ակտուալի իրադարձություններին։ Ստացեք տեղեկատվություն նմանը չունեցող Եվ յուրօրինակ The Master-ի, The voice of HR-ի հետ։'
+            />
             <Header parentMenu='pages' />
             <SiteBreadcrumb
                 pageTitle="Event Three"

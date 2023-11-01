@@ -8,7 +8,7 @@ import blogImg2 from '../../assets/img/blog/style2/1.jpg';
 const Blog = () => {
     return (
         <React.Fragment>
-            <div id="rs-blog" className="rs-blog style1 modify1 pt-100 pb-106 md-pt-70 md-pb-70">
+            <div id="rs-blog" className="rs-blog style1 modify1 pt-50 pb-50 md-pt-30 md-pb-30">
                 <div className="container">
                     <SectionTitle
                         sectionClass="sec-title mb-50 md-mb-30 text-center"

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import Header from '../../components/Layout/Header';
 import Footer from '../../components/Layout/Footer/Footer';
 import ScrollToTop from '../../components/Common/ScrollTop';
@@ -7,15 +6,17 @@ import Newsletter from '../../components/Common/Newsletter';
 import ContactMain from './ContactMain';
 import footerLogo from '../../assets/img/logo/logo-light.png';
 import useFade from '../../utils/hooks/useFade.js';
+import SEO from '../../components/SEO';
 
 const Contact = () => {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
-            <Helmet>
-                <meta name="description" content="Actual HR Agency, Actual training center" />
-            </Helmet>
+            <SEO
+                title='Actual HR Agency | Ակտուալ - Մեր մասին'
+                description='Կապ մեզ հետ - Բաժանորդագրվեք Ակտուալի ալիքին հետադարձ կապի համար կամ այցելեք մեզ՝ ք. Երևան, Խանջյան 19, (+374)44-30-30-28։'
+            />
             <Header parentMenu='contact' />
             <ContactMain />
             <Newsletter
