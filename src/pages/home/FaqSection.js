@@ -12,11 +12,11 @@ import { Link } from 'react-router-dom';
 const FaqSection = () => {
 
     const [isOpen, setIsOpen] = useState(false);
-    const openModal = () => setIsOpen(!isOpen);
+    const toggleModal = () => setIsOpen(!isOpen);
 
     return (
         <div className="rs-faq-part style1 orange-style pt-100 pb-100 md-pt-70 md-pb-70">
-            <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={() => { openModal(); }} />
+            <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={toggleModal} />
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 padding-0">
@@ -85,9 +85,9 @@ const FaqSection = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6 padding-0">
-                        <div className="img-part media-icon orange-color">
-                            <div className="popup-videos" onClick={() => { openModal(); }}><i className="fa fa-play"></i></div>
+                    <div className={`col-lg-6 padding-0 ${isOpen ? "z-index-1" : ""}`}>
+                        <div className={`img-part media-icon orange-color ${isOpen ? "overlay" : ""}`}>
+                            <div className="popup-videos" onClick={toggleModal}><i className="fa fa-play"></i></div>
                         </div>
                     </div>
                 </div>

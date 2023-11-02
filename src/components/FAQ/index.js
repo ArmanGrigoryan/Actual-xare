@@ -83,7 +83,7 @@ const Faq = () => {
                             <AccordionItem className="accordion-item" uuid="c">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        Ի՞նչ կտա մեզ HR management դասընթացը
+                                        Ի՞նչ կտա մեզ HR Management դասընթացը
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">

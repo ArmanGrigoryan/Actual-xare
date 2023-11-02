@@ -7,33 +7,36 @@ import courseImg2 from '../../assets/img/courses/2.jpg';
 import courseImg3 from '../../assets/img/courses/3.jpg';
 import authorImg1 from '../../assets/img/courses/4.jpg';
 
-const Courses = () => {
-    const sliderSettings = {
-        dots: true,
-        centerMode: false,
-        infinite: true,
-        arrows: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 575,
-                settings: {
-                    slidesToShow: 1,
-                    dots: false,
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                }
+const sliderSettings = {
+    dots: true,
+    centerMode: false,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                dots: false,
             }
-        ]
-    };
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+    ]
+};
+
+const Courses = () => {
 
     return (
-        <div className="rs-featured-courses pt-100 pb-150 md-pt-76 md-pb-140 sm-pb-70">
+        <div className="rs-featured-courses pt-100 pb-100 md-pt-76 md-pb-100 sm-pb-70">
             <div className="container">
                 <SectionTitle
                     sectionClass="sec-title2 text-center"

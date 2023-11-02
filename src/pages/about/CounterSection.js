@@ -39,7 +39,7 @@ const AboutCounter = () => {
     };
 
     return (
-        <div id="rs-about" className="rs-about style3 pt-110 md-pt-70">
+        <div id="rs-about" className="rs-about style3 pt-50 md-pt-30">
             <div className="container">
                 <div className="row y-middle">
                     <div className="col-lg-4 lg-pr-0 md-mb-30">

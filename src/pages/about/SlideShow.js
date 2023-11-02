@@ -23,16 +23,17 @@ import pic19 from '../../assets/img/archive/21.jpeg';
 import pic20 from '../../assets/img/archive/17.jpeg';
 import Image from '../../components/Elements/Image';
 
+const sliderSettings = {
+    dots: false,
+    centerMode: true,
+    infinite: true,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    className: 'slides',
+};
+
 const SlideShow = () => {
-    const sliderSettings = {
-        dots: false,
-        centerMode: true,
-        infinite: true,
-        arrows: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        className: 'slides',
-    };
 
     return (
         <div className="rs-featured-courses pt-50 pb-50 md-pt-30 md-pb-30 sm-pb-30">
