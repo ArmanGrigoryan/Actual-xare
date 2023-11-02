@@ -11,6 +11,7 @@ import ScrollToTop from '../../components/Common/ScrollTop';
 import BrandThree from '../../components/Common/Brand/BrandThree.js';
 import Events from './EventsSection.js';
 import Videos from './VideoSection.js';
+import WithLoveNews from './WithLoveNews';
 
 const HomeMain = () => {
 
@@ -19,6 +20,7 @@ const HomeMain = () => {
 			<SliderDefault />
 			<Courses />
 			<PopularCourses />
+			<WithLoveNews />
 			<Videos />
 			<Cta />
 			<Degree />
