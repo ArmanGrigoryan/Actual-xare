@@ -122,6 +122,16 @@
             }
         }
     }
+
+    .btn-part{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .btn-send {
+            max-width: 250px;
+        }
+    }
 }
 
 @media #{$lg} {

@@ -28,7 +28,7 @@ const AboutVideo = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className="col-lg-6 pl-150 pt-134 pb-150 md-pl-14 md-pt-0 md-pb-70">
+                        <div className="col-lg-6 ml-25 pl-120 pt-50 pb-50 md-pl-10 md-pt-0 md-pb-30">
                             <SectionTitle
                                 sectionClass="sec-title mb-40"
                                 titleClass="title mb-16"
@@ -38,7 +38,7 @@ const AboutVideo = () => {
                                 detailedDescription="Մեր փորձառու մասնագետներից բաղկացած թիմը մշտապես կլինի Ձեր բիզնեսի կողքին՝ համալրելով Ձեր կազմակերպությունը ոչ միայն որակյալ և մրցունակ մասնագետներով, այլև գրագետ և ճիշտ բրենդավորելով Ձեր ընկերությունն աշխատաշուկայում՝ որպես գործատու"
                             />
                             <div className="btn-part">
-                                <Link className="readon orange" to="/courses">Դիմել հիմա</Link>
+                                <Link className="readon orange" to="/course">Դիմել հիմա</Link>
                             </div>
                         </div>
                     </div>

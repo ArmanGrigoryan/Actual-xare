@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function Image(props) {
-    const { src, alt, className, onClick, isZooming = false } = props;
+export default function Image({
+    src, 
+    alt, 
+    className, 
+    onClick, 
+    isZooming = false, 
+    textDescriptionComponent = null, 
+    isPreviewing = false 
+}) {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleDescription = () => setIsExpanded(prev => !prev);
 
     return (
         <div className="relative max-height-inherit">
@@ -14,13 +24,19 @@ export default function Image(props) {
                 loading="lazy"
             />
 
-            {/* {
-                isZooming ?
-                <span className="zoom-icon-absolute">
-                    <i className="fa fa-search-plus"></i>
-                </span> :
+            {
+                isPreviewing ?
+                <div className={`absolute-description ${isExpanded ? "expanded" : ""}`}>
+                    {
+                        isExpanded ?
+                        <span onClick={toggleDescription}>&darr;</span> :
+                        <span onClick={toggleDescription}>...</span>
+                    }
+                    { textDescriptionComponent }
+                </div> :
                 null
-            } */}
+            }
+
         </div>
     );
 }
