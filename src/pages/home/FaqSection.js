@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ModalVideo from 'react-modal-video';
 import {
     Accordion,
     AccordionItem,
@@ -8,15 +7,20 @@ import {
     AccordionItemButton,
 } from 'react-accessible-accordion';
 import { Link } from 'react-router-dom';
+import ModalVideo from 'comp/Elements/ModalVideo';
 
 const FaqSection = () => {
-
     const [isOpen, setIsOpen] = useState(false);
+
     const toggleModal = () => setIsOpen(!isOpen);
 
     return (
         <div className="rs-faq-part style1 orange-style pt-100 pb-100 md-pt-70 md-pb-70">
-            <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={toggleModal} />
+            <ModalVideo
+                isOpen={isOpen}
+                closeHandler={toggleModal}
+            />
+
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 padding-0">

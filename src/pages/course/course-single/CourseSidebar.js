@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
-import ModalVideo from 'react-modal-video';
 import { Link } from 'react-router-dom';
 import videoImg from 'media/about/about-video-bg2.png';
+import ModalVideo from 'comp/Elements/ModalVideo';
 
 const CourseSidebar = () => {
-
     const [isOpen, setIsOpen] = useState(false);
+
     const toggleModal = () => setIsOpen(!isOpen);
 
     return (
         <div className="inner-column">
-            <ModalVideo channel='youtube' isOpen={isOpen} videoId='OmLNs6zQIHo' onClose={toggleModal} />
+            <ModalVideo
+                isOpen={isOpen}
+                closeHandler={toggleModal}
+            />
+
             <div className="intro-video media-icon orange-color2">
                 <img loading="lazy" className="video-img radius-12 w-100" src={videoImg} alt="Video" />
                 <Link to="" className="popup-videos" onClick={toggleModal} >

@@ -16,16 +16,16 @@ const Courses = () => {
                 <SectionTitle
                     sectionClass="sec-title2 text-center mb-44"
                     subtitleClass="sub-title"
-                    subtitle="Select Courses"
+                    subtitle="Դարձիր Ակտուալ անդամ"
                     titleClass="title black-color"
-                    title="Explore Popular Courses"
+                    title="Ընթացիկ Դասընթացներ"
                 />
                 <div className="row">
                     <div className="col-lg-4 col-md-6 mb-30">
                         <CourseSingle
                             itemClass="courses-item radius-12"
                             image={image1}
-                            title="Fitness Development Strategy Buildup Laoreet"
+                            title="ՄՌԿ դասընթաց սկսնակների համար"
                             pricing="Ակցիա"
                             studentQuantity="25"
                             lessonsQuantity="6"
@@ -36,7 +36,7 @@ const Courses = () => {
                         <CourseSingle
                             itemClass="courses-item radius-12"
                             image={image2}
-                            title="Artificial Intelligence Fundamental Startup Justo"
+                            title="ՄՌԿ խորացված դասընթաց"
                             pricing="Ակցիա"
                             studentQuantity="33"
                             lessonsQuantity="4"
@@ -47,7 +47,7 @@ const Courses = () => {
                         <CourseSingle
                             itemClass="courses-item radius-12"
                             image={image3}
-                            title="Computer Science Startup Varius et Commodo"
+                            title="Կադրային Գործավարություն և ՀՀ Աշխատանքային Օրենսգիրք"
                             pricing="Ակցիա"
                             studentQuantity="21"
                             lessonsQuantity="7"
@@ -58,7 +58,7 @@ const Courses = () => {
                         <CourseSingle
                             itemClass="courses-item radius-12"
                             image={image4}
-                            title="Testy & Delicious Food Recipes for Lunch Tellus"
+                            title="Բիզնես Անգլերեն | Business English"
                             pricing="Ակցիա"
                             studentQuantity="45"
                             lessonsQuantity="12"
@@ -69,7 +69,7 @@ const Courses = () => {
                         <CourseSingle
                             itemClass="courses-item radius-12"
                             image={image5}
-                            title="Lawyer Advance Mental Simulator Handle Nulla"
+                            title="Excel և Վերլուծություն"
                             pricing="Ակցիա"
                             studentQuantity="41"
                             lessonsQuantity="14"

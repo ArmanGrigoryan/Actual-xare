@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ModalVideo from 'react-modal-video';
 import SectionTitle from 'comp/Common/SectionTitle';
+import ModalVideo from 'comp/Elements/ModalVideo';
 
 const AboutVideo = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,14 +10,18 @@ const AboutVideo = () => {
 
     return (
         <div className="rs-cta style2">
-            <ModalVideo channel='youtube' isOpen={isOpen} videoId='FMvA5fyZ338' onClose={toggleModal} />
+            <ModalVideo 
+                isOpen={isOpen}
+                closeHandler={toggleModal}
+            />
+
             <div className="partition-bg-wrap inner-page">
                 <div className="container">
                     <div className="row y-bottom">
                         <div className="col-lg-6 pb-50 md-pt-30 md-pb-30 d-flex align-items-center min-height-400">
                             <div className="video-wrap w-100">
                                 <a className="popup-videos w-100" onClick={toggleModal}>
-                                    <i className="fa fa-play"></i> 
+                                    <i className="fa fa-play"></i>
                                     <h5 className="title mb-0 ml-20 mobile-fade-full-width width-30-100">Կատարեք շրջագայություն Ակտուալում</h5>
                                 </a>
                             </div>

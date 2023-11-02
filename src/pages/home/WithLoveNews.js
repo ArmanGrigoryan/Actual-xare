@@ -533,7 +533,7 @@ const WithLoveNews = ({ openPreviewHandler }) => {
                 <SectionTitle
                     sectionClass="sec-title2 text-center"
                     subtitleClass="sub-title uppercase mb-10"
-                    subtitle="Ծանոթացեք սպասվող նորություններին"
+                    subtitle="Ծանոթացեք վերջին նորություններին"
                     titleClass="title mb-40"
                     title="Սիրով՝ Ակտուալից"
                 />

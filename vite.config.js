@@ -25,6 +25,7 @@ export default defineConfig({
       "font": path.resolve(__dirname, "./src/assets/fonts"),
       "pages": path.resolve(__dirname, "./src/pages"),
       "hooks": path.resolve(__dirname, "./src/utils/hooks"),
+      "helpers": path.resolve(__dirname, "./src/utils/helpers"),
       "data": path.resolve(__dirname, "./src/sample-data"),
     }
   }

@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './app/App';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'style/main.scss';
 
 const element = document.getElementById('root');

@@ -329,5 +329,14 @@
 @media #{$mobile} {
     .intro-section .intro-tabs .react-tabs__tab {
         width: 100%;
+
+        &:first-child button {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        &:last-child button {
+            border-radius: 0;
+        }
     }
 }

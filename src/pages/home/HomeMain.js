@@ -1,7 +1,6 @@
 import React from 'react';
 import SliderDefault from 'comp/Slider/SliderDefault';
-// import Courses from './CoursesSection';
-// import PopularCourses from './CoursesSection8';
+import Courses from './CoursesSection';
 import Cta from './CtaSection';
 import FaqSection from './FaqSection';
 import Testimonial from './TestimonialSection';
@@ -18,8 +17,7 @@ const HomeMain = () => {
 	return (
 		<React.Fragment>
 			<SliderDefault />
-			{/* <Courses /> */}
-			{/* <PopularCourses /> */}
+			<Courses />
 			<WithLoveNewsWithPreview />
 			<Videos />
 			<Cta />
