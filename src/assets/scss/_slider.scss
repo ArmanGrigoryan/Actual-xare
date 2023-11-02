@@ -34,19 +34,20 @@
                 background: rgba(0,0,0,.6);
                 max-height: 100vh;
 
-                #myVideo1,
-                #myVideo2 {
+                #slider-bg-video {
                     position: absolute;
                     top: 0;
                     left: 0;
                     right: 0;
                     bottom: 0;
-                    min-width: 100%; 
+                    min-width: 100%;
+                    max-width: 100vw;
                     min-height: 100vh;
                     z-index: -1;
+                    object-fit: cover;
                 }
             }
-        }    
+        }
     }
 }
 

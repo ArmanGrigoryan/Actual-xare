@@ -64,7 +64,7 @@ const AboutTab = () => {
     }, [tab])
 
     return (
-        <div className="rs-about style1 pt-100 pb-100 md-pt-70 md-pb-70">
+        <div className="rs-about style1 pt-50 pb-50 md-pt-30 md-pb-30">
             <div className="container">
                 <Tabs>
                     <div className="row align-items-center">

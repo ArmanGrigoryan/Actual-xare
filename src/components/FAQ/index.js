@@ -57,7 +57,7 @@ const Faq = () => {
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Ակտուալը տարիներ շարունակ թողարկել է նմանը չունեցող նախագծեր (The Master, The Voice Of HR), որոնց արդյունքում ձևավորվել և աշխատաշուկայում իրենց ուրույն տեղն են գտել բազմաթիվ կադրեր։
+                                    Ակտուալը տարիներ շարունակ թողարկել է նմանը չունեցող նախագծեր, որոնց արդյունքում ձևավորվել և աշխատաշուկայում իրենց ուրույն տեղն են գտել բազմաթիվ կադրեր։
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="i">
@@ -78,6 +78,16 @@ const Faq = () => {
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
                                     Այո, դասընթացն ավարտելուն պես, ուսանողին տրամադրվում է համապատասխան մասնակցության վկայական։
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                            <AccordionItem className="accordion-item" uuid="c">
+                                <AccordionItemHeading className="card-header">
+                                    <AccordionItemButton className="card-link">
+                                        Ի՞նչ կտա մեզ HR Management դասընթացը
+                                    </AccordionItemButton>
+                                </AccordionItemHeading>
+                                <AccordionItemPanel className="card-body">
+                                    Դասընթացը հնարավորություն կտա ստանալ համակարգված և ամբողջական պատկերացում/գիտելիքներ ՄՌԿ-ի տեսությունից մինչև պրակտիկ կիրառությունը տարբեր ոլորտներում։ Ծանոթացում ՄՌԿ գրեթե բոլոր գործառույթներին և շուկայում ընթացող միտումներին։
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="d">
