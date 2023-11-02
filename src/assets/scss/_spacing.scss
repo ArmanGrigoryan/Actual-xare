@@ -1,0 +1,291 @@
+/*--
+    - Margin & Padding
+-----------------------------------------*/
+/*-- Margin Top --*/
+@for $i from 1 through 100 {
+    .mt-#{2 * $i}{margin-top: 2px * $i;}
+    .mt--#{2 * $i}{margin-top: -2px * $i;}
+}
+.mt-0 {margin-top: 0 !important;}
+.mt-2 {margin-top: 2px !important;}
+.mt-5 {margin-top: 5px !important;}
+
+/*-- Margin Bottom --*/
+@for $i from 1 through 100 {
+    .mb-#{2 * $i}{margin-bottom: 2px *$i;}
+    .mb--#{2 * $i}{margin-bottom: -2px *$i;}
+}
+.mb-0 {margin-bottom: 0 !important;}
+.mb-2 {margin-bottom: 2px !important;}
+.mb-5 {margin-bottom: 5px !important;}
+
+/*-- Margin Left --*/
+@for $i from 1 through 100 {
+    .ml-#{2 * $i}{margin-left: 2px * $i;}
+    .ml--#{2 * $i}{margin-left: -2px * $i;}
+}
+.ml-0 {margin-left: 0 !important;}
+.ml-2 {margin-left: 2px !important;}
+.ml-5 {margin-left: 5px !important;}
+
+/*-- Margin Right --*/
+@for $i from 1 through 100 {
+    .mr-#{2 * $i}{margin-right: 2px *$i;}
+    .mr--#{2 * $i}{margin-right: -2px *$i;}
+}
+.mr-0 {margin-right: 0 !important;}
+.mr-2 {margin-right: 2px !important;}
+.mr-5 {margin-right: 5px !important;}
+
+/*-- Padding Top --*/
+@for $i from 1 through 100 {
+    .pt-#{2 * $i}{padding-top: 2px *$i;}
+}
+.pt-0 {padding-top: 0 !important;}
+.pt-2 {padding-top: 2px !important;}
+.pt-5 {padding-top: 5px !important;}
+.pt-110 {padding-top: 110px !important;}
+.pt-120 {padding-top: 120px !important;}
+
+/*-- Padding Bottom --*/
+@for $i from 1 through 100 {
+    .pb-#{2 * $i}{padding-bottom: 2px *$i;}
+}
+.pb-0 {padding-bottom: 0 !important;}
+.pb-2 {padding-bottom: 2px !important;}
+.pb-5 {padding-bottom: 5px !important;}
+
+/*-- Padding Left --*/
+@for $i from 1 through 100 {
+    .pl-#{2 * $i}{padding-left: 2px *$i;}
+}
+.pl-0 {padding-left: 0 !important;}
+.pl-2 {padding-left: 2px !important;}
+.pl-5 {padding-left: 5px !important;}
+.pl-120 {padding-left: 120px !important;}
+
+/*-- Padding Right --*/
+@for $i from 1 through 100 {
+    .pr-#{2 * $i}{padding-right: 2px *$i;}
+}
+.pr-0 {padding-right: 0 !important;}
+.pr-2 {padding-right: 2px !important;}
+.pr-5 {padding-right: 5px !important;}
+.pr-150 {padding-right: 150px !important;}
+
+/*-- Border Radius --*/
+@for $i from 1 through 40 {
+    .radius-#{$i}{border-radius: 1px *$i;}
+}
+.radius-full {border-radius: 50% !important;}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y)*-1);
+    margin-right: calc(var(--bs-gutter-x)*-0.5);
+    margin-left: calc(var(--bs-gutter-x)*-0.5);
+}
+
+/* Lg Device :1199px. */
+@media #{$lg} {
+    /*--
+        - Large Device Margin & Padding
+    -----------------------------------------*/
+    /*-- Margin Top --*/
+    @for $i from 1 through 100 {
+        .lg-mt-#{2 * $i}{margin-top: 2px * $i;}
+        .lg-mt--#{2 * $i}{margin-top: -2px * $i;}
+    }
+    .lg-mt-0 {margin-top: 0 !important;}
+    .lg-mt-2 {margin-top: 2px !important;}
+    .lg-mt-5 {margin-top: 5px !important;}
+
+    /*-- Margin Bottom --*/
+    @for $i from 1 through 100 {
+        .lg-mb-#{2 * $i}{margin-bottom: 2px *$i;}
+        .lg-mb--#{2 * $i}{margin-bottom: -2px *$i;}
+    }
+
+    /*-- Margin Left --*/
+    @for $i from 1 through 100 {
+        .lg-ml-#{2 * $i}{margin-left: 2px * $i;}
+        .lg-ml--#{2 * $i}{margin-left: -2px * $i;}
+    }
+
+    /*-- Margin Right --*/
+    @for $i from 1 through 100 {
+        .lg-mr-#{2 * $i}{margin-right: 2px *$i;}
+        .lg-mr--#{2 * $i}{margin-right: -2px *$i;}
+    }
+
+    /*-- Padding Top --*/
+    @for $i from 1 through 100 {
+        .lg-pt-#{2 * $i}{padding-top: 2px *$i;}
+    }
+
+    /*-- Padding Bottom --*/
+    @for $i from 1 through 100 {
+        .lg-pb-#{2 * $i}{padding-bottom: 2px *$i;}
+    }
+
+    /*-- Padding Left --*/
+    @for $i from 1 through 100 {
+        .lg-pl-#{2 * $i}{padding-left: 2px *$i;}
+    }
+
+    /*-- Padding Right --*/
+    @for $i from 1 through 100 {
+        .lg-pr-#{2 * $i}{padding-right: 2px *$i;}
+    }
+}
+
+@media #{$md} {
+    /*--
+        - MD Device Margin & Padding
+    -----------------------------------------*/
+    /*-- Margin Top --*/
+    @for $i from 1 through 100 {
+        .md-mt-#{2 * $i}{margin-top: 2px * $i;}
+        .md-mt--#{2 * $i}{margin-top: -2px * $i;}
+    }
+
+    /*-- Margin Bottom --*/
+    @for $i from 1 through 100 {
+        .md-mb-#{2 * $i}{margin-bottom: 2px *$i;}
+        .md-mb--#{2 * $i}{margin-bottom: -2px *$i;}
+    }
+
+    /*-- Margin Left --*/
+    @for $i from 1 through 100 {
+        .md-ml-#{2 * $i}{margin-left: 2px * $i;}
+        .md-ml--#{2 * $i}{margin-left: -2px * $i;}
+    }
+
+    /*-- Margin Right --*/
+    @for $i from 1 through 100 {
+        .md-mr-#{2 * $i}{margin-right: 2px *$i;}
+        .md-mr--#{2 * $i}{margin-right: -2px *$i;}
+    }
+
+    /*-- Padding Top --*/
+    @for $i from 1 through 100 {
+        .md-pt-#{2 * $i}{padding-top: 2px *$i;}
+    }
+
+    /*-- Padding Bottom --*/
+    @for $i from 1 through 100 {
+        .md-pb-#{2 * $i}{padding-bottom: 2px *$i;}
+    }
+
+    /*-- Padding Left --*/
+    @for $i from 1 through 100 {
+        .md-pl-#{2 * $i}{padding-left: 2px *$i;}
+    }
+
+    /*-- Padding Right --*/
+    @for $i from 1 through 100 {
+        .md-pr-#{2 * $i}{padding-right: 2px *$i;}
+    }
+}
+
+@media #{$sm} {
+    /*--
+        - SM Device Margin & Padding
+    -----------------------------------------*/
+    /*-- Margin Top --*/
+    @for $i from 1 through 100 {
+        .sm-mt-#{2 * $i}{margin-top: 2px * $i;}
+        .sm-mt--#{2 * $i}{margin-top: -2px * $i;}
+    }
+
+    /*-- Margin Bottom --*/
+    @for $i from 1 through 100 {
+        .sm-mb-#{2 * $i}{margin-bottom: 2px *$i;}
+        .sm-mb--#{2 * $i}{margin-bottom: -2px *$i;}
+    }
+
+    /*-- Margin Left --*/
+    @for $i from 1 through 100 {
+        .sm-ml-#{2 * $i}{margin-left: 2px * $i;}
+        .sm-ml--#{2 * $i}{margin-left: -2px * $i;}
+    }
+
+    /*-- Margin Right --*/
+    @for $i from 1 through 100 {
+        .sm-mr-#{2 * $i}{margin-right: 2px *$i;}
+        .sm-mr--#{2 * $i}{margin-right: -2px *$i;}
+    }
+
+    /*-- Padding Top --*/
+    @for $i from 1 through 100 {
+        .sm-pt-#{2 * $i}{padding-top: 2px *$i;}
+    }
+
+    /*-- Padding Bottom --*/
+    @for $i from 1 through 100 {
+        .sm-pb-#{2 * $i}{padding-bottom: 2px *$i;}
+    }
+
+    /*-- Padding Left --*/
+    @for $i from 1 through 100 {
+        .sm-pl-#{2 * $i}{padding-left: 2px *$i;}
+    }
+
+    /*-- Padding Right --*/
+    @for $i from 1 through 100 {
+        .sm-pr-#{2 * $i}{padding-right: 2px *$i;}
+    }
+}
+
+@media #{$xs} {
+    /*--
+        - XS Device Margin & Padding
+    -----------------------------------------*/
+    /*-- Margin Top --*/
+    @for $i from 1 through 100 {
+        .xs-mt-#{2 * $i}{margin-top: 2px * $i;}
+        .xs-mt--#{2 * $i}{margin-top: -2px * $i;}
+    }
+
+    /*-- Margin Bottom --*/
+    @for $i from 1 through 100 {
+        .xs-mb-#{2 * $i}{margin-bottom: 2px *$i;}
+        .xs-mb--#{2 * $i}{margin-bottom: -2px *$i;}
+    }
+
+    /*-- Margin Left --*/
+    @for $i from 1 through 100 {
+        .xs-ml-#{2 * $i}{margin-left: 2px * $i;}
+        .xs-ml--#{2 * $i}{margin-left: -2px * $i;}
+    }
+
+    /*-- Margin Right --*/
+    @for $i from 1 through 100 {
+        .xs-mr-#{2 * $i}{margin-right: 2px *$i;}
+        .xs-mr--#{2 * $i}{margin-right: -2px *$i;}
+    }
+
+    /*-- Padding Top --*/
+    @for $i from 1 through 100 {
+        .xs-pt-#{2 * $i}{padding-top: 2px *$i;}
+    }
+
+    /*-- Padding Bottom --*/
+    @for $i from 1 through 100 {
+        .xs-pb-#{2 * $i}{padding-bottom: 2px *$i;}
+    }
+
+    /*-- Padding Left --*/
+    @for $i from 1 through 100 {
+        .xs-pl-#{2 * $i}{padding-left: 2px *$i;}
+    }
+
+    /*-- Padding Right --*/
+    @for $i from 1 through 100 {
+        .xs-pr-#{2 * $i}{padding-right: 2px *$i;}
+    }
+}
+

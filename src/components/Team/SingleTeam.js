@@ -1,0 +1,21 @@
+import React from "react";
+
+const SingleTeam = (props) => {
+    const { teamClass, Image, Title, Designation } = props;
+	return(
+        <div className={teamClass ? teamClass + ' card-shadow-light' : 'team-item' + ' card-shadow-light'}>
+            <img loading="lazy" 
+                src={Image} 
+                alt={Title}
+            />
+            <div className="content-part">
+                <h4 className="name">
+                    {Title ? Title : 'Jhon Pedrocas'}
+                </h4>
+                <span className="designation">{Designation ? Designation : 'Professor'}</span>
+            </div>
+        </div>
+	)
+}
+
+export default SingleTeam
