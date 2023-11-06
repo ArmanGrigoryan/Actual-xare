@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import thumb1 from '../../assets/img/blog/style2/1.jpg';
-import thumb2 from '../../assets/img/blog/style2/1.jpg';
-import thumb3 from '../../assets/img/blog/style2/1.jpg';
-import thumb4 from '../../assets/img/blog/style2/1.jpg';
-import thumb5 from '../../assets/img/blog/style2/1.jpg';
+import thumb1 from 'media/blog/style2/1.jpg';
+import thumb2 from 'media/blog/style2/1.jpg';
+import thumb3 from 'media/blog/style2/1.jpg';
+import thumb4 from 'media/blog/style2/1.jpg';
+import thumb5 from 'media/blog/style2/1.jpg';
 
 const RecentPost = () => {
     return (

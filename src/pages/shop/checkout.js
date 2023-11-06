@@ -1,14 +1,14 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import CheckoutMain from '../../components/Shop/CheckoutMain';
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer/Footer';
-import Newsletter from '../../components/Common/Newsletter';
-import ScrollToTop from '../../components/Common/ScrollTop';
-import SiteBreadcrumb from '../../components/Common/Breadcumb';
-import footerLogo from '../../assets/img/logo/logo-light.png';
-import bannerbg from '../../assets/img/breadcrumbs/inner12.jpg';
+import CheckoutMain from 'comp/Shop/CheckoutMain';
+import Header from 'comp/Layout/Header';
+import Footer from 'comp/Layout/Footer/Footer';
+import Newsletter from 'comp/Common/Newsletter';
+import ScrollToTop from 'comp/Common/ScrollTop';
+import SiteBreadcrumb from 'comp/Common/Breadcumb';
+import footerLogo from 'media/logo/logo-light.png';
+import bannerbg from 'media/breadcrumbs/inner12.jpg';
 
 const Checkout = () => {
 

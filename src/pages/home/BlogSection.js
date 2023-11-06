@@ -1,6 +1,6 @@
 import React from 'react';
-import BlogPart from '../../components/Blog/HomeBlogSection';
-import SectionTitle from '../../components/Common/SectionTitle';
+import BlogPart from 'comp/Blog/HomeBlogSection';
+import SectionTitle from 'comp/Common/SectionTitle';
 
 const Blog = () => {
     return (

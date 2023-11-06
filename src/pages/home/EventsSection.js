@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SectionTitle from '../../components/Common/SectionTitle';
-import EventsShort from '../../components/Events/EventsShort';
-import eventImage from '../../assets/img/event/single.jpg'
+import SectionTitle from 'comp/Common/SectionTitle';
+import EventsShort from 'comp/Events/EventsShort';
+import eventImage from 'media/event/single.jpg'
 
 const Events = () => {
 

@@ -1,27 +1,27 @@
 import React from 'react';
 import Slider from "react-slick";
-import SectionTitle from '../../components/Common/SectionTitle';
-import pic1 from '../../assets/img/archive/1.jpg';
-import pic2 from '../../assets/img/archive/2.jpg';
-import pic3 from '../../assets/img/archive/15.jpeg';
-import pic4 from '../../assets/img/archive/6.jpg';
-import pic5 from '../../assets/img/archive/4.jpg';
-import pic6 from '../../assets/img/archive/12.jpeg';
-import pic7 from '../../assets/img/archive/11.jpeg';
-import pic8 from '../../assets/img/archive/16.jpeg';
-import pic9 from '../../assets/img/archive/3.jpg';
-import pic10 from '../../assets/img/archive/8.jpeg';
-import pic11 from '../../assets/img/archive/13.jpeg';
-import pic12 from '../../assets/img/archive/10.jpeg';
-import pic13 from '../../assets/img/archive/20.jpeg';
-import pic14 from '../../assets/img/archive/5.jpg';
-import pic15 from '../../assets/img/archive/9.jpeg';
-import pic16 from '../../assets/img/archive/18.jpeg';
-import pic17 from '../../assets/img/archive/19.jpeg';
-import pic18 from '../../assets/img/archive/14.jpeg';
-import pic19 from '../../assets/img/archive/21.jpeg';
-import pic20 from '../../assets/img/archive/17.jpeg';
-import Image from '../../components/Elements/Image';
+import SectionTitle from 'comp/Common/SectionTitle';
+import pic1 from 'media/archive/1.jpg';
+import pic2 from 'media/archive/2.jpg';
+import pic3 from 'media/archive/15.jpeg';
+import pic4 from 'media/archive/6.jpg';
+import pic5 from 'media/archive/4.jpg';
+import pic6 from 'media/archive/12.jpeg';
+import pic7 from 'media/archive/11.jpeg';
+import pic8 from 'media/archive/16.jpeg';
+import pic9 from 'media/archive/3.jpg';
+import pic10 from 'media/archive/8.jpeg';
+import pic11 from 'media/archive/13.jpeg';
+import pic12 from 'media/archive/10.jpeg';
+import pic13 from 'media/archive/20.jpeg';
+import pic14 from 'media/archive/5.jpg';
+import pic15 from 'media/archive/9.jpeg';
+import pic16 from 'media/archive/18.jpeg';
+import pic17 from 'media/archive/19.jpeg';
+import pic18 from 'media/archive/14.jpeg';
+import pic19 from 'media/archive/21.jpeg';
+import pic20 from 'media/archive/17.jpeg';
+import Image from 'comp/Elements/Image';
 
 const sliderSettings = {
     dots: false,
@@ -36,7 +36,7 @@ const sliderSettings = {
 const SlideShow = () => {
 
     return (
-        <div className="rs-featured-courses pt-50 pb-50 md-pt-30 md-pb-30 sm-pb-30">
+        <div className="rs-featured-news pt-50 pb-50 md-pt-30 md-pb-30 sm-pb-30">
             <div className="relative">
                 <SectionTitle
                     sectionClass="sec-title2 text-center"

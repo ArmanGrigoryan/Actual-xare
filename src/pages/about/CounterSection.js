@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import CountUp from 'react-countup';
-import SectionTitle from '../../components/Common/SectionTitle';
-import countIcon1 from '../../assets/img/about/style3/icons/1.png';
-import countIcon2 from '../../assets/img/about/style3/icons/2.png';
-import countIcon3 from '../../assets/img/about/style3/icons/3.png';
+import SectionTitle from 'comp/Common/SectionTitle';
+import countIcon1 from 'media/about/style3/icons/1.png';
+import countIcon2 from 'media/about/style3/icons/2.png';
+import countIcon3 from 'media/about/style3/icons/3.png';
 
 const counters = [
     {

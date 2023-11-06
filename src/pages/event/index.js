@@ -1,20 +1,20 @@
 import React from 'react';
-import SingleEventThree from '../../components/Events/SingleEventThree';
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer/Footer';
-import Newsletter from '../../components/Common/Newsletter';
-import ScrollToTop from '../../components/Common/ScrollTop';
-import SiteBreadcrumb from '../../components/Common/Breadcumb';
-import footerLogo from '../../assets/img/logo/logo-light.png';
-import bannerbg from '../../assets/img/breadcrumbs/inner12.jpg';
-import eventImg1 from '../../assets/img/event/style3/1.jpg';
-import eventImg2 from '../../assets/img/event/style3/2.jpg';
-import eventImg3 from '../../assets/img/event/style3/1.jpg';
-import eventImg4 from '../../assets/img/event/style3/2.jpg';
-import eventImg5 from '../../assets/img/event/style3/1.jpg';
-import eventImg6 from '../../assets/img/event/style3/2.jpg';
-import useFade from '../../utils/hooks/useFade.js';
-import SEO from '../../components/SEO';
+import SingleEventThree from 'comp/Events/SingleEventThree';
+import Header from 'comp/Layout/Header';
+import Footer from 'comp/Layout/Footer/Footer';
+import Newsletter from 'comp/Common/Newsletter';
+import ScrollToTop from 'comp/Common/ScrollTop';
+import SiteBreadcrumb from 'comp/Common/Breadcumb';
+import footerLogo from 'media/logo/logo-light.png';
+import bannerbg from 'media/breadcrumbs/inner12.jpg';
+import eventImg1 from 'media/event/style3/1.jpg';
+import eventImg2 from 'media/event/style3/2.jpg';
+import eventImg3 from 'media/event/style3/1.jpg';
+import eventImg4 from 'media/event/style3/2.jpg';
+import eventImg5 from 'media/event/style3/1.jpg';
+import eventImg6 from 'media/event/style3/2.jpg';
+import useFade from 'hooks/useFade.js';
+import SEO from 'comp/SEO';
 
 const Event = () => {
     const { refElement: animateRef } = useFade();

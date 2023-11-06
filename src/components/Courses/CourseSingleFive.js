@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { CourseContext } from '../../app/App';
+import { CourseContext } from 'app/App';
 
 const CourseSingleFive = (props) => {
     const { courseChangeHandler } = useContext(CourseContext);

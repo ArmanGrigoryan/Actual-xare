@@ -1,5 +1,5 @@
 import React from 'react';
-import useFade from '../../../utils/hooks/useFade';
+import useFade from 'hooks/useFade';
 
 const ReviewPart = () => {
     const { refElement: animateRef } = useFade(false);

@@ -1,11 +1,11 @@
 import React from 'react';
-import SectionTitle from '../../components/Common/SectionTitle';
-import DegreeSingle from '../../components/Degree/DegreeSingle';
-import image1 from '../../assets/img/degrees/1.jpg'
-import image2 from '../../assets/img/degrees/2.jpg'
-import image3 from '../../assets/img/degrees/1.jpg'
-import image4 from '../../assets/img/degrees/2.jpg'
-import image5 from '../../assets/img/degrees/1.jpg'
+import SectionTitle from 'comp/Common/SectionTitle';
+import DegreeSingle from 'comp/Degree/DegreeSingle';
+import image1 from 'media/degrees/1.jpg'
+import image2 from 'media/degrees/2.jpg'
+import image3 from 'media/degrees/1.jpg'
+import image4 from 'media/degrees/2.jpg'
+import image5 from 'media/degrees/1.jpg'
 
 const Degree = () => {
 

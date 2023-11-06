@@ -1,9 +1,9 @@
 import React from 'react';
-import SingleTestimonialTwo from '../../components/Testimonial/SingleTestimonialTwo';
+import SingleTestimonialTwo from 'comp/Testimonial/SingleTestimonialTwo';
 import { Fade } from 'react-reveal';
 
-import avatar1 from '../../assets/img/donor/books.jpg';
-import avatar2 from '../../assets/img/donor/key.jpeg';
+import avatar1 from 'media/donor/books.jpg';
+import avatar2 from 'media/donor/key.jpeg';
 
 function Testimonial() {
 

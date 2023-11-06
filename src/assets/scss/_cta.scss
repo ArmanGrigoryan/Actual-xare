@@ -57,7 +57,7 @@
                 z-index: -1;
             }
             &:before {
-                background: url(../img/cta/style2/left-bg.jpg);
+                background: url(media/cta/style2/left-bg.jpg);
                 width: 55%;
                 left: 0;
                 background-size: cover;
@@ -65,7 +65,7 @@
                 background-position: center;
             }
             &:after {
-                background: url(../img/cta/style2/right-bg.jpg);
+                background: url(media/cta/style2/right-bg.jpg);
                 width: 45%;
                 right: 0;
                 background-size: cover;
@@ -76,11 +76,11 @@
                 position: relative;
 
                 &:before {
-                    background: url(../img/cta/style2/left-bg2.png);
+                    background: url(media/cta/style2/left-bg2.png);
                     background-size: cover;
                 }
                 &:after {
-                    background: url(../img/cta/style2/right-bg2.png);
+                    background: url(media/cta/style2/right-bg2.png);
                     background-size: cover;
                 }
             }
@@ -101,14 +101,14 @@
             }
             &:after {
                 width: 50%;
-                background:url(../img/cta/home1.jpg);
+                background:url(media/cta/home1.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
             }
             &:before {
                 width: 50%;
-                background:url(../img/cta/main-home.jpg);
+                background:url(media/cta/main-home.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 right: 0;

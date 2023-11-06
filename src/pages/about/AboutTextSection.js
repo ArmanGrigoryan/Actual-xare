@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from '../../components/Common/SectionTitle';
-import AboutImage from '../../assets/img/about/about2orange.png';
+import SectionTitle from 'comp/Common/SectionTitle';
+import AboutImage from 'media/about/about2orange.png';
 
 const AboutText = () => {
 

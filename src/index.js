@@ -5,7 +5,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import App from './app/App';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './assets/scss/main.scss';
+import 'style/main.scss';
 
 const element = document.getElementById('root');
 const root = createRoot(element);

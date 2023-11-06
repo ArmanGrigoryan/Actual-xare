@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import aboutImg from '../../assets/img/about/team.jpg';
-import araqelutyunImg from '../../assets/img/about/araqelutyun.jpg';
-import administraciaImg from '../../assets/img/about/administracia.jpg';
+import aboutImg from 'media/about/team.jpg';
+import araqelutyunImg from 'media/about/araqelutyun.jpg';
+import administraciaImg from 'media/about/administracia.jpg';
 
 const tab1 = "Պատմություն",
 tab2 = "Առաքելություն",
