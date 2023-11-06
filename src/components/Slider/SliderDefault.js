@@ -1,19 +1,14 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React from 'react';
 import TrainingVideo from 'media/video/laura-virabyan-training.mp4';
 import VideoPoster from 'media/video/laura.png';
 
 const SliderDefault = () => {
-    const videoRef = useRef();
-
-    useLayoutEffect(() => {
-        // videoRef.current.pause();
-    }, []);
 
     return (
         <React.Fragment>
             <div className="rs-slider main-home">
                 <div className="slider-content slide1">
-                    <video poster={VideoPoster} ref={videoRef} autoPlay muted loop id="slider-bg-video">
+                    <video poster={VideoPoster} autoPlay muted loop id="slider-bg-video">
                         <source src={TrainingVideo} type="video/mp4" />
                     </video>
                     <div className="container">
