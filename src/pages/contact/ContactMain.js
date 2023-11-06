@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import SiteBreadcrumb from '../../components/Common/Breadcumb';
-import SectionTitle from '../../components/Common/SectionTitle';
-import ContactForm from '../../components/Contact/ContactForm';
-import ContactInfo from '../../components/Contact/ContactInfo';
-import bannerbg from '../../assets/img/breadcrumbs/inner12.jpg';
+import SiteBreadcrumb from 'comp/Common/Breadcumb';
+import SectionTitle from 'comp/Common/SectionTitle';
+import ContactForm from 'comp/Contact/ContactForm';
+import ContactInfo from 'comp/Contact/ContactInfo';
+import bannerbg from 'media/breadcrumbs/inner12.jpg';
 
 const ContactMain = () => {
     const [btnText, setBtnText] = useState("Ուղարկել");

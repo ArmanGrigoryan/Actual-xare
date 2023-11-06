@@ -2,10 +2,10 @@ import React from 'react';
 import Slider from "react-slick";
 import SinglePost from './SinglePost';
 
-import blogImg1 from '../../assets/img/blog/style2/1.jpg';
-import blogImg2 from '../../assets/img/blog/style2/1.jpg';
-import blogImg3 from '../../assets/img/blog/style2/1.jpg';
-import blogImg4 from '../../assets/img/blog/style2/1.jpg';
+import blogImg1 from 'media/blog/style2/1.jpg';
+import blogImg2 from 'media/blog/style2/1.jpg';
+import blogImg3 from 'media/blog/style2/1.jpg';
+import blogImg4 from 'media/blog/style2/1.jpg';
 
 const BlogPart = () => {
 

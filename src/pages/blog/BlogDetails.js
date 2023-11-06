@@ -1,7 +1,7 @@
 import React from 'react';
-import Commenting from '../../components/Widget/Commenting';
-import PostContent from '../../components/Widget/PostContent';
-import PostNavigation from '../../components/Widget/PostNavigation';
+import Commenting from 'comp/Widget/Commenting';
+import PostContent from 'comp/Widget/PostContent';
+import PostNavigation from 'comp/Widget/PostNavigation';
 
 const BlogDetails = () => {
 

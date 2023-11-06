@@ -1,11 +1,11 @@
 import React from 'react';
-import CourseSingleFour from '../../components/Courses/CourseSingleFour';
-import image1 from '../../assets/img/courses/4.jpg';
-import image2 from '../../assets/img/courses/5.jpg';
-import image3 from '../../assets/img/courses/6.jpg';
-import image4 from '../../assets/img/courses/7.jpg';
-import image5 from '../../assets/img/courses/8.jpg';
-import image6 from '../../assets/img/courses/9.jpg';
+import CourseSingleFour from 'comp/Courses/CourseSingleFour';
+import image1 from 'media/courses/4.jpg';
+import image2 from 'media/courses/5.jpg';
+import image3 from 'media/courses/6.jpg';
+import image4 from 'media/courses/7.jpg';
+import image5 from 'media/courses/8.jpg';
+import image6 from 'media/courses/9.jpg';
 
 const Courses = () => {
 

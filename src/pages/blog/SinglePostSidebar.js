@@ -1,7 +1,7 @@
 import React from 'react';
-import RecentPost from '../../components/Widget/RecentPost';
-import MetaWidget from '../../components/Widget/MetaWidget';
-import CategoriesWidget from '../../components/Widget/CategoriesWidget';
+import RecentPost from 'comp/Widget/RecentPost';
+import MetaWidget from 'comp/Widget/MetaWidget';
+import CategoriesWidget from 'comp/Widget/CategoriesWidget';
 
 const SinglePostSidebar = () => {
 

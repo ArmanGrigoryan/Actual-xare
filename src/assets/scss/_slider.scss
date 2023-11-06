@@ -5,7 +5,7 @@
         .slider-content {
             height: 100vh;
             text-align: center;
-            .content-part{
+            .content-part {
                 padding: 300px 35px 100px;
                 max-width: 1000px;
                 margin: 0 auto;
@@ -24,6 +24,9 @@
                     font-weight: 700;
                     color: $whiteColor;
                     margin-bottom: 65px;
+                }
+                .sl-subtitle {
+                    font-size: 27px;
                 }
                 .anime {
                     padding: 0 10%;

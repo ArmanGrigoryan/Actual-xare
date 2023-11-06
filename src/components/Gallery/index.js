@@ -1,27 +1,27 @@
 import React, { useRef, useState } from "react";
 
-import Image from '../Elements/Image';
-import pic1 from '../../assets/img/archive/1.jpg';
-import pic2 from '../../assets/img/archive/2.jpg';
-import pic3 from '../../assets/img/archive/15.jpeg';
-import pic4 from '../../assets/img/archive/6.jpg';
-import pic5 from '../../assets/img/archive/4.jpg';
-import pic6 from '../../assets/img/archive/12.jpeg';
-import pic7 from '../../assets/img/archive/11.jpeg';
-import pic8 from '../../assets/img/archive/16.jpeg';
-import pic9 from '../../assets/img/archive/3.jpg';
-import pic10 from '../../assets/img/archive/8.jpeg';
-import pic11 from '../../assets/img/archive/13.jpeg';
-import pic12 from '../../assets/img/archive/10.jpeg';
-import pic13 from '../../assets/img/archive/20.jpeg';
-import pic14 from '../../assets/img/archive/5.jpg';
-import pic15 from '../../assets/img/archive/9.jpeg';
-import pic16 from '../../assets/img/archive/18.jpeg';
-import pic17 from '../../assets/img/archive/19.jpeg';
-import pic18 from '../../assets/img/archive/14.jpeg';
-import pic19 from '../../assets/img/archive/21.jpeg';
-import pic20 from '../../assets/img/archive/17.jpeg';
-import PopupImage from "../Layout/ImagePopup/index.js";
+import Image from 'comp/Elements/Image';
+import pic1 from 'media/archive/1.jpg';
+import pic2 from 'media/archive/2.jpg';
+import pic3 from 'media/archive/15.jpeg';
+import pic4 from 'media/archive/6.jpg';
+import pic5 from 'media/archive/4.jpg';
+import pic6 from 'media/archive/12.jpeg';
+import pic7 from 'media/archive/11.jpeg';
+import pic8 from 'media/archive/16.jpeg';
+import pic9 from 'media/archive/3.jpg';
+import pic10 from 'media/archive/8.jpeg';
+import pic11 from 'media/archive/13.jpeg';
+import pic12 from 'media/archive/10.jpeg';
+import pic13 from 'media/archive/20.jpeg';
+import pic14 from 'media/archive/5.jpg';
+import pic15 from 'media/archive/9.jpeg';
+import pic16 from 'media/archive/18.jpeg';
+import pic17 from 'media/archive/19.jpeg';
+import pic18 from 'media/archive/14.jpeg';
+import pic19 from 'media/archive/21.jpeg';
+import pic20 from 'media/archive/17.jpeg';
+import PopupImage from "comp/Layout/ImagePopup/index.js";
 
 export default function Gallery() {
     const [previewElement, setPreviewElement] = useState(null);
@@ -46,14 +46,14 @@ export default function Gallery() {
                             src={pic1} 
                             alt="Picture 1" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                             className="slim" 
                         />
                         <Image 
                             src={pic2} 
                             alt="Picture 2" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                     </div>
                     <div className="image-grid-container-column">
@@ -61,13 +61,13 @@ export default function Gallery() {
                             src={pic3} 
                             alt="Picture 3" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                         <Image 
                             src={pic4} 
                             alt="Picture 4" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                             className="slim" 
                         />
                     </div>  
@@ -76,14 +76,14 @@ export default function Gallery() {
                             src={pic5} 
                             alt="Picture 5" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                             className="slim" 
                         />
                         <Image 
                             src={pic6} 
                             alt="Picture 6" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                     </div>
                     <div className="image-grid-container-column">
@@ -91,13 +91,13 @@ export default function Gallery() {
                             src={pic7} 
                             alt="Picture 7" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                         <Image 
                             src={pic8} 
                             alt="Picture 8" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                             className="slim" 
                         />
                     </div>
@@ -113,7 +113,7 @@ export default function Gallery() {
                             src={pic9} 
                             alt="Picture 9" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                     </div>
                     <div className="image-grid-container-column">
@@ -121,7 +121,7 @@ export default function Gallery() {
                             src={pic10} 
                             alt="Picture 10" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                     </div>  
                     <div className="image-grid-container-column">
@@ -129,7 +129,7 @@ export default function Gallery() {
                             src={pic11} 
                             alt="Picture 11" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                     </div>
                     <div className="image-grid-container-column">
@@ -137,7 +137,7 @@ export default function Gallery() {
                             src={pic12} 
                             alt="Picture 12" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                     </div>
                 </div>
@@ -152,14 +152,14 @@ export default function Gallery() {
                             src={pic13} 
                             alt="Picture 13" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                             className="slim" 
                         />
                         <Image 
                             src={pic14} 
                             alt="Picture 14" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                     </div>
                     <div className="image-grid-container-column">
@@ -167,13 +167,13 @@ export default function Gallery() {
                             src={pic15} 
                             alt="Picture 15" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                         <Image 
                             src={pic16} 
                             alt="Picture 16" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                             className="slim" 
                         />
                     </div>  
@@ -182,14 +182,14 @@ export default function Gallery() {
                             src={pic17} 
                             alt="Picture 17" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                             className="slim" 
                         />
                         <Image 
                             src={pic18} 
                             alt="Picture 18" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                     </div>
                     <div className="image-grid-container-column">
@@ -197,13 +197,13 @@ export default function Gallery() {
                             src={pic19} 
                             alt="Picture 19" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                         />
                         <Image 
                             src={pic20} 
                             alt="Picture 20" 
                             isZooming={true}
-                            onClick={(evt) => setPreviewElement(evt.target)}
+                            clickHandler={(evt) => setPreviewElement(evt.target)}
                             className="slim" 
                         />
                     </div>

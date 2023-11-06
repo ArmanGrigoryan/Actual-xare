@@ -1,12 +1,13 @@
 import React from 'react';
 import Slider from "react-slick";
-import SingleTeam from '../../components/Team/SingleTeam';
-import SectionTitle from '../../components/Common/SectionTitle';
+import SingleTeam from 'comp/Team/SingleTeam';
+import SectionTitle from 'comp/Common/SectionTitle';
+import Gallery from 'comp/Gallery';
 
-import team1 from '../../assets/img/team/1.jpg';
-import team2 from '../../assets/img/team/2.jpg';
-import team3 from '../../assets/img/team/3.jpg';
-import team4 from '../../assets/img/team/4.jpg';
+import team1 from 'media/team/1.jpg';
+import team2 from 'media/team/2.jpg';
+import team3 from 'media/team/3.jpg';
+import team4 from 'media/team/4.jpg';
 
 const slilderSettings = {
     dots: false,
@@ -96,6 +97,8 @@ const Team = () => {
                         />
                     </Slider>
                 </div>
+                
+                <Gallery />
             </div>
         </React.Fragment>
     )

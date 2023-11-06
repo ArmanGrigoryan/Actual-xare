@@ -1,18 +1,12 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ModalVideo from 'react-modal-video';
-import SectionTitle from '../../components/Common/SectionTitle';
+import SectionTitle from 'comp/Common/SectionTitle';
 
 const AboutVideo = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const videoRef = useRef();
 
     const toggleModal = () => setIsOpen(!isOpen);
-
-    useLayoutEffect(() => {
-        console.log(videoRef)
-        // videoRef.current.play();
-    }, []);
 
     return (
         <div className="rs-cta style2">

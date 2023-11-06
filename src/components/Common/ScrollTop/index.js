@@ -1,5 +1,5 @@
 import React from "react";
-import useScrollTop from "../../../utils/hooks/useScrollTop.js";
+import useScrollTop from "hooks/useScrollTop.js";
 
 const ScrollToTop = ({ scrollClassName }) => {
 	const {

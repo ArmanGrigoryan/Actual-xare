@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { CourseContext } from '../../../app/App';
-import useFade from '../../../utils/hooks/useFade';
+import { CourseContext } from 'app/App.js';
+import useFade from 'hooks/useFade';
 
 const OverviewPart = () => {
     const { course } = useContext(CourseContext);
