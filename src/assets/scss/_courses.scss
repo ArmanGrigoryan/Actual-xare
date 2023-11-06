@@ -226,7 +226,7 @@
     }
 }
 
-.rs-featured-courses{
+.rs-featured-news{
     background: #e7f8fb;
 
     .slick-dots {
@@ -430,10 +430,10 @@
 }
 
 @media #{$sm} {
-    .rs-featured-courses .courses-item{
+    .rs-featured-news .courses-item{
         padding: 0 20px;
     }
-    .rs-featured-courses {
+    .rs-featured-news {
         .slick-next {
             width: 25px;
             height: 25px;

@@ -1,11 +1,11 @@
-import SectionTitle from '../../components/Common/SectionTitle';
-import SingleService from '../../components/Service/SingleService';
-import serviceIcon1 from '../../assets/img/service/icons/1.png';
-import serviceIcon2 from '../../assets/img/service/icons/2.png';
-import serviceIcon3 from '../../assets/img/service/icons/1.png';
-import serviceIcon4 from '../../assets/img/service/icons/2.png';
-import serviceIcon5 from '../../assets/img/service/icons/1.png';
-import serviceIcon6 from '../../assets/img/service/icons/2.png';
+import SectionTitle from 'comp/Common/SectionTitle';
+import SingleService from 'comp/Service/SingleService';
+import serviceIcon1 from 'media/service/icons/1.png';
+import serviceIcon2 from 'media/service/icons/2.png';
+import serviceIcon3 from 'media/service/icons/1.png';
+import serviceIcon4 from 'media/service/icons/2.png';
+import serviceIcon5 from 'media/service/icons/1.png';
+import serviceIcon6 from 'media/service/icons/2.png';
 
 const Service = () => {
 

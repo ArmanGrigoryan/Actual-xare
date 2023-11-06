@@ -1,6 +1,6 @@
 import React from 'react';
-import SubscribeForm from '../../Elements/Subscribe/SubscribeForm.js';
-import newsletterIcon from '../../../assets/img/newsletter.png'
+import SubscribeForm from 'comp/Elements/Subscribe/SubscribeForm.js';
+import newsletterIcon from 'media/newsletter.png';
 
 const Newsletter = (props) => {
     const { sectionClass, wrapperClass, titleClass, iconPath } = props;

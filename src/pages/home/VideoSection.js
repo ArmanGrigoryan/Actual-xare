@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
-import bgImg from '../../assets/img/video/video2.jpg';
+import bgImg from 'media/video/video2.jpg';
 
 const bgStyle = {
     backgroundImage: `url(${bgImg})`,

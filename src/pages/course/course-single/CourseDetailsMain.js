@@ -1,6 +1,6 @@
 import React from 'react';
 import CourseDetailsPart from './CourseDetailsPart';
-import ScrollToTop from '../../../components/Common/ScrollTop';
+import ScrollToTop from 'comp/Common/ScrollTop';
 
 const CourseDetailsMain = () => {
 

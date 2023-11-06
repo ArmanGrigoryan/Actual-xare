@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import { Link } from 'react-router-dom';
-import videoImg from '../../../assets/img/about/about-video-bg2.png';
+import videoImg from 'media/about/about-video-bg2.png';
 
 const CourseSidebar = () => {
 

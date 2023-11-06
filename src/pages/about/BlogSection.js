@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SectionTitle from '../../components/Common/SectionTitle';
-import SinglePostTwo from '../../components/Blog/SinglePostTwo';
-import blogImg1 from '../../assets/img/blog/style2/1.jpg';
-import blogImg2 from '../../assets/img/blog/style2/1.jpg';
+import SectionTitle from 'comp/Common/SectionTitle';
+import SinglePostTwo from 'comp/Blog/SinglePostTwo';
+import blogImg1 from 'media/blog/style2/1.jpg';
+import blogImg2 from 'media/blog/style2/1.jpg';
 
 const Blog = () => {
     return (

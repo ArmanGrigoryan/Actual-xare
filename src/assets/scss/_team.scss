@@ -177,13 +177,8 @@
                             }
 
                             &.hoverable:hover {
-                                transform: scale(1.05);
-                                cursor: zoom-in;
-
-                                & + .zoom-icon-absolute {
-                                    bottom: 10px;
-                                    opacity: 1;
-                                }
+                                transform: scale(1.02);
+                                transform-origin: top center;
                             }
                         }
 
@@ -230,66 +225,6 @@
                     }
                 }
             }
-
-            .more-section {
-                padding-top: 20px;
-                position: relative;
-                z-index: 1;
-
-                h1 {
-                    margin: 0;
-                    padding: 0;
-                    font-size: 20px;
-                    text-align: center;
-                    color: $primaryColor;
-                }
-                
-                span {
-                    top: -40px;
-                    position: relative;
-                    display: inline-block;
-                    text-transform: capitalize;
-                    opacity: 0;
-                    margin: 0 5px;
-                    transform: rotateX(-90deg);
-                }
-                
-                .let1 {
-                    animation: drop 2.2s ease-in-out infinite;
-                    animation-delay: 1.2s;
-                }
-                
-                .let2 {
-                    animation: drop 2.2s ease-in-out infinite;
-                    animation-delay: 1.3s;
-                }
-                
-                .let3 {
-                    animation: drop 2.2s ease-in-out infinite;
-                    animation-delay: 1.4s;
-                }
-                
-                .let4 {
-                    animation: drop 2.2s ease-in-out infinite;
-                    animation-delay: 1.5s;
-                
-                }
-                
-                .let5 {
-                    animation: drop 2.2s ease-in-out infinite;
-                    animation-delay: 1.6s;
-                }
-                
-                .let6 {
-                    animation: drop 2.2s ease-in-out infinite;
-                    animation-delay: 1.7s;
-                }
-                
-                .let7 {
-                    animation: drop 2.2s ease-in-out infinite;
-                    animation-delay: 1.8s;
-                }
-            }
         }
 
     } 
@@ -323,6 +258,73 @@
                 }
             }
         }
+    }
+}
+
+.more-section {
+    padding-top: 20px;
+    position: relative;
+    z-index: 1;
+
+    &.absolute {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        text-align: center;
+        color: $primaryColor;
+    }
+    
+    span {
+        top: -40px;
+        position: relative;
+        display: inline-block;
+        text-transform: capitalize;
+        opacity: 0;
+        margin: 0 5px;
+        transform: rotateX(-90deg);
+    }
+    
+    .let1 {
+        animation: drop 2.2s ease-in-out infinite;
+        animation-delay: 1.2s;
+    }
+    
+    .let2 {
+        animation: drop 2.2s ease-in-out infinite;
+        animation-delay: 1.3s;
+    }
+    
+    .let3 {
+        animation: drop 2.2s ease-in-out infinite;
+        animation-delay: 1.4s;
+    }
+    
+    .let4 {
+        animation: drop 2.2s ease-in-out infinite;
+        animation-delay: 1.5s;
+    
+    }
+    
+    .let5 {
+        animation: drop 2.2s ease-in-out infinite;
+        animation-delay: 1.6s;
+    }
+    
+    .let6 {
+        animation: drop 2.2s ease-in-out infinite;
+        animation-delay: 1.7s;
+    }
+    
+    .let7 {
+        animation: drop 2.2s ease-in-out infinite;
+        animation-delay: 1.8s;
     }
 }
 

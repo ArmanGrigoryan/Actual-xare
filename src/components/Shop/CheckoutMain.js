@@ -2,7 +2,7 @@ import React from 'react';
 import CountryList from './CountryList';
 import DistrictList from './DistrictList';
 
-import paypalLogo from '../../assets/img/paypal.png';
+import paypalLogo from 'media/paypal.png';
 
 import {
     Accordion,

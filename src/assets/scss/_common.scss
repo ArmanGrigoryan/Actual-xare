@@ -39,6 +39,21 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    transition: $transition;
+
+    &.slim {
+        height: 320px;
+    }
+
+    &.hoverable:hover {
+        transform: scale(1.02);
+        cursor: zoom-in;
+
+        & + .zoom-icon-absolute {
+            bottom: 10px;
+            opacity: 1;
+        }
+    }
 }
 p {
     margin: 0 0 26px;
@@ -151,6 +166,9 @@ ul {
 /*--
     - Text color
 -----------------------------------------*/
+.color-inherit {
+    color: inherit !important;
+}
 .white-color {
 	color: $whiteColor !important;
 }
@@ -428,7 +446,7 @@ ul {
 .absolute-description {
     opacity: .75;
     padding: 40px 25px 15px;
-    background-color: rgba(0, 0, 0, 0.85);
+    background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.00345888) 0, rgba(0, 0, 0) 150%);
     color: #fff;
     position: absolute;
     bottom: 0;
@@ -436,15 +454,21 @@ ul {
     transform: translateX(-50%);
     width: 100%;
     margin: 0 auto;
-    max-height: 100px;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-    overflow: auto;
+    max-height: 130px;
+    border-radius: 12px;
+    overflow: hidden;
     transition: $transition;
+    z-index: 1;
 
     &.expanded {
+        overflow: auto;
         max-height: 700px;
         opacity: 1;
+        background: rgba(0,0,0,.55);
+
+        + img {
+            filter: blur(2px);
+        }
     }
 
     span {
@@ -457,8 +481,9 @@ ul {
         left: 50%;
         transform: translateX(-50%);
         padding-top: 5px;
+        padding-bottom: 100px;
         margin: 0;
-        font-size: 32px;
+        font-size: 50px;
         color: #fff;
     }
 }
@@ -474,10 +499,11 @@ ul {
     font-weight: 700;
     color: $titleColor;
     background: $grayColor;
+
     &.orange-btn{
         color: $whiteColor;
-        background: $primaryColor;
-        border-color: $primaryColor;
+        background: $orangeColor;
+        border-color: $orangeColor;
         border-radius: 5px 5px 5px 5px;
         outline: none;
         padding: 12px 35px;
@@ -495,48 +521,47 @@ ul {
         }
         &:hover{
             color: $whiteColor;
-            background: darken($primaryColor,10%);
+            background: darken($orangeColor,10%);
         }
         &.transparent{
             &:hover{
-                color: $titleColor5;
+                transform: scale(1.05);
                 background: $whiteColor;
-                border-color: $whiteColor;
             }
         }
     }  
     &.register-btn {
         padding: 10px 50px;
         color: $whiteColor;
-        background: $primaryColor;
-        border-color: $primaryColor;
+        background: $orangeColor;
+        border-color: $orangeColor;
         font-weight: 500;
         width: 100%;
         border-radius: 5px;
         &:hover {
-            background: darken($primaryColor, 5%);
+            background: darken($orangeColor, 5%);
         }
     }
     &.submit-btn{
         border: 2px solid;
-        border-color: $primaryColor;
+        border-color: $orangeColor;
         padding: 10px 50px;
         line-height: normal;
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 500;
-        background: $primaryColor;
+        background: $orangeColor;
         color: $whiteColor;
         border-radius: 5px; 
         margin-bottom: 12px;
         width: 100%;
         &:hover{
             background: transparent !important;
-            color: $primaryColor !important;
+            color: $orangeColor !important;
         }
     }  
     &:hover {
-        background: $primaryColor !important;
+        background: $orangeColor !important;
         color: $whiteColor;
     }
 }
@@ -878,6 +903,12 @@ select,
 .card-shadow-top {
     box-shadow: 0px -75px 30px 40px rgba(0, 0, 0, 0.6);
 }
+.card-shadow-absolute-description {
+    box-shadow: inset 0px 30px 30px 5px rgba(0, 0, 0, 0.45);
+}
+.card-shadow-absolute-description-closed {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px -30px 30px inset;
+}
 
 .slick-track {
     display: flex;
@@ -890,6 +921,12 @@ select,
     object-fit: contain;
     vertical-align: middle;
     display: inline-block;
+
+    &.coverable {
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
+    }
 }
 
 .hidden-opacity {
@@ -1116,6 +1153,10 @@ select,
     .sec-title .title {
         font-size: 30px;
     }
+
+    .absolute-description.expanded {
+        max-height: 600px;
+    }
 }
 
 @media #{$sm} {
@@ -1160,6 +1201,9 @@ select,
     .newsletter-wrap .sec-title .title {
         font-size: 20px;
     }
+    .absolute-description.expanded {
+        max-height: 500px;
+    }
 }
 
 @media #{$xs} { 
@@ -1177,6 +1221,9 @@ select,
     }
     .rs-banner.style5 {
         min-height: 400px;
+    }
+    .absolute-description.expanded {
+        max-height: 400px;
     }
 }
 

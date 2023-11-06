@@ -1,6 +1,6 @@
 import React from 'react';
-import teamImg1 from '../../../assets/img/team/3.jpg';
-import useFade from '../../../utils/hooks/useFade';
+import teamImg1 from 'media/team/3.jpg';
+import useFade from 'hooks/useFade';
 
 const InstructorPart = () => {
     const { refElement: animateRef } = useFade(false);
