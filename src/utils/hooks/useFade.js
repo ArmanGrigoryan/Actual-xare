@@ -3,11 +3,11 @@ import { useEffect, useLayoutEffect, useRef } from "react";
 export default function useFade(isScrolling = true) {
     const animateRef = useRef();
 
-    // useLayoutEffect(() => {
-    //     if (isScrolling) {
-    //         window.scrollTo(0, 0);
-    //     }
-    // }, []);
+    useLayoutEffect(() => {
+        if (isScrolling) {
+            window.scrollTo(0, 0);
+        }
+    }, []);
 
     useEffect(() => {
         animateRef.current.animate([

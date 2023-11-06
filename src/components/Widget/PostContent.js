@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import postImage from '../../assets/img/blog/inner/1.jpg';
-import innerImage from '../../assets/img/blog/inner/2.jpg';
+import postImage from 'media/blog/inner/1.jpg';
+import innerImage from 'media/blog/inner/2.jpg';
 
 const PostContent = ({ }) => {
     return (

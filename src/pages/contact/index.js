@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer/Footer';
-import ScrollToTop from '../../components/Common/ScrollTop';
-import Newsletter from '../../components/Common/Newsletter';
+import Header from 'comp/Layout/Header';
+import Footer from 'comp/Layout/Footer/Footer';
+import ScrollToTop from 'comp/Common/ScrollTop';
+import Newsletter from 'comp/Common/Newsletter';
 import ContactMain from './ContactMain';
-import footerLogo from '../../assets/img/logo/logo-light.png';
-import useFade from '../../utils/hooks/useFade.js';
-import SEO from '../../components/SEO';
+import footerLogo from 'media/logo/logo-light.png';
+import useFade from 'hooks/useFade.js';
+import SEO from 'comp/SEO';
 
 const Contact = () => {
     const { refElement: animateRef } = useFade();

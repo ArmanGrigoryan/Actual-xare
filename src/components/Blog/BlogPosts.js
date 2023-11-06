@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 import SingleBlog from './SingleBlog';
-import posts from '../../sample-data/blog-posts/posts.json';
+import posts from 'data/blog-posts/posts.json';
 
 const BlogPosts = () => {
 

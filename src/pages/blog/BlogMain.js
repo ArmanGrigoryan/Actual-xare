@@ -1,15 +1,15 @@
 import React from 'react';
 import SinglePostSidebar from './SinglePostSidebar';
-import SinglePostSix from '../../components/Blog/SinglePostSix';
+import SinglePostSix from 'comp/Blog/SinglePostSix';
 
-import blogImg1 from '../../assets/img/blog/inner/1.jpg'
-import blogImg2 from '../../assets/img/blog/inner/1.jpg'
-import blogImg3 from '../../assets/img/blog/inner/1.jpg'
-import blogImg4 from '../../assets/img/blog/inner/1.jpg'
-import blogImg5 from '../../assets/img/blog/inner/1.jpg'
-import blogImg6 from '../../assets/img/blog/inner/1.jpg'
-import blogImg7 from '../../assets/img/blog/inner/1.jpg'
-import blogImg8 from '../../assets/img/blog/inner/1.jpg'
+import blogImg1 from 'media/blog/inner/1.jpg'
+import blogImg2 from 'media/blog/inner/1.jpg'
+import blogImg3 from 'media/blog/inner/1.jpg'
+import blogImg4 from 'media/blog/inner/1.jpg'
+import blogImg5 from 'media/blog/inner/1.jpg'
+import blogImg6 from 'media/blog/inner/1.jpg'
+import blogImg7 from 'media/blog/inner/1.jpg'
+import blogImg8 from 'media/blog/inner/1.jpg'
 
 const BlogMain = () => {
 

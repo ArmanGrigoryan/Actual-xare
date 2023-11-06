@@ -1,7 +1,7 @@
 import React from 'react';
-import ErrorContent from '../components/Error';
-import useFade from '../utils/hooks/useFade.js';
-import SEO from '../components/SEO';
+import ErrorContent from 'comp/Error';
+import useFade from 'hooks/useFade.js';
+import SEO from 'comp/SEO';
 
 const Error = () => {
     const { refElement: animateRef } = useFade();

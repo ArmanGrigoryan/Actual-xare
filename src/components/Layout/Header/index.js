@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import MenuItems from './MenuItems';
 import RSMobileMenu from './RSMobileMenu';
-import normalLogo from '../../../assets/img/logo/logo-light.png';
-import darkLogo from '../../../assets/img/logo/logo-dark.png';
+import normalLogo from 'media/logo/logo-light.png';
+import darkLogo from 'media/logo/logo-dark.png';
 
 const Header = (props) => {
 	const { parentMenu } = props;
