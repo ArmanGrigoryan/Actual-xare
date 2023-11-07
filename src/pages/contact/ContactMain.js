@@ -3,7 +3,7 @@ import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import SectionTitle from 'comp/Common/SectionTitle';
 import ContactForm from 'comp/Contact/ContactForm';
 import ContactInfo from 'comp/Contact/ContactInfo';
-import bannerbg from 'media/breadcrumbs/inner12.jpg';
+import bannerbg from 'media/slider/main-home/homepage-bg.jpg';
 
 const ContactMain = () => {
     const [btnText, setBtnText] = useState("Ուղարկել");
@@ -79,7 +79,7 @@ const ContactMain = () => {
                                     description="Թողեք ձեր հաղորդագրությունը և մենք շուտով կպատասխանենք"
                                 />
                                 <ContactForm
-                                    submitBtnClass="btn-send"
+                                    submitBtnClass="readon orange-btn primary-transparent main-home p-40 cursor-pointer radius-12"
                                     btnText={btnText}
                                     btnDisabled={disabled}
                                     cb={submitHandler}

@@ -17,9 +17,9 @@ const SliderDefault = () => {
                             <h2 className='sl-subtitle width-50-100 fade-in-mobile anime white-color mb-50'>Մենք կսովորեցնենք հոգ տանել Ձեր բիզնեսի մասին</h2>
                             <div className="sl-btn">
                                 <a 
-                                    className="readon orange-btn main-home p-40 cursor-pointer" 
+                                    className="readon orange-btn white-transparent large-scale main-home p-40 cursor-pointer" 
                                     target='_blank' 
-                                    href="https://shorturl.at/jBEPW"
+                                    href="https://rb.gy/8cbai"
                                 >
                                     Գրանցվել
                                 </a>
