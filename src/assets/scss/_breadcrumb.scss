@@ -1,9 +1,27 @@
 .rs-breadcrumbs {
     position: relative;
     .breadcrumbs-img {
+        width: 100%;
+        min-height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
         img{
+            position: relative;
             width: 100%;
             object-fit: cover;
+            z-index: 122;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 123;
+                background-color: rgba(0,0,0,.3);
+            }
         }
     } 
     .breadcrumbs-text {
@@ -15,9 +33,10 @@
         text-align: center;
         padding: 0 10px;
         .page-title {
-            font-size: 38px;
+            font-size: 40px;
+            text-shadow: 2.5px 1.5px #fff;
             margin-bottom: 20px;
-            color: $primaryColor;
+            margin-top: 30px;
         }
         ul {
             padding: 0;

@@ -4,7 +4,7 @@ import aboutImg from 'media/about/team.jpg';
 import araqelutyunImg from 'media/about/araqelutyun.jpg';
 import administraciaImg from 'media/about/administracia.jpg';
 
-const tab1 = "Պատմություն",
+const tab1 = "Գործունեություն",
 tab2 = "Առաքելություն",
 tab3 = "Ադմինիստրացիա";
 const tabStyle = 'nav nav-tabs histort-part';
@@ -94,8 +94,10 @@ const AboutTab = () => {
                             <TabPanel>
                                 <div className="about-history">
                                     <div className="sec-title mb-24">
-                                        <h2 className="title">Ակտուալի Պատմությունը</h2>
-                                        <div className="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sim ilique sunt in culpa.</div>
+                                        <h2 className="title">Ակտուալի Գործունեությունը</h2>
+                                        <div className="desc">Դասընթացներ: Մենք իրականացնում ենք դասընթացներ ինչպես անհատների այնպես էլ կորպորատիվ փաթեթների շրջանակում: բիզնես անգլերենի, Մարդկային ռեսուրսների կառավարման և համակարգչային գիտելիքների վերազինման դասընթացներ: Ավելի քան  500 մասնակից արդեն հասցրել են գիտելիքներով վերազինվել մեր ընկերության օգնությամբ:</div>
+                                        <div className="desc">Աութսորս ուղղվածությունը մեր ընկերության ամենադինամիկ աճ ապահովող կողմներից է: Մեր արհեստավարժ թիմը ամբողջ աշխատաժամանակով գործունեություն կծավալի ձեր բիզնեսում, ներդնելով՝ ՄՌԿ ստանդարտներ, կորպորատիվ մշակույթ, արժեհամակարգ և այն ամենը ինչը առնչվում է մարդկային ռեսուրսների կառավարման գործիքակազմին: Աութսորս ծառայության համար գործում են տարբեր փաթեթներ, որոնք տեղայնացվում են տվյալ բիզնեսի կատարողականին</div>
+                                        <div className="desc">Խորհրդատվական ծառայությունը իրականացվում է անմիջապես հիմնադիր տնօրենի մասնակցությամբ: Բիզնես պրոցեսների օպտիմալացում, անձնակազմի կառավարման հիմնախնդիրների վերհանում և կարգավորում:</div>
                                     </div>
                                 </div>
                             </TabPanel>

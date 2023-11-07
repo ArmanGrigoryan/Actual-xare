@@ -8,7 +8,7 @@ import countIcon3 from 'media/about/style3/icons/3.png';
 
 const counters = [
     {
-        countNum: 300,
+        countNum: 500,
         countTitle: 'Ուսանող',
         counterPrefix: '+',
         countIcon: countIcon1
