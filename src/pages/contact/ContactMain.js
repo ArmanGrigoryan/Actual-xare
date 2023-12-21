@@ -23,7 +23,8 @@ const ContactMain = () => {
                 pageName=""
                 breadcrumbsImg={bannerbg}
             />
-            <div className="rs-contact style1 event-bg pt-110 md-pt-80 pb-100 md-pb-80">
+
+            <div className="rs-contact style1 event-bg pt-60 md-pt-40 pb-60 md-pb-40">
                 <div className="container wider pb-66 md-pb-46">
                     <div className="row gutter-35">
                         <div className="col-md-4">
@@ -90,7 +91,6 @@ const ContactMain = () => {
                 </div>
             </div>
         </React.Fragment>
-
     );
 }
 
