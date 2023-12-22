@@ -8,6 +8,9 @@ import team1 from 'media/team/1.jpg';
 import team2 from 'media/team/2.jpg';
 import team3 from 'media/team/3.jpg';
 import team4 from 'media/team/4.jpg';
+import team5 from 'media/team/5.jpg';
+import team6 from 'media/team/6.jpg';
+import team7 from 'media/team/7.jpg';
 
 const slilderSettings = {
     dots: false,
@@ -53,45 +56,60 @@ const Team = () => {
                             />
                         </div>
                     </div>
+
                     <Slider {...slilderSettings}>
                         <SingleTeam
-                            itemClass="team-item"
-                            Image={team1}
-                            Title="Սոնա Վարդանյան"
-                            Designation="Ավագ ՄՌԿ մասնագետ"
-                        />
-
-                        <SingleTeam
                             teamClass="team-item"
-                            Image={team2}
+                            isCovering={true}
+                            image={team2}
                             Title="Սիրանուշ Բարսեղյան"
-                            Designation="Ավագ ՄՌԿ մասնագետ"
+                            Designation="ՄՌԿ մասնագետ"
                         />
 
                         <SingleTeam
                             teamClass="team-item"
-                            Image={team3}
+                            isCovering={true}
+                            image={team3}
                             Title="Լաուրա Վիրաբյան"
                             Designation="Հիմնադիր տնօրեն, Ավագ ՄՌԿ մասնագետ"
                         />
 
                         <SingleTeam
                             teamClass="team-item"
-                            Image={team4}
+                            isCovering={true}
+                            image={team4}
                             Title="Մոնիկա Գրիգորյան"
                             Designation="ՄՌԿ մասնագետ"
                         />
 
                         <SingleTeam
                             teamClass="team-item"
-                            Image={team2}
+                            isCovering={true}
+                            image={team6}
                             Title="Լիլիթ Դավթյան"
                             Designation="ՄՌԿ մասնագետ"
                         />
 
                         <SingleTeam
                             teamClass="team-item"
-                            Image={team2}
+                            isCovering={true}
+                            image={team7}
+                            Title="Հասմիկ Սիմոնյան"
+                            Designation="ՄՌԿ մասնագետ"
+                        />
+
+                        <SingleTeam
+                            teamClass="team-item"
+                            isCovering={true}
+                            image={team5}
+                            Title="Լիլիթ Սաղաթելյան"
+                            Designation="ՄՌԿ մասնագետ"
+                        />
+
+                        <SingleTeam
+                            itemClass="team-item"
+                            isCovering={true}
+                            image={team1}
                             Title="Էլեն Մարդոյան"
                             Designation="Մենեջեր"
                         />

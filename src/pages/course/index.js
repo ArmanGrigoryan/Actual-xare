@@ -5,7 +5,7 @@ import Newsletter from 'comp/Common/Newsletter';
 import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import CourseMain from './CourseMain';
 import footerLogo from 'media/logo/logo-light.png';
-import bannerbg from 'media/breadcrumbs/inner12.jpg';
+import bannerbg from 'media/slider/main-home/homepage-bg-2.jpg';
 import useFade from 'hooks/useFade.js';
 import SEO from 'comp/SEO';
 
@@ -20,8 +20,8 @@ const Course = () => {
             />
             <Header parentMenu='course' />
             <SiteBreadcrumb
-                pageTitle="Course Grid 03"
-                pageName="Course"
+                pageTitle="Ակտուալ Դասընթացներ"
+                pageName=""
                 breadcrumbsImg={bannerbg}
             />
             <CourseMain />

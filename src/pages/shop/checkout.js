@@ -8,7 +8,7 @@ import Newsletter from 'comp/Common/Newsletter';
 import ScrollToTop from 'comp/Common/ScrollTop';
 import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import footerLogo from 'media/logo/logo-light.png';
-import bannerbg from 'media/breadcrumbs/inner12.jpg';
+import bannerbg from 'media/slider/main-home/homepage-bg.jpg';
 
 const Checkout = () => {
 

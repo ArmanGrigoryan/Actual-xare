@@ -76,6 +76,7 @@
 @for $i from 1 through 40 {
     .radius-#{$i}{border-radius: 1px *$i;}
 }
+.radius-12 {border-radius: 12px !important;}
 .radius-full {border-radius: 50% !important;}
 
 .row {

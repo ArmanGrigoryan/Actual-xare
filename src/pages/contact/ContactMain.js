@@ -3,7 +3,7 @@ import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import SectionTitle from 'comp/Common/SectionTitle';
 import ContactForm from 'comp/Contact/ContactForm';
 import ContactInfo from 'comp/Contact/ContactInfo';
-import bannerbg from 'media/breadcrumbs/inner12.jpg';
+import bannerbg from 'media/slider/main-home/homepage-bg.jpg';
 
 const ContactMain = () => {
     const [btnText, setBtnText] = useState("Ուղարկել");
@@ -23,7 +23,8 @@ const ContactMain = () => {
                 pageName=""
                 breadcrumbsImg={bannerbg}
             />
-            <div className="rs-contact style1 event-bg pt-110 md-pt-80 pb-100 md-pb-80">
+
+            <div className="rs-contact style1 event-bg pt-60 md-pt-40 pb-60 md-pb-40">
                 <div className="container wider pb-66 md-pb-46">
                     <div className="row gutter-35">
                         <div className="col-md-4">
@@ -79,7 +80,7 @@ const ContactMain = () => {
                                     description="Թողեք ձեր հաղորդագրությունը և մենք շուտով կպատասխանենք"
                                 />
                                 <ContactForm
-                                    submitBtnClass="btn-send"
+                                    submitBtnClass="readon orange-btn primary-transparent main-home p-40 cursor-pointer radius-12"
                                     btnText={btnText}
                                     btnDisabled={disabled}
                                     cb={submitHandler}
@@ -90,7 +91,6 @@ const ContactMain = () => {
                 </div>
             </div>
         </React.Fragment>
-
     );
 }
 

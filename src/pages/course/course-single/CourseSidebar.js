@@ -52,7 +52,7 @@ const CourseSidebar = () => {
             </div>                
             <div className="btn-part radius-12">
                 <a className="btn readon orange"><span className='h5 mr-2'>50000</span> ՀՀ դրամ</a>
-                <a className="btn readon orange-transparent">Գրանցվել հիմա</a>
+                <a className="btn readon orange-white-transparent">Գրանցվել հիմա</a>
             </div>
         </div>
     );

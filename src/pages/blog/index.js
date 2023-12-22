@@ -5,11 +5,15 @@ import Footer from 'comp/Layout/Footer/Footer';
 import Newsletter from 'comp/Common/Newsletter';
 import ScrollToTop from 'comp/Common/ScrollTop';
 import SiteBreadcrumb from 'comp/Common/Breadcumb';
-import footerLogo from 'media/logo/logo-light.png';
-import bannerbg from 'media/breadcrumbs/inner12.jpg';
-import useFade from 'hooks/useFade.js';
 import SEO from 'comp/SEO';
-import Gallery from '../../components/Gallery';
+import Gallery from 'comp/Gallery';
+import withPreviewPopup from 'comp/HOC/withPreviewPopup';
+import footerLogo from 'media/logo/logo-light.png';
+import bannerbg from 'media/slider/main-home/homepage-bg.jpg';
+import useFade from 'hooks/useFade.js';
+import SlideShow from 'pages/about/SlideShow';
+
+const SlideShowWithPreview = withPreviewPopup(SlideShow);
 
 const Blog = () => {
     const { refElement: animateRef } = useFade();
@@ -22,10 +26,11 @@ const Blog = () => {
             />
             <Header parentMenu='blog' />
             <SiteBreadcrumb
-                pageTitle="Blog"
-                pageName="Blog"
+                pageTitle="Ակտուալ Բլոգ"
+                pageName=""
                 breadcrumbsImg={bannerbg}
             />
+            <SlideShowWithPreview />
             <Gallery />
             {/* <BlogMain /> */}
             <Newsletter

@@ -32,7 +32,7 @@ const AboutVideo = () => {
                                 detailedDescription="Մեր փորձառու մասնագետներից բաղկացած թիմը մշտապես կլինի Ձեր բիզնեսի կողքին՝ համալրելով Ձեր կազմակերպությունը ոչ միայն որակյալ և մրցունակ մասնագետներով, այլև գրագետ և ճիշտ բրենդավորելով Ձեր ընկերությունն աշխատաշուկայում՝ որպես գործատու"
                             />
                             <div className="btn-part">
-                                <Link className="readon orange" to="/course">Դիմել հիմա</Link>
+                                <Link className="readon orange-btn primary-transparent radius-12" to="/course">Դիմել հիմա</Link>
                             </div>
                         </div>
                     </div>
