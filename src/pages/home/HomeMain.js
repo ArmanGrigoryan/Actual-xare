@@ -11,7 +11,7 @@ import WithLoveNewsWithPreview from './WithLoveNews';
 const HomeMain = () => {
 
 	return (
-		<React.Fragment>
+		<>
 			<SliderDefault />
 			<WithLoveNewsWithPreview />
 			<Videos />
@@ -20,7 +20,7 @@ const HomeMain = () => {
 			<Testimonial />
 			<BrandThree brandClass='rs-partner pb-50 pt-50 sec-title2' />
 			<ScrollToTop scrollClassName="scrollup orange-color" />
-		</React.Fragment>
+		</>
 	);
 }
 

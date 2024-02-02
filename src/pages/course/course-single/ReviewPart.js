@@ -1,10 +1,13 @@
-import Slider from "react-slick";
+import React from 'react';
+// import Slider from "react-slick";
 import SectionTitle from "comp/Common/SectionTitle";
 import withPreviewPopup from "comp/HOC/withPreviewPopup";
 import Image from "comp/Elements/Image";
 import HtmlText from 'comp/Elements/HtmlText';
 import { useQuery } from 'react-query';
 import { getReviews } from 'api';
+
+const Slider = React.lazy(() => import("react-slick"));
 
 const sliderSettings = {
     dots: true,

@@ -1,7 +1,9 @@
 import React from 'react';
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import SectionTitle from 'comp/Common/SectionTitle';
 import Image from 'comp/Elements/Image';
+
+const Slider = React.lazy(() => import("react-slick"));
 
 const sliderSettings = {
     dots: false,

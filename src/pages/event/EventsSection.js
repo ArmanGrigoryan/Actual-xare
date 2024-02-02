@@ -11,7 +11,7 @@ const Events = () => {
         <div className="rs-event modify2 orange-style pt-50 pb-50 md-pt-30 md-pb-30">
             <div className="container md-max-w-unset wider">
                 <SectionTitle
-                    sectionClass="sec-title2 text-center mb-44"
+                    sectionClass="sec-title2 text-center mb-20"
                     subtitleClass="sub-title mb-0"
                     subtitle="Դարձիր Ակտուալ անդամ"
                     titleClass="title black-color"

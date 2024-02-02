@@ -12,31 +12,29 @@ const SliderDefault = () => {
     }, []);
 
     return (
-        <React.Fragment>
-            <div className="rs-slider main-home">
-                <div className="slider-content slide1">
-                    <video ref={videoRef} poster={VideoPoster} autoPlay muted loop id="slider-bg-video">
-                        <source src={TrainingVideo} type="video/mp4" />
-                    </video>
+        <div className="rs-slider main-home">
+            <div className="slider-content slide1">
+                <video id="slider-bg-video" ref={videoRef} poster={VideoPoster} preload="auto" muted loop >
+                    <source src={TrainingVideo} type="video/mp4" />
+                </video>
 
-                    <div className="container">
-                        <div className="content-part position-relative">
-                            <h1 className="sl-title">Ակտուալ Ձեր բիզնեսի համար</h1>
-                            <h2 className='sl-subtitle width-50-100 fade-in-mobile anime white-color mb-30 sm-mb-10'>Սովորեք, ամրապնդեք, զարգացրեք Ձեր բիզնեսը</h2>
+                <div className="container">
+                    <div className="content-part position-relative">
+                        <h1 className="sl-title">Ակտուալ Ձեր բիզնեսի համար</h1>
+                        <h2 className='sl-subtitle width-50-100 fade-in-mobile anime white-color mb-30 sm-mb-10'>Սովորեք, ամրապնդեք, զարգացրեք Ձեր բիզնեսը</h2>
 
-                            <div className="sl-btn">
-                                <Link
-                                    className="readon white-transparent large-scale orange-btn main-home mt-20 p-40 cursor-pointer" 
-                                    to="/course"
-                                >
-                                    Գրանցվել
-                                </Link>
-                            </div>
+                        <div className="sl-btn">
+                            <Link
+                                className="readon white-transparent large-scale orange-btn main-home mt-20 p-40 cursor-pointer" 
+                                to="/course"
+                            >
+                                Գրանցվել
+                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
-        </React.Fragment>
+        </div>
     );
 }
 

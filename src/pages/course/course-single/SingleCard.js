@@ -11,10 +11,11 @@ const SingleCard = (props) => {
                 <div className="courses-grid">
                     <div className="img-part featured-img">
                         <img 
+                            width={425}
+                            height={500}
                             src={props.logo}
                             alt={props.title}
                             loading="lazy"
-                            className="xl-min-height-500"
                         />
                     </div>
                     <div className="content-part">

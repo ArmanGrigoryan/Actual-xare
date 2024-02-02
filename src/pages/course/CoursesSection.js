@@ -11,7 +11,7 @@ const Courses = () => {
         <div className="rs-popular-courses main-home event-bg pt-30 pb-50  md-pb-30">
             <div className="container wider">
                 <SectionTitle
-                    sectionClass="sec-title2 text-center mb-44"
+                    sectionClass="sec-title2 text-center mb-20"
                     subtitleClass="sub-title mb-0"
                     subtitle="Դարձիր Ակտուալ անդամ"
                     title="Շտապիր գրանցվել"

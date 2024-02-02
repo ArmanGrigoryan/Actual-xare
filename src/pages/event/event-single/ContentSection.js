@@ -1,10 +1,11 @@
 import React, { useContext, useState } from 'react';
 import ModalVideo from 'comp/Elements/ModalVideo';
 import { EventContext } from 'app/App';
-import EventGallery from './EventGallery';
+// import EventGallery from './EventGallery';
 import HtmlText from 'comp/Elements/HtmlText';
 import withPreviewPopup from 'comp/HOC/withPreviewPopup';
 
+const EventGallery = React.lazy(() => import("./EventGallery"));
 const EventGalleryWithPreview = withPreviewPopup(EventGallery);
 
 const ContentSection = () => {

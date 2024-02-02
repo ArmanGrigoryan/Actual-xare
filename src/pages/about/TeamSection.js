@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import SingleTeam from 'comp/Team/SingleTeam';
 import SectionTitle from 'comp/Common/SectionTitle';
 import withPreviewPopup from 'comp/HOC/withPreviewPopup';
@@ -13,6 +13,8 @@ import team6 from 'media/team/6.jpg';
 import team7 from 'media/team/7.jpg';
 import team8 from 'media/team/8.jpeg';
 import team9 from 'media/team/9.jpeg';
+
+const Slider = React.lazy(() => import("react-slick"));
 
 const SlideShowWithPreview = withPreviewPopup(SlideShow);
 
@@ -69,99 +71,97 @@ const ArchiveImages = [
 const Team = () => {
 
     return (
-        <React.Fragment>
-            <div className="rs-team style1 inner-style orange-color pt-40 pb-40 gray-bg">
-                <div className="container">
-                    <div className="row y-middle">
-                        <div className="col-md-6 sm-mb-30">
-                            <SectionTitle
-                                sectionClass="sec-title"
-                                subtitleClass="sub-title orange"
-                                subtitle="Գործընկերներ"
-                                titleClass="title mb-20"
-                                title="Ակտուալի թիմը"
-                            />
-                        </div>
+        <div className="rs-team style1 inner-style orange-color pt-40 pb-40 gray-bg">
+            <div className="container">
+                <div className="row y-middle">
+                    <div className="col-md-6 sm-mb-30">
+                        <SectionTitle
+                            sectionClass="sec-title"
+                            subtitleClass="sub-title orange"
+                            subtitle="Գործընկերներ"
+                            titleClass="title mb-20"
+                            title="Ակտուալի թիմը"
+                        />
                     </div>
-
-                    <Slider {...slilderSettings}>
-                        <SingleTeam
-                            teamClass="team-item"
-                            isCovering={true}
-                            image={team2}
-                            Title="Սիրանուշ Բարսեղյան"
-                            Designation="ՄՌԿ մասնագետ"
-                        />
-
-                        <SingleTeam
-                            teamClass="team-item"
-                            isCovering={true}
-                            image={team3}
-                            Title="Լաուրա Վիրաբյան"
-                            Designation="Հիմնադիր տնօրեն, Ավագ ՄՌԿ մասնագետ"
-                        />
-
-                        <SingleTeam
-                            teamClass="team-item"
-                            isCovering={true}
-                            image={team4}
-                            Title="Մոնիկա Գրիգորյան"
-                            Designation="ՄՌԿ մասնագետ"
-                        />
-
-                        <SingleTeam
-                            teamClass="team-item"
-                            isCovering={true}
-                            image={team6}
-                            Title="Լիլիթ Դավթյան"
-                            Designation="ՄՌԿ մասնագետ"
-                        />
-
-                        <SingleTeam
-                            teamClass="team-item"
-                            isCovering={true}
-                            image={team7}
-                            Title="Հասմիկ Սիմոնյան"
-                            Designation="ՄՌԿ մասնագետ"
-                        />
-
-                        <SingleTeam
-                            teamClass="team-item"
-                            isCovering={true}
-                            image={team5}
-                            Title="Լիլիթ Սաղաթելյան"
-                            Designation="ՄՌԿ մասնագետ"
-                        />
-
-                        <SingleTeam
-                            itemClass="team-item"
-                            isCovering={true}
-                            image={team1}
-                            Title="Աննա Թովմասյան"
-                            Designation="Թարգմանչուհի"
-                        />
-
-                        <SingleTeam
-                            itemClass="team-item"
-                            isCovering={true}
-                            image={team8}
-                            Title="Մարինե Հովհաննիսյան"
-                            Designation="Փաստաբան"
-                        />
-
-                        <SingleTeam
-                            itemClass="team-item"
-                            isCovering={true}
-                            image={team9}
-                            Title="Գայանե Ղուկասյան"
-                            Designation="Excel մասնագետ"
-                        />
-                    </Slider>
                 </div>
 
-                <SlideShowWithPreview images={ArchiveImages} />
+                <Slider {...slilderSettings}>
+                    <SingleTeam
+                        teamClass="team-item"
+                        isCovering={true}
+                        image={team2}
+                        Title="Սիրանուշ Բարսեղյան"
+                        Designation="ՄՌԿ մասնագետ"
+                    />
+
+                    <SingleTeam
+                        teamClass="team-item"
+                        isCovering={true}
+                        image={team3}
+                        Title="Լաուրա Վիրաբյան"
+                        Designation="Հիմնադիր տնօրեն, Ավագ ՄՌԿ մասնագետ"
+                    />
+
+                    <SingleTeam
+                        teamClass="team-item"
+                        isCovering={true}
+                        image={team4}
+                        Title="Մոնիկա Գրիգորյան"
+                        Designation="ՄՌԿ մասնագետ"
+                    />
+
+                    <SingleTeam
+                        teamClass="team-item"
+                        isCovering={true}
+                        image={team6}
+                        Title="Լիլիթ Դավթյան"
+                        Designation="ՄՌԿ մասնագետ"
+                    />
+
+                    <SingleTeam
+                        teamClass="team-item"
+                        isCovering={true}
+                        image={team7}
+                        Title="Հասմիկ Սիմոնյան"
+                        Designation="ՄՌԿ մասնագետ"
+                    />
+
+                    <SingleTeam
+                        teamClass="team-item"
+                        isCovering={true}
+                        image={team5}
+                        Title="Լիլիթ Սաղաթելյան"
+                        Designation="ՄՌԿ մասնագետ"
+                    />
+
+                    <SingleTeam
+                        itemClass="team-item"
+                        isCovering={true}
+                        image={team1}
+                        Title="Աննա Թովմասյան"
+                        Designation="Թարգմանչուհի"
+                    />
+
+                    <SingleTeam
+                        itemClass="team-item"
+                        isCovering={true}
+                        image={team8}
+                        Title="Մարինե Հովհաննիսյան"
+                        Designation="Փաստաբան"
+                    />
+
+                    <SingleTeam
+                        itemClass="team-item"
+                        isCovering={true}
+                        image={team9}
+                        Title="Գայանե Ղուկասյան"
+                        Designation="Excel մասնագետ"
+                    />
+                </Slider>
             </div>
-        </React.Fragment>
+
+            <SlideShowWithPreview images={ArchiveImages} />
+        </div>
     )
 }
 

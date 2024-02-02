@@ -2,8 +2,6 @@
 /*  01. Theme default CSS
 /*----------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
-
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -871,8 +869,14 @@ select,
 .min-height-400 {
     min-height: 400px;
 }
+.height-500 {
+    height: 500px;
+}
 .min-height-500 {
     min-height: 500px !important;
+}
+.max-height-500 {
+    max-height: 500px !important;
 }
 .max-height-inherit {
     max-height: inherit;

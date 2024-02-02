@@ -5,7 +5,7 @@ const MenuItems = () => {
     const location = useLocation();
 
     return (
-        <React.Fragment>
+        <>
             <li className={location.pathname === "/" ? 'menu-item-has-children current-menu-item' : 'menu-item-has-children'}>
                 <Link to="/"> Գլխավոր </Link>
             </li>
@@ -22,7 +22,7 @@ const MenuItems = () => {
             <li className={location.pathname.includes("/contact") ? 'menu-item-has-children current-menu-item' : 'menu-item-has-children'}>
                 <Link to="/contact"> Կապ </Link>
             </li>
-        </React.Fragment>
+        </>
     );
 }
 

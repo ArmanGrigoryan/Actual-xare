@@ -14,7 +14,7 @@ const SingleCard = (props) => {
                             loading="lazy" 
                             src={props.logo} 
                             alt="Event" 
-                            className="radius-12 min-height-500 md-height-600 object-fit-cover w-100"
+                            className="radius-12 height-500 md-height-600 object-fit-cover w-100"
                         />
                     </div>
                     <div className="content-part">

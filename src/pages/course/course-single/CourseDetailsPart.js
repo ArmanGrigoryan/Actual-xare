@@ -6,7 +6,7 @@ import ReviewPart from './ReviewPart';
 const CourseDetailsPart = () => {
 
     return (
-        <React.Fragment>
+        <>
             <div className="intro-section gray-bg pt-50 pb-50 md-pt-30 md-pb-30 loaded">
                 <div className="container">
                     <div className="row clearfix">
@@ -21,7 +21,7 @@ const CourseDetailsPart = () => {
                     <ReviewPart />
                 </div>
             </div>
-        </React.Fragment>
+        </>
     )
 }
 

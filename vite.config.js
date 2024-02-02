@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { Terser } from 'vite';
 import path from 'path';
 
 export default defineConfig({
@@ -7,9 +8,13 @@ export default defineConfig({
     loader: "jsx",
     include: /src\/.*\.js|.jsx?$/,
     exclude: [],
+    minifySyntax: true,
+    minifyWhitespace: true,
+    minifyIdentifiers: true,
+    minify: true,
   },
   assetsInclude: ['**/*.gltf'],
-  plugins: [react()],
+  plugins: [react(), Terser()],
   server: {
     host: "localhost",
     port: 3000
@@ -20,6 +25,12 @@ export default defineConfig({
         '.js': 'jsx',
       },
     },
+  },
+  build: {
+    lib: ['es', 'es.min'],
+    cssMinify: true,
+    cssCodeSplit: true,
+    minify: 'esbuild',
   },
   resolve: {
     alias: {

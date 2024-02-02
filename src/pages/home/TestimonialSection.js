@@ -1,9 +1,11 @@
 import React from 'react';
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import SectionTitle from 'comp/Common/SectionTitle';
 import SingleTestimonial from 'comp/Testimonial/SingleTestimonial';
 import quote from 'media/testimonial/main-home/test-2.png';
 import female from 'media/icon/female.png';
+
+const Slider = React.lazy(() => import("react-slick"));
 
 const Testimonial = () => {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Team from './TeamSection';
+// import Team from './TeamSection';
 import AboutVideo from './VideoSection';
 import AboutCounter from './CounterSection';
 import Testimonial from './TestimonialSection';
@@ -8,19 +8,23 @@ import AboutText from './AboutTextSection.js';
 import AboutTab from './AboutTabSection.js';
 import Faq from 'comp/FAQ';
 
+const Team = React.lazy(() => import("./TeamSection"));
+
 const AboutMain = () => {
 
     return (
-        <React.Fragment>
+        <>
             <AboutText />
             <AboutVideo />
             <AboutCounter />
             <AboutTab />
-            <Team />
+            <React.Suspense fallback={<div></div>}>
+                <Team />
+            </React.Suspense>
             <Testimonial />
             <Faq />
 			<ScrollToTop scrollClassName="scrollup orange-color" />
-        </React.Fragment>
+        </>
     )
 }
 

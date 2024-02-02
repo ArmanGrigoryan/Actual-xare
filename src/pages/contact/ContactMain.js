@@ -17,7 +17,7 @@ const ContactMain = () => {
     }
 
     return (
-        <React.Fragment>
+        <>
             <SiteBreadcrumb
                 pageTitle="Կապ մեզ հետ"
                 pageName=""
@@ -90,7 +90,7 @@ const ContactMain = () => {
                     </div>
                 </div>
             </div>
-        </React.Fragment>
+        </>
     );
 }
 
