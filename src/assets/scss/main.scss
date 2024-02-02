@@ -1,16 +1,15 @@
 @import 'variables';
+@import 'spacing';
 @import 'mixins';
 @import 'common';
 @import 'header';
 @import 'about';
 @import 'accordion';
 @import 'animations';
-@import 'degree';
 @import 'skills';
 @import 'scrollup';
 @import 'slider';
 @import 'services';
-@import 'spacing';
 @import 'contact';
 @import 'course_single';
 @import 'cta';
@@ -33,6 +32,7 @@
 @import 'courses';
 @import 'font/flaticon';
 @import 'font/fontAwesome';
-
+@import 'bootstrap';
 @import 'rodal/lib/rodal.css';
-@import 'bootstrap/dist/css/bootstrap.min.css';
+
+// @import 'bootstrap/dist/css/bootstrap.min.css';

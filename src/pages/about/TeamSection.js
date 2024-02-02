@@ -2,24 +2,28 @@ import React from 'react';
 import Slider from "react-slick";
 import SingleTeam from 'comp/Team/SingleTeam';
 import SectionTitle from 'comp/Common/SectionTitle';
-import Gallery from 'comp/Gallery';
-
-import team1 from 'media/team/1.jpg';
+import withPreviewPopup from 'comp/HOC/withPreviewPopup';
+import SlideShow from 'comp/SlideShow';
+import team1 from 'media/team/1.jpeg';
 import team2 from 'media/team/2.jpg';
 import team3 from 'media/team/3.jpg';
 import team4 from 'media/team/4.jpg';
 import team5 from 'media/team/5.jpg';
 import team6 from 'media/team/6.jpg';
 import team7 from 'media/team/7.jpg';
+import team8 from 'media/team/8.jpeg';
+import team9 from 'media/team/9.jpeg';
+
+const SlideShowWithPreview = withPreviewPopup(SlideShow);
 
 const slilderSettings = {
     dots: false,
     centerMode: false,
     autoplay: true,
-    autoplaySpeed: 3500,
-    lazyLoad: true,
+    autoplaySpeed: 4500,
     infinite: true,
     arrows: false,
+    lazyLoad: true,
     className: "active",
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -39,6 +43,29 @@ const slilderSettings = {
     ]
 };
 
+const ArchiveImages = [
+    'media/archive/1.jpg',
+    'media/archive/2.jpg',
+    'media/archive/15.jpeg',
+    'media/archive/6.jpg',
+    'media/archive/4.jpg',
+    'media/archive/12.jpeg',
+    'media/archive/11.jpeg',
+    'media/archive/16.jpeg',
+    'media/archive/3.jpg',
+    'media/archive/8.jpeg',
+    'media/archive/13.jpeg',
+    'media/archive/10.jpeg',
+    'media/archive/20.jpeg',
+    'media/archive/5.jpg',
+    'media/archive/9.jpeg',
+    'media/archive/18.jpeg',
+    'media/archive/19.jpeg',
+    'media/archive/14.jpeg',
+    'media/archive/21.jpeg',
+    'media/archive/17.jpeg'
+]
+
 const Team = () => {
 
     return (
@@ -50,8 +77,8 @@ const Team = () => {
                             <SectionTitle
                                 sectionClass="sec-title"
                                 subtitleClass="sub-title orange"
-                                subtitle="Դասավանդողներ"
-                                titleClass="title mb-0"
+                                subtitle="Գործընկերներ"
+                                titleClass="title mb-20"
                                 title="Ակտուալի թիմը"
                             />
                         </div>
@@ -110,13 +137,29 @@ const Team = () => {
                             itemClass="team-item"
                             isCovering={true}
                             image={team1}
-                            Title="Էլեն Մարդոյան"
-                            Designation="Մենեջեր"
+                            Title="Աննա Թովմասյան"
+                            Designation="Թարգմանչուհի"
+                        />
+
+                        <SingleTeam
+                            itemClass="team-item"
+                            isCovering={true}
+                            image={team8}
+                            Title="Մարինե Հովհաննիսյան"
+                            Designation="Փաստաբան"
+                        />
+
+                        <SingleTeam
+                            itemClass="team-item"
+                            isCovering={true}
+                            image={team9}
+                            Title="Գայանե Ղուկասյան"
+                            Designation="Excel մասնագետ"
                         />
                     </Slider>
                 </div>
-                
-                <Gallery />
+
+                <SlideShowWithPreview images={ArchiveImages} />
             </div>
         </React.Fragment>
     )

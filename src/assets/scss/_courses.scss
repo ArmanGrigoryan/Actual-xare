@@ -83,26 +83,53 @@
     &.main-home{
         .courses-item {
             position: relative;
+
             .courses-grid{
                 padding: 0px;
                 box-shadow: 0 0 30px #eee;
                 border-radius: 0 0 4px 4px;
                 background: $whiteColor;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+
                 .img-part{
                     margin-bottom: 0px;
                     overflow: hidden;
-                    a{
-                        display: block;
-                        img{
-                            width: 100%;
-                            border-radius: 4px 4px 0 0;
-                            transition: all .8s ease;
-                            transform: scale(1);
+
+                    img{
+                        position: relative;
+                        width: 100%;
+                        border-radius: 12px 12px 0 0;
+                        transition: all .8s ease;
+                        transform: scale(1);
+                        max-height: 500px;
+                        min-height: 500px;
+                        object-fit: cover;
+
+                        &:before {
+                            border-radius: 12px;
+                            opacity: 0.8;
+                            background: linear-gradient(transparent, #333333), linear-gradient(transparent, #333333);
+                            background: -moz-linear-gradient(transparent, #333333), -moz-linear-gradient(transparent, #333333);
+                            background: -o-linear-gradient(transparent, #333333), -o-linear-gradient(transparent, #333333);
+                            content: "";
+                            height: 100%;
+                            bottom: 0;
+                            left: 0px;
+                            right: 0px;
+                            position: absolute;
+                            z-index: 1;
+                            transition: all 0.7s ease 0s;
                         }
                     }
                 }
                 .content-part{
-                    padding: 32px 35px 35px 35px;
+                    padding: 25px;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+
                     .info-meta{
                         padding-bottom: 10px;
                         li{
@@ -110,7 +137,7 @@
                             margin-right: 10px;
                             transition: all 0.3s ease;
                             i{
-                                color: #fcb903;
+                                color: $yellowLiteColor;
                             }
                             &.ratings {
                                 span {
@@ -122,9 +149,9 @@
                     .course-price{
                         .price{
                             padding: 3px 15px;
-                            color: #ffffff;
+                            color: $whiteColor;
                             font-weight: 500;
-                            background: $primaryColor;
+                            background: $yellowLiteColor;
                             border-radius: 5px;
                             transition: all 0.3s ease;
                             position: absolute;
@@ -134,8 +161,11 @@
                     }
                     .title{
                         margin: 0 0 10px;
-                        line-height: 30px;
-                        font-size: 22px;
+                        line-height: 25px;
+                        font-size: 18px;
+                        min-height: 40px;
+                        flex-grow: 1;
+
                         a{
                             color: $titleColor5;
                             &:hover{
@@ -147,14 +177,15 @@
                         display: flex;
                         justify-content: space-between;
                         list-style: none;
-                        margin: 25px 0 0;
-                        padding: 25px 0 0;
+                        margin: 5px 0 0;
+                        padding: 10px 0 0;
                         font-size: 14px;
                         border-top: 1px solid #f4f0f0;
                         .user{
                             display: inline-block;
                             margin-right: 8px;
                             color: #363636;
+                            font-size: 12px;
                             i{
                                 &:before{
                                     color: $primaryColor;
@@ -168,62 +199,13 @@
             &:hover{
                 .courses-grid{
                     .img-part{
-                        a{
-                            img{
-                                
-                                transform: scale(1.1);
-                            }
+                        img{
+                            
+                            transform: scale(1.1);
                         }
                     }
                 }
             }
-        }
-        &.home12-style{
-            .courses-item {
-                .courses-grid{
-                    .content-part{
-                        padding: 32px 35px 35px 35px;
-                        .info-meta{
-                            padding-bottom: 10px;
-                            li{
-                                i{
-                                    color:  #fcb903;
-                                }
-                            }
-                        }
-                        .course-price{
-                            .price{
-                                background: $greenColor;
-                            }
-                        }
-                        .title{
-                            margin: 0 0 10px;
-                            line-height: 30px;
-                            font-size: 22px;
-                            a{
-                                color: $titleColor5;
-                                &:hover{
-                                    color: $greenColor;
-                                }
-                            }
-                        }
-                        .meta-part{
-                            border-top: 1px solid #f4f0f0;
-                            .user{
-                                display: inline-block;
-                                margin-right: 8px;
-                                color: #363636;
-                                i{
-                                    &:before{
-                                        color: $greenColor;
-                                        padding-right: 6px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            } 
         }
     }
 }
@@ -421,12 +403,8 @@
 
 /* Lg Device :1199px. */
 @media #{$lg} {
-    .rs-popular-courses.main-home.home12-style .courses-item.courses-grid .content-part .title {
-        line-height: 29px;
-        font-size: 20px;
-    } 
-    .rs-popular-courses.main-home.home12-style .courses-item.courses-grid .content-part {
-        padding: 32px 25px 35px 25px;
+    .rs-popular-courses.main-home .courses-item .courses-grid .content-part .title {
+        font-size: 16px;
     }
 }
 
@@ -454,6 +432,10 @@
             }
         }
     }
+    .rs-popular-courses.main-home .courses-item .courses-grid .img-part img {
+        max-height: 250px;
+        min-height: 250px;
+    }
 }
 
 /* Large Mobile :575px. */
@@ -461,13 +443,14 @@
     .rs-popular-courses.style3 .courses-item.img-part img {
         width: 100%;
     }
+    .rs-popular-courses.main-home .courses-item .courses-grid .img-part img {
+        max-height: 350px;
+        min-height: unset;
+    }
 }
 
 /* small mobile :480px. */
 @media #{$mobile} {
-    .rs-popular-courses.main-home.home12-style .sec-title4 .title {
-        font-size: 22px;
-    }
     .rs-popular-courses.main-home .courses-item.courses-grid .content-part {
         padding: 30px 25px;
     }

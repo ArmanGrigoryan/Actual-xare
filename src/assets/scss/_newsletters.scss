@@ -14,6 +14,10 @@
                             margin-right: 20px;
                         }
                     }
+
+                    .title {
+                        font-size: 22px;
+                    }
                 }
             }
             .newsletter-form {
@@ -74,13 +78,6 @@
         }
     } 
 }
-
-/* Tablet desktop :991px. */
-// @media #{$md} {
-//     .rs-newsletter.style1 .newsletter-wrap .content-part .sec-title {
-//         display: block;
-//     }
-// }
 
 /* Tablet :767px. */
 @media #{$sm} {

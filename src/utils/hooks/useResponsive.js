@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import determineDisplaySize from "helpers";
+import { determineDisplaySize } from "helpers";
 
 const useResponsive = () => {
   const [ currentDisplaySize, setCurrentDisplaySize ] = useState(determineDisplaySize(window.innerWidth));

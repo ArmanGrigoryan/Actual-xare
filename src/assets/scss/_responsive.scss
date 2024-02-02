@@ -7,14 +7,7 @@
 }
 
 /* Laptop :1600px. */
-@media #{$laptop} {
-    .hidden-laptop {
-        display: none !important;
-    }
-    .laptop-text-center {
-        text-align: center !important;
-    }
-}
+@media #{$laptop} {}
 
 
 /* XL Device :1366px. */
@@ -22,20 +15,10 @@
     .hidden-xl {
         display: none !important;
     }
-    .xl-text-center {
-        text-align: center !important;
-    }
 }
 
 /* Lg Device :1199px. */
-@media #{$lg} {
-    .hidden-lg {
-        display: none !important;
-    }
-    .lg-text-center {
-        text-align: center !important;
-    }
-}
+@media #{$lg} {}
 
 
 /* Tablet desktop :768px. */
@@ -43,39 +26,14 @@
     .hidden-md {
         display: none !important;
     }
-    .md-display-block {
-        display: block !important;
+    .md-display-flex {
+        display: flex !important;
     }
-    .md-pl-pr {
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-        > [class*="col-"] {
-            padding-left: 15px !important;
-            padding-right: 15px !important;
-        }
+    .md-max-w-unset {
+        max-width: unset !important;
     }
-    .md-text-left {
-        text-align: left !important;
-    }
-    .md-text-center {
-        text-align: center !important;
-    }
-    .md-text-right {
-        text-align: right !important;
-    }
-    .order-last {
-        -webkit-order: unset;
-        -moz-box-ordinal-group: unset;
-        order: unset;
-    }
-    .md-order-first {
-        -webkit-order: -1;
-        -moz-box-ordinal-group: -1;
-        order: -1;
-    }
-    .readon.buy-now {
-        padding: 7px 32px;
-        top: -24px;
+    .md-flex-wrap {
+        flex-wrap: wrap !important;
     }
 }
 
@@ -84,17 +42,6 @@
 @media #{$sm} {
     .hidden-sm {
         display: none !important;
-    }
-    .sm-pl-pr {
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-        > [class*="col-"] {
-            padding-left: 15px !important;
-            padding-right: 15px !important;
-        }
-    }
-    .md-text-center {
-        text-align: center !important;
     }
     h3 {
         font-size: 23px;
@@ -112,21 +59,7 @@
 }
 
 /* Large Mobile :575px. */
-@media #{$xs} {
-    .hidden-xs {
-        display: none !important;
-    }
-    .xs-text-center {
-        text-align: center !important;
-    }
-}
+@media #{$xs} {}
 
 /* small mobile :480px. */
-@media #{$mobile} {
-    .hidden-mobile {
-        display: none !important;
-    }
-    .mobile-text-center {
-        text-align: center !important;
-    }
-}
+@media #{$mobile} {}

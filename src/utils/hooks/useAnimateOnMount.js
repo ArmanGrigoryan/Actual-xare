@@ -1,21 +1,16 @@
 import { useEffect, useRef } from "react";
+import { FadeAnimationItems, ForwardAnimationParams } from "helpers";
 
-export default function useAnimateOnMount() {
+export default function useAnimateOnMount(forwardedRef) {
     const animateRef = useRef();
 
     useEffect(() => {
-        animateRef.current.animate([
-            { opacity: 0 },
-            { opacity: 1 },
-        ],
-        {
-            duration: 300,
-            iterations: 1,
-            fill: "forwards",
-        });
+        const currentRef = forwardedRef || animateRef;
+
+        currentRef.current.animate(FadeAnimationItems, ForwardAnimationParams);
     }), [];
 
-    return {
-        refElement: animateRef
+    return  {
+        refElement: forwardedRef || animateRef
     }
 }

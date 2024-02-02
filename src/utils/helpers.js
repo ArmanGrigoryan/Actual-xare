@@ -8,7 +8,7 @@ export const DisplaySize = {
     ComputerM: 1440,
 };
 
-const determineDisplaySize = (width) => {
+export const determineDisplaySize = (width) => {
   if (width >= DisplaySize.Tablet) {
     if (width >= DisplaySize.ComputerM) {
         return DisplaySize.ComputerM;
@@ -24,4 +24,24 @@ const determineDisplaySize = (width) => {
   }
 }
 
-export default determineDisplaySize;
+export const AnimationInterval = 300;
+export const FadeAnimationItems = [
+  { opacity: 0 },
+  { opacity: 1 },
+];
+export const FadeAnimationItemsReversed = FadeAnimationItems.slice().reverse();
+export const ForwardAnimationParams = {
+  duration: AnimationInterval,
+  iterations: 1,
+  fill: "forwards",
+};
+
+export class Storage {
+  static set = (key, value) => localStorage.setItem(key, JSON.stringify(value));
+
+  static get = (key) => JSON.parse(localStorage.getItem(key));
+
+  static remove = (key) => localStorage.removeItem(key);
+
+  static clear = () => localStorage.clear();
+}

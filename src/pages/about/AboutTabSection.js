@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import aboutImg from 'media/about/team.jpg';
 import araqelutyunImg from 'media/about/araqelutyun.jpg';
 import administraciaImg from 'media/about/administracia.jpg';
+import { FadeAnimationItems } from 'helpers'
 
 const tab1 = "Գործունեություն",
 tab2 = "Առաքելություն",
@@ -44,22 +45,13 @@ const AboutTab = () => {
 
     useEffect(() => {
         if (tab === tab1) {
-            refElement1.current?.animate([
-                { opacity: 0 },
-                { opacity: 1 },
-            ], 1000)
+            refElement1.current?.animate(FadeAnimationItems, 1000)
         }
         else if (tab === tab2) {
-            refElement2.current?.animate([
-                { opacity: 0 },
-                { opacity: 1 },
-            ], 1000)
+            refElement2.current?.animate(FadeAnimationItems, 1000)
         }
         else {
-            refElement3.current?.animate([
-                { opacity: 0 },
-                { opacity: 1 },
-            ], 1000)
+            refElement3.current?.animate(FadeAnimationItems, 1000)
         } 
     }, [tab])
 
@@ -90,7 +82,7 @@ const AboutTab = () => {
                                 </Tab>
                             </TabList>
                         </div>
-                        <div className="col-lg-6 pl-120 md-pl-14">
+                        <div className="col-lg-6 pl-50 md-pl-14">
                             <TabPanel>
                                 <div className="about-history">
                                     <div className="sec-title mb-24">

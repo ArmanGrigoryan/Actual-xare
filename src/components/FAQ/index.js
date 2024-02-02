@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
+import React from 'react';
 import {
     Accordion,
     AccordionItem,
@@ -9,17 +8,11 @@ import {
 } from 'react-accessible-accordion';
 
 const Faq = () => {
-    const location = useLocation();
-    const faqElement = useRef();
-
-    useEffect(() => {
-        if (location.hash === "#faq") faqElement.current.scrollIntoView({
-            behavior: "smooth"
-        });
-    }, [location.hash])
+    const emailSubject = "Հետադարձ կապ";
+    const emailBody = "Բարև Ձեզ, ցանկանանում եմ բաժանորդագրվել Ձեր ալիքին։";
 
     return (
-        <div ref={faqElement} id="faq" className="rs-faq-part style1 pt-50 pb-50 md-pt-20 md-pb-20">
+        <div className="rs-faq-part style1 pt-50 pb-50 md-pt-20 md-pb-20">
             <div className="container">
                 <div className="main-part innerpage">
                     <div className="faq-content mb-10">
@@ -31,13 +24,17 @@ const Faq = () => {
                                         Ինչպիսի՞ դասընթացներ ունեք
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body"><pre>{`Դասընթացները հետևյալն են՝
+                                <AccordionItemPanel className="card-body">
+                                    <pre>
+                                        {`Դասընթացները հետևյալն են՝
         - Մարդկային ռեսուրսների կառավարման դասընթաց սկսնակների համար,
         - Մարդկային ռեսուրսների կառավարման դասընթաց՝ 10/16 վերապատրաստում գործով մասնագետների համար,
         - Կադրային գործավարություն և ՀՀ Աշխատանքային օրենսգիրք,
         - Բիզնես անգլերեն՝ եռամսյա հատուկ դասընթաց,
         - Excel և վերլուծությունը հատուկ դասընթաց:
-        Մանրամասների համար զանգահարեք՝  (+374)44-30-30-28`}</pre>
+Մանրամասների համար զանգահարեք՝  `}
+                                        <a href="tel:(+374)44-30-30-28">(+374)44-30-30-28</a>
+                                    </pre>
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="b">
@@ -70,7 +67,7 @@ const Faq = () => {
                                     Մասնագետների մասին տեղեկատվություն կարող եք ստանալ ընտրելով համապատասխան դասընթացը, դասավանդող բաԺնում։
                                 </AccordionItemPanel>
                             </AccordionItem>
-                            <AccordionItem className="accordion-item" uuid="c">
+                            <AccordionItem className="accordion-item" uuid="j">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
                                         Արդյո՞ք տրամադրվում է սերտիֆիկատ
@@ -103,11 +100,11 @@ const Faq = () => {
                             <AccordionItem className="accordion-item" uuid="e">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link">
-                                        Դասընթացի արժեքը կասեք
+                                        Դասընթացի արժեքը կասե՞ք
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Դասընթացների արժեքները տարբեր են, Մանրամասների համար զանգահարեք՝  (+374)44-30-30-28:
+                                    Դասընթացների արժեքները տարբեր են, Մանրամասների համար զանգահարեք՝  <a target='_top' href="tel:(+374)44-30-30-28">(+374)44-30-30-28</a>:
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="f">
@@ -117,17 +114,17 @@ const Faq = () => {
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Մեր հասցեն է ք․ Երևան, Խանջյան 19։ 
+                                    Մեր հասցեն է՝ ք․ Երևան, Խանջյան 19։ 
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="g">
                                 <AccordionItemHeading className="card-header">
                                     <AccordionItemButton className="card-link line-height-25">
-                                        Ինչպե՞ս կարող ենք տեղեկանալ առաջիկայում սպասվող իրադարձություններին
+                                        Ինչպե՞ս կարող ենք տեղեկանալ առաջիկայում սպասվող նորություններին
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Կարող եք բաժանորդագրվել մեր ալիքին՝ actualhrarmenia@gmail.com, կամ զանգահարելով (+374)44-30-30-28 հեռախոսահամարին։
+                                    Կարող եք բաժանորդագրվել մեր ալիքին՝ <a target="_top" href={`mailto:support@actualhr.am?subject=${emailSubject}&body=${emailBody}`}>support@actualhr.am</a>, կամ զանգահարելով <a target="_top" href="tel:(+374)44-30-30-28">(+374)44-30-30-28</a> հեռախոսահամարին։
                                 </AccordionItemPanel>
                             </AccordionItem>
                         </Accordion>

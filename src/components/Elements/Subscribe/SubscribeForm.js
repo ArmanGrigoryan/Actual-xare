@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-
-const url = "https://rstheme.us16.list-manage.com/subscribe?u=b07284c0016b6ff3084de6551&id=292fe5312b";
 
 const CustomForm = () => {
     const [disabled, setDisabled] = useState(false);
     const inputRef = useRef();
+
+    const URL = useMemo(() => "https://rstheme.us16.list-manage.com/subscribe?u=b07284c0016b6ff3084de6551&id=292fe5312b", []);
 
     const clickHandler = (submitHandler) => () => {
         const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -33,18 +33,21 @@ const CustomForm = () => {
 
     return (
         <MailchimpSubscribe
-            url={url}
+            url={URL}
             render={({ subscribe, status }) => (
             <div>
                 <div>
                     <input 
                         type="email"
-                        placeholder="Էլ․ փոստ"
+                        placeholder="Էլ. փոստ" 
                         ref={inputRef}
                         disabled={disabled}
+                        onInput={evt => evt.target.setCustomValidity("")}
+                        onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
+                        required
                     />
                     <button 
-                        // disabled={disabled} 
+                        disabled={disabled} 
                         onClick={clickHandler(subscribe)}
                     >
                         { status ? "Շնորհակալություն!" : "Ուղարկել" }

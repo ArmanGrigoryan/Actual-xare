@@ -24,7 +24,6 @@ export default function Image({
 
     return (
         <div className="relative max-height-inherit cursor-pointer" onClick={expandHandler}>
-
             {
                 textDescriptionComponent && isPreviewing ?
                     <div 
@@ -33,26 +32,28 @@ export default function Image({
                     >
                         {
                             isExpanded ?
-                            <span onClick={closeHandler}>&darr;</span> :
-                            <span onClick={expandHandler}>...</span>
+                            ( <span onClick={closeHandler}>&darr;</span> ) :
+                            ( <span onClick={expandHandler}>...</span> )
                         }
                         { textDescriptionComponent }
                     </div> :
-                textDescriptionComponent && !isPreviewing ?
-                    <div className={`absolute-description`}>
-                        <span>...</span>
-                    </div> :
-                    null
+                        textDescriptionComponent && !isPreviewing ?
+                        (
+                            <div className={`absolute-description`}>
+                                <span>...</span>
+                            </div>
+                        ) :
+                            null
             }
+
             <img
                 src={src}
                 alt={alt}
-                className={isZooming ? className + " hoverable" : className}
+                className={`${isZooming ? className + " hoverable" : className}`}
                 onClick={clickHandler}
                 decoding="async" 
                 loading="lazy"
             />
-
         </div>
     );
 }

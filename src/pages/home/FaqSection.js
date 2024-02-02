@@ -15,8 +15,9 @@ const FaqSection = () => {
     const toggleModal = () => setIsOpen(!isOpen);
 
     return (
-        <div className="rs-faq-part style1 orange-style pt-100 pb-100 md-pt-70 md-pb-70">
+        <div className="rs-faq-part style1 orange-style pt-50 pb-50 md-pt-30 md-pb-30">
             <ModalVideo
+                videoUrl="https://www.youtube.com/embed/yb9Qrzx1eMU?autoplay=1&start=0&vq=hd720"
                 isOpen={isOpen}
                 closeHandler={toggleModal}
             />
@@ -47,13 +48,17 @@ const FaqSection = () => {
                                                 Ինչպիսի՞ դասընթացներ ունեք
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
-                                        <AccordionItemPanel className="card-body"><pre>{`Դասընթացները հետևյալն են՝
+                                        <AccordionItemPanel className="card-body">
+                                            <pre>
+                                                {`Դասընթացները հետևյալն են՝
         - Մարդկային ռեսուրսների կառավարման դասընթաց սկսնակների համար,
         - Մարդկային ռեսուրսների կառավարման դասընթաց՝ 10/16 վերապատրաստում գործով մասնագետների համար,
         - Կադրային գործավարություն և ՀՀ Աշխատանքային օրենսգիրք,
         - Բիզնես անգլերեն՝ եռամսյա հատուկ դասընթաց,
         - Excel և վերլուծությունը հատուկ դասընթաց:
-        Մանրամասների համար զանգահարեք՝  (+374)44-30-30-28`}</pre>
+Մանրամասների համար զանգահարեք՝  `}
+                                                <a href="tel:(+374)44-30-30-28">(+374)44-30-30-28</a>
+                                            </pre>
                                         </AccordionItemPanel>
                                     </AccordionItem>
 
@@ -80,9 +85,9 @@ const FaqSection = () => {
                                     </AccordionItem>
                                 </Accordion>
                                 
-                                <div className='blog-button text-right mt-4'>
-                                    <Link to="/about#faq" className="blog-btn">
-                                        {'Ավելին'}
+                                <div className='blog-button text-right mt-20'>
+                                    <Link to="/about" className="blog-btn">
+                                        Ավելին
                                     </Link>
                                 </div>
                             </div>

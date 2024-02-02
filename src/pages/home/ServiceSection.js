@@ -10,7 +10,7 @@ import serviceIcon6 from 'media/service/icons/2.png';
 const Service = () => {
 
     return (
-        <div id="rs-service" className="rs-services main-home gray-bg pt-110 pb-100 md-pt-70 md-pb-70">
+        <div id="rs-service" className="rs-services main-home gray-bg pt-50 pb-50  md-pb-30">
             <div className="container">
                 <SectionTitle
                     sectionClass="sec-title2 text-center mb-46"

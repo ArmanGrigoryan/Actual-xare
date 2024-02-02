@@ -88,7 +88,6 @@
                 }
                 .date {
                     font-size: 50px;
-                    font-family: $titleFont;
                     color: $primaryColor;
                     font-weight: 700;
                 }
@@ -231,7 +230,7 @@
 
                             &:before{
                                 content: "\f02d";
-                                font-family: "FontAwesome";
+                                font-family: $fontAwesome;
                                 font-size: 15px;
                                 color: $primaryColor;
                                 position: absolute;
@@ -253,14 +252,13 @@
                     .rs-view-btn{
                         a{
                             padding: 0px 0px 0px 0px;
-                            font-family: "Rubik", Sans-serif;
                             font-weight: 400;
                             color: $bodyColor;
                             font-size: 15px;
                             position: relative;
                             &:after{
                                 content: "\f054";
-                                font-family: "FontAwesome";
+                                font-family: $fontAwesome;
                                 font-size: 12px;
                                 position: relative;
                                 right: 0px;

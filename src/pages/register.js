@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from 'comp/Layout/Header';
-import Footer from 'comp/Layout/Footer/Footer';
+import Footer from 'comp/Layout/Footer';
 import Newsletter from 'comp/Common/Newsletter';
 import ScrollToTop from 'comp/Common/ScrollTop';
 import SiteBreadcrumb from 'comp/Common/Breadcumb';
@@ -25,7 +25,7 @@ const Register = () => {
                 pageName=""
                 breadcrumbsImg={bannerbg}
             />
-            <div className="register-section pt-100 pb-100 md-pt-80 md-pb-80">
+            <div className="register-section pt-50 pb-50 md-pt-30 md-pb-30">
                 <div className="container">
                     <div className="register-box">
                         <div className="sec-title text-center mb-30">
@@ -66,7 +66,7 @@ const Register = () => {
                 </div>
             </div>
             <Newsletter
-                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-40"
+                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-20"
                 titleClass="title mb-0 white-color"
             />
             <Footer

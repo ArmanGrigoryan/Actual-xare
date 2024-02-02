@@ -1,39 +1,75 @@
-import React from 'react';
-import useFade from 'hooks/useFade';
+import Slider from "react-slick";
+import SectionTitle from "comp/Common/SectionTitle";
+import withPreviewPopup from "comp/HOC/withPreviewPopup";
+import Image from "comp/Elements/Image";
+import HtmlText from 'comp/Elements/HtmlText';
+import { useQuery } from 'react-query';
+import { getReviews } from 'api';
 
-const ReviewPart = () => {
-    const { refElement: animateRef } = useFade(false);
+const sliderSettings = {
+    dots: true,
+    centerMode: false,
+    infinite: true,
+    arrows: true,
+    lazyLoad: true,
+    loop: true,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 1,
+                dots: false,
+            }
+        }
+    ]
+};
+
+const CourseReviews = ({ openPreviewHandler }) => {
+    const { data, isFetched } = useQuery("reviews", getReviews);
 
     return (
-        <div className="content pt-30 pb-30 white-bg" ref={animateRef}>
-            <div className="cource-review-box mb-30">
-                <h4>Stephane Smith</h4>
-                <div className="rating">
-                    <span className="total-rating">4.5</span> <span className="fa fa-star"></span><span className="fa fa-star"></span><span className="fa fa-star"></span><span className="fa fa-star"></span><span className="fa fa-star"></span> 256 Reviews
+        <div className="content white-bg">
+            <div className="rs-course-reviews rs-featured-news pt-30 pb-70 md-pt-30 md-pb-30">
+                <div className="container-fluid">
+                    <SectionTitle
+                        sectionClass="sec-title2 text-center"
+                        subtitleClass="sub-title uppercase mb-10"
+                        subtitle=""
+                        titleClass="title mb-30"
+                        title="Ակտուալ Հաղորդակցություն"
+                    />
+
+                    <Slider {...sliderSettings}>
+                        {
+                            isFetched ?
+                            data.map(({ id, logo, alt, html }) => {
+                                const textDescriptionComponent = <HtmlText html={html} />;
+
+                                return (
+                                    <Image
+                                        key={id}
+                                        src={logo} 
+                                        alt={alt} 
+                                        className="block d-block w-100 radius-12 b-none border-none coverable" 
+                                        clickHandler={evt => openPreviewHandler(evt, textDescriptionComponent)}
+                                        textDescriptionComponent={textDescriptionComponent}
+                                        isZooming={true}
+                                    />
+                                )
+                            }) :
+                            null
+                        }
+                    </Slider>
                 </div>
-                <div className="text">Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus.</div>
-                <div className="helpful">Was this review helpful?</div>
-                <ul className="like-option">
-                    <li><i className="fa fa-thumbs-o-up"></i></li>
-                    <li><i className="fa fa-thumbs-o-down"></i></li>
-                    <li><a className="report">Report</a></li>
-                </ul>
-            </div>
-            <div className="cource-review-box mb-30">
-                <h4>Anna Sthesia</h4>
-                <div className="rating">
-                    <span className="total-rating">4.5</span> <span className="fa fa-star"></span><span className="fa fa-star"></span><span className="fa fa-star"></span><span className="fa fa-star"></span><span className="fa fa-star"></span> 256 Reviews
-                </div>
-                <div className="text">Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus.</div>
-                <div className="helpful">Was this review helpful?</div>
-                <ul className="like-option">
-                    <li><i className="fa fa-thumbs-o-up"></i></li>
-                    <li><i className="fa fa-thumbs-o-down"></i></li>
-                    <li><a className="report">Report</a></li>
-                </ul>
             </div>
         </div>
-    );
+    )
 }
+
+const ReviewPart = withPreviewPopup(CourseReviews);
 
 export default ReviewPart;

@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import PopupImage from "comp/Layout/ImagePopup";
 import Image from "comp/Elements/Image";
+import { AnimationInterval, FadeAnimationItemsReversed, ForwardAnimationParams } from "helpers";
 
 export default function withPreviewPopup(Component) {
     return function withPreviewPopupComponent({ ...props }) {
         const [previewElement, setPreviewElement] = useState(null);
         const [isElementPreviewing, setIsElementPreviewing] = useState(false);
         const [activeComponent, setActiveComponent] = useState(null);
+
+        const ElementRef = useRef();
 
         const openPreviewHandler = (evt, comp) => {
             setPreviewElement(evt.target);
@@ -15,9 +18,14 @@ export default function withPreviewPopup(Component) {
         }
 
         const closePreviewHandler = () => {
-            setPreviewElement(null);
-            setIsElementPreviewing(false);
-            setActiveComponent(null);
+            Promise.resolve(ElementRef.current.animate(FadeAnimationItemsReversed, ForwardAnimationParams))
+            .then(res => {
+                if (res.finished) setTimeout(() => {
+                    setPreviewElement(null);
+                    setIsElementPreviewing(false);
+                    setActiveComponent(null);
+                }, AnimationInterval)
+            });
         }
 
         return (
@@ -27,6 +35,7 @@ export default function withPreviewPopup(Component) {
                 {
                     previewElement ?
                     <PopupImage 
+                        ref={ElementRef}
                         onClose={closePreviewHandler}
                     >
                         <Image

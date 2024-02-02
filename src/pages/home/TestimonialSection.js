@@ -13,9 +13,9 @@ const Testimonial = () => {
         infinite: true,
         draggable: false,
         autoplay: true,
-        autoplaySpeed: 6000,
-        lazyLoad: true,
+        autoplaySpeed: 8000,
         arrows: false,
+        lazyLoad: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [
@@ -30,62 +30,60 @@ const Testimonial = () => {
     };
 
     return (
-        <React.Fragment>
-            <div className="rs-testimonial main-home pt-100 pb-100 md-pt-70 md-pb-70">
-                <div className="container">
-                    <SectionTitle
-                        sectionClass="sec-title2 mb-50 md-mb-30 text-center"
-                        subtitleClass="sub-title primary"
-                        subtitle=""
-                        titleClass="title white-color"
-                        title="Կարծիքներ մեր մասին"
-                        effectClass="heading-line"
+        <div className="rs-testimonial main-home pt-50 pb-50  md-pb-30">
+            <div className="container">
+                <SectionTitle
+                    sectionClass="sec-title2 mb-50 md-mb-30 text-center"
+                    subtitleClass="sub-title primary"
+                    subtitle=""
+                    titleClass="title white-color"
+                    title="Կարծիքներ մեր մասին"
+                    effectClass="heading-line"
+                />
+                <Slider {...testimonialSettings}>
+                    <SingleTestimonial
+                        itemClass="testi-item"
+                        quoteImage={quote}
+                        authorImage={female}
+                        Title="Լուսինե Մանուկյան"
+                        Designation="ՄՌԿ մասնագետ"
+                        Description="Ոչ միայն խորհուրդ կտամ մասնակցել , այլև ես ինքս մեծ սիրով կրկին կմասնակցեմ Ակտուալի կողմից անցկացվելիք դասընթացներին..."
                     />
-                    <Slider {...testimonialSettings}>
-                        <SingleTestimonial
-                            itemClass="testi-item"
-                            quoteImage={quote}
-                            authorImage={female}
-                            Title="Լուսինե Մանուկյան"
-                            Designation="ՄՌԿ մասնագետ"
-                            Description="Ոչ միայն խորհուրդ կտամ մասնակցել , այլև ես ինքս մեծ սիրով կրկին կմասնակցեմ Ակտուալի կողմից անցկացվելիք դասընթացներին..."
-                        />
-                        <SingleTestimonial
-                            itemClass="testi-item"
-                            quoteImage={quote}
-                            authorImage={female}
-                            Title="Արմինե Աղաջանյան"
-                            Designation="ՄՌԿ մասնագետ"
-                            Description="Ակտուալը նորն ու այժմեականը լսելու վստահելի հարթակ է..."
-                        />
-                        <SingleTestimonial
-                            itemClass="testi-item"
-                            quoteImage={quote}
-                            authorImage={female}
-                            Title="Սուսաննա Մարտիրոսյան"
-                            Designation="ՄՌԿ մասնագետ"
-                            Description="Դասընթացը տվեց այն հնարավորությունը, որ կադրային գծով մասնագետը դառնա բիզնես գործընկեր..."
-                        />
-                        <SingleTestimonial
-                            itemClass="testi-item"
-                            quoteImage={quote}
-                            authorImage={female}
-                            Title="Սոնա Վարդանյան"
-                            Designation="ՄՌԿ դասընթացի շրջանավարտ"
-                            Description="Շատ շնորհակալ եմ արդիական դասընթացի, կազմակերպության գործնական խնդիրների վերաբերյալ մեծ քանակությանմբ տեղյակություն ստանալու համար..."
-                        />
-                        <SingleTestimonial
-                            itemClass="testi-item"
-                            quoteImage={quote}
-                            authorImage={female}
-                            Title="Աննա Օհանյան"
-                            Designation="ՄՌԿ դասընթացի շրջանավարտ"
-                            Description="Ակտուալ-ում Յուրաքանչյուր թեմա յուրովի հետաքրքիր է..."
-                        />
-                    </Slider>
-                </div>
+                    <SingleTestimonial
+                        itemClass="testi-item"
+                        quoteImage={quote}
+                        authorImage={female}
+                        Title="Արմինե Աղաջանյան"
+                        Designation="ՄՌԿ մասնագետ"
+                        Description="Ակտուալը նորն ու այժմեականը լսելու վստահելի հարթակ է..."
+                    />
+                    <SingleTestimonial
+                        itemClass="testi-item"
+                        quoteImage={quote}
+                        authorImage={female}
+                        Title="Սուսաննա Մարտիրոսյան"
+                        Designation="ՄՌԿ մասնագետ"
+                        Description="Դասընթացը տվեց այն հնարավորությունը, որ կադրային գծով մասնագետը դառնա բիզնես գործընկեր..."
+                    />
+                    <SingleTestimonial
+                        itemClass="testi-item"
+                        quoteImage={quote}
+                        authorImage={female}
+                        Title="Սոնա Վարդանյան"
+                        Designation="ՄՌԿ դասընթացի շրջանավարտ"
+                        Description="Շատ շնորհակալ եմ արդիական դասընթացի, կազմակերպության գործնական խնդիրների վերաբերյալ մեծ քանակությանմբ տեղյակություն ստանալու համար..."
+                    />
+                    <SingleTestimonial
+                        itemClass="testi-item"
+                        quoteImage={quote}
+                        authorImage={female}
+                        Title="Աննա Օհանյան"
+                        Designation="ՄՌԿ դասընթացի շրջանավարտ"
+                        Description="Ակտուալ-ում Յուրաքանչյուր թեմա յուրովի հետաքրքիր է..."
+                    />
+                </Slider>
             </div>
-        </React.Fragment>
+        </div>
     )
 }
 

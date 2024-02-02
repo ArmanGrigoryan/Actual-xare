@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SectionTitle = (props) => {
-    const { titleClass, subtitleClass, bottomSubTitleClass, descClass, secondDescClass, effectClass } = props;
+    const { titleClass, subtitleClass, bottomSubTitleClass, descClass, secondDescClass, effectClass, hrClass } = props;
 
     return (
         <div className={props.sectionClass}>
@@ -13,7 +13,7 @@ const SectionTitle = (props) => {
                 <div className={props.descClass}>{props.detailedDescription}</div>
                 { props.detailedDescription && <>
                     <div>Եկե՛ք զարգացնենք Ձեր բիզնեսը միասին 🧡</div> 
-                    <hr />
+                    <hr className={hrClass || ""} />
                 </> }
             </div> : ''}
             {secondDescClass ? <div className={props.secondDescClass}>{props.secondDescription}</div> : ''}

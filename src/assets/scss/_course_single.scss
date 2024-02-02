@@ -1,68 +1,70 @@
 /*Intro Section*/
 .intro-section{
     position:relative;
+    z-index: 996;
+
+    &:has(.image-preview-modal),
+    &:has(.open-iframe) {
+        z-index: 997;
+    }
+
     /*Video Column Style*/
     .video-column{
-        position:relative;
-        z-index:1;
+        position: relative;
+        z-index: 1;
+
         .intro-video{
             position:relative;
             text-align:center;
             width:100%;
             display:block;
+
             h4{
                 position: absolute;
                 width: 100%;
                 text-align: center;
-                color: #ffffff;
+                color: $whiteColor;
                 font-weight: 500;
                 font-size: 16px;
                 text-transform: capitalize;
                 bottom: 0;
                 left: 50%;
                 transform: translate(-50%, -50%);
-            }
-            .intro-video-box{
-                position: relative;
-                width:60px;
-                height: 60px;
-                z-index:99;
-                color: #00aa15;
-                font-weight:400;
-                font-size:24px;
-                text-align: center;
-                border-radius:50%;
-                padding-left:7px;
-                line-height:60px;
-                display: inline-block;
-                background-color:#ffffff;
-                transition: all 900ms ease;
-                -moz-transition: all 900ms ease;
-                -webkit-transition: all 900ms ease;
-                -ms-transition: all 900ms ease;
-                -o-transition: all 900ms ease;
-                box-shadow:0px 0px 15px rgba(0,0,0,0.10);
-            }            
+            }  
             &:before{
-                position:absolute;
-                content:'';
-                left:0px;
-                top:0px;
-                right:0px;
-                bottom:0px;
-                background-color:rgba(0,0,0,0.10);
+                position: absolute;
+                content: '';
+                left: 0px;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-color: rgba(0,0,0,0.10);
+                border-radius: 12px;
             }
         }
         .course-features-info {
-            margin: 50px 0;
+            margin: 30px 0 0;
             padding: 30px 40px 30px;
             position: relative;
             background: $whiteColor;
             box-shadow: 0 0 30px #eee;
+
+            &.slim {
+                padding: 30px 20px;
+            }
+
             ul {
                 li {
-                    display: block;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    gap: 20px;
                     padding: 10px 0;
+
+                    &.gapper {
+                        gap: 40px;
+                    }
+
                     i {
                         color: $primaryColor;
                     }
@@ -71,7 +73,12 @@
                     }
                     .value {
                         float: right;
+                        line-height: 20px;
                         padding-right: 5px;
+
+                        &.right-align {
+                            text-align: right;
+                        }
                     }
                 }
             }
@@ -85,6 +92,14 @@
                 border-radius: 5px;
                 margin: 0 0 15px;
                 width: 100%;
+
+                .single-price-text {
+                    font-size: 10px;
+                    position: absolute;
+                    bottom: 8px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }
         }
     }
@@ -96,7 +111,7 @@
         .react-tabs__tab{
             position:relative;
             text-align:center;
-            width: calc(100% / 3);
+            width: 50%;
             display: inline-block;
             button{
                 position:relative;
@@ -105,7 +120,7 @@
                 font-size:14px;
                 background:none;
                 background: $whiteColor;
-                color:#626262;
+                color:$darkGray;
                 border: 1px solid #eee;
                 font-weight:500;
                 line-height:24px;
@@ -154,11 +169,12 @@
     .inner-box{
         position:relative;
         padding:0px 40px 40px;
+        
         h4{
             position:relative;
             color: $titleColor;
             font-weight:600;
-            line-height:1.3em;
+            line-height:1.6em;
             margin-bottom:15px;
         }
         h3{
@@ -171,7 +187,7 @@
         }
         p{
             position:relative;
-            color:#626262;
+            color:$darkGray;
             font-size:16px;
             line-height:1.8em;
             margin-bottom:15px;
@@ -182,7 +198,7 @@
             margin-bottom:30px;
             li{
                 position:relative;
-                color:#393939;
+                color:$darkColor;
                 font-size:16px;
                 font-weight:500;
                 line-height:1.3em;
@@ -204,7 +220,7 @@
             margin-bottom:20px;
             li{
                 position:relative;
-                color:#626262;
+                color:$darkGray;
                 font-size:16px;
                 margin-bottom:14px;
                 padding-left:30px;
@@ -216,7 +232,7 @@
                     color:$primaryColor;
                     font-size:14px;
                     line-height:1em;
-                    font-family: "FontAwesome";
+                    font-family: $fontAwesome;
                 }
                 &:last-child{
                     margin-bottom:0px;
@@ -239,7 +255,7 @@
     }
     .rating{
         position:relative;
-        color:#626262;
+        color:$darkGray;
         font-size:16px;
         .fa{
             position:relative;
@@ -257,14 +273,14 @@
     }
     .text{
         position:relative;
-        color:#626262;
+        color:$darkGray;
         font-size:16px;
         line-height:1.8em;
         margin-top:15px;
     }
     .helpful{
         position:relative;
-        color:#393939;
+        color:$darkColor;
         font-size:16px;
         line-height:1.8em;
         margin-top:12px;
@@ -281,7 +297,7 @@
                 position:relative;
                 width:36px;
                 height:36px;
-                color:#626262;
+                color:$darkGray;
                 text-align:center;
                 line-height:36px;
                 border-radius:50px;
@@ -323,7 +339,7 @@
 }
 @media #{$md} {
     .course-overview .inner-box {
-        padding: 0px 20px 40px;
+        padding: 0px 20px 20px;
     }
 }
 @media #{$mobile} {
@@ -338,5 +354,13 @@
         &:last-child button {
             border-radius: 0;
         }
+    }
+    .intro-section .video-column .course-features-info {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .intro-section .video-column .btn-part {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

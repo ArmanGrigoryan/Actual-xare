@@ -57,7 +57,7 @@ const AboutCounter = () => {
                     </div>
                     <div className="col-lg-8 pl-82 md-pl-14">
                         {counters &&
-                            <div className="row rs-counter couter-area">
+                            <div className="row rs-counter counter-area">
                                 {counters.map(counter => (
                                     <div key={counter.countNum} className="col-md-4 sm-mb-30">
                                         <div className="counter-item one">
@@ -71,7 +71,7 @@ const AboutCounter = () => {
                                                                 redraw={true} 
                                                                 start={!isAnimated ? 0 : counter.countNum} 
                                                                 end={isVisible && isReadyOnce ? counter.countNum : 0} 
-                                                                duration={3} 
+                                                                duration={2} 
                                                             />
                                                             <span className="counter-prefix">{counter.counterPrefix}</span>
                                                         </div>

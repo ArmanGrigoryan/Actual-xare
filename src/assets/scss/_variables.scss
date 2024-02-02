@@ -1,7 +1,7 @@
 // Font Family
-// $bodyFont: 'Rubik', sans-serif;
 $bodyFont: 'Nunito', sans-serif;
 $titleFont: 'Nunito', sans-serif;
+$fontAwesome: "FontAwesome";
 
 // Colors
 // $primaryColor:     #99041d;
@@ -16,22 +16,27 @@ $titleColor5:      #101010;
 $titleColor6:      #333333;
 $titleColor7:      #171F32;
 $whiteColor:       #ffffff;
+$lighterColor:     #f6f6f6;
+$lighterColor2:    #eee;
 $bodyColor:        #505050;
 $bodyColor2:       #363636;
+$darkColor:        #393939;
 $bodyColor3:       #54647b;
 $grayColor:        #f3f8f9;
 $graybg:           #f3f8f9;
+$darkGray:         #626262;
 $secbg:            #f3f8f9;
 $metaColor:        #54647b;
 $orangeColor:      #ff5421;
 $purpleColor:      #c701f1;
 $yellowColor:      #f4bf00;
+$yellowLiteColor:  #fcb903;
 $greenColor:       #0c8b51;
 // Gradient Backgrounds
 $gradient-bg: linear-gradient(180deg, $secondaryColor 0%, $orangeColor 100%);
 
 // Common
-$header_transition: all .45s ease;
+$header_transition: all .1s ease-in-out;
 $transition: all .3s ease;
 
 // Responsive Variables
@@ -46,24 +51,7 @@ $sm: 'only screen and (max-width: 767px)';
 $xs: 'only screen and (max-width: 575px)';
 $mobile: 'only screen and (max-width: 480px)';
 
-// Removeable --------------------------------------------------------
-$white: #ffffff;
+$white: $whiteColor;
 $black: #333333;
-$grey:#f8f8f8;
-$grey-2:#f4f9fc;
 $theme-color: #096bd8;
-$theme-color-2: #6100b3;
-$body-color: #696969;
-$hr-border-color:#eceff8;
 $footer-bg:#091b29;
-$tab-bg:#1a1430; 
-$tab-color:#aeabba;
-$black-soft:#7e7e7e;
-$link-color:#e4ecf3;
-$border-color:#eaedff;
-$heading-color: #333333;
-
-$c_reg: 'cerebri_sansregular';
-$c_med: 'cerebri_sansmedium';
-$c_sem: 'cerebri_sanssemibold';
-$c_bold: 'cerebri_sansbold';

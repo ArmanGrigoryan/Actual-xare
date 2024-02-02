@@ -5,15 +5,10 @@ import AboutImage from 'media/about/about2orange.png';
 const AboutText = () => {
 
     return (
-        <div className="rs-about style1 pt-82 pb-100 md-pt-50 md-pb-60">            
+        <div className="rs-about style1 pt-50 pb-50 md-pt-30 md-pb-30">            
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-lg-6 order-last padding-0 md-pl-14 md-pr-14 md-mb-30">
-                        <div className="img-part animated">
-                            <img loading="lazy" className="about-main" src={AboutImage} alt="About" />
-                        </div>
-                    </div>
-                    <div className="col-lg-6 pr-70 md-pr-14">
+                    <div className="col-lg-6 pr-70 md-pr-14 pl-20">
                         <div className="about-content">
                             <SectionTitle
                                 sectionClass="sec-title mb-44 md-mb-0"
@@ -33,6 +28,12 @@ const AboutText = () => {
                                 Ակուալի հմուտ և մասնագիտացված մարդկային ռեսուրսների կառավարման մասնագետները, աշխատանքային
                                 ռեժիմով, գտնվում են բիզնեսում կատարելով ամենօրյա անհրաժեշտ աշխատանքները՝ ի բարորություն ձեր բիզնեսին:"
                             />
+                        </div>
+                    </div>
+
+                    <div className="col-lg-6 padding-0 md-pl-14 md-pr-14 md-mb-30">
+                        <div className="img-part animated">
+                            <img loading="lazy" className="about-main" src={AboutImage} alt="About" />
                         </div>
                     </div>
                 </div>

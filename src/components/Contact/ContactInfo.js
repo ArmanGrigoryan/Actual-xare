@@ -4,11 +4,10 @@ const ContactInfo = (props) => {
     const { boxClass, iconClass, title, address, phone, email } = props;
 
     const emailSubject = "Հետադարձ կապ";
-    const emailBody = "Բարև Ձեզ, ես ցանկանում եմ տեղեկանալ դասընթացների մասին ավելի մանրամասն։ Կարող եք զանգահարել՝ +374";
+    const emailBody = "Բարև Ձեզ, կցանկանայի տեղեկանալ դասընթացների մասին ավելի մանրամասն։ Կոնտակտային հեռախոսահամար՝ +374";
 
     return (
         <React.Fragment>
-
             <div className={`address-box radius-12 ${boxClass}`}>
                 <div className="address-icon">
                     <i className={iconClass}></i>

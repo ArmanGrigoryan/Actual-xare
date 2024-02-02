@@ -21,6 +21,20 @@ const ContactForm = (props) => {
                 </div>
 
                 <div className="col-md-6 mb-30">
+                    <input
+                        id="lastname" 
+                        className="from-control" 
+                        type="text" 
+                        name="lastname" 
+                        placeholder="Ազգանուն" 
+                        required 
+                        disabled={btnDisabled}
+                        onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
+                        onInput={evt => evt.target.setCustomValidity("")}
+                    />
+                </div>
+
+                <div className="col-md-6 mb-30">
                     <input 
                         id="email" 
                         className="from-control" 
@@ -41,20 +55,6 @@ const ContactForm = (props) => {
                         type="text" 
                         name="phone" 
                         placeholder="Հեռ." 
-                        required 
-                        disabled={btnDisabled}
-                        onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
-                        onInput={evt => evt.target.setCustomValidity("")}
-                    />
-                </div>
-
-                <div className="col-md-6 mb-30">
-                    <input
-                        id="website" 
-                        className="from-control" 
-                        type="text" 
-                        name="website" 
-                        placeholder="Ձեր կայքը" 
                         required 
                         disabled={btnDisabled}
                         onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}

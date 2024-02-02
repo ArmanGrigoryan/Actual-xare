@@ -6,10 +6,12 @@ import Rodal from 'rodal';
 const ModalVideo = ({
     isOpen,
     closeHandler,
-    videoUrl = "https://www.youtube.com/embed/yb9Qrzx1eMU?autoplay=1&start=0&vq=hd720",
+    videoWidth = "100%",
+    videoHeight = "100%",
+    videoUrl,
+    hasOwnIframe = false,
     videoTitle = "Ակտուալի մասին"
 }) => {
-
     const displaySize = useResponsive();
 
     return (
@@ -22,27 +24,31 @@ const ModalVideo = ({
                         displaySize === DisplaySize.MobileS || displaySize === DisplaySize.MobileM ? 
                         "100vw" :
                             "80vw",
-                maxHeight: "65vh",
                 zIndex: 1000,
                 background: "transparent",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                alignContent: "center",
             }}
             enterAnimation="door"
-            leaveAnimation="door"
+            leaveAnimation="fade"
             showCloseButton={false}
-            className='z-index-1000 w-100 h-100'
+            className={`z-index-1000 ${hasOwnIframe ? "slim-iframe" : ""} w-100 h-100`}
             width={1920}
             height={1920}
         >
-            <iframe
-                className='w-100 h-100 radius-20'
-                width={"100%"}
-                height={"100%"}
-                src={isOpen ? videoUrl : ""}
+            { isOpen && <iframe 
+                className={`sm-mr-10 radius-20 open-iframe border-none overflow-hidden max-height-inherit`}
+                width={videoWidth}
+                height={videoHeight}
+                src={videoUrl}
                 title={videoTitle}
                 allowFullScreen={true}
                 frameBorder="0"
+                scrolling="no"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            />
+            /> }
         </Rodal>
     )
 }

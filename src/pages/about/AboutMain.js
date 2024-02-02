@@ -1,6 +1,5 @@
 import React from 'react';
 import Team from './TeamSection';
-// import Blog from './BlogSection';
 import AboutVideo from './VideoSection';
 import AboutCounter from './CounterSection';
 import Testimonial from './TestimonialSection';
@@ -19,7 +18,6 @@ const AboutMain = () => {
             <AboutTab />
             <Team />
             <Testimonial />
-            {/* <Blog /> */}
             <Faq />
 			<ScrollToTop scrollClassName="scrollup orange-color" />
         </React.Fragment>

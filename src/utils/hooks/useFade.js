@@ -1,4 +1,5 @@
 import { useEffect, useLayoutEffect, useRef } from "react";
+import { FadeAnimationItems, ForwardAnimationParams } from "helpers";
 
 export default function useFade(isScrolling = true) {
     const animateRef = useRef();
@@ -10,15 +11,7 @@ export default function useFade(isScrolling = true) {
     }, []);
 
     useEffect(() => {
-        animateRef.current.animate([
-            { opacity: 0 },
-            { opacity: 1 },
-        ],
-        {
-            duration: 400,
-            iterations: 1,
-            fill: "forwards",
-        });
+        animateRef.current.animate(FadeAnimationItems, ForwardAnimationParams);
     }), [];
 
     return {

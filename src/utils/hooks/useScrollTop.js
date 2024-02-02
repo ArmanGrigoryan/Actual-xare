@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocation } from 'react-router-dom';
+import { AnimationInterval, FadeAnimationItems, FadeAnimationItemsReversed, ForwardAnimationParams } from "helpers";
 
 export default function useScrollTop() {
 	const [isVisible, setIsVisible] = useState(false);
@@ -18,28 +19,12 @@ export default function useScrollTop() {
 			if (window.pageYOffset > 200 && !isVisible) {
 				setIsVisible(true);
 
-                animateRef.current.animate([
-                    { opacity: 0 },
-                    { opacity: 1 },
-                ],
-                {
-                    duration: 300,
-                    iterations: 1,
-                    fill: "forwards",
-                });
+                animateRef.current.animate(FadeAnimationItems, ForwardAnimationParams);
 			} 
             else if(window.pageYOffset <= 200 && isVisible) {
-                animateRef.current.animate([
-                    { opacity: 1 },
-                    { opacity: 0 },
-                ],
-                {
-                    duration: 300,
-                    iterations: 1,
-                    fill: "forwards",
-                });
+                animateRef.current.animate(FadeAnimationItemsReversed, ForwardAnimationParams);
 
-                setTimeout(() => setIsVisible(false), 300);
+                setTimeout(() => setIsVisible(false), AnimationInterval);
             }
 		};
 

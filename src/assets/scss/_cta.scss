@@ -73,8 +73,6 @@
                 background-position: left;
             }
             &.inner-page {
-                position: relative;
-
                 &:before {
                     background: url(media/cta/style2/left-bg2.png);
                     background-size: cover;
@@ -91,6 +89,7 @@
             background: none !important;
             position: relative;
             padding: 130px 0;
+
             &:after,
             &:before {
                 position: absolute;
@@ -112,6 +111,7 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 right: 0;
+                z-index: -2;
             }
         } 
     }
@@ -146,9 +146,11 @@
         right: unset;
         top: unset;
     }
-    .rs-cta.style2 .partition-bg-wrap.inner-page:after,
     .rs-cta.style2 .partition-bg-wrap.inner-page:before {
         max-height: 330px;
+    }
+    .rs-cta.style2 .partition-bg-wrap.inner-page:after {
+        max-height: calc(100% - 330px);
     }
 }
 

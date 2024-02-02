@@ -1,15 +1,12 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-
-import ReviewPart from './ReviewPart';
 import OverviewPart from './OverviewPart';
 import InstructorPart from './IntructorPart';
 
 const CourseDetailsTab = () => {
 
     let tab1 = "Նկարագիր",
-        tab2 = "Դասընթացավար",
-        tab3 = "Կարծիքներ";
+        tab2 = "Դասընթացավար";
     const tabStyle = 'intro-tabs tabs-box';
 
     return (
@@ -22,9 +19,6 @@ const CourseDetailsTab = () => {
                     <Tab>
                         <button>{tab2}</button>
                     </Tab>
-                    <Tab>
-                        <button>{tab3}</button>
-                    </Tab>
                 </TabList>
 
                 <TabPanel>
@@ -33,10 +27,6 @@ const CourseDetailsTab = () => {
 
                 <TabPanel>
                     <InstructorPart />
-                </TabPanel>
-
-                <TabPanel>
-                    <ReviewPart />
                 </TabPanel>
             </Tabs>
         </div>

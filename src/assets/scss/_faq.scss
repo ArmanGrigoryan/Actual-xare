@@ -9,43 +9,6 @@
                 text-transform: uppercase;
             }
         }
-        .accordion{
-            border-width: 12px;
-            .card{
-                margin-bottom: 15px;
-                border: none;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-                .card-header{
-                    padding: 0 !important;
-                    border: none;
-                    .card-link{
-                        font-size: 17px;
-                        font-weight: 600;
-                        line-height: 28px;
-                        color: $whiteColor;
-                        display: block;
-                        padding: 15px 15px;
-                        text-transform: capitalize;
-                        background: $primaryColor;
-                        &.collapsed {
-                            background: #f9f8ff;
-                            color: $bodyColor;
-                        }
-                    }
-                }
-                .card-body{
-                    background: $whiteColor;
-                    font-size: 15px;
-                    font-weight: 400;
-                    line-height: 25px;
-                    color: $bodyColor;
-                    padding: 15px 14px 15px !important;
-                    border: 1px solid #f9f8ff;
-                }
-            }
-        }
     }
     &.style1 {
         .main-part{
@@ -77,6 +40,10 @@
                 }
                 .accordion-style1{
                     border: none;
+                    * {
+                        transition: $transition;
+                    }
+
                     .accordion-item{
                         margin-bottom: 5px;
                         font-size: 15px;
@@ -88,8 +55,9 @@
                         .card-header{
                             display: flex;
                             align-items: center;
-                            padding: 0 !important;
+                            padding: 0;
                             border: none;
+
                             .card-link{
                                 position: relative;
                                 display: block;
@@ -104,7 +72,7 @@
                                 box-shadow: 0 0 49px 0 rgba(0, 0, 0, 0.08);
                                 &:after {
                                     position: absolute;
-                                    font-family: "FontAwesome";
+                                    font-family: $fontAwesome;
                                     content: "\f0f3";
                                     left: 25px;
                                     top: 50%;
@@ -115,16 +83,12 @@
                                     height: unset;
                                     width: unset;
                                 }
+
+                                &[aria-expanded=true] {
+                                    background: rgba(48, 32, 197, 0.993);
+                                    color: $whiteColor;
+                                }
                             }
-							.card-link[aria-expanded=true],
-							.card-link[aria-selected=true] {
-								background: $primaryColor;
-								color: $whiteColor;
-                                border-radius: 12px;
-								&:after {
-									content: "\f1f6";
-								}
-							}
                         }
                         .card-body{
                             background: $whiteColor;
@@ -132,7 +96,7 @@
                             font-weight: 400;
                             line-height: 25px;
                             color: $bodyColor;
-                            padding: 15px 14px 15px !important;
+                            padding: 15px 14px;
                             width: 100%;
                         }
                     }
@@ -148,15 +112,6 @@
             min-height: 615px;
         }    
     }
-
-    &.orange-style {
-        .content-part .accordion-style1 .accordion-item .card-header .card-link[aria-selected=true],
-        .content-part .accordion-style1 .accordion-item .card-header .card-link[aria-expanded=true],
-        .main-part .faq-content .accordion-style1 .accordion-item .card-header .card-link[aria-expanded=true],
-        .main-part .faq-content .accordion-style1 .accordion-item .card-header .card-link[aria-selected=true] {
-            background: $primaryColor;
-        }
-    } 
 }
 
 /* Lg Device :1199px. */
@@ -173,11 +128,6 @@
     .rs-faq-part.style1 .main-part.new-style .title .text-part{
         font-size: 30px;
     }
-}
-
-/* Tablet desktop :992px to 1199px. */
-@media #{$only_lg} {
-    
 }
 
 /* Custom Container Width :992px. */
@@ -207,18 +157,7 @@
     }
     .rs-faq-part.style1 .main-part {
         padding: 30px 40px;
-    }
-    
-}
-
-/* Tablet :767px. */
-@media #{$sm} {
-    
-}
-
-/* Large Mobile :575px. */
-@media #{$xs} {
-    
+    }   
 }
 
 /* small mobile :480px. */
@@ -232,7 +171,7 @@
         padding-left: 41px;
     }
     .rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card .card-body {
-        padding: 20px 12px 28px !important;
+        padding: 20px 12px 28px;
         font-size: 12px;
     }
     .rs-faq-part.style1 .main-part.new-style .title .text-part {
@@ -263,7 +202,7 @@
     }
     .rs-faq-part.style1 .main-part .faq-content .accordion-style1 .accordion-item .card-body {
         font-size: 14px;
-        padding: 12px 10px 12px !important;
+        padding: 12px 10px;
     }
     .rs-faq-part.style1 .main-part.new-style{
         padding-left: 20px;
@@ -274,6 +213,5 @@
         line-height: 1.5;
         padding-top: 10px;
         padding-bottom: 10px;
-    }
-    
+    }   
 }

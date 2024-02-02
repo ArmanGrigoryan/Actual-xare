@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from 'comp/Layout/Header';
-import Footer from 'comp/Layout/Footer/Footer';
+import Footer from 'comp/Layout/Footer';
 import ScrollToTop from 'comp/Common/ScrollTop';
 import Newsletter from 'comp/Common/Newsletter';
 import ContactMain from './ContactMain';
@@ -20,7 +20,7 @@ const Contact = () => {
             <Header parentMenu='contact' />
             <ContactMain />
             <Newsletter
-                sectionClass="rs-newsletter style1 orange-color event-bg mb--90 sm-mb-0 sm-pb-80"
+                sectionClass="rs-newsletter style1 orange-color event-bg mb--90 sm-mb-0 sm-pb-20"
                 titleClass="title mb-0 white-color"
             />
             <Footer

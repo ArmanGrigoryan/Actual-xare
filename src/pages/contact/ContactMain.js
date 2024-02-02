@@ -24,8 +24,8 @@ const ContactMain = () => {
                 breadcrumbsImg={bannerbg}
             />
 
-            <div className="rs-contact style1 event-bg pt-60 md-pt-40 pb-60 md-pb-40">
-                <div className="container wider pb-66 md-pb-46">
+            <div className="rs-contact style1 event-bg pt-50 md-pt-30 pb-50 md-pb-30">
+                <div className="container wider pb-50 md-pb-30">
                     <div className="row gutter-35">
                         <div className="col-md-4">
                             <ContactInfo
@@ -40,7 +40,7 @@ const ContactMain = () => {
                                 boxClass="sm-mb-30"
                                 title="Էլ. հասցե"
                                 iconClass="flaticon-email"
-                                email="actualhrarmenia@gmail.com"
+                                email="support@actualhr.am"
                             />
                         </div>
                         <div className="col-md-4">
@@ -70,7 +70,7 @@ const ContactMain = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 pl-60 md-pl-14">
+                        <div className="col-lg-6 pl-50 md-pl-14">
                             <div className="contact-widget">
                                 <SectionTitle
                                     sectionClass="sec-title2 mb-36"

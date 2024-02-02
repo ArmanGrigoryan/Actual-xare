@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from 'comp/Layout/Header';
-import Footer from 'comp/Layout/Footer/Footer';
+import Footer from 'comp/Layout/Footer';
 import Newsletter from 'comp/Common/Newsletter';
 import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import AboutMain from './AboutMain';
@@ -26,7 +26,7 @@ const About = () => {
             />
             <AboutMain />
             <Newsletter
-                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-70"
+                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-20"
                 titleClass="title mb-0 white-color"
             />
             <Footer

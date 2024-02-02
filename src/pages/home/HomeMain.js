@@ -1,14 +1,10 @@
 import React from 'react';
 import SliderDefault from 'comp/Slider/SliderDefault';
-import Courses from './CoursesSection';
 import Cta from './CtaSection';
 import FaqSection from './FaqSection';
 import Testimonial from './TestimonialSection';
-import Blog from './BlogSection';
-import Degree from './DegreeSection.js';
 import ScrollToTop from 'comp/Common/ScrollTop';
 import BrandThree from 'comp/Common/Brand/BrandThree.js';
-import Events from './EventsSection.js';
 import Videos from './VideoSection.js';
 import WithLoveNewsWithPreview from './WithLoveNews';
 
@@ -17,16 +13,12 @@ const HomeMain = () => {
 	return (
 		<React.Fragment>
 			<SliderDefault />
-			<Courses />
 			<WithLoveNewsWithPreview />
 			<Videos />
 			<Cta />
-			<Degree />
-			<Events />
 			<FaqSection />
 			<Testimonial />
-			<BrandThree brandClass='rs-partner pb-40 pt-60' />
-			<Blog />
+			<BrandThree brandClass='rs-partner pb-50 pt-50 sec-title2' />
 			<ScrollToTop scrollClassName="scrollup orange-color" />
 		</React.Fragment>
 	);
