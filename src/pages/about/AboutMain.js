@@ -1,5 +1,4 @@
-import React from 'react';
-// import Team from './TeamSection';
+import React, { Suspense } from 'react';
 import AboutVideo from './VideoSection';
 import AboutCounter from './CounterSection';
 import Testimonial from './TestimonialSection';
@@ -18,9 +17,9 @@ const AboutMain = () => {
             <AboutVideo />
             <AboutCounter />
             <AboutTab />
-            <React.Suspense fallback={<div></div>}>
+            <Suspense fallback={<></>}>
                 <Team />
-            </React.Suspense>
+            </Suspense>
             <Testimonial />
             <Faq />
 			<ScrollToTop scrollClassName="scrollup orange-color" />

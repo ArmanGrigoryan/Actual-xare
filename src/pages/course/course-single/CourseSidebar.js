@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import ModalVideo from 'comp/Elements/ModalVideo';
-import { CourseContext } from 'app/App';
+import { useCourseContext } from 'app/App';
 
 const CourseSidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const { course } = useContext(CourseContext);
+    const { course } = useCourseContext();
 
     const toggleModal = () => setIsOpen(!isOpen);
 

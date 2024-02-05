@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { EventContext } from 'app/App';
+import { useEventContext } from 'app/App';
 
 const SingleCard = (props) => {
-    const { eventChangeHandler } = useContext(EventContext);
+    const { eventChangeHandler } = useEventContext();
 
     return (
         <div className={props.eventClass ? props.eventClass : 'event-item'}>

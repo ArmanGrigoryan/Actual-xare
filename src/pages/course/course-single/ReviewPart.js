@@ -1,35 +1,13 @@
-import React from 'react';
-// import Slider from "react-slick";
+import React, { Suspense } from 'react';
 import SectionTitle from "comp/Common/SectionTitle";
 import withPreviewPopup from "comp/HOC/withPreviewPopup";
 import Image from "comp/Elements/Image";
 import HtmlText from 'comp/Elements/HtmlText';
 import { useQuery } from 'react-query';
 import { getReviews } from 'api';
+import { CourseReviewsSliderSettings as sliderSettings } from 'helpers';
 
 const Slider = React.lazy(() => import("react-slick"));
-
-const sliderSettings = {
-    dots: true,
-    centerMode: false,
-    infinite: true,
-    arrows: true,
-    lazyLoad: true,
-    loop: true,
-    autoplay: true,
-    autoplaySpeed: 7000,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 1,
-                dots: false,
-            }
-        }
-    ]
-};
 
 const CourseReviews = ({ openPreviewHandler }) => {
     const { data, isFetched } = useQuery("reviews", getReviews);
@@ -46,27 +24,29 @@ const CourseReviews = ({ openPreviewHandler }) => {
                         title="Ակտուալ Հաղորդակցություն"
                     />
 
-                    <Slider {...sliderSettings}>
-                        {
-                            isFetched ?
-                            data.map(({ id, logo, alt, html }) => {
-                                const textDescriptionComponent = <HtmlText html={html} />;
+                    <Suspense fallback={<></>}>
+                        <Slider {...sliderSettings}>
+                            {
+                                isFetched ?
+                                data.map(({ id, logo, alt, html }) => {
+                                    const textDescriptionComponent = <HtmlText html={html} />;
 
-                                return (
-                                    <Image
-                                        key={id}
-                                        src={logo} 
-                                        alt={alt} 
-                                        className="block d-block w-100 radius-12 b-none border-none coverable" 
-                                        clickHandler={evt => openPreviewHandler(evt, textDescriptionComponent)}
-                                        textDescriptionComponent={textDescriptionComponent}
-                                        isZooming={true}
-                                    />
-                                )
-                            }) :
-                            null
-                        }
-                    </Slider>
+                                    return (
+                                        <Image
+                                            key={id}
+                                            src={logo} 
+                                            alt={alt} 
+                                            className="block d-block w-100 radius-12 b-none border-none coverable" 
+                                            clickHandler={evt => openPreviewHandler(evt, textDescriptionComponent)}
+                                            textDescriptionComponent={textDescriptionComponent}
+                                            isZooming={true}
+                                        />
+                                    )
+                                }) :
+                                null
+                            }
+                        </Slider>
+                    </Suspense>
                 </div>
             </div>
         </div>

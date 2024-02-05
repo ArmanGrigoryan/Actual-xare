@@ -1,5 +1,4 @@
-import React from 'react';
-// import Slider from "react-slick";
+import React, { Suspense } from 'react';
 import SectionTitle from 'comp/Common/SectionTitle';
 import SingleTestimonial from 'comp/Testimonial/SingleTestimonial';
 import quote from 'media/testimonial/main-home/test-2.png';
@@ -42,48 +41,50 @@ const Testimonial = () => {
                     title="Կարծիքներ մեր մասին"
                     effectClass="heading-line"
                 />
-                <Slider {...testimonialSettings}>
-                    <SingleTestimonial
-                        itemClass="testi-item"
-                        quoteImage={quote}
-                        authorImage={female}
-                        Title="Լուսինե Մանուկյան"
-                        Designation="ՄՌԿ մասնագետ"
-                        Description="Ոչ միայն խորհուրդ կտամ մասնակցել , այլև ես ինքս մեծ սիրով կրկին կմասնակցեմ Ակտուալի կողմից անցկացվելիք դասընթացներին..."
-                    />
-                    <SingleTestimonial
-                        itemClass="testi-item"
-                        quoteImage={quote}
-                        authorImage={female}
-                        Title="Արմինե Աղաջանյան"
-                        Designation="ՄՌԿ մասնագետ"
-                        Description="Ակտուալը նորն ու այժմեականը լսելու վստահելի հարթակ է..."
-                    />
-                    <SingleTestimonial
-                        itemClass="testi-item"
-                        quoteImage={quote}
-                        authorImage={female}
-                        Title="Սուսաննա Մարտիրոսյան"
-                        Designation="ՄՌԿ մասնագետ"
-                        Description="Դասընթացը տվեց այն հնարավորությունը, որ կադրային գծով մասնագետը դառնա բիզնես գործընկեր..."
-                    />
-                    <SingleTestimonial
-                        itemClass="testi-item"
-                        quoteImage={quote}
-                        authorImage={female}
-                        Title="Սոնա Վարդանյան"
-                        Designation="ՄՌԿ դասընթացի շրջանավարտ"
-                        Description="Շատ շնորհակալ եմ արդիական դասընթացի, կազմակերպության գործնական խնդիրների վերաբերյալ մեծ քանակությանմբ տեղյակություն ստանալու համար..."
-                    />
-                    <SingleTestimonial
-                        itemClass="testi-item"
-                        quoteImage={quote}
-                        authorImage={female}
-                        Title="Աննա Օհանյան"
-                        Designation="ՄՌԿ դասընթացի շրջանավարտ"
-                        Description="Ակտուալ-ում Յուրաքանչյուր թեմա յուրովի հետաքրքիր է..."
-                    />
-                </Slider>
+                <Suspense fallback={<></>}>
+                    <Slider {...testimonialSettings}>
+                        <SingleTestimonial
+                            itemClass="testi-item"
+                            quoteImage={quote}
+                            authorImage={female}
+                            Title="Լուսինե Մանուկյան"
+                            Designation="ՄՌԿ մասնագետ"
+                            Description="Ոչ միայն խորհուրդ կտամ մասնակցել , այլև ես ինքս մեծ սիրով կրկին կմասնակցեմ Ակտուալի կողմից անցկացվելիք դասընթացներին..."
+                        />
+                        <SingleTestimonial
+                            itemClass="testi-item"
+                            quoteImage={quote}
+                            authorImage={female}
+                            Title="Արմինե Աղաջանյան"
+                            Designation="ՄՌԿ մասնագետ"
+                            Description="Ակտուալը նորն ու այժմեականը լսելու վստահելի հարթակ է..."
+                        />
+                        <SingleTestimonial
+                            itemClass="testi-item"
+                            quoteImage={quote}
+                            authorImage={female}
+                            Title="Սուսաննա Մարտիրոսյան"
+                            Designation="ՄՌԿ մասնագետ"
+                            Description="Դասընթացը տվեց այն հնարավորությունը, որ կադրային գծով մասնագետը դառնա բիզնես գործընկեր..."
+                        />
+                        <SingleTestimonial
+                            itemClass="testi-item"
+                            quoteImage={quote}
+                            authorImage={female}
+                            Title="Սոնա Վարդանյան"
+                            Designation="ՄՌԿ դասընթացի շրջանավարտ"
+                            Description="Շատ շնորհակալ եմ արդիական դասընթացի, կազմակերպության գործնական խնդիրների վերաբերյալ մեծ քանակությանմբ տեղյակություն ստանալու համար..."
+                        />
+                        <SingleTestimonial
+                            itemClass="testi-item"
+                            quoteImage={quote}
+                            authorImage={female}
+                            Title="Աննա Օհանյան"
+                            Designation="ՄՌԿ դասընթացի շրջանավարտ"
+                            Description="Ակտուալ-ում Յուրաքանչյուր թեմա յուրովի հետաքրքիր է..."
+                        />
+                    </Slider>
+                </Suspense>
             </div>
         </div>
     )

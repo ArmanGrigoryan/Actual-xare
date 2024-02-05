@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { CourseContext } from 'app/App';
+import { useCourseContext } from 'app/App';
 
 const SingleCard = (props) => {
-    const { courseChangeHandler } = useContext(CourseContext);
+    const { courseChangeHandler } = useCourseContext();
 
     return (
         <div className={`${props.itemClass}`}>

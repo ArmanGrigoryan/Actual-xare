@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 export default function Image({
     src, 
     alt, 
-    className, 
+    className = "", 
     clickHandler, 
     isZooming = false, 
     textDescriptionComponent = null, 

@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import { EventContext } from 'app/App';
+import React from 'react';
 import Header from 'comp/Layout/Header';
 import Footer from 'comp/Layout/Footer';
 import Newsletter from 'comp/Common/Newsletter';
@@ -13,7 +12,6 @@ import ContentSection from './ContentSection';
 
 const EventSingle = () => {
     const { refElement: animateRef } = useFade();
-    const { event } = useContext(EventContext);
 
     return (
         <div ref={animateRef} className="hidden-opacity">

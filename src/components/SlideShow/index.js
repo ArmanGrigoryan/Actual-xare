@@ -1,20 +1,9 @@
-import React from 'react';
-// import Slider from "react-slick";
+import React, { Suspense } from 'react';
 import SectionTitle from 'comp/Common/SectionTitle';
 import Image from 'comp/Elements/Image';
+import { SlideShowSliderSettings as sliderSettings } from 'helpers';
 
 const Slider = React.lazy(() => import("react-slick"));
-
-const sliderSettings = {
-    dots: false,
-    centerMode: true,
-    infinite: true,
-    arrows: true,
-    lazyLoad: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    className: 'slides',
-};
 
 const SlideShow = ({ 
     images = [],
@@ -34,19 +23,21 @@ const SlideShow = ({
                 {
                     images.length > 0 ?
                     (
-                        <Slider {...sliderSettings}>
-                            {
-                                images.map(url => (
-                                    <Image 
-                                        key={url}
-                                        src={url} 
-                                        alt="" 
-                                        className="block d-block w-100 radius-12 b-none border-none" 
-                                        clickHandler={evt => openPreviewHandler && openPreviewHandler(evt, null)}
-                                    />
-                                ))
-                            }
-                        </Slider>
+                        <Suspense fallback={<></>}>
+                            <Slider {...sliderSettings}>
+                                {
+                                    images.map(url => (
+                                        <Image 
+                                            key={url}
+                                            src={url} 
+                                            alt="" 
+                                            className="block d-block w-100 radius-12 b-none border-none" 
+                                            clickHandler={evt => openPreviewHandler && openPreviewHandler(evt, null)}
+                                        />
+                                    ))
+                                }
+                            </Slider>
+                        </Suspense>
                     ) :
                     null
                 }

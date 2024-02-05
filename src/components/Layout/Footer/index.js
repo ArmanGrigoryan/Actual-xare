@@ -1,14 +1,19 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const AddressMaps = React.lazy(() => import('./Maps'));
 
 const Footer = (props) => {
     const { footerClass, footerTopClass } = props;
+    const [visible, setVisible] = useState(false);
 
     const email = "support@actualhr.am";
     const emailSubject = "Հետադարձ կապ";
     const emailBody = "Բարև Ձեզ, ես ցանկանում եմ տեղեկանալ դասընթացների մասին ավելի մանրամասն։ Կարող եք զանգահարել՝ +374";
+
+    useEffect(() => {
+        setTimeout(() => setVisible(true))
+    }, [])
 
     return (
         <footer className={footerClass ? footerClass : 'rs-footer'}>
@@ -57,7 +62,7 @@ const Footer = (props) => {
                     </div>
 
                     <Suspense fallback={<></>}>
-                        <AddressMaps />
+                         { visible && <AddressMaps /> }
                     </Suspense>
                 </div>
             </div>

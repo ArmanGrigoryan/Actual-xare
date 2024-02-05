@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import { Route, Routes as Switch } from 'react-router-dom';
 import Home from 'pages/home';
 import About from 'pages/about';
@@ -17,7 +17,10 @@ import withCourse from 'comp/HOC/withCourse';
 import withEvent from 'comp/HOC/withEvent';
 
 export const CourseContext = createContext(null);
+export const useCourseContext = () => useContext(CourseContext);
+
 export const EventContext = createContext(null);
+export const useEventContext = () => useContext(EventContext);
 
 export const queryClient = new QueryClient();
 
