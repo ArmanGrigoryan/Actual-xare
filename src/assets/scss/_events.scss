@@ -71,8 +71,12 @@
                         }
                     }
                 }
+
+                &:hover {
+                    transform: scale(1.03);
+                }
             }
-       }
+        }
     }
 }
 
@@ -169,9 +173,6 @@
 
 /* small mobile :480px. */
 @media #{$mobile} {
-    .rs-download-app .mobile-img .apps-image img {
-        max-width: 140px;
-    }
     .rs-event .event-item .event-short .content-part .title {
         font-size: 18px;
         line-height: 28px;

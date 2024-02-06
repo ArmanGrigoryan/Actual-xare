@@ -13,7 +13,7 @@ const WithLoveNews = ({ openPreviewHandler }) => {
     const { data, isFetched } = useQuery("news", getNews);
 
     return (
-        <div className="rs-featured-news pt-50 pb-70 md-pb-50 sm-pb-20">
+        <div className="rs-featured-news pt-50 md-pt-30 pb-70 xs-pb-20">
             <div className="container-fluid">
                 <SectionTitle
                     sectionClass="sec-title2 text-center"

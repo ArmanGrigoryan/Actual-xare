@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const ErrorContent = () => {
     return (
-        <div id="rs-page-error" className="rs-page-error">
+        <div className="rs-page-error">
             <div className="error-text">
                 <h1 className="error-code">404</h1>
                 <h3 className="error-message">Էջը չի գտնվել</h3>

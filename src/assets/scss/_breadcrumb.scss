@@ -111,11 +111,7 @@
         z-index: -1;
     }
 }
-.breadcrumbs1 {
-    background-size: cover;
-    background-position: center;
-    background-position: center top;
-}
+
 @media #{$md} {
     .rs-breadcrumbs .breadcrumbs-img img{
         min-height: 200px;

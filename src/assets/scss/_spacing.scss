@@ -47,6 +47,11 @@
 .mr-10 {margin-right: 10px !important;}
 .mr-20 {margin-right: 20px !important;}
 
+.mx-30 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 /*-- Padding Top --*/
 @for $i from 1 through 25 {
     .pt-#{2 * $i}{padding-top: 2px *$i;}
@@ -124,6 +129,7 @@
     }
 
     .md-ml-10 {margin-left: 10px;}
+    .md-ml-20 {margin-left: 20px !important;}
     .md-mr-10 {margin-right: 10px;}
 
     @for $i from 1 through 15 {
@@ -168,6 +174,9 @@
     .sm-pr-25 {
         padding-right: 25px;
     }
+    .sm-pb-20 {
+        padding-bottom: 20px;
+    }
 
     .col-sm-12 {
         width: 100%;
@@ -186,6 +195,9 @@
     }
     .xs-py-30 {
         padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .xs-pb-20 {
         padding-bottom: 20px;
     }
 

@@ -246,31 +246,6 @@
                 &.no-gap {
                     padding-top: 93px;
                 }
-                .recent-post{
-                    .post-img{
-                        img{
-                            width: 80px;
-                            height: 80px;
-                            border-radius: 4px;
-                        }
-                    }
-                    .post-item{
-                        .post-desc{
-                            a{
-                                &:hover{
-                                    color: $orangeColor;
-                                }
-                            }
-                        }
-                        .post-date{
-                            i{
-                                font-size: 13px;
-                                color: $orangeColor;
-                                padding-right: 5px;
-                            }
-                        }
-                    }
-                }
             }
             .footer-bottom {
                 padding: 40px 0;

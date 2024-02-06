@@ -7,7 +7,7 @@ import avatar2 from 'media/donor/key.jpeg';
 function Testimonial() {
 
     return (
-        <div className="rs-testimonial style2 pt-50 pb-50 md-pt-30 md-pb-30">
+        <div className="rs-testimonial style2 pt-30 pb-30">
             <div className="container">
                 <div className="row">
                     <div>

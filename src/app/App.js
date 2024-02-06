@@ -3,9 +3,9 @@ import { Route, Routes as Switch } from 'react-router-dom';
 import Home from 'pages/home';
 import About from 'pages/about';
 import Course from 'pages/course';
-import CourseSingle from 'pages/course/course-single';
+import CourseSinglePage from 'pages/course/course-single';
 import Event from 'pages/event';
-import EventSingle from 'pages/event/event-single';
+import EventSinglePage from 'pages/event/event-single';
 import Contact from 'pages/contact';
 import Error from 'pages/404';
 import { Storage } from 'helpers';
@@ -24,8 +24,8 @@ export const useEventContext = () => useContext(EventContext);
 
 export const queryClient = new QueryClient();
 
-const CourseSingleHOC = withCourse(CourseSingle);
-const EventSingleHOC = withEvent(EventSingle);
+const CourseSingle = withCourse(CourseSinglePage);
+const EventSingle = withEvent(EventSinglePage);
 
 const App = () => {
     const [course, setCourse] = useState(Storage.get("course"));
@@ -57,9 +57,9 @@ const App = () => {
                             <Route path="/home" element={<Home />} />
                             <Route path="/about" element={<About />} />
                             <Route path="/course" exact element={<Course />} />
-                            <Route path="/course/course-single" element={<CourseSingleHOC />} />
+                            <Route path="/course/course-single" element={<CourseSingle />} />
                             <Route path="/event" element={<Event />} />
-                            <Route path="/event/event-single" element={<EventSingleHOC />} />
+                            <Route path="/event/event-single" element={<EventSingle />} />
                             <Route path="/contact" element={<Contact />} />
                             <Route path="*" element={<Error />} />
                         </Switch>

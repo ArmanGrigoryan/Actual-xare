@@ -12,7 +12,7 @@ const Faq = () => {
     const emailBody = "Բարև Ձեզ, ցանկանանում եմ բաժանորդագրվել Ձեր ալիքին։";
 
     return (
-        <div className="rs-faq-part style1 pt-50 pb-50 md-pt-20 md-pb-20">
+        <div className="rs-faq-part style1 pb-50 md-pb-20">
             <div className="container">
                 <div className="main-part innerpage">
                     <div className="faq-content mb-10">

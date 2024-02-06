@@ -6,20 +6,12 @@
     }
 }
 
-/* Laptop :1600px. */
-@media #{$laptop} {}
-
-
 /* XL Device :1366px. */
 @media #{$xl} {
     .hidden-xl {
         display: none !important;
     }
 }
-
-/* Lg Device :1199px. */
-@media #{$lg} {}
-
 
 /* Tablet desktop :768px. */
 @media #{$md} {
@@ -46,20 +38,4 @@
     h3 {
         font-size: 23px;
     }
-    .rs-my-account .title,
-    .rs-team-Single .btm-info-team .con-info .title,
-    .rs-why-choose.style3 .features-wrap .title,
-    .rs-banner.style6 .banner-content .title,
-    .rs-call-action .action-wrap .title,
-    .rs-about.style4 .about-content .title,
-    .rs-banner.style5 .banner-content .title,
-    .rs-banner.style3 .banner-content .title {
-        font-size: 28px;
-    }
 }
-
-/* Large Mobile :575px. */
-@media #{$xs} {}
-
-/* small mobile :480px. */
-@media #{$mobile} {}
