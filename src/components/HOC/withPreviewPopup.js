@@ -8,13 +8,15 @@ export default function withPreviewPopup(Component) {
         const [previewElement, setPreviewElement] = useState(null);
         const [isElementPreviewing, setIsElementPreviewing] = useState(false);
         const [activeComponent, setActiveComponent] = useState(null);
+        const [hasDarkCloseIcon, setHasDarkCloseIcon] = useState(null);
 
         const ElementRef = useRef();
 
-        const openPreviewHandler = (evt, comp) => {
+        const openPreviewHandler = (evt, comp, darkIcon) => {
             setPreviewElement(evt.target);
             setIsElementPreviewing(true);
             setActiveComponent(comp);
+            setHasDarkCloseIcon(darkIcon);
         }
 
         const closePreviewHandler = () => {
@@ -43,6 +45,7 @@ export default function withPreviewPopup(Component) {
                             textDescriptionComponent={activeComponent}
                             src={previewElement.src} 
                             alt={previewElement.alt} 
+                            hasDarkCloseIcon={hasDarkCloseIcon}
                             className="radius-12 b-none border-none item" 
                         />
                     </PopupImage> :

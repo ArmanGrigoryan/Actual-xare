@@ -3,11 +3,13 @@ import React, { useRef, useState } from "react";
 export default function Image({
     src, 
     alt, 
+    loading = "lazy",
     className = "", 
     clickHandler, 
     isZooming = false, 
+    isPreviewing = false,
+    hasDarkCloseIcon = false,
     textDescriptionComponent = null, 
-    isPreviewing = false 
 }) {
     const [isExpanded, setIsExpanded] = useState(false);
 
@@ -23,7 +25,7 @@ export default function Image({
     const expandHandler = () => setIsExpanded(true);
 
     return (
-        <div className="relative max-height-inherit cursor-pointer" onClick={expandHandler}>
+        <div className={`relative max-height-inherit cursor-pointer ${hasDarkCloseIcon ? "darker" : ""}`} onClick={expandHandler}>
             {
                 textDescriptionComponent && isPreviewing ?
                     <div 
@@ -51,8 +53,8 @@ export default function Image({
                 alt={alt}
                 className={`${isZooming ? className + " hoverable" : className}`}
                 onClick={clickHandler}
+                loading={loading}
                 decoding="async" 
-                loading="lazy"
             />
         </div>
     );

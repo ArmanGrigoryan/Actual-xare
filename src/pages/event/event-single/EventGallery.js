@@ -1,11 +1,13 @@
 import React from 'react';
-import MasterGallery from 'comp/Gallery/Master';
-import MasterTwoGallery from 'comp/Gallery/MasterTwo';
-import TheVoiceOfHRGallery from 'comp/Gallery/TheVoiceOfHR';
-import TheVoiceOfHRTwoGallery from 'comp/Gallery/TheVoiceOfHRTwo';
-import HRManagementGallery from 'comp/Gallery/HRManagement';
-import ArchiveGallery from 'comp/Gallery/Archive';
-  
+import { 
+    TheVoiceOfHRGallery,
+    TheVoiceOfHRTwoGallery,
+    MasterGallery,
+    MasterTwoGallery,
+    HRManagementGallery,
+    ArchiveGallery,
+} from 'comp/Gallery';
+
 const EventGallery = (props) => {
 
     return (

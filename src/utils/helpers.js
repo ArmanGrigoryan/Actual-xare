@@ -113,16 +113,22 @@ export const TeamSliderSettings = {
 };
 
 export const AnimationInterval = 300;
+export const HeightScrollAnimationInterval = 2000;
+export const HeightScrollAnimationParams = {
+    duration: HeightScrollAnimationInterval,
+    iterations: 1,
+    fill: "forwards"
+};
 export const FadeAnimationItems = [
   { opacity: 0 },
   { opacity: 1 },
 ];
-export const FadeAnimationItemsReversed = FadeAnimationItems.slice().reverse();
 export const ForwardAnimationParams = {
   duration: AnimationInterval,
   iterations: 1,
   fill: "forwards",
 };
+export const FadeAnimationItemsReversed = FadeAnimationItems.slice().reverse();
 
 export class Storage {
   static set = (key, value) => localStorage.setItem(key, JSON.stringify(value));

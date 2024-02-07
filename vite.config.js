@@ -36,7 +36,7 @@ export default defineConfig({
       "api": path.resolve(__dirname, "./src/api"),
       "app": path.resolve(__dirname, "./src/app"),
       "comp": path.resolve(__dirname, "./src/components"),
-      "media": path.resolve(__dirname, "./media"),
+      "media": path.resolve(__dirname, "./public/media"),
       "style": path.resolve(__dirname, "./src/assets/scss"),
       "font": path.resolve(__dirname, "./src/assets/fonts"),
       "pages": path.resolve(__dirname, "./src/pages"),

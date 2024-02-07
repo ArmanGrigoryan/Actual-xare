@@ -65,18 +65,8 @@ img {
     transition: $transition;
     vertical-align: middle;
 
-    &.slim {
-        height: 320px;
-    }
-
     &.hoverable:hover {
-        transform: scale(1.02);
         cursor: zoom-in;
-
-        & + .zoom-icon-absolute {
-            bottom: 10px;
-            opacity: 1;
-        }
     }
 }
 p {
@@ -948,12 +938,6 @@ select,
         overflow: hidden;
         transition: $transition;
 
-        &.expanded {
-            transition: $transition;
-            height: auto;
-            overflow: visible;
-        }
-
         .image-grid-container {
             display: flex;
             flex-wrap: wrap;
@@ -973,27 +957,15 @@ select,
                     margin-top: 8px;
                     vertical-align: middle;
                     transition: $transition;
+                    aspect-ratio: 1.5 / 1;
 
-                    &.slim {
-                        height: 320px;
+                    &.aspect-ratio-auto {
+                        aspect-ratio: auto;
                     }
 
-                    &.hoverable:hover {
-                        transform: scale(1.02);
-                        transform-origin: top center;
+                    &.aspect-ratio-equal {
+                        aspect-ratio: 1 / 1;
                     }
-                }
-
-                .zoom-icon-absolute {
-                    transition: $transition;
-                    color: rgba(255, 255, 255, .8);
-                    font-size: 24px;
-                    display: inline-block;
-                    position: absolute;
-                    bottom: 0;
-                    opacity: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
                 }
             }
         }
@@ -1006,24 +978,11 @@ select,
                 box-shadow: 0 1em 1em -1em rgba(0, 0, 0, .25);
                 
                 &.progress {
-                    background: rgba(1, 15, 30, 0.1);
-                    height: 1.5px;
+                    background: rgba(1, 15, 30, 0.2);
+                    height: 2.5px;
                     overflow: hidden;
                     position: relative;
                 }
-                
-                &.progress::before {
-                    content: "";
-                    animation-duration: 3s;
-                    animation-timing-function: ease;
-                    animation-iteration-count: infinite;
-                    animation-name: progress;
-                    background: darken($primaryColor, 80%);
-                    display: block;
-                    height: 1.5px;
-                    position: absolute;
-                    width: 80px;
-                }   
             }
         }
     }
@@ -1034,6 +993,7 @@ select,
     padding-bottom: 10px;
     position: relative;
     z-index: 1;
+    transition: $transition;
 
     &.absolute {
         position: absolute;
@@ -1134,6 +1094,16 @@ select,
             top: 10px;
             right: 10px;
             font-size: 45px;
+
+            &.darker {
+                color: $bodyColor2
+            }
+        }
+
+        .image-popup-element {
+            &.darker + .close-icon {
+                color: $closeIconColor;
+            }
         }
     }
 }
