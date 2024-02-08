@@ -12,6 +12,7 @@ import ContentSection from './ContentSection';
 
 const EventSingle = () => {
     const { refElement: animateRef } = useFade();
+    const { event } = useContext(EventContext);
 
     return (
         <div ref={animateRef} className="hidden-opacity">

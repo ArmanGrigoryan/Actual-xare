@@ -22,6 +22,26 @@
     }
 }
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+    
+    &:not(.fa) { 
+        font-family: $bodyFont !important;
+    }
+
+    &:has(.image-preview-modal) {
+        ::-webkit-scrollbar-thumb, ::-webkit-scrollbar {
+            visibility: hidden;
+        }
+
+        .intro-section .video-column {
+            z-index: -1;
+        }
+    }
+}
+
 html,
 body {
     line-height: 26px;
