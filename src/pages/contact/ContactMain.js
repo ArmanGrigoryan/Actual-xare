@@ -24,7 +24,7 @@ const ContactMain = () => {
                 breadcrumbsImg={bannerbg}
             />
 
-            <div className="rs-contact style1 event-bg pt-50 md-pt-30 pb-50 md-pb-30">
+            <div className="rs-contact style1 event-bg pt-50 md-pt-30 pb-50 md-pb-30 xs-px-10">
                 <div className="container wider pb-50 md-pb-30">
                     <div className="row gutter-35">
                         <div className="col-md-4">
@@ -45,16 +45,16 @@ const ContactMain = () => {
                         </div>
                         <div className="col-md-4">
                             <ContactInfo
-                                boxClass=""
-                                title="Հեռախոսահամար"
+                                boxClass="sm-mb-30"
+                                title="Հեռախոս"
                                 iconClass="flaticon-phone"
-                                phone="(+374)44-30-30-28"
+                                phone="(+374) 44-30-30-28"
                             />
                         </div>
                     </div>
                 </div>
 
-                <div className="container">
+                <div className="container wider">
                     <div className="row y-top">
                         <div className="col-lg-6 md-mb-30">
                             <div className="mapouter">

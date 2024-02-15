@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SectionTitle from 'comp/Common/SectionTitle';
 import ModalVideo from 'comp/Elements/ModalVideo';
+import { DisplaySize } from "helpers";
+import { useResponsive } from 'hooks';
 
 const AboutVideo = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleModal = () => setIsOpen(!isOpen);
+
+    const displaySize = useResponsive();
 
     return (
         <div className="rs-cta style2">
@@ -23,7 +27,13 @@ const AboutVideo = () => {
                             <div className="video-wrap w-100">
                                 <a className="popup-videos w-100" onClick={toggleModal}>
                                     <i className="fa fa-play"></i>
-                                    <h5 className="title md-fs-18 xs-fs-14 mb-0 ml-10 md-ml-20 mr-10 mobile-fade-full-width width-30-100">Կատարիր Շրջագայություն Ակտուալում</h5>
+                                    <h5 className="title md-fs-18 xs-fs-14 mb-0 ml-10 md-ml-20 mr-10 mobile-fade-full-width width-30-100">
+                                        {
+                                            displaySize === DisplaySize.ComputerS || displaySize === DisplaySize.ComputerM ?
+                                            "Կատարիր Շրջագայություն Ակտուալում" :
+                                            "Շրջագայիր Ակտուալում"
+                                        }
+                                    </h5>
                                 </a>
                             </div>
                         </div>

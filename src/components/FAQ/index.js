@@ -14,7 +14,7 @@ const Faq = () => {
     return (
         <div className="rs-faq-part style1 pb-50 md-pb-20">
             <div className="container">
-                <div className="main-part innerpage">
+                <div className="main-part innerpage radius-12">
                     <div className="faq-content mb-10">
                         <h2 className='text-center mb-50'>Հաճախ տրվող հարցեր</h2>
                         <Accordion className="accordion-style1">

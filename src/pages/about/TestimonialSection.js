@@ -8,7 +8,7 @@ function Testimonial() {
 
     return (
         <div className="rs-testimonial style2 pt-30 pb-30">
-            <div className="container">
+            <div className="container radius-12">
                 <div className="row">
                     <div>
                         <Fade left>

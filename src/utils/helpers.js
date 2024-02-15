@@ -4,7 +4,8 @@ export const DisplaySize = {
     MobileM: 375,
     MobileL: 425,
     Tablet: 768,
-    ComputerS: 1024,
+    ComputerXS: 1024,
+    ComputerS: 1100,
     ComputerM: 1440,
 };
 
@@ -14,6 +15,8 @@ export const determineDisplaySize = (width) => {
         return DisplaySize.ComputerM;
     } else if (width >= DisplaySize.ComputerS) {
       return DisplaySize.ComputerS;
+    } else if (width >= DisplaySize.ComputerXS) {
+      return DisplaySize.ComputerXS;
     } else {
       return DisplaySize.Tablet;
     }

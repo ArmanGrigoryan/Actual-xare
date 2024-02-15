@@ -4,7 +4,7 @@ import Footer from 'comp/Layout/Footer';
 import Newsletter from 'comp/Common/Newsletter';
 import HomeMain from './HomeMain';
 import footerLogo from 'media/logo/logo-light.png';
-import useFade from 'hooks/useFade.js';
+import { useFade } from 'hooks';
 import SEO from 'comp/SEO';
 
 const HomePage = () =>  {

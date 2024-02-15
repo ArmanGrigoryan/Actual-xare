@@ -7,7 +7,7 @@ import ScrollToTop from 'comp/Common/ScrollTop';
 import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import footerLogo from 'media/logo/logo-light.png';
 import bannerbg from 'media/slider/main-home/homepage-bg.jpg';
-import useFade from 'hooks/useFade.js';
+import { useFade } from 'hooks';
 import SEO from 'comp/SEO';
 
 const Register = () => {

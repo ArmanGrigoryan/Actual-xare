@@ -18,7 +18,7 @@ const Events = () => {
                     title="Իրադարձություններ"
                 />
 
-                <div className="row gap-30 md-gap-20 mr-20 md-mr-10 ml-20 md-ml-10">
+                <div className="row gap-30 md-gap-20 mr-20 mobile-mr-10 ml-20 mobile-ml-10">
                     {
                         isFetched ?
                         data.map(event => (

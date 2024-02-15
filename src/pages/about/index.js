@@ -6,7 +6,7 @@ import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import AboutMain from './AboutMain';
 import footerLogo from 'media/logo/logo-light.png';
 import bannerbg from 'media/slider/main-home/homepage-bg-3.jpg';
-import useFade from 'hooks/useFade.js';
+import { useFade } from 'hooks';
 import SEO from 'comp/SEO';
 
 const About = () => {

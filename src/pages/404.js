@@ -1,6 +1,6 @@
 import React from 'react';
 import ErrorContent from 'comp/Error';
-import useFade from 'hooks/useFade.js';
+import { useFade } from 'hooks';
 import SEO from 'comp/SEO';
 
 const Error = () => {

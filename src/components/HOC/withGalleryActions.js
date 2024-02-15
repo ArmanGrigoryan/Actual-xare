@@ -1,5 +1,5 @@
 import React from "react";
-import useScrollAnimate from "hooks/useScrollAnimate";
+import { useScrollAnimate } from "hooks";
 
 export default function withGalleryActions(Component) {
     return function withGalleryActionsComponent({ openPreviewHandler }) {

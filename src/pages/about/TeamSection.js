@@ -22,13 +22,13 @@ const SlideShowWithPreview = withPreviewPopup(SlideShow);
 const Team = () => {
 
     return (
-        <div className="rs-team style1 inner-style orange-color pt-40 pb-40 gray-bg">
+        <div className="rs-team style1 inner-style orange-color mt-0 sm-pt-20 pt-40 pb-40 gray-bg">
             <div className="container">
                 <div className="row y-middle">
-                    <div className="col-md-6 sm-mb-30">
+                    <div className="col-md-6 sm-mb-0">
                         <SectionTitle
                             sectionClass="sec-title"
-                            subtitleClass="sub-title orange"
+                            subtitleClass="sub-title orange sm-mb-0"
                             subtitle="Գործընկերներ"
                             titleClass="title mb-20"
                             title="Ակտուալի թիմը"

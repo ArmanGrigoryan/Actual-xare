@@ -127,6 +127,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                gap: 30px;
             }
             .copyright {
                 p {
@@ -253,6 +254,8 @@
                 position: relative;
                 .copyright {
                     p {
+                        font-size: 14px;
+                        line-height: 20px;
                         margin-bottom: 0;
                         color: $grayColor;
                     }
@@ -264,6 +267,8 @@
                     }
                 }
                 .copy-right-menu {
+                    text-align: center;
+
                     li {
                         position: relative;
                         display: inline-block;
@@ -275,7 +280,7 @@
                                 color: $orangeColor;
                             }
                         }
-                        &:after {
+                        &.dotted:after {
                             display: block;
                             content: "";
                             position: absolute;
@@ -353,5 +358,9 @@
     
     .rs-footer.home9-style .footer-top .info-container {
         padding: 0 20px;
+    }
+
+    .rs-footer.home9-style.main-home .footer-bottom .copyright p {
+        font-size: 12px;
     }
 }

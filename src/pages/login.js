@@ -5,10 +5,10 @@ import Footer from 'comp/Layout/Footer';
 import Newsletter from 'comp/Common/Newsletter';
 import ScrollToTop from 'comp/Common/ScrollTop';
 import SiteBreadcrumb from 'comp/Common/Breadcumb';
+import SEO from 'comp/SEO';
 import footerLogo from 'media/logo/logo-light.png';
 import bannerbg from 'media/slider/main-home/homepage-bg.jpg';
-import useFade from 'hooks/useFade.js';
-import SEO from 'comp/SEO';
+import { useFade } from 'hooks';
 
 const Login = () => {
     const { refElement: animateRef } = useFade();

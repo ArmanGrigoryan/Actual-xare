@@ -68,20 +68,20 @@ const Footer = (props) => {
             </div>
 
             <div className="footer-bottom">
-                <div className="container">
+                <div className="container wider">
                     <div className="row y-middle">
                         <div className='legal-links'>
                             <div className="col-lg-6 text-left">
                                 <ul className="copy-right-menu">
-                                    <li><Link to="/event">Իվենթներ</Link></li>
-                                    <li><Link to="/blog">Բլոգ</Link></li>
-                                    <li><Link to="/about">Մեր մասին</Link></li>
-                                    <li><Link to="/contact">Կապ</Link></li>
+                                    <li className="dotted"><Link to="/event">Իվենթներ</Link></li>
+                                    <li className="dotted"><Link to="/course">Դասընթացներ</Link></li>
+                                    <li className="dotted"><Link to="/about">Մեր մասին</Link></li>
+                                    <li className="dotted"><Link to="/contact">Կապ</Link></li>
                                 </ul>
                             </div>
-                            <div className="col-lg-6 md-mb-10 text-end last">
+                            <div className="col-lg-6 text-end last">
                                 <div className="copyright md-mb-0">
-                                    <pre className="white-color text-middle text-center">Բոլոր իրավունքները պաշտպանված են  {new Date().getFullYear()}թ.</pre>
+                                    <p className="white-color text-middle text-center">Բոլոր իրավունքները պաշտպանված են  {new Date().getFullYear()}թ.</p>
                                 </div>
                             </div>
                         </div>

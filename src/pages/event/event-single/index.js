@@ -7,7 +7,7 @@ import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import SEO from 'comp/SEO';
 import footerLogo from 'media/logo/logo-light.png';
 import bannerbg from 'media/slider/main-home/homepage-bg-4.jpg';
-import useFade from 'hooks/useFade.js';
+import { useFade } from 'hooks';
 import ContentSection from './ContentSection';
 
 const EventSingle = () => {

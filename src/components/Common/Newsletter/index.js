@@ -7,8 +7,8 @@ const Newsletter = (props) => {
 
     return (
         <div className={sectionClass ? sectionClass : 'rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-20'}>
-            <div className="container md-pl-0 md-pr-0 pr-30 pl-30">
-                <div className={wrapperClass ? wrapperClass : 'newsletter-wrap'}>
+            <div className="container xs-px-0">
+                <div className={wrapperClass ? wrapperClass : 'newsletter-wrap mx-20'}>
                     <div className="row y-middle">
                         <div className="col-lg-6 col-md-12 md-mb-30">
                             <div className="content-part">

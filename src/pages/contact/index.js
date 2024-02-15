@@ -5,7 +5,7 @@ import ScrollToTop from 'comp/Common/ScrollTop';
 import Newsletter from 'comp/Common/Newsletter';
 import ContactMain from './ContactMain';
 import footerLogo from 'media/logo/logo-light.png';
-import useFade from 'hooks/useFade.js';
+import { useFade } from 'hooks';
 import SEO from 'comp/SEO';
 
 const Contact = () => {

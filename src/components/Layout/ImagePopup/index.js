@@ -1,5 +1,5 @@
 import React from "react";
-import useAnimateOnMount from "hooks/useAnimateOnMount";
+import { useAnimateOnMount } from "hooks";
 
 const PopupImage = React.forwardRef((props, ref) => {
     const { refElement: animateRef } = useAnimateOnMount(ref);

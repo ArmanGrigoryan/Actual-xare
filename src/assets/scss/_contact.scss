@@ -38,12 +38,11 @@
                 .address {
                     color: $titleColor7;
                     text-wrap: wrap;
-                    font-size: 17px;
+                    font-size: 14px;
                     font-weight: 600;
                 }
                 a {
                     color: $titleColor7;
-                    font-size: 17px;
                     font-weight: 600;
                     &:hover {
                         color: $primaryColor;
@@ -156,7 +155,7 @@
                     a,
                     .desc {
                         text-wrap: wrap;
-                        font-size: 16px;;
+                        font-size: 14px;;
                     }
                 }
             }
@@ -179,6 +178,8 @@
 
 @media #{$md} {
     .rs-contact {
+        padding: 30px;
+
         .map-canvas {
             iframe {
                 height: 450px;
@@ -189,7 +190,7 @@
                 .address-text {
                     .label {
                         text-wrap: wrap;
-                        font-size: 20px;
+                        font-size: 22px;
                         margin-bottom: 8px;
                     }
                 }

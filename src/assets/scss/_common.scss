@@ -1311,6 +1311,9 @@ select,
     .rodal-dialog {
         max-height: 60vh;
     }
+    .sm-height-400 {
+        height: 400px;
+    }
 }
 
 @media #{$xs} { 
@@ -1340,9 +1343,6 @@ select,
     }
     .readon.orange-btn {
         font-size: 14px;
-    }
-    .rs-newsletter.style1 .newsletter-wrap .content-part .sec-title .title {
-        font-size: 18px !important;
     }
     .rodal-dialog {
         max-height: 45vh;

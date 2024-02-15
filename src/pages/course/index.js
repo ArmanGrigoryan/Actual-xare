@@ -6,7 +6,7 @@ import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import ScrollToTop from 'comp/Common/ScrollTop';
 import SEO from 'comp/SEO';
 import Courses from './CoursesSection';
-import useFade from 'hooks/useFade.js';
+import { useFade } from 'hooks';
 import footerLogo from 'media/logo/logo-light.png';
 import bannerbg from 'media/slider/main-home/homepage-bg-2.jpg';
 

@@ -21,7 +21,7 @@ const SliderDefault = () => {
                 <div className="container">
                     <div className="content-part position-relative">
                         <h1 className="sl-title">Ակտուալ Ձեր Բիզնեսի Համար</h1>
-                        <h2 className='sl-subtitle width-50-100 fade-in-mobile anime white-color mb-30 sm-mb-10'>Սովորեք, ամրապնդեք, զարգացրեք Ձեր բիզնեսը</h2>
+                        <h2 className='sl-subtitle width-50-100 fade-in-mobile anime white-color'>Սովորեք, ամրապնդեք, զարգացրեք</h2>
 
                         <div className="sl-btn">
                             <Link

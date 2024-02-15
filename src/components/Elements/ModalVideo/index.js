@@ -1,5 +1,5 @@
 import React from "react";
-import useResponsive from 'hooks/useResponsive';
+import { useResponsive } from 'hooks';
 import { DisplaySize } from "helpers";
 import Rodal from 'rodal';
 

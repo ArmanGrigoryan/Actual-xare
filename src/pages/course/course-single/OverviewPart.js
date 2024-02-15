@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCourseContext } from 'app/App';
-import useFade from 'hooks/useFade';
+import { useFade } from 'hooks';
 import HtmlText from 'comp/Elements/HtmlText';
 
 const OverviewPart = () => {
