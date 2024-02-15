@@ -27,16 +27,16 @@ const WithLoveNews = ({ openPreviewHandler }) => {
                     <Slider {...sliderSettings}>
                         {
                             isFetched ?
-                            data.slice(0).reverse().map(({ id, logo, alt, html }) => {
+                            data.slice(0).reverse().map(({ id, logo, alt, hasDarkCloseIcon, html }) => {
                                 const textDescriptionComponent = <HtmlText html={html} />;
 
                                 return (
                                     <Image
                                         key={id}
                                         src={logo} 
-                                        alt={alt} 
+                                        alt={alt}
                                         className="block d-block w-100 radius-12 b-none border-none coverable" 
-                                        clickHandler={evt => openPreviewHandler(evt, textDescriptionComponent)}
+                                        clickHandler={evt => openPreviewHandler(evt, textDescriptionComponent, hasDarkCloseIcon)}
                                         textDescriptionComponent={textDescriptionComponent}
                                         isZooming={true}
                                     />

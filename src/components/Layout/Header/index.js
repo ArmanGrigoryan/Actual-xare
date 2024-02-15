@@ -12,7 +12,7 @@ const Header = (props) => {
 
 	useEffect(() => {
 		const toggleVisibility = () => {
-			if (window.scrollY > 0 && window.innerWidth > 991) setIsVisible(true);
+			if (window.scrollY > 100 && window.innerWidth > 991) setIsVisible(true);
 			else setIsVisible(false);
 		};
 

@@ -3,6 +3,7 @@ import SingleTeam from 'comp/Team/SingleTeam';
 import SectionTitle from 'comp/Common/SectionTitle';
 import withPreviewPopup from 'comp/HOC/withPreviewPopup';
 import SlideShow from 'comp/SlideShow';
+import { ArchiveImages } from 'helpers';
 import { TeamSliderSettings as sliderSettings } from 'helpers';
 import team1 from 'media/team/1.jpeg';
 import team2 from 'media/team/2.jpg';
@@ -17,29 +18,6 @@ import team9 from 'media/team/9.jpeg';
 const Slider = React.lazy(() => import("react-slick"));
 
 const SlideShowWithPreview = withPreviewPopup(SlideShow);
-
-const ArchiveImages = [
-    'media/archive/1.jpg',
-    'media/archive/2.jpg',
-    'media/archive/15.jpeg',
-    'media/archive/6.jpg',
-    'media/archive/4.jpg',
-    'media/archive/12.jpeg',
-    'media/archive/11.jpeg',
-    'media/archive/16.jpeg',
-    'media/archive/3.jpg',
-    'media/archive/8.jpeg',
-    'media/archive/13.jpeg',
-    'media/archive/10.jpeg',
-    'media/archive/20.jpeg',
-    'media/archive/5.jpg',
-    'media/archive/9.jpeg',
-    'media/archive/18.jpeg',
-    'media/archive/19.jpeg',
-    'media/archive/14.jpeg',
-    'media/archive/21.jpeg',
-    'media/archive/17.jpeg'
-]
 
 const Team = () => {
 

@@ -28,7 +28,7 @@ const CourseReviews = ({ openPreviewHandler }) => {
                         <Slider {...sliderSettings}>
                             {
                                 isFetched ?
-                                data.map(({ id, logo, alt, html }) => {
+                                data.map(({ id, logo, alt, hasDarkCloseIcon, html }) => {
                                     const textDescriptionComponent = <HtmlText html={html} />;
 
                                     return (
@@ -37,7 +37,7 @@ const CourseReviews = ({ openPreviewHandler }) => {
                                             src={logo} 
                                             alt={alt} 
                                             className="block d-block w-100 radius-12 b-none border-none coverable" 
-                                            clickHandler={evt => openPreviewHandler(evt, textDescriptionComponent)}
+                                            clickHandler={evt => openPreviewHandler(evt, textDescriptionComponent, hasDarkCloseIcon)}
                                             textDescriptionComponent={textDescriptionComponent}
                                             isZooming={true}
                                         />

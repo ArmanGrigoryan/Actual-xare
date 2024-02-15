@@ -1016,42 +1016,49 @@ select,
         display: inline-block;
         text-transform: capitalize;
         opacity: 0;
-        margin: 0 5px;
+        margin: 0 2px;
         transform: rotateX(-90deg);
     }
     
     .let1 {
-        animation: drop 2.2s ease-in-out infinite;
-        animation-delay: 1.2s;
+        opacity: 1;
+        transform: none;
+        top: 3px;
     }
     
     .let2 {
-        animation: drop 2.2s ease-in-out infinite;
-        animation-delay: 1.3s;
+        opacity: 1;
+        transform: none;
+        top: 3px;
     }
     
     .let3 {
-        animation: drop 2.2s ease-in-out infinite;
-        animation-delay: 1.4s;
+        opacity: 1;
+        transform: none;
+        top: 3px;
     }
     
     .let4 {
-        animation: drop 2.2s ease-in-out infinite;
-        animation-delay: 1.5s;
+        opacity: 1;
+        transform: none;
+        top: 3px;
     
     }
     
     .let5 {
-        animation: drop 2.2s ease-in-out infinite;
-        animation-delay: 1.6s;
+        opacity: 1;
+        transform: none;
+        top: 3px;
     }
     
     .let6 {
-        animation: drop 2.2s ease-in-out infinite;
-        animation-delay: 1.7s;
+        opacity: 1;
+        transform: none;
+        top: 3px;
     }
     
     .let7 {
+        margin-left: 15px;
         animation: drop 2.2s ease-in-out infinite;
         animation-delay: 1.8s;
     }

@@ -26,13 +26,13 @@ const SlideShow = ({
                         <Suspense fallback={<></>}>
                             <Slider {...sliderSettings}>
                                 {
-                                    images.map(url => (
+                                    images.map(({ url, hasDarkCloseIcon }) => (
                                         <Image 
                                             key={url}
                                             src={url} 
                                             alt="" 
                                             className="block d-block w-100 radius-12 b-none border-none" 
-                                            clickHandler={evt => openPreviewHandler && openPreviewHandler(evt, null)}
+                                            clickHandler={evt => openPreviewHandler && openPreviewHandler(evt, null, hasDarkCloseIcon)}
                                         />
                                     ))
                                 }

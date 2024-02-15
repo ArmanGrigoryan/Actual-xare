@@ -37,7 +37,7 @@ const Footer = (props) => {
                             <li className='mt-50 sm-mt-0'>
                                 <ul className="d-flex gap-20">
                                     <li className="d-flex">
-                                        <a target="_blank" href="https://facebook.com/ActualHRagency" className="cursor-pointer">
+                                        <a target="_blank" href="https://www.facebook.com/ActualHPartner" className="cursor-pointer">
                                             <i className="fa fa-facebook-f position-static"></i>
                                         </a>
                                     </li>
@@ -52,7 +52,7 @@ const Footer = (props) => {
                                         </a>
                                     </li>
                                     <li className="d-flex">
-                                        <a target="_blank" href="https://www.youtube.com/@ActualHRAgency">
+                                        <a target="_blank" href="https://www.youtube.com/@ActualHRPartner">
                                             <i className="fa fa-youtube position-static"></i>
                                         </a>
                                     </li>
@@ -62,7 +62,7 @@ const Footer = (props) => {
                     </div>
 
                     <Suspense fallback={<></>}>
-                         { visible && <AddressMaps /> }
+                        { visible && <AddressMaps /> }
                     </Suspense>
                 </div>
             </div>

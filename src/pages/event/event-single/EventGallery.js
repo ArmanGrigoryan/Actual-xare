@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { 
     TheVoiceOfHRGallery,
     TheVoiceOfHRTwoGallery,
@@ -9,26 +9,32 @@ import {
 } from 'comp/Gallery';
 
 const EventGallery = (props) => {
+    const [isVisible, setIsVisible] = useState(false);
+    useEffect(() => {
+        setTimeout(() => setIsVisible(true), 200);
+    }, []);
 
-    return (
-        <div>
-            {
-                props.type === "master" ?
-                <MasterGallery {...props} /> :
-                    props.type === "masterTwo" ?
-                    <MasterTwoGallery {...props} /> :
-                        props.type === "hrManagement" ?
-                        <HRManagementGallery {...props} /> :
-                            props.type === "theVoiceOfHr" ?
-                            <TheVoiceOfHRGallery {...props} /> :
-                                props.type === "theVoiceOfHrTwo" ?
-                                <TheVoiceOfHRTwoGallery {...props} /> :
-                                    props.type === "archive" ?
-                                    <ArchiveGallery {...props} /> :
-                                        null
-            }
-        </div>
-    );
+    return isVisible ?
+        (
+            <div>
+                {
+                    props.type === "master" ?
+                    <MasterGallery {...props} /> :
+                        props.type === "masterTwo" ?
+                        <MasterTwoGallery {...props} /> :
+                            props.type === "hrManagement" ?
+                            <HRManagementGallery {...props} /> :
+                                props.type === "theVoiceOfHr" ?
+                                <TheVoiceOfHRGallery {...props} /> :
+                                    props.type === "theVoiceOfHrTwo" ?
+                                    <TheVoiceOfHRTwoGallery {...props} /> :
+                                        props.type === "archive" ?
+                                        <ArchiveGallery {...props} /> :
+                                            null
+                }
+            </div>
+        ) : 
+        null
 }
 
 export default EventGallery;

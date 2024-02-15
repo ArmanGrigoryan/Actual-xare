@@ -24,6 +24,89 @@ export const determineDisplaySize = (width) => {
   }
 }
 
+export const ArchiveImages = [
+    {
+        url: 'media/archive/1.jpg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/2.jpg',
+        hasDarkCloseIcon: true,
+    },
+    {
+        url: 'media/archive/15.jpeg',
+        hasDarkCloseIcon: true,
+    },
+    {
+        url: 'media/archive/6.jpg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/4.jpg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/12.jpeg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/11.jpeg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/16.jpeg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/3.jpg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/8.jpeg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/13.jpeg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/10.jpeg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/20.jpeg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/5.jpg',
+        hasDarkCloseIcon: true,
+    },
+    {
+        url: 'media/archive/9.jpeg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/18.jpeg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/19.jpeg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/14.jpeg',
+        hasDarkCloseIcon: false,
+    },
+    {
+        url: 'media/archive/21.jpeg',
+        hasDarkCloseIcon: true,
+    },
+    {
+        url: 'media/archive/17.jpeg',
+        hasDarkCloseIcon: false,
+    },
+]
+
 export const CourseReviewsSliderSettings = {
   dots: true,
   centerMode: false,

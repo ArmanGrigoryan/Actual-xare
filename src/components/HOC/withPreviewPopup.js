@@ -12,11 +12,11 @@ export default function withPreviewPopup(Component) {
 
         const ElementRef = useRef();
 
-        const openPreviewHandler = (evt, comp, darkIcon) => {
+        const openPreviewHandler = (evt, comp, isDarkIcon) => {
             setPreviewElement(evt.target);
             setIsElementPreviewing(true);
             setActiveComponent(comp);
-            setHasDarkCloseIcon(darkIcon);
+            setHasDarkCloseIcon(isDarkIcon);
         }
 
         const closePreviewHandler = () => {
