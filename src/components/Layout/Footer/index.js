@@ -28,7 +28,7 @@ const Footer = (props) => {
                             </li>
                             <li>
                                 <i className="flaticon-call"></i>
-                                <div className="desc"><a href="tel:(+374)44-30-30-28">(+374)44-30-30-28</a></div>
+                                <div className="desc"><a href="tel:(+374)44-30-30-28">(+374) 44-30-30-28</a></div>
                             </li>
                             <li>
                                 <i className="flaticon-email"></i>

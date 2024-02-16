@@ -35,25 +35,23 @@ const CustomForm = () => {
         <MailchimpSubscribe
             url={URL}
             render={({ subscribe, status }) => (
-            <div>
-                <div>
-                    <input 
-                        type="email"
-                        placeholder="Էլ. փոստ" 
-                        ref={inputRef}
-                        disabled={disabled}
-                        onInput={evt => evt.target.setCustomValidity("")}
-                        onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
-                        required
-                    />
-                    <button 
-                        disabled={disabled} 
-                        onClick={clickHandler(subscribe)}
-                    >
-                        { status ? "Շնորհակալություն!" : "Ուղարկել" }
-                    </button>
-
-                </div>
+            <div className="d-flex flex">
+                <input 
+                    required
+                    type="email"
+                    placeholder="Էլ. փոստ" 
+                    className="pr-10"
+                    ref={inputRef}
+                    disabled={disabled}
+                    onInput={evt => evt.target.setCustomValidity("")}
+                    onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
+                />
+                <button 
+                    disabled={disabled} 
+                    onClick={clickHandler(subscribe)}
+                >
+                    { status ? "Ուղարկված!" : "Ուղարկել" }
+                </button>
             </div>
             )}
         />

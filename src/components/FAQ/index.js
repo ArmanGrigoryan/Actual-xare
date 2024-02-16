@@ -16,7 +16,7 @@ const Faq = () => {
             <div className="container">
                 <div className="main-part innerpage radius-12">
                     <div className="faq-content mb-10">
-                        <h2 className='text-center mb-50'>Հաճախ տրվող հարցեր</h2>
+                        <h2 className='text-center mb-60'>Հաճախ տրվող հարցեր</h2>
                         <Accordion className="accordion-style1">
                             <AccordionItem className="accordion-item" uuid="a">
                                 <AccordionItemHeading className="card-header">

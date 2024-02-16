@@ -24,25 +24,20 @@
                 position: relative;
                 border-radius: 6px;
                 overflow: hidden;
-                input,
-                button {
-                    outline: none;
-                    border: none;
-                }
                 input {
                     background: $whiteColor;
+                    border: none;
+                    outline: none;
                     width: 100%;
                     color: $bodyColor;
-                    padding: 17px 30px;
-                    padding-right: 150px;
+                    padding: 15px 20px;
                 }
                 button {
-                    position: absolute;
-                    right: 0;
-                    top: 0;
                     background: $secondaryColor;
+                    border: none;
+                    outline: none;
                     color: $whiteColor;
-                    padding: 17px 40px;
+                    padding: 15px 30px;
                     transition: $transition;
                     &:hover {
                         background: lighten($secondaryColor, 5%);
@@ -95,10 +90,6 @@
 
 /* small mobile :480px. */
 @media #{$mobile} {
-    .rs-newsletter.style1 .newsletter-wrap .newsletter-form input {
-        padding: 10px 20px;
-        padding-right: 100px;
-    }
     .rs-newsletter.style1 .newsletter-wrap .newsletter-form button {
         padding: 10px 20px;
     }

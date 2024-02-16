@@ -119,16 +119,16 @@ h4 {
 }
 button {
     cursor: pointer;
-
-    &[disabled] {
-        opacity: .75;
-    }
 }
 button, input {
     margin: 0;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
+
+    &[disabled] {
+        opacity: .75;
+    }
 }
 ul {
 	margin: 0px;
